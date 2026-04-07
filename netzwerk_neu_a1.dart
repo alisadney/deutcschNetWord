@@ -13,6 +13,17 @@ import 'package:zamerkn_englisch/telak/Talek_China/recources/color_managr.dart';
 // المفردات الأساسية - التحيات، التعارف، الأبجدية، الأرقام
 // ============================================================================
 
+import 'package:flutter/material.dart';
+// تأكد من استيراد المسارات الصحيحة للمكتبات الخاصة بك
+// import 'package:your_app/core/manager/color_manager.dart';
+// import 'package:your_app/presentation/widgets/learning_cards_screen_dwa.dart';
+// import 'package:your_app/presentation/widgets/generic_list_screen_dwa.dart';
+// import 'package:your_app/presentation/widgets/combined_learning_widget.dart';
+
+// ============================================================================
+// الكاردات - Kapitel 1 Modul 1 (المفردات والكلمات)
+// ============================================================================
+
 class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
   final List<LearningCard> Cards = [
     // ============================================================
@@ -37,6 +48,8 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "Genau", secondaryText: "بالضبط"),
     LearningCard(primaryText: "Super", secondaryText: "رائع"),
     LearningCard(primaryText: "Alles klar", secondaryText: "كل شيء واضح"),
+    LearningCard(primaryText: "Noch einmal bitte", secondaryText: "مرة أخرى من فضلك"),
+    LearningCard(primaryText: "Ich verstehe nicht", secondaryText: "أنا لا أفهم"),
 
     // ============================================================
     // المجموعة 2: أسئلة التعارف (Fragen zur Person)
@@ -47,9 +60,13 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "Woher kommst du?", secondaryText: "من أين أنت؟"),
     LearningCard(primaryText: "Wo wohnst du?", secondaryText: "أين تسكن؟"),
     LearningCard(primaryText: "Wie geht's?", secondaryText: "كيف الحال؟"),
-    LearningCard(primaryText: "Wie geht's dir?", secondaryText: "كيف حالك؟"),
-    LearningCard(primaryText: "Wie geht's Ihnen?", secondaryText: "كيف حالكم؟"),
+    LearningCard(primaryText: "Wie geht's dir?", secondaryText: "كيف حالك؟ (غير رسمي)"),
+    LearningCard(primaryText: "Wie geht's Ihnen?", secondaryText: "كيف حالكم؟ (رسمي)"),
     LearningCard(primaryText: "Wie heißen Sie?", secondaryText: "ما اسمكم؟ (رسمي)"),
+    LearningCard(primaryText: "Woher kommen Sie?", secondaryText: "من أين أنتم؟ (رسمي)"),
+    LearningCard(primaryText: "Wo wohnen Sie?", secondaryText: "أين تسكنون؟ (رسمي)"),
+    LearningCard(primaryText: "Welche Sprachen sprechen Sie?", secondaryText: "أي اللغات تتحدث؟"),
+    LearningCard(primaryText: "Wie ist Ihre Telefonnummer?", secondaryText: "ما رقم هاتفكم؟"),
 
     // ============================================================
     // المجموعة 3: الإجابات (Antworten)
@@ -64,20 +81,25 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "Nicht so gut", secondaryText: "ليس جيدًا"),
     LearningCard(primaryText: "Es geht", secondaryText: "على ما يرام"),
     LearningCard(primaryText: "Ganz gut", secondaryText: "جيد جدًا"),
+    LearningCard(primaryText: "Meine Muttersprache ist...", secondaryText: "لغتي الأم هي..."),
+    LearningCard(primaryText: "Ich spreche ein bisschen Deutsch", secondaryText: "أتحدث القليل من الألمانية"),
+    LearningCard(primaryText: "Ich lerne Deutsch", secondaryText: "أنا أتعلم الألمانية"),
 
     // ============================================================
     // المجموعة 4: الاسم الأول واسم العائلة (Vorname & Nachname)
     // ============================================================
-    LearningCard(primaryText: "Name", secondaryText: "الاسم"),
-    LearningCard(primaryText: "Vorname", secondaryText: "الاسم الأول"),
-    LearningCard(primaryText: "Nachname", secondaryText: "اسم العائلة"),
-    LearningCard(primaryText: "Familienname", secondaryText: "اسم العائلة"),
-    LearningCard(primaryText: "Wer", secondaryText: "من"),
-    LearningCard(primaryText: "Wie", secondaryText: "كيف"),
-    LearningCard(primaryText: "Wo", secondaryText: "أين"),
-    LearningCard(primaryText: "Woher", secondaryText: "من أين"),
-    LearningCard(primaryText: "Herkunft", secondaryText: "المنشأ"),
-    LearningCard(primaryText: "Wohnort", secondaryText: "مكان السكن"),
+    LearningCard(primaryText: "der Name", secondaryText: "الاسم"),
+    LearningCard(primaryText: "der Vorname", secondaryText: "الاسم الأول"),
+    LearningCard(primaryText: "der Nachname", secondaryText: "اسم العائلة"),
+    LearningCard(primaryText: "der Familienname", secondaryText: "اسم العائلة"),
+    LearningCard(primaryText: "der Herr", secondaryText: "السيد"),
+    LearningCard(primaryText: "die Frau", secondaryText: "السيدة"),
+    LearningCard(primaryText: "wer", secondaryText: "من"),
+    LearningCard(primaryText: "wie", secondaryText: "كيف"),
+    LearningCard(primaryText: "wo", secondaryText: "أين"),
+    LearningCard(primaryText: "woher", secondaryText: "من أين"),
+    LearningCard(primaryText: "die Herkunft", secondaryText: "المنشأ"),
+    LearningCard(primaryText: "der Wohnort", secondaryText: "مكان السكن"),
 
     // ============================================================
     // المجموعة 5: الدول والبلدان (Länder)
@@ -92,8 +114,10 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "der Irak", secondaryText: "العراق"),
     LearningCard(primaryText: "Palästina", secondaryText: "فلسطين"),
     LearningCard(primaryText: "die Schweiz", secondaryText: "سويسرا"),
+    LearningCard(primaryText: "Russland", secondaryText: "روسيا"),
+    LearningCard(primaryText: "England", secondaryText: "إنجلترا"),
     LearningCard(primaryText: "Mexiko", secondaryText: "المكسيك"),
-    LearningCard(primaryText: "Land", secondaryText: "الدولة"),
+    LearningCard(primaryText: "das Land", secondaryText: "الدولة"),
 
     // ============================================================
     // المجموعة 6: المدن (Städte)
@@ -107,30 +131,33 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "Wien", secondaryText: "فيينا"),
     LearningCard(primaryText: "Bagdad", secondaryText: "بغداد"),
     LearningCard(primaryText: "Alexandria", secondaryText: "الإسكندرية"),
+    LearningCard(primaryText: "die Stadt", secondaryText: "المدينة"),
 
     // ============================================================
     // المجموعة 7: المهن (Berufe)
     // ============================================================
-    LearningCard(primaryText: "Lehrer", secondaryText: "معلم"),
-    LearningCard(primaryText: "Lehrerin", secondaryText: "معلمة"),
-    LearningCard(primaryText: "Student", secondaryText: "طالب"),
-    LearningCard(primaryText: "Studentin", secondaryText: "طالبة"),
-    LearningCard(primaryText: "Ingenieur", secondaryText: "مهندس"),
-    LearningCard(primaryText: "Ärztin", secondaryText: "طبيبة"),
-    LearningCard(primaryText: "Koch", secondaryText: "طاهٍ"),
-    LearningCard(primaryText: "Architekt", secondaryText: "مهندس معماري"),
-    LearningCard(primaryText: "Journalist", secondaryText: "صحفي"),
-    LearningCard(primaryText: "Kursleiter", secondaryText: "مدرب دورة"),
+    LearningCard(primaryText: "der Lehrer", secondaryText: "معلم"),
+    LearningCard(primaryText: "die Lehrerin", secondaryText: "معلمة"),
+    LearningCard(primaryText: "der Student", secondaryText: "طالب"),
+    LearningCard(primaryText: "die Studentin", secondaryText: "طالبة"),
+    LearningCard(primaryText: "der Ingenieur", secondaryText: "مهندس"),
+    LearningCard(primaryText: "die Ärztin", secondaryText: "طبيبة"),
+    LearningCard(primaryText: "der Koch", secondaryText: "طاهٍ"),
+    LearningCard(primaryText: "die Köchin", secondaryText: "طاهية"),
+    LearningCard(primaryText: "der Architekt", secondaryText: "مهندس معماري"),
+    LearningCard(primaryText: "der Journalist", secondaryText: "صحفي"),
+    LearningCard(primaryText: "der Kursleiter", secondaryText: "مدرب دورة"),
+    LearningCard(primaryText: "der Beruf", secondaryText: "المهنة"),
 
     // ============================================================
     // المجموعة 8: الأبجدية الألمانية (Alphabet & Umlaute)
     // ============================================================
     LearningCard(primaryText: "das Alphabet", secondaryText: "الأبجدية"),
     LearningCard(primaryText: "der Umlaut", secondaryText: "الحرف المتحول"),
-    LearningCard(primaryText: "Ä", secondaryText: "أي أوملاوت"),
-    LearningCard(primaryText: "Ö", secondaryText: "أو أوملاوت"),
-    LearningCard(primaryText: "Ü", secondaryText: "أو أوملاوت"),
-    LearningCard(primaryText: "ß (Eszett)", secondaryText: "إس تسيت"),
+    LearningCard(primaryText: "Ä (Ärger)", secondaryText: "أي أوملاوت"),
+    LearningCard(primaryText: "Ö (Öffnen)", secondaryText: "أو أوملاوت"),
+    LearningCard(primaryText: "Ü (Übung)", secondaryText: "أو أوملاوت"),
+    LearningCard(primaryText: "ß (Eszett)", secondaryText: "إس تسيت (حرف S مزدوج)"),
     LearningCard(primaryText: "buchstabieren", secondaryText: "يهجي"),
 
     // ============================================================
@@ -159,13 +186,18 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "zwanzig", secondaryText: "٢٠"),
     LearningCard(primaryText: "die Telefonnummer", secondaryText: "رقم الهاتف"),
     LearningCard(primaryText: "die Rufnummer", secondaryText: "رقم الاتصال"),
+    LearningCard(primaryText: "die Nummer", secondaryText: "الرقم"),
+    LearningCard(primaryText: "die Zahl", secondaryText: "عدد"),
 
     // ============================================================
-    // المجموعة 10: البريد الإلكتروني (E-Mail)
+    // المجموعة 10: البريد الإلكتروني والعنوان (E-Mail & Adresse)
     // ============================================================
     LearningCard(primaryText: "die E-Mail-Adresse", secondaryText: "البريد الإلكتروني"),
-    LearningCard(primaryText: "der Name", secondaryText: "الاسم"),
-    LearningCard(primaryText: "der Nachname", secondaryText: "اسم العائلة"),
+    LearningCard(primaryText: "die Adresse", secondaryText: "العنوان"),
+    LearningCard(primaryText: "die Straße", secondaryText: "الشارع"),
+    LearningCard(primaryText: "die Hausnummer", secondaryText: "رقم المنزل"),
+    LearningCard(primaryText: "die Postleitzahl (PLZ)", secondaryText: "الرمز البريدي"),
+    LearningCard(primaryText: "der Ort", secondaryText: "المدينة/المكان"),
 
     // ============================================================
     // المجموعة 11: الأفعال الأساسية (Verben)
@@ -181,7 +213,7 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "spielen", secondaryText: "يلعب"),
     LearningCard(primaryText: "machen", secondaryText: "يفعل"),
     LearningCard(primaryText: "gehen", secondaryText: "يذهب"),
-    LearningCard(primaryText: "fahren", secondaryText: "يقود"),
+    LearningCard(primaryText: "fahren", secondaryText: "يقود / يركب"),
     LearningCard(primaryText: "verstehen", secondaryText: "يفهم"),
     LearningCard(primaryText: "fragen", secondaryText: "يسأل"),
     LearningCard(primaryText: "antworten", secondaryText: "يجيب"),
@@ -189,18 +221,21 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "lesen", secondaryText: "يقرأ"),
     LearningCard(primaryText: "schreiben", secondaryText: "يكتب"),
     LearningCard(primaryText: "hören", secondaryText: "يستمع"),
+    LearningCard(primaryText: "wohnen", secondaryText: "يسكن"),
+    LearningCard(primaryText: "bleiben", secondaryText: "يبقى"),
+    LearningCard(primaryText: "regnen", secondaryText: "يمطر"),
 
     // ============================================================
     // المجموعة 12: الضمائر الشخصية (Personalpronomen)
     // ============================================================
     LearningCard(primaryText: "ich", secondaryText: "أنا"),
-    LearningCard(primaryText: "du", secondaryText: "أنت"),
+    LearningCard(primaryText: "du", secondaryText: "أنت (غير رسمي - مفرد)"),
     LearningCard(primaryText: "er", secondaryText: "هو"),
     LearningCard(primaryText: "sie", secondaryText: "هي"),
     LearningCard(primaryText: "es", secondaryText: "هو/هي (محايد)"),
     LearningCard(primaryText: "wir", secondaryText: "نحن"),
-    LearningCard(primaryText: "ihr", secondaryText: "أنتم"),
-    LearningCard(primaryText: "Sie", secondaryText: "أنتم (رسمي)"),
+    LearningCard(primaryText: "ihr", secondaryText: "أنتم (غير رسمي - جمع)"),
+    LearningCard(primaryText: "Sie", secondaryText: "أنتم (رسمي - مفرد وجمع)"),
     LearningCard(primaryText: "sie (Plural)", secondaryText: "هم"),
 
     // ============================================================
@@ -208,7 +243,8 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     // ============================================================
     LearningCard(primaryText: "das Handtuch", secondaryText: "المنشفة"),
     LearningCard(primaryText: "die Flasche", secondaryText: "الزجاجة"),
-    LearningCard(primaryText: "der Koffer", secondaryText: "الحقيبة"),
+    LearningCard(primaryText: "der Koffer", secondaryText: "الحقيبة (السفر)"),
+    LearningCard(primaryText: "die Tasche", secondaryText: "الحقيبة / الشنطة"),
     LearningCard(primaryText: "das Würstchen", secondaryText: "النقانق"),
     LearningCard(primaryText: "der Kindergarten", secondaryText: "رياض الأطفال"),
     LearningCard(primaryText: "das Butterbrot", secondaryText: "شطيرة الزبدة"),
@@ -222,12 +258,21 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     LearningCard(primaryText: "die Pause", secondaryText: "الاستراحة"),
     LearningCard(primaryText: "das Video", secondaryText: "الفيديو"),
     LearningCard(primaryText: "das Gespräch", secondaryText: "المحادثة"),
-    LearningCard(primaryText: "die Uhr", secondaryText: "الساعة"),
+    LearningCard(primaryText: "die Uhr", secondaryText: "الساعة (وقت/جهاز)"),
     LearningCard(primaryText: "die Schule", secondaryText: "المدرسة"),
     LearningCard(primaryText: "das Büro", secondaryText: "المكتب"),
     LearningCard(primaryText: "die Wohnung", secondaryText: "الشقة"),
     LearningCard(primaryText: "das Zimmer", secondaryText: "الغرفة"),
-    LearningCard(primaryText: "die Uni", secondaryText: "الجامعة"),
+    LearningCard(primaryText: "die Uni (Universität)", secondaryText: "الجامعة"),
+    LearningCard(primaryText: "das Auto", secondaryText: "السيارة"),
+    LearningCard(primaryText: "das Haus", secondaryText: "المنزل"),
+    LearningCard(primaryText: "der Tisch", secondaryText: "الطاولة"),
+    LearningCard(primaryText: "der Stuhl", secondaryText: "الكرسي"),
+    LearningCard(primaryText: "der Apfel", secondaryText: "التفاحة"),
+    LearningCard(primaryText: "das Wasser", secondaryText: "الماء"),
+    LearningCard(primaryText: "der Kaffee", secondaryText: "القهوة"),
+    LearningCard(primaryText: "der Tee", secondaryText: "الشاي"),
+    LearningCard(primaryText: "die Polizei", secondaryText: "الشرطة"),
 
     // ============================================================
     // المجموعة 14: مهارات التعلم (Fähigkeiten)
@@ -245,36 +290,40 @@ class NetzwerkNeuA1Kapitel_1_Modul1A1_1CardsScreenDwa extends StatelessWidget {
     // المجموعة 15: عبارات مهمة في الصف
     // ============================================================
     LearningCard(primaryText: "Ich verstehe nicht", secondaryText: "أنا لا أفهم"),
-    LearningCard(primaryText: "Kannst du bitte wiederholen?", secondaryText: "هل يمكنك التكرار؟"),
-    LearningCard(primaryText: "Wie bitte?", secondaryText: "ماذا قلت؟"),
+    LearningCard(primaryText: "Kannst du bitte wiederholen?", secondaryText: "هل يمكنك التكرار من فضلك؟"),
+    LearningCard(primaryText: "Wie bitte?", secondaryText: "ماذا قلت؟ / عذرًا؟"),
     LearningCard(primaryText: "Noch mal, bitte", secondaryText: "مرة أخرى من فضلك"),
     LearningCard(primaryText: "Langsamer, bitte", secondaryText: "أبطأ من فضلك"),
     LearningCard(primaryText: "Was bedeutet das?", secondaryText: "ماذا يعني ذلك؟"),
     LearningCard(primaryText: "Wie schreibt man das?", secondaryText: "كيف يُكتب هذا؟"),
     LearningCard(primaryText: "Machen wir eine Pause", secondaryText: "لنأخذ استراحة"),
+    LearningCard(primaryText: "Hat jemand eine Frage?", secondaryText: "هل لدى أحد سؤال؟"),
+    LearningCard(primaryText: "Ja, ich habe eine Frage", secondaryText: "نعم، لدي سؤال"),
+    LearningCard(primaryText: "Nein, danke. Ich habe keine Fragen.", secondaryText: "لا، شكرًا. ليس لدي أي أسئلة."),
   ];
 
   @override
   Widget build(BuildContext context) {
     return LearningCardsScreenDwa(
-      categoryTitle: "Netzwerk neu A1.1 - Kapitel 1 Modul 1 - المفردات الأساسية",
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 1 Modul 1 - المفردات الأساسية (محدث)",
       cards: Cards,
     );
   }
 }
 
 // ============================================================================
-// الجمل - Kapitel 1 Modul 1
+// الجمل - Kapitel 1 Modul 1 (محدثة ومنظمة)
 // ============================================================================
 
 class NetzwerkNeuA1Kapitel_1_Modul1SintinceScreenDwa extends StatelessWidget {
   final List<ItemCard> sentences = [
-
     // ============================================================
-    // المجموعة 1: التحيات والتعريف بالنفس
+    // المجموعة 1: التحيات والتعريف بالنفس (Begrüßung & Vorstellung)
     // ============================================================
     ItemCard(english: "Guten Tag, mein Name ist Julia.", arabic: "طاب يومك، اسمي جوليا."),
     ItemCard(english: "Guten Tag, mein Name ist Khalid Nabil.", arabic: "طاب يومك، اسمي خالد نبيل."),
+    ItemCard(english: "Guten Morgen, mein Name ist Nina Weber.", arabic: "صباح الخير، اسمي نينا ويبر."),
+    ItemCard(english: "Guten Abend, ich bin Paul.", arabic: "مساء الخير، أنا بول."),
     ItemCard(english: "Hallo, ich bin Juan.", arabic: "مرحبًا، أنا خوان."),
     ItemCard(english: "Ich heiße Julia.", arabic: "اسمي جوليا."),
     ItemCard(english: "Ich heiße Khalid Nabil.", arabic: "اسمي خالد نبيل."),
@@ -285,23 +334,27 @@ class NetzwerkNeuA1Kapitel_1_Modul1SintinceScreenDwa extends StatelessWidget {
     ItemCard(english: "Das ist Herr Hansen.", arabic: "هذا السيد هانسن."),
 
     // ============================================================
-    // المجموعة 2: السؤال عن الاسم (3 أسئلة)
+    // المجموعة 2: السؤال عن الاسم (Frage nach dem Namen) - 3 طرق
     // ============================================================
     ItemCard(english: "Wie ist dein Name?", arabic: "ما اسمك؟"),
     ItemCard(english: "Wie heißt du?", arabic: "ما اسمك؟"),
     ItemCard(english: "Wer bist du?", arabic: "من أنت؟"),
     ItemCard(english: "Wie heißen Sie?", arabic: "ما اسمكم؟ (رسمي)"),
+    ItemCard(english: "Wie ist Ihr Name?", arabic: "ما اسمكم؟ (رسمي)"),
+    ItemCard(english: "Wer sind Sie?", arabic: "من أنتم؟ (رسمي)"),
     ItemCard(english: "Entschuldigung, wie heißen Sie?", arabic: "عذرًا، ما اسمكم؟"),
 
     // ============================================================
-    // المجموعة 3: الاسم الأول واسم العائلة
+    // المجموعة 3: الاسم الأول واسم العائلة (Vorname & Nachname)
     // ============================================================
     ItemCard(english: "Mein Vorname ist Khalid.", arabic: "اسمي الأول هو خالد."),
     ItemCard(english: "Mein Familienname ist Nabil.", arabic: "اسم عائلتي هو نبيل."),
     ItemCard(english: "Mein Vorname ist Khalid und mein Familienname ist Nabil.", arabic: "اسمي الأول هو خالد واسم عائلتي هو نبيل."),
+    ItemCard(english: "Ich heiße Khalid Nabil. Herr Nabil.", arabic: "أنا اسمي خالد نبيل. السيد نبيل."),
+    ItemCard(english: "Sie heißt Hoda Raied. Frau Raied.", arabic: "هي اسمها هدى رائد. السيدة رائد."),
 
     // ============================================================
-    // المجموعة 4: السؤال عن المنشأ (Herkunft)
+    // المجموعة 4: السؤال عن المنشأ (Frage nach der Herkunft)
     // ============================================================
     ItemCard(english: "Ich komme aus Ägypten.", arabic: "أنا من مصر."),
     ItemCard(english: "Ich komme aus Mexiko.", arabic: "أنا من المكسيك."),
@@ -309,33 +362,49 @@ class NetzwerkNeuA1Kapitel_1_Modul1SintinceScreenDwa extends StatelessWidget {
     ItemCard(english: "Ich komme aus dem Irak.", arabic: "أنا من العراق."),
     ItemCard(english: "Ich komme aus Palästina.", arabic: "أنا من فلسطين."),
     ItemCard(english: "Ich komme aus der Schweiz.", arabic: "أنا من سويسرا."),
+    ItemCard(english: "Ich komme aus Russland.", arabic: "أنا من روسيا."),
+    ItemCard(english: "Ich komme aus England.", arabic: "أنا من إنجلترا."),
     ItemCard(english: "Woher kommst du?", arabic: "من أين أنت؟"),
-    ItemCard(english: "Woher kommen Sie?", arabic: "من أين أنتم؟"),
+    ItemCard(english: "Woher kommen Sie?", arabic: "من أين أنتم؟ (رسمي)"),
 
     // ============================================================
-    // المجموعة 5: السؤال عن السكن (Wohnort)
+    // المجموعة 5: السؤال عن السكن (Frage nach dem Wohnort)
     // ============================================================
     ItemCard(english: "Ich wohne in Kairo.", arabic: "أنا أسكن في القاهرة."),
     ItemCard(english: "Ich wohne in Berlin.", arabic: "أنا أسكن في برلين."),
     ItemCard(english: "Ich wohne in Bagdad.", arabic: "أنا أسكن في بغداد."),
     ItemCard(english: "Ich wohne in Bonn.", arabic: "أنا أسكن في بون."),
+    ItemCard(english: "Ich wohne in München.", arabic: "أنا أسكن في ميونخ."),
     ItemCard(english: "Wo wohnst du?", arabic: "أين تسكن؟"),
-    ItemCard(english: "Wo wohnen Sie?", arabic: "أين تسكنون؟"),
+    ItemCard(english: "Wo wohnen Sie?", arabic: "أين تسكنون؟ (رسمي)"),
 
     // ============================================================
-    // المجموعة 6: السؤال عن الحال (Wie geht's?)
+    // المجموعة 6: السؤال عن الحال (Frage nach dem Befinden)
     // ============================================================
     ItemCard(english: "Wie geht's?", arabic: "كيف الحال؟"),
-    ItemCard(english: "Wie geht's dir?", arabic: "كيف حالك؟"),
-    ItemCard(english: "Wie geht's Ihnen?", arabic: "كيف حالكم؟"),
+    ItemCard(english: "Wie geht's dir?", arabic: "كيف حالك؟ (غير رسمي)"),
+    ItemCard(english: "Wie geht's Ihnen?", arabic: "كيف حالكم؟ (رسمي)"),
     ItemCard(english: "Es geht mir gut, danke.", arabic: "أنا بخير، شكرًا."),
     ItemCard(english: "Es geht mir sehr gut, danke.", arabic: "أنا بخير جدًا، شكرًا."),
     ItemCard(english: "Nicht so gut.", arabic: "ليس جيدًا جدًا."),
     ItemCard(english: "Es geht.", arabic: "على ما يرام."),
     ItemCard(english: "Ganz gut, danke.", arabic: "جيد جدًا، شكرًا."),
+    ItemCard(english: "Alles gut?", arabic: "كل شيء بخير؟"),
+    ItemCard(english: "Ja, alles gut.", arabic: "نعم، كل شيء بخير."),
+    ItemCard(english: "Nein, ich verstehe nicht.", arabic: "لا، أنا لا أفهم."),
 
     // ============================================================
-    // المجموعة 7: جمل من محادثات الكتاب (Netzwerk neu)
+    // المجموعة 7: السؤال عن اللغة (Frage nach der Sprache)
+    // ============================================================
+    ItemCard(english: "Welche Sprachen sprichst du?", arabic: "أي اللغات تتحدث؟"),
+    ItemCard(english: "Ich spreche Arabisch, Deutsch und Englisch.", arabic: "أتحدث العربية والألمانية والإنجليزية."),
+    ItemCard(english: "Meine Muttersprache ist Arabisch.", arabic: "لغتي الأم هي العربية."),
+    ItemCard(english: "Ich spreche ein bisschen Deutsch.", arabic: "أتحدث القليل من الألمانية."),
+    ItemCard(english: "Ich lerne Italienisch.", arabic: "أنا أتعلم الإيطالية."),
+    ItemCard(english: "Ich lerne Deutsch.", arabic: "أنا أتعلم الألمانية."),
+
+    // ============================================================
+    // المجموعة 8: جمل من محادثات الكتاب (Netzwerk neu & Nicos Weg)
     // ============================================================
     ItemCard(english: "Hallo Nina. Hallo Niklas. Wie geht's?", arabic: "مرحبًا نينا. مرحبًا نيكلاس. كيف الحال؟"),
     ItemCard(english: "Danke, sehr gut. Und dir?", arabic: "شكرًا، بخير جدًا. وأنت؟"),
@@ -347,11 +416,11 @@ class NetzwerkNeuA1Kapitel_1_Modul1SintinceScreenDwa extends StatelessWidget {
     ItemCard(english: "Ich heiße Niklas.", arabic: "أسمي نيكلاس."),
     ItemCard(english: "Entschuldigung, wie heißt du?", arabic: "عذرًا، ما اسمك؟"),
     ItemCard(english: "Tschüss, Julia. Bis bald.", arabic: "وداعًا جوليا. أراك قريبًا."),
+    ItemCard(english: "Am Flughafen ist die Tasche weg.", arabic: "الحقيعة ضائعة في المطار."),
 
     // ============================================================
-    // المجموعة 8: التحيات الرسمية
+    // المجموعة 9: التحيات الرسمية (Formelle Begrüßung)
     // ============================================================
-    ItemCard(english: "Guten Morgen. Mein Name ist Nina Weber.", arabic: "صباح الخير. اسمي نينا ويبر."),
     ItemCard(english: "Guten Morgen, Frau Weber. Ich heiße Oliver Hansen.", arabic: "صباح الخير، سيدة ويبر. أسمي أوليفر هانسن."),
     ItemCard(english: "Guten Tag, Frau Kowalski.", arabic: "طاب يومك، سيدة كوفالسكي."),
     ItemCard(english: "Guten Tag, Frau Weber. Wie geht es Ihnen?", arabic: "طاب يومك، سيدة ويبر. كيف حالكم؟"),
@@ -363,30 +432,29 @@ class NetzwerkNeuA1Kapitel_1_Modul1SintinceScreenDwa extends StatelessWidget {
     ItemCard(english: "Tschüss, Frau Weber.", arabic: "وداعًا، سيدة ويبر."),
 
     // ============================================================
-    // المجموعة 9: جمل عن الأبجدية والتهجئة
+    // المجموعة 10: جمل عن الأبجدية والتهجئة (Alphabet & Buchstabieren)
     // ============================================================
     ItemCard(english: "Das Alphabet: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, Ä, Ö, Ü, ß", arabic: "الأبجدية الألمانية"),
     ItemCard(english: "Buchstabieren Sie bitte Ihren Namen.", arabic: "من فضلك، تهجئ اسمك."),
-    ItemCard(english: "Mein Name ist Nabil. K-H-A-L-E-D N-A-B-I-L.", arabic: "اسمي نبيل. خ-ا-ل-د ن-ب-ي-ل."),
+    ItemCard(english: "Kannst du bitte das Alphabet vorlesen?", arabic: "هل يمكنك قراءة الأبجدية من فضلك؟"),
+    ItemCard(english: "Ich buchstabiere meinen Namen. K – H – A – L – E – D – N – A – B – I – L", arabic: "أنا أتهجأ اسمي. خ-ا-ل-د ن-ب-ي-ل"),
+    ItemCard(english: "Wie kann man Oum Kalthoum schreiben? O – U – M – K – A – L – S – O – U – M", arabic: "كيف يُكتب أم كلثوم؟"),
 
     // ============================================================
-    // المجموعة 10: جمل عن البريد الإلكتروني
+    // المجموعة 11: جمل عن الأرقام والهواتف (Zahlen & Telefon)
     // ============================================================
+    ItemCard(english: "null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn", arabic: "٠، ١، ٢، ٣، ٤، ٥، ٦، ٧، ٨، ٩، ١٠"),
+    ItemCard(english: "elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig", arabic: "١١، ١٢، ١٣، ١٤، ١٥، ١٦، ١٧، ١٨، ١٩، ٢٠"),
+    ItemCard(english: "Wie ist deine Telefonnummer?", arabic: "ما رقم هاتفك؟"),
+    ItemCard(english: "Wie ist Ihre Telefonnummer, bitte?", arabic: "ما رقم هاتفكم من فضلك؟"),
+    ItemCard(english: "Meine Telefonnummer lautet: 01010169369", arabic: "رقم هاتفي هو: 01010169369"),
+    ItemCard(english: "Meine Handynummer ist 0151 899 44 583.", arabic: "رقم موبايلي هو 0151 899 44 583."),
     ItemCard(english: "Wie ist deine E-Mail-Adresse?", arabic: "ما هو بريدك الإلكتروني؟"),
     ItemCard(english: "Meine E-Mail-Adresse ist khalid.nabil26@gmail.com.", arabic: "بريدي الإلكتروني هو khalid.nabil26@gmail.com"),
     ItemCard(english: "Bitte noch mal, kannst du sie buchstabieren?", arabic: "من فضلك مرة أخرى، هل يمكنك تهجئتها؟"),
 
     // ============================================================
-    // المجموعة 11: جمل عن الأرقام والهواتف
-    // ============================================================
-    ItemCard(english: "null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn", arabic: "٠، ١، ٢، ٣، ٤، ٥، ٦، ٧، ٨، ٩، ١٠"),
-    ItemCard(english: "elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig", arabic: "١١، ١٢، ١٣، ١٤، ١٥، ١٦، ١٧، ١٨، ١٩، ٢٠"),
-    ItemCard(english: "Wie ist deine Telefonnummer?", arabic: "ما رقم هاتفك؟"),
-    ItemCard(english: "Meine Telefonnummer ist 0151 899 44 583.", arabic: "رقم هاتفي هو 0151 899 44 583."),
-    ItemCard(english: "Wie ist Ihre Telefonnummer, bitte?", arabic: "ما رقم هاتفكم من فضلك؟"),
-
-    // ============================================================
-    // المجموعة 12: جمل عن المهن
+    // المجموعة 12: جمل عن المهن (Berufe)
     // ============================================================
     ItemCard(english: "Ich bin Studentin.", arabic: "أنا طالبة."),
     ItemCard(english: "Ich bin Ingenieur.", arabic: "أنا مهندس."),
@@ -394,115 +462,203 @@ class NetzwerkNeuA1Kapitel_1_Modul1SintinceScreenDwa extends StatelessWidget {
     ItemCard(english: "Ich bin Architekt.", arabic: "أنا مهندس معماري."),
     ItemCard(english: "Ich arbeite als Journalistin.", arabic: "أنا أعمل كصحفية."),
     ItemCard(english: "Was sind Sie von Beruf?", arabic: "ما هي مهنتكم؟"),
+    ItemCard(english: "Ich arbeite als Kursleiter.", arabic: "أنا أعمل كمدرب دورة."),
 
     // ============================================================
-    // المجموعة 13: جمل مركبة (التعريف الكامل)
+    // المجموعة 13: جمل مركبة وكاملة (التعريف الكامل بالنفس)
     // ============================================================
     ItemCard(english: "Mein Name ist Khalid Nabil. Ich komme aus Ägypten und ich wohne in Kairo.", arabic: "اسمي خالد نبيل. أنا من مصر وأسكن في القاهرة."),
     ItemCard(english: "Ich heiße Ahmed und komme aus Ägypten. Ich wohne in Kairo.", arabic: "أنا اسمي أحمد وأنا من مصر. أسكن في القاهرة."),
     ItemCard(english: "Ich bin Mustafa. Ich komme aus dem Irak und wohne in Kairo.", arabic: "أنا مصطفى. أنا من العراق وأسكن في القاهرة."),
+    ItemCard(english: "Mein Name ist Müller und ich komme aus England.", arabic: "اسمي مولر وأنا من إنجلترا."),
+    ItemCard(english: "Mein Name ist Peter und ich komme aus Deutschland.", arabic: "اسمي بيتر وأنا من ألمانيا."),
+    ItemCard(english: "Mein Name ist Hoda und ich komme aus Palästina.", arabic: "اسمي هدى وأنا من فلسطين."),
+    ItemCard(english: "Mein Name ist Khalid Nabil. Ich komme aus Ägypten und ich wohne in Kairo. Ich spreche Arabisch, Deutsch und Englisch. Ich lerne Italienisch. Meine Handynummer ist 01010169369", arabic: "اسمي خالد نبيل. أنا من مصر وأسكن في القاهرة. أتحدث العربية والألمانية والإنجليزية. أنا أتعلم الإيطالية. رقم موبايلي هو 01010169369"),
   ];
 
   @override
   Widget build(BuildContext context) {
     return GenericListScreenDwa(
-      title: "Netzwerk neu A1.1 - Kapitel 1 Modul 1 - الجمل الأساسية",
+      title: "Netzwerk neu A1.1 - Kapitel 1 Modul 1 - الجمل الأساسية (محدث)",
       items: sentences,
-      primaryColor: ColorManager.celestial2,
-      secondaryColor: Color(0xFF203A43),
+      primaryColor: const Color(0xFF1A6B8A), // لون بديل
+      secondaryColor: const Color(0xFF203A43),
     );
   }
 }
 
 // ============================================================================
-// القواعد - Kapitel 1 Modul 1
+// القواعد - Kapitel 1 Modul 1 (محدثة ومنظمة بالكامل)
 // ============================================================================
 
 class NetzwerkNeuA1Kapitel_1_Modul1GrammatikScreenDwa extends StatelessWidget {
+  // قائمة بالقواعد والمفاهيم
   final List<LearningItem> words = [
-    // ➤ قاعدة 1: تصريف الفعل sein (يكون)
-    LearningItem(primaryText: "➤ Verb „sein“ – Präsens", secondaryText: "الفعل „يكون“ – المضارع"),
+    // ============================================================
+    // 1. الفرق بين المخاطبة الرسمية وغير الرسمية (Du vs. Sie)
+    // ============================================================
+    LearningItem(primaryText: "➤ 1. Informelle Anrede (غير رسمي)", secondaryText: "يُستخدم مع الأصدقاء، العائلة، الأطفال"),
+    LearningItem(primaryText: "du (أنتَ/أنتِ)", secondaryText: "Wie heißt du? - Ich heiße Nina."),
+    LearningItem(primaryText: "ihr (أنتم/أنتنَّ)", secondaryText: "Wie heißt ihr? - Wir heißen Nina und Tom."),
+    LearningItem(primaryText: "➤ 2. Formelle Anrede (رسمي)", secondaryText: "يُستخدم مع الغرباء، كبار السن، في العمل"),
+    LearningItem(primaryText: "Sie (أنتم/حضرتك)", secondaryText: "Wie heißen Sie? - Mein Name ist Nina Weber."),
+    LearningItem(primaryText: "ملاحظة مهمة", secondaryText: "في الرسمي، نستخدم دائماً اللقب: Herr + اسم العائلة / Frau + اسم العائلة"),
+
+    // ============================================================
+    // 2. الضمائر الشخصية (Personalpronomen)
+    // ============================================================
+    LearningItem(primaryText: "➤ Personalpronomen", secondaryText: "الضمائر الشخصية"),
+    LearningItem(primaryText: "ich", secondaryText: "أنا"),
+    LearningItem(primaryText: "du", secondaryText: "أنت (مفرد - غير رسمي)"),
+    LearningItem(primaryText: "er", secondaryText: "هو"),
+    LearningItem(primaryText: "sie", secondaryText: "هي"),
+    LearningItem(primaryText: "es", secondaryText: "هو/هي (للأشياء المحايدة)"),
+    LearningItem(primaryText: "wir", secondaryText: "نحن"),
+    LearningItem(primaryText: "ihr", secondaryText: "أنتم (جمع - غير رسمي)"),
+    LearningItem(primaryText: "sie", secondaryText: "هم (جمع)"),
+    LearningItem(primaryText: "Sie", secondaryText: "أنتم/حضرتك (رسمي - مفرد وجمع)"),
+
+    // ============================================================
+    // 3. تصريف الأفعال المنتظمة (Regelmäßige Verben)
+    // ============================================================
+    LearningItem(primaryText: "➤ Regelmäßige Verben (schwach)", secondaryText: "الأفعال المنتظمة (الضعيفة) - قاعدة الإضافة"),
+    LearningItem(primaryText: "Stamm + Endung", secondaryText: "جذر الفعل + نهاية"),
+    LearningItem(primaryText: "ich + e", secondaryText: "wohnen -> ich wohne (أنا أسكن)"),
+    LearningItem(primaryText: "du + st", secondaryText: "wohnen -> du wohnst (أنت تسكن)"),
+    LearningItem(primaryText: "er/sie/es + t", secondaryText: "wohnen -> er wohnt (هو يسكن)"),
+    LearningItem(primaryText: "wir + en", secondaryText: "wohnen -> wir wohnen (نحن نسكن)"),
+    LearningItem(primaryText: "ihr + t", secondaryText: "wohnen -> ihr wohnt (أنتم تسكنون)"),
+    LearningItem(primaryText: "sie/Sie + en", secondaryText: "wohnen -> sie wohnen (هم يسكنون)"),
+    LearningItem(primaryText: "مثال مع kommen", secondaryText: "ich komme, du kommst, er kommt, wir kommen, ihr kommt, sie kommen"),
+    LearningItem(primaryText: "مثال مع spielen", secondaryText: "ich spiele, du spielst, er spielt, wir spielen, ihr spielt, sie spielen"),
+    LearningItem(primaryText: "مثال مع arbeiten", secondaryText: "ich arbeite, du arbeitest, er arbeitet, wir arbeiten, ihr arbeitet, sie arbeiten (نضيف e قبل t/st)"),
+
+    // ============================================================
+    // 4. الفعل sein (يكون) - غير منتظم
+    // ============================================================
+    LearningItem(primaryText: "➤ Verb „sein“ – Präsens", secondaryText: "الفعل „يكون“ – المضارع (غير منتظم)"),
     LearningItem(primaryText: "ich bin", secondaryText: "أنا أكون"),
     LearningItem(primaryText: "du bist", secondaryText: "أنت تكون"),
     LearningItem(primaryText: "er/sie/es ist", secondaryText: "هو/هي يكون"),
     LearningItem(primaryText: "wir sind", secondaryText: "نحن نكون"),
     LearningItem(primaryText: "ihr seid", secondaryText: "أنتم تكونون"),
     LearningItem(primaryText: "sie/Sie sind", secondaryText: "هم/حضرتك يكونون"),
+    LearningItem(primaryText: "أمثلة:", secondaryText: "Ich bin Khaled. / Wir sind aus Ägypten. / Wie ist dein Name?"),
 
-    // ➤ قاعدة 2: تصريف الفعل haben (يملك)
+    // ============================================================
+    // 5. الفعل haben (يملك) - غير منتظم جزئياً
+    // ============================================================
     LearningItem(primaryText: "➤ Verb „haben“ – Präsens", secondaryText: "الفعل „يملك“ – المضارع"),
-    LearningItem(primaryText: "ich habe", secondaryText: "أنا أملك"),
+    LearningItem(primaryText: "ich habe", secondaryText: "أنا أملك / لديَّ"),
     LearningItem(primaryText: "du hast", secondaryText: "أنت تملك"),
     LearningItem(primaryText: "er/sie/es hat", secondaryText: "هو/هي يملك"),
     LearningItem(primaryText: "wir haben", secondaryText: "نحن نملك"),
     LearningItem(primaryText: "ihr habt", secondaryText: "أنتم تملكون"),
     LearningItem(primaryText: "sie/Sie haben", secondaryText: "هم/حضرتك يملكون"),
+    LearningItem(primaryText: "أمثلة:", secondaryText: "Ich habe ein Auto. / Hast du einen Bruder? / Er hat eine Katze."),
 
-    // ➤ قاعدة 3: تصريف الأفعال المنتظمة
-    LearningItem(primaryText: "➤ Regelmäßige Verben (schwach)", secondaryText: "الأفعال المنتظمة (الضعيفة)"),
-    LearningItem(primaryText: "ich -e (wohne)", secondaryText: "أنا + e"),
-    LearningItem(primaryText: "du -st (wohnst)", secondaryText: "أنت + st"),
-    LearningItem(primaryText: "er/sie/es -t (wohnt)", secondaryText: "هو/هي + t"),
-    LearningItem(primaryText: "wir -en (wohnen)", secondaryText: "نحن + en"),
-    LearningItem(primaryText: "ihr -t (wohnt)", secondaryText: "أنتم + t"),
-    LearningItem(primaryText: "sie/Sie -en (wohnen)", secondaryText: "هم/حضرتك + en"),
+    // ============================================================
+    // 6. الأفعال الشاذة (Unregelmäßige Verben) مع تغير حرف العلة
+    // ============================================================
+    LearningItem(primaryText: "➤ Unregelmäßige Verben (stark)", secondaryText: "الأفعال غير المنتظمة (القوية) - تغير حرف العلة في du/er"),
+    LearningItem(primaryText: "sprechen (e -> i)", secondaryText: "ich spreche, du sprichst, er/sie spricht, wir sprechen, ihr sprecht, sie sprechen"),
+    LearningItem(primaryText: "sehen (e -> ie)", secondaryText: "ich sehe, du siehst, er/sie sieht, wir sehen, ihr seht, sie sehen"),
+    LearningItem(primaryText: "lesen (e -> ie)", secondaryText: "ich lese, du liest, er/sie liest, wir lesen, ihr lest, sie lesen"),
+    LearningItem(primaryText: "fahren (a -> ä)", secondaryText: "ich fahre, du fährst, er/sie fährt, wir fahren, ihr fahrt, sie fahren"),
+    LearningItem(primaryText: "essen (e -> i)", secondaryText: "ich esse, du isst, er/sie isst, wir essen, ihr esst, sie essen"),
 
-    // ➤ قاعدة 4: الأفعال الشاذة (kommen, sprechen, etc.)
-    LearningItem(primaryText: "➤ Unregelmäßige Verben (stark)", secondaryText: "الأفعال غير المنتظمة (القوية)"),
-    LearningItem(primaryText: "sprechen: ich spreche, du sprichst, er/sie spricht", secondaryText: "يتحدث: أنا أتحدث، أنت تتحدث، هو/هي يتحدث"),
-    LearningItem(primaryText: "sehen: ich sehe, du siehst, er/sie sieht", secondaryText: "يرى: أنا أرى، أنت ترى، هو/هي يرى"),
-    LearningItem(primaryText: "lesen: ich lese, du liest, er/sie liest", secondaryText: "يقرأ: أنا أقرأ، أنت تقرأ، هو/هي يقرأ"),
-    LearningItem(primaryText: "fahren: ich fahre, du fährst, er/sie fährt", secondaryText: "يقود: أنا أقود، أنت تقود، هو/هي يقود"),
+    // ============================================================
+    // 7. ترتيب الكلمات في الجملة (Satzstellung)
+    // ============================================================
+    LearningItem(primaryText: "➤ Satzstellung (Hauptsatz)", secondaryText: "ترتيب الكلمات في الجملة الرئيسية"),
+    LearningItem(primaryText: "القاعدة: الفعل في المركز الثاني", secondaryText: "Das Verb steht auf Position 2"),
+    LearningItem(primaryText: "مثال: Ich", secondaryText: "komme aus Ägypten. (فاعل - فعل - بقية الجملة)"),
+    LearningItem(primaryText: "مثال مع ظرف زمان:", secondaryText: "Heute komme ich aus Ägypten. (ظرف - فعل - فاعل - بقية الجملة)"),
+    LearningItem(primaryText: "مثال مع Fragewort:", secondaryText: "Woher kommst du? (أداة استفهام - فعل - فاعل)"),
 
-    // ➤ قاعدة 5: الضمائر الشخصية
-    LearningItem(primaryText: "➤ Personalpronomen", secondaryText: "الضمائر الشخصية"),
-    LearningItem(primaryText: "ich", secondaryText: "أنا"),
-    LearningItem(primaryText: "du", secondaryText: "أنت (مفرد)"),
-    LearningItem(primaryText: "er", secondaryText: "هو"),
-    LearningItem(primaryText: "sie", secondaryText: "هي"),
-    LearningItem(primaryText: "es", secondaryText: "هو/هي (محايد)"),
-    LearningItem(primaryText: "wir", secondaryText: "نحن"),
-    LearningItem(primaryText: "ihr", secondaryText: "أنتم"),
-    LearningItem(primaryText: "Sie", secondaryText: "أنتم (رسمي)"),
-    LearningItem(primaryText: "sie (Plural)", secondaryText: "هم"),
+    // ============================================================
+    // 8. أدوات الاستفهام (W-Fragen)
+    // ============================================================
+    LearningItem(primaryText: "➤ W-Fragen", secondaryText: "أسئلة بأدوات الاستفهام"),
+    LearningItem(primaryText: "Wer?", secondaryText: "من؟ (للسؤال عن الشخص)"),
+    LearningItem(primaryText: "Wie?", secondaryText: "كيف؟ (للسؤال عن الحال أو الاسم)"),
+    LearningItem(primaryText: "Wo?", secondaryText: "أين؟ (للسؤال عن المكان - السكن)"),
+    LearningItem(primaryText: "Woher?", secondaryText: "من أين؟ (للسؤال عن الأصل أو المصدر)"),
+    LearningItem(primaryText: "Wohin?", secondaryText: "إلى أين؟ (للسؤال عن الاتجاه - سيتم شرحه لاحقًا)"),
+    LearningItem(primaryText: "Welche?", secondaryText: "أي؟ (للسؤال عن الاختيار - مثل Welche Sprachen?)"),
 
-    // ➤ قاعدة 6: ترتيب الكلمات في الجملة
-    LearningItem(primaryText: "➤ Satzstellung", secondaryText: "ترتيب الكلمات في الجملة"),
-    LearningItem(primaryText: "الفعل في المركز الثاني", secondaryText: "Das Verb steht auf Position 2"),
-    LearningItem(primaryText: "Ich lerne Deutsch.", secondaryText: "أنا أتعلم الألمانية."),
-    LearningItem(primaryText: "Heute lerne ich Deutsch.", secondaryText: "اليوم أتعلم الألمانية."),
+    // ============================================================
+    // 9. الأسئلة الأربعة الأساسية في الفصل الأول
+    // ============================================================
+    LearningItem(primaryText: "➤ Die 4 wichtigsten Fragen", secondaryText: "أهم 4 أسئلة في Kapitel 1"),
+    LearningItem(primaryText: "1. Wie heißt du?", secondaryText: "ما اسمك؟ (السؤال عن الاسم)"),
+    LearningItem(primaryText: "2. Woher kommst du?", secondaryText: "من أين أنت؟ (السؤال عن المنشأ)"),
+    LearningItem(primaryText: "3. Wo wohnst du?", secondaryText: "أين تسكن؟ (السؤال عن السكن)"),
+    LearningItem(primaryText: "4. Wie geht es dir?", secondaryText: "كيف حالك؟ (السؤال عن الحال)"),
 
-    // ➤ قاعدة 7: السؤال بالأسئلة
-    LearningItem(primaryText: "➤ Fragen mit W-Fragen", secondaryText: "أسئلة بأدوات الاستفهام"),
-    LearningItem(primaryText: "Wie heißt du?", secondaryText: "ما اسمك؟"),
-    LearningItem(primaryText: "Woher kommst du?", secondaryText: "من أين أنت؟"),
-    LearningItem(primaryText: "Wo wohnst du?", secondaryText: "أين تسكن؟"),
-    LearningItem(primaryText: "Wer bist du?", secondaryText: "من أنت؟"),
-    LearningItem(primaryText: "Wie geht's?", secondaryText: "كيف الحال؟"),
+    // ============================================================
+    // 10. حروف الجر للمدن والدول (Präpositionen aus & in)
+    // ============================================================
+    LearningItem(primaryText: "➤ Präpositionen: aus & in", secondaryText: "حروف الجر: من (aus) و في (in)"),
+    LearningItem(primaryText: "Woher? -> aus + Dativ", secondaryText: "للسؤال عن المنشأ نستخدم aus (من) مع اسم الدولة"),
+    LearningItem(primaryText: "Wo? -> in + Dativ", secondaryText: "للسؤال عن السكن نستخدم in (في) مع اسم المدينة"),
+    LearningItem(primaryText: "أمثلة:", secondaryText: "Ich komme aus Ägypten. / Ich wohne in Kairo."),
+    LearningItem(primaryText: "تنبيه:", secondaryText: "مع الدول المؤنثة (die Schweiz, die Türkei) نستخدم: aus der Schweiz / in der Schweiz"),
+
+    // ============================================================
+    // 11. الفعل "heißen" و "sein" للسؤال عن الاسم
+    // ============================================================
+    LearningItem(primaryText: "➤ 3 طرق للسؤال عن الاسم", secondaryText: "ثلاث طرق مختلفة للسؤال عن الاسم"),
+    LearningItem(primaryText: "Wie heißt du?", secondaryText: "Ich heiße Khaled. (باستخدام الفعل heißen)"),
+    LearningItem(primaryText: "Wie ist dein Name?", secondaryText: "Mein Name ist Khaled. (باستخدام الفعل sein مع اسم)"),
+    LearningItem(primaryText: "Wer bist du?", secondaryText: "Ich bin Khaled. (باستخدام الفعل sein مباشرة)"),
+
+    // ============================================================
+    // 12. ملخص تصريف الأفعال المهمة في الفصل الأول
+    // ============================================================
+    LearningItem(primaryText: "➤ Zusammenfassung: Konjugation", secondaryText: "ملخص التصريفات المهمة"),
+    LearningItem(primaryText: "ich", secondaryText: "wohne, komme, heiße, bin, habe, spreche"),
+    LearningItem(primaryText: "du", secondaryText: "wohnst, kommst, heißt, bist, hast, sprichst"),
+    LearningItem(primaryText: "er/sie/es", secondaryText: "wohnt, kommt, heißt, ist, hat, spricht"),
+    LearningItem(primaryText: "wir", secondaryText: "wohnen, kommen, heißen, sind, haben, sprechen"),
+    LearningItem(primaryText: "ihr", secondaryText: "wohnt, kommt, heißt, seid, habt, sprecht"),
+    LearningItem(primaryText: "sie/Sie", secondaryText: "wohnen, kommen, heißen, sind, haben, sprechen"),
   ];
 
+  // جمل تطبيقية للقواعد
   final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ أمثلة على ترتيب الجملة (Verb auf Position 2)", secondaryText: ""),
     LearningItem(primaryText: "Ich bin Khalid und komme aus Ägypten.", secondaryText: "أنا خالد وأنا من مصر."),
     LearningItem(primaryText: "Ich wohne in Kairo. Meine Familie wohnt auch in Kairo.", secondaryText: "أنا أسكن في القاهرة. عائلتي تسكن أيضًا في القاهرة."),
+    LearningItem(primaryText: "Heute lerne ich Deutsch.", secondaryText: "اليوم أتعلم الألمانية. (الظرف أولاً ثم الفعل ثم الفاعل)"),
+    LearningItem(primaryText: "➤ أمثلة على الفعل haben", secondaryText: ""),
     LearningItem(primaryText: "Hast du einen Bruder? Ja, ich habe einen Bruder.", secondaryText: "هل لديك أخ؟ نعم، لدي أخ."),
+    LearningItem(primaryText: "Haben Sie eine Uhr?", secondaryText: "هل لديك ساعة؟ (رسمي)"),
+    LearningItem(primaryText: "➤ أمثلة على الفعل sprechen (غير منتظم)", secondaryText: ""),
     LearningItem(primaryText: "Sprechen Sie Deutsch? Nein, ich spreche Arabisch und Englisch.", secondaryText: "هل تتحدث الألمانية؟ لا، أتحدث العربية والإنجليزية."),
-    LearningItem(primaryText: "Was machst du? Ich lerne Deutsch.", secondaryText: "ماذا تفعل؟ أتعلم الألمانية."),
+    LearningItem(primaryText: "Er spricht sehr gut Deutsch.", secondaryText: "هو يتحدث الألمانية بشكل جيد جدًا."),
+    LearningItem(primaryText: "➤ أمثلة على الفعل sein", secondaryText: ""),
+    LearningItem(primaryText: "Ich bin Student. Meine Schwester ist Ärztin.", secondaryText: "أنا طالب. أختي طبيبة."),
+    LearningItem(primaryText: "Wir sind aus Ägypten.", secondaryText: "نحن من مصر."),
+    LearningItem(primaryText: "➤ أمثلة على السؤال بالـ W-Fragen", secondaryText: ""),
     LearningItem(primaryText: "Wie heißt dein Freund? Er heißt Ahmed.", secondaryText: "ما اسم صديقك؟ اسمه أحمد."),
     LearningItem(primaryText: "Woher kommt Frau Weber? Sie kommt aus Deutschland.", secondaryText: "من أين السيدة ويبر؟ هي من ألمانيا."),
     LearningItem(primaryText: "Wer ist das? Das ist Herr Meier.", secondaryText: "من هذا؟ هذا السيد ماير."),
+    LearningItem(primaryText: "Welche Sprachen sprichst du? Ich spreche Deutsch und Englisch.", secondaryText: "أي اللغات تتحدث؟ أتحدث الألمانية والإنجليزية."),
+    LearningItem(primaryText: "➤ الفرق بين du و Sie", secondaryText: ""),
+    LearningItem(primaryText: "Du (غير رسمي): Wie heißt du? - Ich heiße Tom.", secondaryText: "مع الأصدقاء والعائلة"),
+    LearningItem(primaryText: "Sie (رسمي): Wie heißen Sie? - Mein Name ist Tom Weber.", secondaryText: "مع الغرباء أو في العمل"),
   ];
 
   @override
   Widget build(BuildContext context) {
     return CombinedLearningWidget(
-      categoryTitle: "Netzwerk neu A1.1 - Kapitel 1 Modul 1 - القواعد (Grammatik)",
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 1 Modul 1 - القواعد (Grammatik) محدث ومنظم",
       words: words,
       sentences: sentences,
     );
   }
 }
-
-
 //2
 
 
