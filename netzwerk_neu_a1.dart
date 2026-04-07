@@ -6463,4 +6463,955 @@ class NetzwerkNeuA1Kapitel_7_Modul2GrammatikScreenDwa extends StatelessWidget {
 
 
 
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 8 Modul 1
+// Fit und Gesund - المفردات الأساسية
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_8_Modul1CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: الموضوع الرئيسي (Thema)
+    // ============================================================
+    LearningCard(primaryText: "fit", secondaryText: "لياقي / في حالة بدنية جيدة"),
+    LearningCard(primaryText: "gesund", secondaryText: "صحي"),
+    LearningCard(primaryText: "die Gesundheit", secondaryText: "الصحة"),
+    LearningCard(primaryText: "faul", secondaryText: "كسول"),
+    LearningCard(primaryText: "krank", secondaryText: "مريض"),
+    LearningCard(primaryText: "die Fitness", secondaryText: "اللياقة البدنية"),
+
+    // ============================================================
+    // المجموعة 2: الحالات والمشاعر (Zustände & Gefühle)
+    // ============================================================
+    LearningCard(primaryText: "hungrig", secondaryText: "جائع"),
+    LearningCard(primaryText: "der Hunger", secondaryText: "الجوع"),
+    LearningCard(primaryText: "müde", secondaryText: "متعب / نعسان"),
+    LearningCard(primaryText: "langweilig", secondaryText: "ممل"),
+    LearningCard(primaryText: "interessant", secondaryText: "مثير للاهتمام"),
+    LearningCard(primaryText: "gefährlich", secondaryText: "خطير"),
+    LearningCard(primaryText: "wichtig", secondaryText: "مهم"),
+    LearningCard(primaryText: "allein", secondaryText: "لوحدك / بمفردك"),
+
+    // ============================================================
+    // المجموعة 3: الأفعال المتعلقة بالصحة (Verben - Gesundheit)
+    // ============================================================
+    LearningCard(primaryText: "Sport treiben", secondaryText: "يمارس الرياضة"),
+    LearningCard(primaryText: "joggen", secondaryText: "يركض / يهرول"),
+    LearningCard(primaryText: "laufen", secondaryText: "يجري"),
+    LearningCard(primaryText: "ins Fitnessstudio gehen", secondaryText: "يذهب إلى صالة الألعاب الرياضية"),
+    LearningCard(primaryText: "schwimmen gehen", secondaryText: "يذهب للسباحة"),
+    LearningCard(primaryText: "sich bewegen", secondaryText: "يتحرك"),
+    LearningCard(primaryText: "duschen", secondaryText: "يستحم (دش)"),
+    LearningCard(primaryText: "wiegen", secondaryText: "يزن (الوزن)"),
+    LearningCard(primaryText: "das Gewicht", secondaryText: "الوزن"),
+    LearningCard(primaryText: "abnehmen", secondaryText: "ينقص وزنه"),
+    LearningCard(primaryText: "zunehmen", secondaryText: "يزيد وزنه"),
+
+    // ============================================================
+    // المجموعة 4: الأكل والشراب (Essen & Trinken)
+    // ============================================================
+    LearningCard(primaryText: "gesund essen", secondaryText: "يأكل صحيًا"),
+    LearningCard(primaryText: "das Frühstück", secondaryText: "الإفطار"),
+    LearningCard(primaryText: "der Salat", secondaryText: "السلطة"),
+    LearningCard(primaryText: "die Suppe", secondaryText: "الشوربة"),
+    LearningCard(primaryText: "die Süßigkeiten", secondaryText: "الحلويات"),
+    LearningCard(primaryText: "die Schokolade", secondaryText: "الشوكولاتة"),
+    LearningCard(primaryText: "das Gemüse", secondaryText: "الخضروات"),
+    LearningCard(primaryText: "das Obst", secondaryText: "الفواكه"),
+    LearningCard(primaryText: "das Fastfood", secondaryText: "الوجبات السريعة"),
+    LearningCard(primaryText: "der Tee", secondaryText: "الشاي"),
+    LearningCard(primaryText: "der Kamillentee", secondaryText: "شاي البابونج"),
+    LearningCard(primaryText: "das Wasser", secondaryText: "الماء"),
+    LearningCard(primaryText: "das Rezept", secondaryText: "الوصفة الطبية / وصفة الطبخ"),
+    LearningCard(primaryText: "die Salbe", secondaryText: "المرهم"),
+    LearningCard(primaryText: "die Tablette", secondaryText: "القرص / الحبة الدوائية"),
+    LearningCard(primaryText: "das Medikament", secondaryText: "الدواء"),
+    LearningCard(primaryText: "der Hustensaft", secondaryText: "شراب السعال"),
+
+    // ============================================================
+    // المجموعة 5: أجزاء الجسم (Körperteile)
+    // ============================================================
+    LearningCard(primaryText: "der Körper", secondaryText: "الجسم"),
+    LearningCard(primaryText: "der Kopf", secondaryText: "الرأس"),
+    LearningCard(primaryText: "das Auge", secondaryText: "العين"),
+    LearningCard(primaryText: "die Nase", secondaryText: "الأنف"),
+    LearningCard(primaryText: "der Mund", secondaryText: "الفم"),
+    LearningCard(primaryText: "der Zahn", secondaryText: "السن (مفرد)"),
+    LearningCard(primaryText: "die Zähne", secondaryText: "الأسنان (جمع)"),
+    LearningCard(primaryText: "der Hals", secondaryText: "الرقبة / الحنجرة"),
+    LearningCard(primaryText: "die Brust", secondaryText: "الصدر"),
+    LearningCard(primaryText: "der Bauch", secondaryText: "البطن"),
+    LearningCard(primaryText: "der Rücken", secondaryText: "الظهر"),
+    LearningCard(primaryText: "der Arm", secondaryText: "الذراع"),
+    LearningCard(primaryText: "die Hand", secondaryText: "اليد"),
+    LearningCard(primaryText: "der Finger", secondaryText: "الإصبع"),
+    LearningCard(primaryText: "das Bein", secondaryText: "الساق / الرجل"),
+    LearningCard(primaryText: "der Fuß", secondaryText: "القدم"),
+    LearningCard(primaryText: "das Knie", secondaryText: "الركبة"),
+    LearningCard(primaryText: "das Ohr", secondaryText: "الأذن"),
+    LearningCard(primaryText: "das Gesicht", secondaryText: "الوجه"),
+
+    // ============================================================
+    // المجموعة 6: الأعراض والإصابات (Symptome & Verletzungen)
+    // ============================================================
+    LearningCard(primaryText: "der Unfall", secondaryText: "الحادث"),
+    LearningCard(primaryText: "die Schmerzen", secondaryText: "الآلام"),
+    LearningCard(primaryText: "Kopfschmerzen", secondaryText: "صداع"),
+    LearningCard(primaryText: "Bauchschmerzen", secondaryText: "ألم في البطن"),
+    LearningCard(primaryText: "Halsschmerzen", secondaryText: "ألم في الحلق"),
+    LearningCard(primaryText: "das Fieber", secondaryText: "الحمى / السخونية"),
+    LearningCard(primaryText: "der Husten", secondaryText: "السعال"),
+    LearningCard(primaryText: "husten", secondaryText: "يسعل"),
+    LearningCard(primaryText: "die Erkältung", secondaryText: "الزكام / البرد"),
+    LearningCard(primaryText: "erkältet sein", secondaryText: "مصاب بالزكام"),
+    LearningCard(primaryText: "die Wunde", secondaryText: "الجرح"),
+    LearningCard(primaryText: "bluten", secondaryText: "ينزف"),
+    LearningCard(primaryText: "der Verband", secondaryText: "الضماد / الرباط"),
+    LearningCard(primaryText: "verletzt", secondaryText: "مصاب / مجروح"),
+    LearningCard(primaryText: "weh tun", secondaryText: "يؤلم"),
+    LearningCard(primaryText: "Es tut mir weh", secondaryText: "إنه يؤلمني"),
+
+    // ============================================================
+    // المجموعة 7: التعبيرات الزمنية (Zeitausdrücke)
+    // ============================================================
+    LearningCard(primaryText: "morgens", secondaryText: "صباحًا"),
+    LearningCard(primaryText: "mittags", secondaryText: "ظهرًا"),
+    LearningCard(primaryText: "abends", secondaryText: "مساءً"),
+    LearningCard(primaryText: "täglich", secondaryText: "يوميًا"),
+    LearningCard(primaryText: "jeden Tag", secondaryText: "كل يوم"),
+    LearningCard(primaryText: "fünfmal pro Woche", secondaryText: "خمس مرات في الأسبوع"),
+    LearningCard(primaryText: "dreimal täglich", secondaryText: "ثلاث مرات يوميًا"),
+    LearningCard(primaryText: "seit drei Tagen", secondaryText: "منذ ثلاثة أيام"),
+    LearningCard(primaryText: "die Woche", secondaryText: "الأسبوع"),
+    LearningCard(primaryText: "der Monat", secondaryText: "الشهر"),
+    LearningCard(primaryText: "das Wochenende", secondaryText: "عطلة نهاية الأسبوع"),
+
+    // ============================================================
+    // المجموعة 8: الفعل "sollen" (يجب أن / يُنصح بأن)
+    // ============================================================
+    LearningCard(primaryText: "ich soll", secondaryText: "يجب أن / يُنصح بأن"),
+    LearningCard(primaryText: "du sollst", secondaryText: "يجب أن"),
+    LearningCard(primaryText: "er/sie/es soll", secondaryText: "يجب أن"),
+    LearningCard(primaryText: "wir sollen", secondaryText: "يجب أن"),
+    LearningCard(primaryText: "ihr sollt", secondaryText: "يجب أن"),
+    LearningCard(primaryText: "sie/Sie sollen", secondaryText: "يجب أن"),
+
+    // ============================================================
+    // المجموعة 9: الفعل "dürfen" (يُسمح له / يستطيع)
+    // ============================================================
+    LearningCard(primaryText: "ich darf", secondaryText: "يُسمح لي / أستطيع"),
+    LearningCard(primaryText: "du darfst", secondaryText: "يُسمح لك / تستطيع"),
+    LearningCard(primaryText: "er/sie/es darf", secondaryText: "يُسمح له / يستطيع"),
+    LearningCard(primaryText: "wir dürfen", secondaryText: "يُسمح لنا / نستطيع"),
+    LearningCard(primaryText: "ihr dürft", secondaryText: "يُسمح لكم / تستطيعون"),
+    LearningCard(primaryText: "sie/Sie dürfen", secondaryText: "يُسمح لهم / يستطيعون"),
+
+    // ============================================================
+    // المجموعة 10: الفعل "müssen" (يضطر إلى / يجب)
+    // ============================================================
+    LearningCard(primaryText: "ich muss", secondaryText: "أضطر إلى / يجب عليّ"),
+    LearningCard(primaryText: "du musst", secondaryText: "تضطر إلى / يجب عليك"),
+    LearningCard(primaryText: "er/sie/es muss", secondaryText: "يضطر إلى / يجب عليه"),
+    LearningCard(primaryText: "wir müssen", secondaryText: "نضطر إلى / يجب علينا"),
+    LearningCard(primaryText: "ihr müsst", secondaryText: "تضطرون إلى / يجب عليكم"),
+    LearningCard(primaryText: "sie/Sie müssen", secondaryText: "يضطرون إلى / يجب عليهم"),
+
+    // ============================================================
+    // المجموعة 11: عبارات مهمة (Wichtige Ausdrücke)
+    // ============================================================
+    LearningCard(primaryText: "Morgen geht's los", secondaryText: "غدًا ستبدأ الأمور"),
+    LearningCard(primaryText: "Schaffe ich das?", secondaryText: "هل سأتمكن من فعل ذلك؟"),
+    LearningCard(primaryText: "Zwei Monate sind lang", secondaryText: "شهران طويلان"),
+    LearningCard(primaryText: "Ich vermisse dich", secondaryText: "أشتاق إليك"),
+    LearningCard(primaryText: "vergessen", secondaryText: "ينسى"),
+    LearningCard(primaryText: "zu wenig", secondaryText: "قليل جدًا"),
+    LearningCard(primaryText: "zu viel", secondaryText: "كثير جدًا"),
+    LearningCard(primaryText: "Das Experiment", secondaryText: "التجربة"),
+    LearningCard(primaryText: "das Nightlife", secondaryText: "الحياة الليلية"),
+    LearningCard(primaryText: "Gute Besserung!", secondaryText: "أتمنى لك الشفاء العاجل!"),
+    LearningCard(primaryText: "Was ist los?", secondaryText: "ما الأمر / ماذا حدث؟"),
+    LearningCard(primaryText: "das Krankenhaus", secondaryText: "المستشفى"),
+    LearningCard(primaryText: "die Apotheke", secondaryText: "الصيدلية"),
+    LearningCard(primaryText: "die Überweisung", secondaryText: "تحويل (لطبيب آخر)"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 8 Modul 1 - Fit und Gesund - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 8 Modul 1
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_8_Modul1SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: عبارات من الدرس (Aus dem Unterricht)
+    // ============================================================
+    ItemCard(english: "Morgen geht's los. 8 Wochen gesund leben.", arabic: "غدًا ستبدأ الأمور. 8 أسابيع أعيش بصحة."),
+    ItemCard(english: "Dreimal täglich essen und viel trinken.", arabic: "آكل ثلاث مرات يوميًا وأشرب كثيرًا."),
+    ItemCard(english: "Schaffe ich das? Zwei Monate sind lang.", arabic: "هل سأتمكن من ذلك؟ شهران طويلان."),
+    ItemCard(english: "Alle Süßigkeiten, Schokolade, gebe ich jetzt meiner Nachbarin.", arabic: "كل الحلويات والشوكولاتة سأعطيها الآن لجارتي."),
+    ItemCard(english: "Ihre Kinder finden es super.", arabic: "أطفالها يجدون ذلك رائعًا."),
+
+    // ============================================================
+    // المجموعة 2: الروتين اليومي (Tägliche Routine)
+    // ============================================================
+    ItemCard(english: "Ich bin um 6:30 Uhr wach. Ich jogge.", arabic: "أستيقظ في الساعة 6:30. أهرول."),
+    ItemCard(english: "Ich mache regelmäßig Sport. Fünfmal die Woche jogge ich oder gehe ins Fitnessstudio.", arabic: "أمارس الرياضة بانتظام. خمس مرات في الأسبوع أهرول أو أذهب إلى صالة الألعاب الرياضية."),
+    ItemCard(english: "Dann dusche ich und bin fit für den Tag.", arabic: "ثم أستحم وأكون في لياقة لبقية اليوم."),
+    ItemCard(english: "Lecker Frühstück! Ich habe Hunger.", arabic: "إفطار شهي! أنا جائع."),
+    ItemCard(english: "Mittags esse ich nur Salat und am Abend eine Suppe.", arabic: "ظهرًا آكل سلطة فقط وفي المساء شوربة."),
+    ItemCard(english: "Da bin ich morgens richtig hungrig.", arabic: "عندها أكون جائعًا جدًا في الصباح."),
+    ItemCard(english: "Abends bin ich müde und gehe jetzt früh ins Bett.", arabic: "في المساء أكون متعبًا وأذهب إلى السرير مبكرًا."),
+    ItemCard(english: "Vielleicht ist das langweilig, aber ich kann super schlafen.", arabic: "ربما هذا ممل، لكن يمكنني النوم بشكل رائع."),
+
+    // ============================================================
+    // المجموعة 3: وسائل النقل والعمل (Verkehrsmittel & Arbeit)
+    // ============================================================
+    ItemCard(english: "Ihr wartet auf die Straßenbahn. Ich habe mein Fahrrad.", arabic: "أنتم تنتظرون الترام. لدي دراجتي."),
+    ItemCard(english: "Ich fahre mit dem Fahrrad zur Arbeit.", arabic: "أذهب إلى العمل بالدراجة."),
+    ItemCard(english: "Heute bin ich sicher die Erste im Büro.", arabic: "اليوم أنا بالتأكيد الأولى في المكتب."),
+
+    // ============================================================
+    // المجموعة 4: بعد الانتهاء من التجربة (Nach dem Experiment)
+    // ============================================================
+    ItemCard(english: "Hurra, fertig! Endlich kann ich in der Freizeit wieder faul sein.", arabic: "مرحى، انتهيت! أخيرًا يمكنني أن أكون كسولًا مرة أخرى في وقت فراغي."),
+    ItemCard(english: "Ich esse Schokolade.", arabic: "آكل شوكولاتة."),
+
+    // ============================================================
+    // المجموعة 5: نصائح اللياقة من التطبيق (Fitness App Tipps)
+    // ============================================================
+    ItemCard(english: "Mach mit! Los geht's! Steh auf!", arabic: "شارك! هيا بنا! انهض!"),
+    ItemCard(english: "Mach 15 Minuten Sport.", arabic: "مارس الرياضة لمدة 15 دقيقة."),
+    ItemCard(english: "Zieh Sportschuhe an.", arabic: "ارتدِ حذاء رياضيًا."),
+    ItemCard(english: "Geh raus und lauf!", arabic: "اخرج واجري!"),
+    ItemCard(english: "Mach weiter so! Gib alles!", arabic: "استمر هكذا! ابذل قصارى جهدك!"),
+    ItemCard(english: "Hol ein Glas Wasser. Trink mindestens 2 Liter.", arabic: "أحضر كأس ماء. اشرب على الأقل 2 لتر."),
+
+    // ============================================================
+    // المجموعة 6: عند الطبيب (Beim Arzt)
+    // ============================================================
+    ItemCard(english: "Guten Tag, Frau Dr. Klimke.", arabic: "طاب يومكم، الدكتورة كليمكه."),
+    ItemCard(english: "Ich hatte einen Unfall mit dem Fahrrad. Mein Knie tut weh.", arabic: "تعرضت لحادث بالدراجة. ركبتي تؤلمني."),
+    ItemCard(english: "Legen Sie sich dahin, bitte.", arabic: "استلقي هناك من فضلك."),
+    ItemCard(english: "Tut das weh? Ja, ein bisschen. Aua!", arabic: "هل هذا يؤلم؟ نعم، قليلاً. آه!"),
+    ItemCard(english: "Ich muss die Wunde sauber machen, dann mache ich einen Verband.", arabic: "يجب أن أنظف الجرح، ثم أضع ضمادًا."),
+    ItemCard(english: "Wann muss ich den Verband wechseln? Immer morgens und abends.", arabic: "متى يجب أن أغير الضماد؟ دائمًا صباحًا ومساءً."),
+    ItemCard(english: "Bewegen Sie das Bein nur wenig.", arabic: "حركي رجلك قليلاً فقط."),
+    ItemCard(english: "Ich gebe Ihnen ein Rezept für eine Salbe.", arabic: "سأعطيك وصفة طبية لمرهم."),
+    ItemCard(english: "Dann gehe ich gleich zur Apotheke und hole die Salbe.", arabic: "ثم سأذهب فورًا إلى الصيدلية وأحضر المرهم."),
+    ItemCard(english: "Muss ich noch einmal zur Kontrolle kommen? Nein, aber bei Problemen kommen Sie bitte gleich.", arabic: "هل يجب أن آتي للفحص مرة أخرى؟ لا، ولكن في حالة وجود مشاكل تعالي فورًا من فضلك."),
+    ItemCard(english: "Auf Wiedersehen und gute Besserung!", arabic: "إلى اللقاء وأتمنى لك الشفاء العاجل!"),
+    ItemCard(english: "Vielen Dank. Auf Wiedersehen.", arabic: "شكرًا جزيلاً. إلى اللقاء."),
+
+    // ============================================================
+    // المجموعة 7: أعراض المرض (Krankheitssymptome)
+    // ============================================================
+    ItemCard(english: "Ich bin total erkältet und krank.", arabic: "أنا مصابة بزكام شديد ومريضة."),
+    ItemCard(english: "Ich kann den Arm nicht bewegen. Mein Arm tut sehr weh.", arabic: "لا أستطيع تحريك ذراعي. ذراعي تؤلمني كثيرًا."),
+    ItemCard(english: "Mir ist so schlecht. Ich habe Bauchschmerzen.", arabic: "أشعر بغثيان شديد. لدي ألم في البطن."),
+    ItemCard(english: "Ich muss immer husten und habe Fieber.", arabic: "أضطر للسعال طوال الوقت ولدي حمى."),
+    ItemCard(english: "Ich habe Kopfschmerzen seit drei Tagen.", arabic: "لدي صداع منذ ثلاثة أيام."),
+    ItemCard(english: "Haben Sie auch Fieber? Ja, heute Morgen hatte ich 38.6.", arabic: "هل لديك حمى أيضًا؟ نعم، اليوم صباحًا كانت 38.6."),
+    ItemCard(english: "Das ist eine Erkältung. Alle sind im Moment erkältet.", arabic: "هذا زكام. الجميع مصاب بالزكام في الوقت الحالي."),
+    ItemCard(english: "Darf ich baden? Nein, mit Fieber dürfen Sie nicht baden.", arabic: "هل يمكنني الاستحمام (بانيو)؟ لا، مع الحمى لا يسمح لك بالاستحمام."),
+    ItemCard(english: "Kurz duschen, das geht.", arabic: "دش سريع، هذا مسموح."),
+
+    // ============================================================
+    // المجموعة 8: نصائح الطبيب (Ärztliche Ratschläge)
+    // ============================================================
+    ItemCard(english: "Sie sollen im Bett bleiben.", arabic: "يجب أن تبقى في السرير (ينصح بذلك)."),
+    ItemCard(english: "Sie sollen wenig essen und viel trinken.", arabic: "يجب أن تأكل قليلاً وتشرب كثيرًا."),
+    ItemCard(english: "Sie sollen viel Tee trinken.", arabic: "يجب أن تشرب شايًا كثيرًا."),
+    ItemCard(english: "Sie sollen drei Tage zu Hause bleiben.", arabic: "يجب أن تبقى في المنزل ثلاثة أيام."),
+    ItemCard(english: "Sie dürfen nicht arbeiten.", arabic: "لا يسمح لك بالعمل."),
+    ItemCard(english: "Sie müssen drei Tage im Bett bleiben.", arabic: "يجب عليك (تضطر إلى) البقاء في السرير ثلاثة أيام."),
+    ItemCard(english: "Nehmen Sie dieses Medikament dreimal pro Tag.", arabic: "تناول هذا الدواء ثلاث مرات يوميًا."),
+    ItemCard(english: "Nehmen Sie zweimal pro Tag eine Tablette gegen die Schmerzen.", arabic: "تناول قرصًا واحدًا ضد الألم مرتين يوميًا."),
+
+    // ============================================================
+    // المجموعة 9: أسئلة الطبيب (Arztfragen)
+    // ============================================================
+    ItemCard(english: "Wie lange sind Sie schon krank?", arabic: "منذ متى وأنت مريض؟"),
+    ItemCard(english: "Was haben Sie denn gestern Abend gegessen?", arabic: "ماذا أكلت مساء أمس؟"),
+    ItemCard(english: "Tut ihm die Brust weh? Hustet er?", arabic: "هل صدره يؤلمه؟ هل يسعل؟"),
+    ItemCard(english: "Hat Ihr Mann auch Schmerzen in den Armen oder Beinen?", arabic: "هل زوجك لديه آلام في الذراعين أو الساقين أيضًا؟"),
+
+    // ============================================================
+    // المجموعة 10: جمل من المحادثات (Dialoge)
+    // ============================================================
+    ItemCard(english: "Ich bin jetzt 27 Jahre alt. Ich bin 1,75 m groß und wiege 73 kg.", arabic: "أنا الآن عمري 27 سنة. طولي 1.75 متر ووزني 73 كجم."),
+    ItemCard(english: "Ich finde dein Experiment okay, aber ist es nicht langweilig?", arabic: "أجد تجربتك جيدة، لكن أليست مملة؟"),
+    ItemCard(english: "Du gehst jeden Abend früh ins Bett. Wir vermissen dich schon.", arabic: "تذهب إلى السرير مبكرًا كل مساء. نحن نشتاق إليك بالفعل."),
+    ItemCard(english: "Gesund leben ist ja okay, aber die Freunde vergessen, das finde ich nicht okay.", arabic: "الحياة الصحية جيدة، لكن نسيان الأصدقاء، هذا لا أستسيغه."),
+    ItemCard(english: "Komm, am Freitag gehen wir wieder ins Nightlife. Wir warten auf dich.", arabic: "هيا، يوم الجمعة سنذهب مجددًا للحياة الليلية. نحن ننتظرك."),
+    ItemCard(english: "Ich will auch mehr Sport machen. Das ist so wichtig. Aber alleine ist es langweilig.", arabic: "أريد أيضًا ممارسة المزيد من الرياضة. هذا مهم جدًا. لكن بمفردي الأمر ممل."),
+    ItemCard(english: "Ich will heute schwimmen gehen. Hast du Lust? Bitte komm mit um 6:30 Uhr.", arabic: "أريد الذهاب للسباحة اليوم. هل لديك رغبة؟ تعالي معي من فضلك الساعة 6:30."),
+    ItemCard(english: "Du isst jetzt so wenig und machst so viel Sport. Ist das wirklich gut für dich?", arabic: "أنت الآن تأكل قليلًا جدًا وتمارس رياضة كثيرة جدًا. هل هذا حقًا جيد لك؟"),
+    ItemCard(english: "Das ist gefährlich. Komm doch zu uns. Ich koche dir was. Dein Lieblingsessen.", arabic: "هذا خطير. تعالي إلينا. سأطبخ لك شيئًا. أكلك المفضل."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 8 Modul 1 - Fit und Gesund - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF2E7D32), // لون أخضر للصحة
+      secondaryColor: const Color(0xFF1B5E20),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 8 Modul 1 (Imperativ + Modalverben)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_8_Modul1GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. Imperativ (صيغة الأمر) - شرح كامل
+    // ============================================================
+    LearningItem(primaryText: "➤ Der Imperativ (صيغة الأمر)", secondaryText: "تُستخدم للأوامر، النصائح، والطلبات"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    
+    LearningItem(primaryText: "📌 1. Imperativ mit du (غير رسمي - مفرد)", secondaryText: "تحذف الـ st وتنتهي الفعل بـ e أو تحذفه"),
+    LearningItem(primaryText: "Regel:", secondaryText: "st + du → تحذف 'st' و تحذف 'du'"),
+    LearningItem(primaryText: "trinken (du trinkst) → trink!", secondaryText: "اشرب!"),
+    LearningItem(primaryText: "kommen (du kommst) → komm!", secondaryText: "تعال!"),
+    LearningItem(primaryText: "sprechen (du sprichst) → sprich!", secondaryText: "تحدث!"),
+    LearningItem(primaryText: "helfen (du hilfst) → hilf!", secondaryText: "ساعد!"),
+    LearningItem(primaryText: "arbeiten (du arbeitest) → arbeite!", secondaryText: "اعمل!"),
+    LearningItem(primaryText: "machen (du machst) → mach!", secondaryText: "افعل!"),
+    LearningItem(primaryText: "laufen (du läufst) → lauf!", secondaryText: "اركض!"),
+    LearningItem(primaryText: "nehmen (du nimmst) → nimm!", secondaryText: "خذ!"),
+    LearningItem(primaryText: "sehen (du siehst) → sieh!", secondaryText: "انظر!"),
+    LearningItem(primaryText: "lesen (du liest) → lies!", secondaryText: "اقرأ!"),
+    LearningItem(primaryText: "sein (du bist) → sei!", secondaryText: "كن!"),
+    LearningItem(primaryText: "werden (du wirst) → werde!", secondaryText: "كن / أصبح!"),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 2. Imperativ mit ihr (غير رسمي - جمع)", secondaryText: "نحذف 'ihr' ونبقي الفعل كما هو مع النهاية 't'"),
+    LearningItem(primaryText: "Regel:", secondaryText: "نحذف 'ihr' ويبقى الفعل مع 't'"),
+    LearningItem(primaryText: "ihr trinkt → trinkt!", secondaryText: "اشربوا!"),
+    LearningItem(primaryText: "ihr kommt → kommt!", secondaryText: "تعالوا!"),
+    LearningItem(primaryText: "ihr sprecht → sprecht!", secondaryText: "تحدثوا!"),
+    LearningItem(primaryText: "ihr helft → helft!", secondaryText: "ساعدوا!"),
+    LearningItem(primaryText: "ihr arbeitet → arbeitet!", secondaryText: "اعملوا!"),
+    LearningItem(primaryText: "ihr macht → macht!", secondaryText: "افعلوا!"),
+    LearningItem(primaryText: "ihr seid → seid!", secondaryText: "كونوا!"),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 3. Imperativ mit Sie (رسمي - مفرد وجمع)", secondaryText: "نحتفظ بـ 'Sie' والفعل في المصدر مع حرف الجر 'bitte'"),
+    LearningItem(primaryText: "Regel:", secondaryText: "الفعل في المصدر + Sie + bitte (اختياري)"),
+    LearningItem(primaryText: "Trinken Sie (bitte)!", secondaryText: "اشربوا من فضلكم!"),
+    LearningItem(primaryText: "Kommen Sie (bitte)!", secondaryText: "تعالوا من فضلكم!"),
+    LearningItem(primaryText: "Sprechen Sie (bitte)!", secondaryText: "تحدثوا من فضلكم!"),
+    LearningItem(primaryText: "Helfen Sie mir (bitte)!", secondaryText: "ساعدوني من فضلكم!"),
+    LearningItem(primaryText: "Arbeiten Sie (bitte)!", secondaryText: "اعملوا من فضلكم!"),
+    LearningItem(primaryText: "Machen Sie die Hausaufgaben!", secondaryText: "افعلوا الواجب المنزلي!"),
+    LearningItem(primaryText: "Seien Sie ruhig!", secondaryText: "كونوا هادئين!"),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ أمثلة إضافية على Imperativ", secondaryText: ""),
+    LearningItem(primaryText: "Mach das Fenster auf!", secondaryText: "افتح النافذة! (du)"),
+    LearningItem(primaryText: "Macht das Fenster auf!", secondaryText: "افتحوا النافذة! (ihr)"),
+    LearningItem(primaryText: "Machen Sie das Fenster auf!", secondaryText: "افتحوا النافذة! (Sie)"),
+    LearningItem(primaryText: "Sei leise!", secondaryText: "كن هادئًا! (du)"),
+    LearningItem(primaryText: "Seid leise!", secondaryText: "كونوا هادئين! (ihr)"),
+    LearningItem(primaryText: "Seien Sie leise!", secondaryText: "كونوا هادئين! (Sie)"),
+    LearningItem(primaryText: "Komm an die Tafel!", secondaryText: "تعال إلى السبورة! (du)"),
+    LearningItem(primaryText: "Kommt an die Tafel!", secondaryText: "تعالوا إلى السبورة! (ihr)"),
+    LearningItem(primaryText: "Kommen Sie an die Tafel!", secondaryText: "تعالوا إلى السبورة! (Sie)"),
+    LearningItem(primaryText: "Lies den Text vor!", secondaryText: "اقرأ النص بصوت عالٍ! (du)"),
+    LearningItem(primaryText: "Lest den Text vor!", secondaryText: "اقرأوا النص بصوت عالٍ! (ihr)"),
+    LearningItem(primaryText: "Lesen Sie den Text vor!", secondaryText: "اقرأوا النص بصوت عالٍ! (Sie)"),
+
+    // ============================================================
+    // 2. الفعل sollen (يجب أن / يُنصح بأن)
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Modalverb „sollen“ (يجب أن - نصيحة)", secondaryText: "يعبر عن نصيحة أو أمر غير مباشر"),
+    LearningItem(primaryText: "ich soll", secondaryText: "يجب أن / من المفترض أن"),
+    LearningItem(primaryText: "du sollst", secondaryText: "يجب أن"),
+    LearningItem(primaryText: "er/sie/es soll", secondaryText: "يجب أن"),
+    LearningItem(primaryText: "wir sollen", secondaryText: "يجب أن"),
+    LearningItem(primaryText: "ihr sollt", secondaryText: "يجب أن"),
+    LearningItem(primaryText: "sie/Sie sollen", secondaryText: "يجب أن"),
+    LearningItem(primaryText: "Du sollst im Bett bleiben.", secondaryText: "يجب أن تبقى في السرير (ينصح بذلك)."),
+    LearningItem(primaryText: "Sie soll viel Wasser trinken.", secondaryText: "يجب أن تشرب ماءً كثيرًا."),
+    LearningItem(primaryText: "Ihr sollt gesund essen.", secondaryText: "يجب أن تأكلوا صحيًا."),
+
+    // ============================================================
+    // 3. الفعل dürfen (يُسمح له / يستطيع)
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Modalverb „dürfen“ (يُسمح - إذن)", secondaryText: "يعبر عن الإذن أو السماح"),
+    LearningItem(primaryText: "ich darf", secondaryText: "يُسمح لي / أستطيع"),
+    LearningItem(primaryText: "du darfst", secondaryText: "يُسمح لك / تستطيع"),
+    LearningItem(primaryText: "er/sie/es darf", secondaryText: "يُسمح له / يستطيع"),
+    LearningItem(primaryText: "wir dürfen", secondaryText: "يُسمح لنا / نستطيع"),
+    LearningItem(primaryText: "ihr dürft", secondaryText: "يُسمح لكم / تستطيعون"),
+    LearningItem(primaryText: "sie/Sie dürfen", secondaryText: "يُسمح لهم / يستطيعون"),
+    LearningItem(primaryText: "Du darfst nicht arbeiten.", secondaryText: "لا يسمح لك بالعمل."),
+    LearningItem(primaryText: "Sie dürfen kurz duschen.", secondaryText: "يسمح لكم بدش سريع."),
+    LearningItem(primaryText: "Darf ich baden? Nein.", secondaryText: "هل يمكنني الاستحمام (بانيو)؟ لا."),
+
+    // ============================================================
+    // 4. الفعل müssen (يضطر إلى / يجب)
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Modalverb „müssen“ (يضطر - إجبار)", secondaryText: "يعبر عن الإجبار أو الضرورة"),
+    LearningItem(primaryText: "ich muss", secondaryText: "أضطر إلى / يجب عليّ"),
+    LearningItem(primaryText: "du musst", secondaryText: "تضطر إلى / يجب عليك"),
+    LearningItem(primaryText: "er/sie/es muss", secondaryText: "يضطر إلى / يجب عليه"),
+    LearningItem(primaryText: "wir müssen", secondaryText: "نضطر إلى / يجب علينا"),
+    LearningItem(primaryText: "ihr müsst", secondaryText: "تضطرون إلى / يجب عليكم"),
+    LearningItem(primaryText: "sie/Sie müssen", secondaryText: "يضطرون إلى / يجب عليهم"),
+    LearningItem(primaryText: "Ich muss die Wunde sauber machen.", secondaryText: "يجب أن أنظف الجرح."),
+    LearningItem(primaryText: "Sie müssen drei Tage zu Hause bleiben.", secondaryText: "يجب عليكم البقاء في المنزل ثلاثة أيام."),
+    LearningItem(primaryText: "Muss ich noch einmal kommen?", secondaryText: "هل يجب أن آتي مرة أخرى؟"),
+
+    // ============================================================
+    // 5. مقارنة بين sollen, dürfen, müssen
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Vergleich: sollen vs. müssen vs. dürfen", secondaryText: "مقارنة بين أفعال المودال"),
+    LearningItem(primaryText: "sollen (نصيحة)", secondaryText: "Du sollst Tee trinken. (يُنصح بأن تشرب شايًا)"),
+    LearningItem(primaryText: "müssen (إجبار)", secondaryText: "Du musst die Pille nehmen. (يجب أن تتناول الحبة - إجبار)"),
+    LearningItem(primaryText: "dürfen (إذن)", secondaryText: "Du darfst Schokolade essen. (يُسمح لك بأكل الشوكولاتة)"),
+
+    // ============================================================
+    // 6. السؤال عن العمر والطول والوزن
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Fragen zu Alter, Größe und Gewicht", secondaryText: "الأسئلة عن العمر والطول والوزن"),
+    LearningItem(primaryText: "Wie alt bist du?", secondaryText: "كم عمرك؟"),
+    LearningItem(primaryText: "Wie groß bist du?", secondaryText: "كم طولك؟"),
+    LearningItem(primaryText: "Wie viel wiegst du?", secondaryText: "كم وزنك؟"),
+    LearningItem(primaryText: "Ich bin 27 Jahre alt.", secondaryText: "عمري 27 سنة."),
+    LearningItem(primaryText: "Ich bin 1,75 m groß.", secondaryText: "طولي 1.75 متر."),
+    LearningItem(primaryText: "Ich wiege 73 kg.", secondaryText: "وزني 73 كجم."),
+
+    // ============================================================
+    // 7. السؤال عن المدة (Seit wann?)
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Fragen mit 'seit' (منذ)", secondaryText: "للسؤال عن المدة الزمنية"),
+    LearningItem(primaryText: "Seit wann hast du Schmerzen?", secondaryText: "منذ متى لديك الألم؟"),
+    LearningItem(primaryText: "Seit drei Tagen.", secondaryText: "منذ ثلاثة أيام."),
+    LearningItem(primaryText: "Wie lange sind Sie schon krank?", secondaryText: "منذ متى وأنت مريض؟"),
+    LearningItem(primaryText: "Schon drei Tage.", secondaryText: "منذ ثلاثة أيام بالفعل."),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ أمثلة على Imperativ من الدرس", secondaryText: ""),
+    LearningItem(primaryText: "Mach mit!", secondaryText: "شارك!"),
+    LearningItem(primaryText: "Steh auf!", secondaryText: "انهض!"),
+    LearningItem(primaryText: "Geh raus und lauf!", secondaryText: "اخرج واجري!"),
+    LearningItem(primaryText: "Mach weiter so!", secondaryText: "استمر هكذا!"),
+    LearningItem(primaryText: "Gib alles!", secondaryText: "ابذل قصارى جهدك!"),
+    LearningItem(primaryText: "Hol ein Glas Wasser!", secondaryText: "أحضر كأس ماء!"),
+    LearningItem(primaryText: "Trink mindestens 2 Liter!", secondaryText: "اشرب على الأقل 2 لتر!"),
+    LearningItem(primaryText: "Zieh Sportschuhe an!", secondaryText: "ارتدِ حذاء رياضيًا!"),
+    LearningItem(primaryText: "Legen Sie sich dahin!", secondaryText: "استلقي هناك!"),
+    LearningItem(primaryText: "Bewegen Sie das Bein nur wenig!", secondaryText: "حركي رجلك قليلاً فقط!"),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ أمثلة على sollen aus dem Dialog", secondaryText: ""),
+    LearningItem(primaryText: "Sie sollen im Bett bleiben.", secondaryText: "يجب أن تبقى في السرير."),
+    LearningItem(primaryText: "Sie sollen wenig essen.", secondaryText: "يجب أن تأكل قليلاً."),
+    LearningItem(primaryText: "Sie sollen viel trinken.", secondaryText: "يجب أن تشرب كثيرًا."),
+    LearningItem(primaryText: "Sie sollen drei Tage zu Hause bleiben.", secondaryText: "يجب أن تبقى في المنزل ثلاثة أيام."),
+    LearningItem(primaryText: "Du sollst den Tee trinken.", secondaryText: "يجب أن تشرب الشاي."),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ أمثلة على müssen", secondaryText: ""),
+    LearningItem(primaryText: "Ich muss die Wunde sauber machen.", secondaryText: "يجب أن أنظف الجرح."),
+    LearningItem(primaryText: "Sie müssen den Verband wechseln.", secondaryText: "يجب أن تغير الضماد."),
+    LearningItem(primaryText: "Ich muss zum Arzt gehen.", secondaryText: "يجب أن أذهب إلى الطبيب."),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ أمثلة على dürfen", secondaryText: ""),
+    LearningItem(primaryText: "Sie dürfen nicht baden.", secondaryText: "لا يسمح لكم بالاستحمام (بانيو)."),
+    LearningItem(primaryText: "Sie dürfen kurz duschen.", secondaryText: "يسمح لكم بدش سريع."),
+    LearningItem(primaryText: "Darf ich Schokolade essen?", secondaryText: "هل يمكنني أكل الشوكولاتة؟"),
+    LearningItem(primaryText: "Nein, du darfst keine Süßigkeiten essen.", secondaryText: "لا، لا يسمح لك بأكل الحلويات."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 8 Modul 1 - Fit und Gesund - القواعد (Imperativ & Modalverben)",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 8 Modul 2
+// Beim Arzt & Modalverben - المفردات الأساسية
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_8_Modul2CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Modalverben (6 أفعال)
+    // ============================================================
+    LearningCard(primaryText: "können", secondaryText: "يستطيع / يقدر (قدرة)"),
+    LearningCard(primaryText: "müssen", secondaryText: "يضطر إلى / يجب (إجبار)"),
+    LearningCard(primaryText: "sollen", secondaryText: "يجب أن / يُنصح بأن (نصيحة)"),
+    LearningCard(primaryText: "wollen", secondaryText: "يريد (رغبة)"),
+    LearningCard(primaryText: "möchten", secondaryText: "يريد بأدب / يحب أن"),
+    LearningCard(primaryText: "dürfen", secondaryText: "يُسمح له / يستطيع (إذن)"),
+
+    // ============================================================
+    // المجموعة 2: تصريف müssen (يضطر إلى)
+    // ============================================================
+    LearningCard(primaryText: "ich muss", secondaryText: "أنا أضطر إلى"),
+    LearningCard(primaryText: "du musst", secondaryText: "أنت تضطر إلى"),
+    LearningCard(primaryText: "er/sie/es muss", secondaryText: "هو/هي يضطر إلى"),
+    LearningCard(primaryText: "wir müssen", secondaryText: "نحن نضطر إلى"),
+    LearningCard(primaryText: "ihr müsst", secondaryText: "أنتم تضطرون إلى"),
+    LearningCard(primaryText: "sie/Sie müssen", secondaryText: "هم يضطرون إلى"),
+
+    // ============================================================
+    // المجموعة 3: تصريف sollen (يجب أن - نصيحة)
+    // ============================================================
+    LearningCard(primaryText: "ich soll", secondaryText: "يُنصح بأن"),
+    LearningCard(primaryText: "du sollst", secondaryText: "يُنصح بأن"),
+    LearningCard(primaryText: "er/sie/es soll", secondaryText: "يُنبصح بأن"),
+    LearningCard(primaryText: "wir sollen", secondaryText: "يُنصح بأن"),
+    LearningCard(primaryText: "ihr sollt", secondaryText: "يُنصح بأن"),
+    LearningCard(primaryText: "sie/Sie sollen", secondaryText: "يُنصح بأن"),
+
+    // ============================================================
+    // المجموعة 4: تصريف wollen (يريد)
+    // ============================================================
+    LearningCard(primaryText: "ich will", secondaryText: "أنا أريد"),
+    LearningCard(primaryText: "du willst", secondaryText: "أنت تريد"),
+    LearningCard(primaryText: "er/sie/es will", secondaryText: "هو/هي يريد"),
+    LearningCard(primaryText: "wir wollen", secondaryText: "نحن نريد"),
+    LearningCard(primaryText: "ihr wollt", secondaryText: "أنتم تريدون"),
+    LearningCard(primaryText: "sie/Sie wollen", secondaryText: "هم يريدون"),
+
+    // ============================================================
+    // المجموعة 5: تصريف möchten (يريد بأدب)
+    // ============================================================
+    LearningCard(primaryText: "ich möchte", secondaryText: "أنا أريد (بأدب)"),
+    LearningCard(primaryText: "du möchtest", secondaryText: "أنت تريد (بأدب)"),
+    LearningCard(primaryText: "er/sie/es möchte", secondaryText: "هو/هي يريد (بأدب)"),
+    LearningCard(primaryText: "wir möchten", secondaryText: "نحن نريد (بأدب)"),
+    LearningCard(primaryText: "ihr möchtet", secondaryText: "أنتم تريدون (بأدب)"),
+    LearningCard(primaryText: "sie/Sie möchten", secondaryText: "هم يريدون (بأدب)"),
+
+    // ============================================================
+    // المجموعة 6: تصريف können (يستطيع)
+    // ============================================================
+    LearningCard(primaryText: "ich kann", secondaryText: "أنا أستطيع"),
+    LearningCard(primaryText: "du kannst", secondaryText: "أنت تستطيع"),
+    LearningCard(primaryText: "er/sie/es kann", secondaryText: "هو/هي يستطيع"),
+    LearningCard(primaryText: "wir können", secondaryText: "نحن نستطيع"),
+    LearningCard(primaryText: "ihr könnt", secondaryText: "أنتم تستطيعون"),
+    LearningCard(primaryText: "sie/Sie können", secondaryText: "هم يستطيعون"),
+
+    // ============================================================
+    // المجموعة 7: تصريف dürfen (يُسمح له)
+    // ============================================================
+    LearningCard(primaryText: "ich darf", secondaryText: "يُسمح لي"),
+    LearningCard(primaryText: "du darfst", secondaryText: "يُسمح لك"),
+    LearningCard(primaryText: "er/sie/es darf", secondaryText: "يُسمح له"),
+    LearningCard(primaryText: "wir dürfen", secondaryText: "يُسمح لنا"),
+    LearningCard(primaryText: "ihr dürft", secondaryText: "يُسمح لكم"),
+    LearningCard(primaryText: "sie/Sie dürfen", secondaryText: "يُسمح لهم"),
+
+    // ============================================================
+    // المجموعة 8: Berufe im Krankenhaus (مهن المستشفى)
+    // ============================================================
+    LearningCard(primaryText: "der Notarzt", secondaryText: "طبيب الطوارئ"),
+    LearningCard(primaryText: "die Notärztin", secondaryText: "طبيبة الطوارئ"),
+    LearningCard(primaryText: "der Physiotherapeut", secondaryText: "أخصائي العلاج الطبيعي"),
+    LearningCard(primaryText: "die Physiotherapeutin", secondaryText: "أخصائية العلاج الطبيعي"),
+    LearningCard(primaryText: "der Krankenpfleger", secondaryText: "ممرض"),
+    LearningCard(primaryText: "die Krankenschwester", secondaryText: "ممرضة"),
+    LearningCard(primaryText: "der Laborant", secondaryText: "فني مختبر"),
+    LearningCard(primaryText: "die Laborantin", secondaryText: "فنية مختبر"),
+    LearningCard(primaryText: "der Zahnarzt", secondaryText: "طبيب أسنان"),
+    LearningCard(primaryText: "die Zahnärztin", secondaryText: "طبيبة أسنان"),
+    LearningCard(primaryText: "der Kinderarzt", secondaryText: "طبيب أطفال"),
+    LearningCard(primaryText: "die Kinderärztin", secondaryText: "طبيبة أطفال"),
+    LearningCard(primaryText: "der Augenarzt", secondaryText: "طبيب عيون"),
+
+    // ============================================================
+    // المجموعة 9: Hausmittel (علاجات منزلية)
+    // ============================================================
+    LearningCard(primaryText: "die Nelke", secondaryText: "القرنفل"),
+    LearningCard(primaryText: "der Honig", secondaryText: "العسل"),
+    LearningCard(primaryText: "die heiße Milch", secondaryText: "الحليب الساخن"),
+    LearningCard(primaryText: "die Hühnersuppe", secondaryText: "شوربة الدجاج"),
+    LearningCard(primaryText: "die Zwiebel", secondaryText: "البصل"),
+    LearningCard(primaryText: "das Hausmittel", secondaryText: "العلاج المنزلي"),
+    LearningCard(primaryText: "der Tipp", secondaryText: "النصيحة"),
+
+    // ============================================================
+    // المجموعة 10: Beschwerden & Symptome (شكاوى وأعراض)
+    // ============================================================
+    LearningCard(primaryText: "starke Kopfschmerzen", secondaryText: "صداع شديد"),
+    LearningCard(primaryText: "sich schwach fühlen", secondaryText: "يشعر بالضعف"),
+    LearningCard(primaryText: "der Blutdruck", secondaryText: "ضغط الدم"),
+    LearningCard(primaryText: "den Blutdruck messen", secondaryText: "يقيس ضغط الدم"),
+    LearningCard(primaryText: "sich ausruhen", secondaryText: "يستريح"),
+    LearningCard(primaryText: "die Beschwerden", secondaryText: "الأعراض / الشكاوى"),
+    LearningCard(primaryText: "einschlafen", secondaryText: "ينام (يخلد إلى النوم)"),
+    LearningCard(primaryText: "der Schnupfen", secondaryText: "الزكام / سيلان الأنف"),
+    LearningCard(primaryText: "inhalieren", secondaryText: "يستنشق (بخار)"),
+    LearningCard(primaryText: "die Schmerztablette", secondaryText: "مسكن الألم"),
+    LearningCard(primaryText: "das Ergebnis", secondaryText: "النتيجة"),
+    LearningCard(primaryText: "die Probe", secondaryText: "العينة"),
+    LearningCard(primaryText: "das Blut", secondaryText: "الدم"),
+    LearningCard(primaryText: "Blut abnehmen", secondaryText: "يسحب دم"),
+    LearningCard(primaryText: "die Untersuchung", secondaryText: "الفحص"),
+    LearningCard(primaryText: "der Termin", secondaryText: "الموعد"),
+    LearningCard(primaryText: "das Wartezimmer", secondaryText: "غرفة الانتظار"),
+    LearningCard(primaryText: "die Operation", secondaryText: "العملية الجراحية"),
+    LearningCard(primaryText: "die Notaufnahme", secondaryText: "قسم الطوارئ"),
+    LearningCard(primaryText: "die Spritze", secondaryText: "الإبرة"),
+    LearningCard(primaryText: "der Verband", secondaryText: "الضماد"),
+
+    // ============================================================
+    // المجموعة 11: Verben im Krankenhaus
+    // ============================================================
+    LearningCard(primaryText: "behandeln", secondaryText: "يعالج"),
+    LearningCard(primaryText: "untersuchen", secondaryText: "يفحص"),
+    LearningCard(primaryText: "helfen bei", secondaryText: "يساعد في"),
+    LearningCard(primaryText: "bringen ins Krankenhaus", secondaryText: "ينقل إلى المستشفى"),
+    LearningCard(primaryText: "untersuchen", secondaryText: "يفحص"),
+    LearningCard(primaryText: "verschreiben", secondaryText: "يصف (دواء)"),
+
+    // ============================================================
+    // المجموعة 12: Wortschatz Krankenhaus
+    // ============================================================
+    LearningCard(primaryText: "das Krankenhaus", secondaryText: "المستشفى"),
+    LearningCard(primaryText: "der Patient", secondaryText: "المريض"),
+    LearningCard(primaryText: "die Patientin", secondaryText: "المريضة"),
+    LearningCard(primaryText: "die Praxis", secondaryText: "العيادة"),
+    LearningCard(primaryText: "die Behandlung", secondaryText: "العلاج"),
+    LearningCard(primaryText: "die Medikamente", secondaryText: "الأدوية"),
+    LearningCard(primaryText: "das Rezept", secondaryText: "الوصفة الطبية"),
+
+    // ============================================================
+    // المجموعة 13: Präsentation (عرض تقديمي)
+    // ============================================================
+    LearningCard(primaryText: "die Präsentation", secondaryText: "العرض التقديمي"),
+    LearningCard(primaryText: "die Einleitung", secondaryText: "المقدمة"),
+    LearningCard(primaryText: "die Hauptpunkte", secondaryText: "النقاط الرئيسية"),
+    LearningCard(primaryText: "der Schluss", secondaryText: "الخاتمة"),
+    LearningCard(primaryText: "die Vorteile", secondaryText: "المزايا / الإيجابيات"),
+    LearningCard(primaryText: "die Nachteile", secondaryText: "العيوب / السلبيات"),
+    LearningCard(primaryText: "die Erfahrung", secondaryText: "التجربة"),
+    LearningCard(primaryText: "das Heimatland", secondaryText: "الوطن"),
+    LearningCard(primaryText: "die Meinung", secondaryText: "الرأي"),
+    LearningCard(primaryText: "die Aufmerksamkeit", secondaryText: "الانتباه"),
+    LearningCard(primaryText: "die Frage stellen", secondaryText: "يسأل سؤالاً"),
+    LearningCard(primaryText: "antworten auf", secondaryText: "يجيب على"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 8 Modul 2 - Beim Arzt & Modalverben - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 8 Modul 2
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_8_Modul2SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: جمل عن Modalverben
+    // ============================================================
+    ItemCard(english: "Ich möchte ins Kino gehen.", arabic: "أريد الذهاب إلى السينما."),
+    ItemCard(english: "Wir wollen heute Fußball spielen.", arabic: "نحن نريد لعب كرة القدم اليوم."),
+    ItemCard(english: "Du sollst deine Hausaufgaben machen.", arabic: "يجب أن تفعل واجباتك المنزلية."),
+    ItemCard(english: "Wir sollen unseren kranken Freund besuchen.", arabic: "يجب أن نزور صديقنا المريض."),
+    ItemCard(english: "Bei Rot müssen wir stehen.", arabic: "عند الضوء الأحمر يجب أن نقف."),
+    ItemCard(english: "Bei Grün dürfen wir gehen.", arabic: "عند الضوء الأخضر يسمح لنا بالذهاب."),
+    ItemCard(english: "Ich kann sehr gut Deutsch sprechen.", arabic: "أنا أستطيع التحدث بالألمانية بشكل جيد جدًا."),
+    ItemCard(english: "Ich darf im Zimmer nicht rauchen.", arabic: "لا يُسمح لي بالتدخين في الغرفة."),
+    ItemCard(english: "Kannst du mir helfen?", arabic: "هل تستطيع مساعدتي؟"),
+    ItemCard(english: "Darf ich hereinkommen?", arabic: "هل يسمح لي بالدخول؟"),
+
+    // ============================================================
+    // المجموعة 2: قاعدة Modalverb (Position 2 + Infinitiv am Ende)
+    // ============================================================
+    ItemCard(english: "Ich will Deutsch lernen.", arabic: "أنا أريد تعلم الألمانية."),
+    ItemCard(english: "Wir wollen heute ins Kino gehen.", arabic: "نحن نريد الذهاب إلى السينما اليوم."),
+    ItemCard(english: "Petra will Tennis spielen.", arabic: "بيترا تريد لعب التنس."),
+
+    // ============================================================
+    // المجموعة 3: Verbote und Erlaubnisse (dürfen)
+    // ============================================================
+    ItemCard(english: "Hier darf man nicht rauchen.", arabic: "هنا لا يسمح بالتدخين."),
+    ItemCard(english: "Hier darf man nicht fotografieren.", arabic: "هنا لا يسمح بالتصوير."),
+    ItemCard(english: "Hier darf man nicht essen und trinken.", arabic: "هنا لا يسمح بالأكل والشرب."),
+    ItemCard(english: "Hier darf man telefonieren.", arabic: "هنا يسمح بالاتصال."),
+    ItemCard(english: "Hier darf man Fahrrad fahren.", arabic: "هنا يسمح بركوب الدراجة."),
+    ItemCard(english: "Hier darf man nicht schwimmen.", arabic: "هنا لا يسمح بالسباحة."),
+    ItemCard(english: "Hier dürfen Kinder spielen.", arabic: "هنا يسمح للأطفال باللعب."),
+    ItemCard(english: "Hier darf man keine Hunde mitnehmen.", arabic: "هنا لا يسمح بإحضار الكلاب."),
+
+    // ============================================================
+    // المجموعة 4: Gespräche beim Arzt (محادثات عند الطبيب)
+    // ============================================================
+    ItemCard(english: "Herr Doktor, ich habe Bauchschmerzen und mir ist so schlecht.", arabic: "سيدي الطبيب، لدي ألم في البطن وأشعر بغثيان."),
+    ItemCard(english: "Wo genau tut es denn weh? Ja, hier, da auch überall.", arabic: "أين بالضبط يؤلم؟ نعم هنا، وهناك أيضًا في كل مكان."),
+    ItemCard(english: "Wie lange haben Sie die Schmerzen schon? Seit gestern.", arabic: "منذ متى لديك الألم؟ منذ الأمس."),
+    ItemCard(english: "Was haben Sie gestern Abend gegessen? Abendbrot ganz normal wie immer.", arabic: "ماذا أكلت مساء أمس؟ عشاء عادي كالعادة."),
+    ItemCard(english: "Essen Sie heute nichts, aber Sie dürfen viel trinken. Tee, Kamillentee ist gut.", arabic: "لا تأكل اليوم شيئًا، لكن يُسمح لك بشرب الكثير. الشاي، شاي البابونج جيد."),
+    ItemCard(english: "Sie müssen drei Tage zu Hause bleiben.", arabic: "يجب أن تبقى في المنزل ثلاثة أيام."),
+    ItemCard(english: "Aber ich muss arbeiten. Nein, Sie dürfen nicht arbeiten. Bleiben Sie zu Hause.", arabic: "لكن يجب أن أعمل. لا، لا يُسمح لك بالعمل. ابق في المنزل."),
+
+    // ============================================================
+    // المجموعة 5: Gespräch 2 (Erkältung)
+    // ============================================================
+    ItemCard(english: "Wie lange sind Sie schon krank? Schon drei Tage.", arabic: "منذ متى وأنت مريض؟ منذ ثلاثة أيام."),
+    ItemCard(english: "Ich muss Sie untersuchen. Sagen Sie A.", arabic: "يجب أن أفحصك. قل A."),
+    ItemCard(english: "Haben Sie auch Fieber? Ja, heute Morgen hatte ich 38.6.", arabic: "هل لديك حمى أيضًا؟ نعم، اليوم صباحًا كانت 38.6."),
+    ItemCard(english: "Das ist eine Erkältung. Alle sind im Moment erkältet.", arabic: "هذا زكام. الكل مصاب بالزكام في الوقت الحالي."),
+    ItemCard(english: "Ich gebe Ihnen ein Rezept für Hustensaft. Den müssen Sie abends nehmen.", arabic: "سأعطيك وصفة لشراب السعال. يجب أن تتناوله مساءً."),
+    ItemCard(english: "Darf ich baden? Nein, mit Fieber dürfen Sie nicht baden oder Ihre Haare waschen.", arabic: "هل يمكنني الاستحمام (بانيو)؟ لا، مع الحمى لا يسمح لك بالاستحمام أو غسل شعرك."),
+    ItemCard(english: "Kurz duschen, das geht. Und rauchen Sie nicht.", arabic: "دش سريع، هذا مسموح. ولا تدخن."),
+
+    // ============================================================
+    // المجموعة 6: Gespräch 3 (Armverletzung)
+    // ============================================================
+    ItemCard(english: "Was ist das Problem, Herr Köck? Mein Arm tut weh. Ich kann ihn nicht richtig bewegen.", arabic: "ما هي المشكلة سيد كوك؟ ذراعي تؤلمني. لا أستطيع تحريكه بشكل صحيح."),
+    ItemCard(english: "Ich muss Sie ins Krankenhaus schicken. Sie bekommen eine Überweisung.", arabic: "يجب أن أرسلك إلى المستشفى. ستحصل على تحويل."),
+    ItemCard(english: "Nehmen Sie zweimal pro Tag eine Tablette gegen die Schmerzen.", arabic: "تناول قرصًا ضد الألم مرتين يوميًا."),
+    ItemCard(english: "Okay, dann gehe ich gleich ins Krankenhaus.", arabic: "حسنًا، ثم سأذهب فورًا إلى المستشفى."),
+
+    // ============================================================
+    // المجموعة 7: Hausmittel (علاجات منزلية)
+    // ============================================================
+    ItemCard(english: "Ich kann nicht einschlafen. Ich bin total müde, aber es geht nicht.", arabic: "لا أستطيع النوم. أنا متعب جدًا، لكن لا أستطيع."),
+    ItemCard(english: "Steh früh auf, dann bist du am Abend richtig müde.", arabic: "استيقظ مبكرًا، ثم تكون متعبًا حقًا في المساء."),
+    ItemCard(english: "Trink vor dem Schlafen eine Tasse heiße Milch mit Honig.", arabic: "اشرب كوبًا من الحليب الساخن مع العسل قبل النوم."),
+    ItemCard(english: "Versuch mal Nelken. Nimm eine Nelke in den Mund, mindestens 10 Minuten lang.", arabic: "جرب القرنفل. ضع قرنفلًا واحدًا في فمك لمدة 10 دقائق على الأقل."),
+    ItemCard(english: "Meine Oma sagt immer: Hühnersuppe hilft. Die Nase ist sofort wieder frei.", arabic: "جدتي دائمًا تقول: شوربة الدجاج مفيدة. الأنف يصبح مفتوحًا فورًا."),
+    ItemCard(english: "Koch die Suppe mit Zwiebel, Salz und Pfeffer mindestens eine Stunde lang.", arabic: "اطبخ الشوربة مع البصل والملح والفلفل لمدة ساعة على الأقل."),
+
+    // ============================================================
+    // المجموعة 8: Berufe im Krankenhaus
+    // ============================================================
+    ItemCard(english: "Ein Notarzt muss immer ruhig bleiben. Ich helfe bei einem Unfall sofort und bringe die Patienten ins Krankenhaus.", arabic: "طبيب الطوارئ يجب أن يبقى هادئًا دائمًا. أساعد في الحوادث فورًا وأنقل المرضى إلى المستشفى."),
+    ItemCard(english: "Ich war Sportlerin und war oft verletzt. Jetzt bin ich Physiotherapeutin und zeige meinen Patienten Übungen.", arabic: "كنت رياضية وكثيرًا ما كنت مصابة. الآن أنا أخصائية علاج طبيعي وأري مرضاي تمارين."),
+    ItemCard(english: "Ich arbeite gern mit Menschen. Mein Beruf ist Krankenpfleger. Ich helfe den Patienten beim Waschen, gebe ihnen Medikamente oder wechsle Verbände.", arabic: "أحب العمل مع الناس. مهنتي ممرض. أساعد المرضى في الاستحمام، أعطيهم الأدوية أو أغير الضمادات."),
+    ItemCard(english: "Ich bin Laborant. Ich untersuche Proben wie Blut. Die Ärzte bekommen dann das Ergebnis.", arabic: "أنا فني مختبر. أفحص عينات مثل الدم. ثم يحصل الأطباء على النتيجة."),
+
+    // ============================================================
+    // المجموعة 9: Beim Arzt - neuer Dialog
+    // ============================================================
+    ItemCard(english: "Guten Tag. Was fehlt Ihnen? Guten Tag. Ich habe seit zwei Tagen starke Kopfschmerzen.", arabic: "طاب يومك. ما بك؟ طاب يومك. لدي صداع شديد منذ يومين."),
+    ItemCard(english: "Haben Sie auch Fieber oder andere Beschwerden? Ja, ein bisschen Fieber und ich fühle mich sehr schwach.", arabic: "هل لديك حمى أو أعراض أخرى؟ نعم، حمى قليلة وأشعر بضعف شديد."),
+    ItemCard(english: "Ich werde Sie untersuchen. Bitte setzen Sie sich. Ich messe jetzt Ihren Blutdruck.", arabic: "سأفحصك. من فضلك اجلس. سأقيس ضغط دمك الآن."),
+    ItemCard(english: "Der ist ein bisschen zu hoch. Oh, ist das gefährlich? Nein, Sie sollten sich ausruhen und viel trinken.", arabic: "إنه مرتفع قليلاً. أوه، هل هذا خطير؟ لا، يجب أن تستريح وتشرب كثيرًا."),
+    ItemCard(english: "Ich gebe Ihnen ein Rezept für Schmerztabletten. Danke, Herr Doktor. Gute Besserung!", arabic: "سأعطيك وصفة لمسكنات الألم. شكرًا سيدي الطبيب. أتمنى لك الشفاء العاجل!"),
+
+    // ============================================================
+    // المجموعة 10: Präsentation (عرض تقديمي)
+    // ============================================================
+    ItemCard(english: "Guten Tag, in meiner Präsentation geht es um das Thema Sport.", arabic: "طاب يومكم، في عرضي التقديمي سأتحدث عن موضوع الرياضة."),
+    ItemCard(english: "Zuerst erkläre ich das Thema, dann spreche ich über Vorteile und Nachteile.", arabic: "أولاً أشرح الموضوع، ثم أتحدث عن الإيجابيات والسلبيات."),
+    ItemCard(english: "Danach erzähle ich von meiner persönlichen Erfahrung.", arabic: "بعد ذلك أحكي عن تجربتي الشخصية."),
+    ItemCard(english: "Anschließend sage ich etwas über die Situation in meinem Heimatland.", arabic: "ثم أقول شيئًا عن الوضع في وطني."),
+    ItemCard(english: "Zum Schluss sage ich meine Meinung. Am Ende können Sie Fragen stellen.", arabic: "في الختام أقول رأيي. في النهاية يمكنكم طرح الأسئلة."),
+    ItemCard(english: "Ich bin nun mit meiner Präsentation am Ende. Haben Sie Fragen? Ich antworte gern.", arabic: "لقد وصلت الآن إلى نهاية عرضي. هل لديكم أسئلة؟ أجيب بكل سرور."),
+    ItemCard(english: "Ich danke Ihnen für Ihre Aufmerksamkeit. Vielen Dank fürs Zuhören.", arabic: "أشكركم على انتباهكم. شكرًا جزيلاً على الاستماع."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 8 Modul 2 - Beim Arzt & Modalverben - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF1565C0), // لون أزرق
+      secondaryColor: const Color(0xFF0D47A1),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 8 Modul 2 (Modalverben - شرح كامل)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_8_Modul2GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. Modalverben - نظرة عامة
+    // ============================================================
+    LearningItem(primaryText: "➤ Modalverben (6 أفعال المودال)", secondaryText: "تُستخدم مع فعل آخر في المصدر"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    
+    LearningItem(primaryText: "📌 القاعدة الذهبية:", secondaryText: "Modalverb في Position 2 + الفعل الأساسي في المصدر في نهاية الجملة"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich will heute ins Kino gehen."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. müssen (يضطر إلى / يجب - إجبار)
+    // ============================================================
+    LearningItem(primaryText: "➤ 1. müssen (اضطرار / إجبار)", secondaryText: "Zwang oder Notwendigkeit"),
+    LearningItem(primaryText: "ich muss", secondaryText: "أنا أضطر إلى"),
+    LearningItem(primaryText: "du musst", secondaryText: "أنت تضطر إلى"),
+    LearningItem(primaryText: "er/sie/es muss", secondaryText: "هو/هي يضطر إلى"),
+    LearningItem(primaryText: "wir müssen", secondaryText: "نحن نضطر إلى"),
+    LearningItem(primaryText: "ihr müsst", secondaryText: "أنتم تضطرون إلى"),
+    LearningItem(primaryText: "sie/Sie müssen", secondaryText: "هم يضطرون إلى"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich muss arbeiten. (يجب أن أعمل - ليس لدي خيار)"),
+    LearningItem(primaryText: "Bei Rot müssen wir stehen.", secondaryText: "عند الأحمر يجب أن نقف."),
+
+    // ============================================================
+    // 3. sollen (يجب أن / يُنصح بأن - نصيحة)
+    // ============================================================
+    LearningItem(primaryText: "➤ 2. sollen (نصيحة / أمر غير مباشر)", secondaryText: "Ratschlag oder fremde Meinung"),
+    LearningItem(primaryText: "ich soll", secondaryText: "يُنصح بأن / يجب أن"),
+    LearningItem(primaryText: "du sollst", secondaryText: "يُنصح بأن"),
+    LearningItem(primaryText: "er/sie/es soll", secondaryText: "يُنصح بأن"),
+    LearningItem(primaryText: "wir sollen", secondaryText: "يُنصح بأن"),
+    LearningItem(primaryText: "ihr sollt", secondaryText: "يُنصح بأن"),
+    LearningItem(primaryText: "sie/Sie sollen", secondaryText: "يُنصح بأن"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Du sollst Tee trinken. (يُنصح بأن تشرب شايًا)"),
+    LearningItem(primaryText: "Sie sollen drei Tage zu Hause bleiben.", secondaryText: "يُنصح بأن تبقوا في المنزل ثلاثة أيام."),
+
+    // ============================================================
+    // 4. wollen (يريد - رغبة قوية)
+    // ============================================================
+    LearningItem(primaryText: "➤ 3. wollen (رغبة قوية)", secondaryText: "starker Wunsch / Wille"),
+    LearningItem(primaryText: "ich will", secondaryText: "أنا أريد"),
+    LearningItem(primaryText: "du willst", secondaryText: "أنت تريد"),
+    LearningItem(primaryText: "er/sie/es will", secondaryText: "هو/هي يريد"),
+    LearningItem(primaryText: "wir wollen", secondaryText: "نحن نريد"),
+    LearningItem(primaryText: "ihr wollt", secondaryText: "أنتم تريدون"),
+    LearningItem(primaryText: "sie/Sie wollen", secondaryText: "هم يريدون"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich will Deutsch lernen. (أنا أريد تعلم الألمانية)"),
+    LearningItem(primaryText: "Wir wollen heute Fußball spielen.", secondaryText: "نحن نريد لعب كرة القدم اليوم."),
+
+    // ============================================================
+    // 5. möchten (يريد بأدب - رغبة مهذبة)
+    // ============================================================
+    LearningItem(primaryText: "➤ 4. möchten (رغبة مهذبة)", secondaryText: "höflicher Wunsch (Konjunktiv von mögen)"),
+    LearningItem(primaryText: "ich möchte", secondaryText: "أنا أريد (بأدب)"),
+    LearningItem(primaryText: "du möchtest", secondaryText: "أنت تريد (بأدب)"),
+    LearningItem(primaryText: "er/sie/es möchte", secondaryText: "هو/هي يريد (بأدب)"),
+    LearningItem(primaryText: "wir möchten", secondaryText: "نحن نريد (بأدب)"),
+    LearningItem(primaryText: "ihr möchtet", secondaryText: "أنتم تريدون (بأدب)"),
+    LearningItem(primaryText: "sie/Sie möchten", secondaryText: "هم يريدون (بأدب)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich möchte einen Kaffee, bitte. (أريد قهوة من فضلك - بأدب)"),
+    LearningItem(primaryText: "Möchten Sie mitkommen?", secondaryText: "هل تريد أن تأتي معنا؟ (بأدب)"),
+
+    // ============================================================
+    // 6. können (يستطيع - قدرة / إمكانية)
+    // ============================================================
+    LearningItem(primaryText: "➤ 5. können (قدرة / إمكانية)", secondaryText: "Fähigkeit / Möglichkeit"),
+    LearningItem(primaryText: "ich kann", secondaryText: "أنا أستطيع"),
+    LearningItem(primaryText: "du kannst", secondaryText: "أنت تستطيع"),
+    LearningItem(primaryText: "er/sie/es kann", secondaryText: "هو/هي يستطيع"),
+    LearningItem(primaryText: "wir können", secondaryText: "نحن نستطيع"),
+    LearningItem(primaryText: "ihr könnt", secondaryText: "أنتم تستطيعون"),
+    LearningItem(primaryText: "sie/Sie können", secondaryText: "هم يستطيعون"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich kann sehr gut Deutsch sprechen. (أنا أستطيع التحدث بالألمانية جيدًا جدًا)"),
+    LearningItem(primaryText: "Kannst du mir helfen?", secondaryText: "هل تستطيع مساعدتي؟"),
+
+    // ============================================================
+    // 7. dürfen (يُسمح له / يستطيع - إذن)
+    // ============================================================
+    LearningItem(primaryText: "➤ 6. dürfen (إذن / سماح)", secondaryText: "Erlaubnis / Verbot"),
+    LearningItem(primaryText: "ich darf", secondaryText: "يُسمح لي"),
+    LearningItem(primaryText: "du darfst", secondaryText: "يُسمح لك"),
+    LearningItem(primaryText: "er/sie/es darf", secondaryText: "يُسمح له"),
+    LearningItem(primaryText: "wir dürfen", secondaryText: "يُسمح لنا"),
+    LearningItem(primaryText: "ihr dürft", secondaryText: "يُسمح لكم"),
+    LearningItem(primaryText: "sie/Sie dürfen", secondaryText: "يُسمح لهم"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Hier darf man nicht rauchen. (هنا لا يُسمح بالتدخين)"),
+    LearningItem(primaryText: "Darf ich hereinkommen?", secondaryText: "هل يُسمح لي بالدخول؟"),
+    LearningItem(primaryText: "Bei Grün dürfen wir gehen.", secondaryText: "عند الأخضر يُسمح لنا بالذهاب."),
+
+    // ============================================================
+    // 8. مقارنة بين müssen, sollen, dürfen
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Vergleich: müssen vs. sollen vs. dürfen", secondaryText: "مقارنة مهمة"),
+    LearningItem(primaryText: "müssen (إجبار)", secondaryText: "Ich muss arbeiten. (ليس لدي خيار)"),
+    LearningItem(primaryText: "sollen (نصيحة)", secondaryText: "Du sollst mehr Sport machen. (ينصح بذلك)"),
+    LearningItem(primaryText: "dürfen (إذن)", secondaryText: "Du darfst heute ausgehen. (مسموح لك)"),
+    LearningItem(primaryText: "dürfen nicht (منع)", secondaryText: "Du darfst nicht rauchen. (ممنوع)"),
+
+    // ============================================================
+    // 9. ترتيب الكلمات مع Modalverb
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Satzstellung mit Modalverb", secondaryText: "ترتيب الكلمات مع فعل المودال"),
+    LearningItem(primaryText: "Aussagesatz:", secondaryText: "Subjekt + Modalverb + Objekt + Infinitiv"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich + will + heute + ins Kino + gehen."),
+    LearningItem(primaryText: "Frage mit W-Wort:", secondaryText: "W-Wort + Modalverb + Subjekt + Infinitiv"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Wann + willst + du + nach Hause + gehen?"),
+    LearningItem(primaryText: "Ja/Nein-Frage:", secondaryText: "Modalverb + Subjekt + Infinitiv"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Kannst + du + mir + helfen?"),
+
+    // ============================================================
+    // 10. wichtige Ausdrücke mit Modalverben
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Nützliche Ausdrücke", secondaryText: "عبارات مفيدة"),
+    LearningItem(primaryText: "Was soll ich tun?", secondaryText: "ماذا يجب أن أفعل؟"),
+    LearningItem(primaryText: "Was darf ich essen?", secondaryText: "ماذا يسمح لي بأكل؟"),
+    LearningItem(primaryText: "Wie lange muss ich im Bett bleiben?", secondaryText: "كم من الوقت يجب أن أبقى في السرير؟"),
+    LearningItem(primaryText: "Kann ich morgen wieder arbeiten?", secondaryText: "هل يمكنني العمل مرة أخرى غدًا؟"),
+    LearningItem(primaryText: "Soll ich die Tablette nehmen?", secondaryText: "هل يجب أن أتناول القرص؟"),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ أمثلة من الدرس على Modalverben", secondaryText: ""),
+    LearningItem(primaryText: "Ich möchte ins Kino gehen.", secondaryText: "أريد الذهاب إلى السينما."),
+    LearningItem(primaryText: "Wir wollen heute Fußball spielen.", secondaryText: "نحن نريد لعب كرة القدم اليوم."),
+    LearningItem(primaryText: "Du sollst deine Hausaufgaben machen.", secondaryText: "يجب أن تفعل واجباتك المنزلية."),
+    LearningItem(primaryText: "Bei Rot müssen wir stehen.", secondaryText: "عند الأحمر يجب أن نقف."),
+    LearningItem(primaryText: "Bei Grün dürfen wir gehen.", secondaryText: "عند الأخضر يسمح لنا بالذهاب."),
+    LearningItem(primaryText: "Ich kann sehr gut Deutsch sprechen.", secondaryText: "أستطيع التحدث بالألمانية جيدًا جدًا."),
+    LearningItem(primaryText: "Ich darf im Zimmer nicht rauchen.", secondaryText: "لا يسمح لي بالتدخين في الغرفة."),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Verbotsschilder (علامات المنع)", secondaryText: ""),
+    LearningItem(primaryText: "Hier darf man nicht rauchen.", secondaryText: "هنا لا يسمح بالتدخين."),
+    LearningItem(primaryText: "Hier darf man nicht fotografieren.", secondaryText: "هنا لا يسمح بالتصوير."),
+    LearningItem(primaryText: "Hier darf man nicht schwimmen.", secondaryText: "هنا لا يسمح بالسباحة."),
+    
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Beim Arzt (عند الطبيب)", secondaryText: ""),
+    LearningItem(primaryText: "Sie müssen drei Tage zu Hause bleiben.", secondaryText: "يجب أن تبقوا في المنزل ثلاثة أيام."),
+    LearningItem(primaryText: "Sie dürfen nicht arbeiten.", secondaryText: "لا يسمح لكم بالعمل."),
+    LearningItem(primaryText: "Sie sollen viel trinken.", secondaryText: "يُنصح بأن تشربوا كثيرًا."),
+    LearningItem(primaryText: "Sie sollen sich ausruhen.", secondaryText: "يُنصح بأن تستريحوا."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 8 Modul 2 - القواعد (Modalverben - شرح كامل)",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
 
