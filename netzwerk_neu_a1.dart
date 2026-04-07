@@ -7415,3 +7415,3960 @@ class NetzwerkNeuA1Kapitel_8_Modul2GrammatikScreenDwa extends StatelessWidget {
 }
 
 
+
+
+
+
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 9 Modul 1
+// Die Wohnung - المفردات الأساسية
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_9_Modul1CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: أجزاء الشقة (Zimmer & Räume)
+    // ============================================================
+    LearningCard(primaryText: "die Wohnung", secondaryText: "الشقة"),
+    LearningCard(primaryText: "das Zimmer", secondaryText: "الغرفة"),
+    LearningCard(primaryText: "das Wohnzimmer", secondaryText: "غرفة المعيشة"),
+    LearningCard(primaryText: "das Schlafzimmer", secondaryText: "غرفة النوم"),
+    LearningCard(primaryText: "das Kinderzimmer", secondaryText: "غرفة الأطفال"),
+    LearningCard(primaryText: "das Arbeitszimmer", secondaryText: "غرفة العمل / المكتب"),
+    LearningCard(primaryText: "die Küche", secondaryText: "المطبخ"),
+    LearningCard(primaryText: "das Bad", secondaryText: "الحمام"),
+    LearningCard(primaryText: "das Badezimmer", secondaryText: "حمام (كامل)"),
+    LearningCard(primaryText: "die Toilette", secondaryText: "المرحاض"),
+    LearningCard(primaryText: "der Flur", secondaryText: "الممر / الردهة"),
+    LearningCard(primaryText: "der Balkon", secondaryText: "الشرفة"),
+    LearningCard(primaryText: "die Terrasse", secondaryText: "التراس"),
+    LearningCard(primaryText: "der Keller", secondaryText: "القبو"),
+    LearningCard(primaryText: "der Dachboden", secondaryText: "العلية"),
+    LearningCard(primaryText: "die Garage", secondaryText: "الجراج"),
+    LearningCard(primaryText: "der Garten", secondaryText: "الحديقة"),
+
+    // ============================================================
+    // المجموعة 2: الأثاث (Möbel)
+    // ============================================================
+    LearningCard(primaryText: "das Möbel", secondaryText: "الأثاث (مفرد)"),
+    LearningCard(primaryText: "die Möbel (Plural)", secondaryText: "الأثاث (جمع)"),
+    LearningCard(primaryText: "der Tisch", secondaryText: "الطاولة"),
+    LearningCard(primaryText: "der Esstisch", secondaryText: "طاولة الطعام"),
+    LearningCard(primaryText: "der Schreibtisch", secondaryText: "مكتب العمل"),
+    LearningCard(primaryText: "der Stuhl", secondaryText: "الكرسي"),
+    LearningCard(primaryText: "der Sessel", secondaryText: "كرسي بذراعين"),
+    LearningCard(primaryText: "das Sofa", secondaryText: "الأريكة / الكنبة"),
+    LearningCard(primaryText: "das Bett", secondaryText: "السرير"),
+    LearningCard(primaryText: "der Schrank", secondaryText: "الخزانة"),
+    LearningCard(primaryText: "der Kleiderschrank", secondaryText: "خزانة الملابس"),
+    LearningCard(primaryText: "das Regal", secondaryText: "الرف"),
+    LearningCard(primaryText: "das Bücherregal", secondaryText: "رف الكتب"),
+    LearningCard(primaryText: "die Kommode", secondaryText: "كومودينو / تسريحة"),
+    LearningCard(primaryText: "der Nachttisch", secondaryText: "طاولة سرير"),
+    LearningCard(primaryText: "die Lampe", secondaryText: "المصباح"),
+    LearningCard(primaryText: "die Stehlampe", secondaryText: "لمبة أرضية"),
+    LearningCard(primaryText: "der Teppich", secondaryText: "السجادة"),
+    LearningCard(primaryText: "das Bild", secondaryText: "الصورة / اللوحة"),
+    LearningCard(primaryText: "der Vorhang", secondaryText: "الستارة"),
+    LearningCard(primaryText: "die Pflanze", secondaryText: "النبتة"),
+
+    // ============================================================
+    // المجموعة 3: الأجهزة المنزلية (Haushaltsgeräte)
+    // ============================================================
+    LearningCard(primaryText: "das Gerät", secondaryText: "الجهاز"),
+    LearningCard(primaryText: "der Fernseher", secondaryText: "التلفاز"),
+    LearningCard(primaryText: "der Computer", secondaryText: "الكمبيوتر"),
+    LearningCard(primaryText: "der Laptop", secondaryText: "اللاب توب"),
+    LearningCard(primaryText: "die Waschmaschine", secondaryText: "الغسالة"),
+    LearningCard(primaryText: "der Kühlschrank", secondaryText: "الثلاجة"),
+    LearningCard(primaryText: "der Herd", secondaryText: "الموقد"),
+    LearningCard(primaryText: "der Backofen", secondaryText: "الفرن"),
+    LearningCard(primaryText: "die Spülmaschine", secondaryText: "غسالة الأطباق"),
+    LearningCard(primaryText: "die Kaffeemaschine", secondaryText: "آلة القهوة"),
+    LearningCard(primaryText: "der Toaster", secondaryText: "المحمصة"),
+    LearningCard(primaryText: "die Mikrowelle", secondaryText: "الميكروويف"),
+    LearningCard(primaryText: "der Staubsauger", secondaryText: "مكنسة كهربائية"),
+    LearningCard(primaryText: "die Heizung", secondaryText: "التدفئة"),
+
+    // ============================================================
+    // المجموعة 4: صفات لوصف الشقة (Adjektive)
+    // ============================================================
+    LearningCard(primaryText: "groß", secondaryText: "كبير"),
+    LearningCard(primaryText: "klein", secondaryText: "صغير"),
+    LearningCard(primaryText: "hell", secondaryText: "مضيء / مشرق"),
+    LearningCard(primaryText: "dunkel", secondaryText: "مظلم / معتم"),
+    LearningCard(primaryText: "ruhig", secondaryText: "هادئ"),
+    LearningCard(primaryText: "laut", secondaryText: "صاخب"),
+    LearningCard(primaryText: "gemütlich", secondaryText: "مريح / دافئ"),
+    LearningCard(primaryText: "modern", secondaryText: "حديث"),
+    LearningCard(primaryText: "alt", secondaryText: "قديم"),
+    LearningCard(primaryText: "neu", secondaryText: "جديد"),
+    LearningCard(primaryText: "teuer", secondaryText: "غالي"),
+    LearningCard(primaryText: "billig", secondaryText: "رخيص"),
+    LearningCard(primaryText: "zentral", secondaryText: "في المركز / وسط المدينة"),
+    LearningCard(primaryText: "leer", secondaryText: "فارغ"),
+    LearningCard(primaryText: "möbliert", secondaryText: "مفروش"),
+    LearningCard(primaryText: "unmöbliert", secondaryText: "غير مفروش"),
+    LearningCard(primaryText: "schön", secondaryText: "جميل"),
+    LearningCard(primaryText: "praktisch", secondaryText: "عملي"),
+
+    // ============================================================
+    // المجموعة 5: وحدات القياس (Maße)
+    // ============================================================
+    LearningCard(primaryText: "der Quadratmeter (m²)", secondaryText: "المتر المربع"),
+    LearningCard(primaryText: "die Größe", secondaryText: "المساحة / الحجم"),
+    LearningCard(primaryText: "die Miete", secondaryText: "الإيجار"),
+    LearningCard(primaryText: "die Warmmiete", secondaryText: "إيجار شامل التدفئة"),
+    LearningCard(primaryText: "die Kaltmiete", secondaryText: "إيجار بدون التدفئة"),
+    LearningCard(primaryText: "die Nebenkosten", secondaryText: "المصاريف الإضافية"),
+    LearningCard(primaryText: "der Stock", secondaryText: "الطابق"),
+    LearningCard(primaryText: "das Erdgeschoss (EG)", secondaryText: "الدور الأرضي"),
+    LearningCard(primaryText: "der Aufzug", secondaryText: "المصعد"),
+    LearningCard(primaryText: "die Treppe", secondaryText: "الدرج"),
+
+    // ============================================================
+    // المجموعة 6: أوصاف موقع الشقة (Lage)
+    // ============================================================
+    LearningCard(primaryText: "das Zentrum", secondaryText: "المركز"),
+    LearningCard(primaryText: "die Innenstadt", secondaryText: "وسط المدينة"),
+    LearningCard(primaryText: "der Stadtrand", secondaryText: "ضاحية المدينة"),
+    LearningCard(primaryText: "die Nähe", secondaryText: "القرب"),
+    LearningCard(primaryText: "in der Nähe von", secondaryText: "قريب من"),
+    LearningCard(primaryText: "der Bahnhof", secondaryText: "محطة القطار"),
+    LearningCard(primaryText: "die Universität", secondaryText: "الجامعة"),
+    LearningCard(primaryText: "die Haltestelle", secondaryText: "محطة (باص/ترام)"),
+
+    // ============================================================
+    // المجموعة 7: الأفعال المهمة (Verben)
+    // ============================================================
+    LearningCard(primaryText: "wohnen", secondaryText: "يسكن"),
+    LearningCard(primaryText: "leben", secondaryText: "يعيش"),
+    LearningCard(primaryText: "bestehen aus", secondaryText: "يتكون من"),
+    LearningCard(primaryText: "stellen (wohin?)", secondaryText: "يضع (شيء - إلى أين)"),
+    LearningCard(primaryText: "legen (wohin?)", secondaryText: "يضع / يمدد (شيء - إلى أين)"),
+    LearningCard(primaryText: "hängen (wohin?)", secondaryText: "يعلق (إلى أين)"),
+    LearningCard(primaryText: "stehen (wo?)", secondaryText: "يقف / يكون موضوعًا (أين - مكان ثابت)"),
+    LearningCard(primaryText: "liegen (wo?)", secondaryText: "يكون موضوعًا / يقع (أين - مكان ثابت)"),
+    LearningCard(primaryText: "sich entspannen", secondaryText: "يسترخي"),
+    LearningCard(primaryText: "einladen", secondaryText: "يدعو"),
+    LearningCard(primaryText: "feiern", secondaryText: "يحتفل"),
+    LearningCard(primaryText: "suchen", secondaryText: "يبحث"),
+    LearningCard(primaryText: "mieten", secondaryText: "يستأجر"),
+    LearningCard(primaryText: "vermieten", secondaryText: "يؤجر"),
+
+    // ============================================================
+    // المجموعة 8: عبارات البحث عن شقة (Wohnungssuche)
+    // ============================================================
+    LearningCard(primaryText: "die Wohnungssuche", secondaryText: "البحث عن شقة"),
+    LearningCard(primaryText: "eine Wohnung suchen", secondaryText: "يبحث عن شقة"),
+    LearningCard(primaryText: "zusammenwohnen", secondaryText: "يسكن معًا"),
+    LearningCard(primaryText: "die WG (Wohngemeinschaft)", secondaryText: "شقة مشتركة"),
+    LearningCard(primaryText: "der Besichtigungstermin", secondaryText: "موعد المعاينة"),
+    LearningCard(primaryText: "der Vermieter", secondaryText: "المؤجر / صاحب العقار"),
+    LearningCard(primaryText: "der Mieter", secondaryText: "المستأجر"),
+    LearningCard(primaryText: "der Mietvertrag", secondaryText: "عقد الإيجار"),
+    LearningCard(primaryText: "die Kaution", secondaryText: "الضمان"),
+
+    // ============================================================
+    // المجموعة 9: Lieblingsorte (الأماكن المفضلة في الشقة)
+    // ============================================================
+    LearningCard(primaryText: "der Lieblingsort", secondaryText: "المكان المفضل"),
+    LearningCard(primaryText: "das Lieblingszimmer", secondaryText: "الغرفة المفضلة"),
+    LearningCard(primaryText: "gemütlich", secondaryText: "مريح"),
+    LearningCard(primaryText: "sich wohlfühlen", secondaryText: "يشعر بالراحة"),
+    LearningCard(primaryText: "sich entspannen", secondaryText: "يسترخي"),
+    LearningCard(primaryText: "zur Ruhe kommen", secondaryText: "يستريح / يهدأ"),
+
+    // ============================================================
+    // المجموعة 10: كلمات إضافية (Zusätzliche Wörter)
+    // ============================================================
+    LearningCard(primaryText: "die Einladung", secondaryText: "الدعوة"),
+    LearningCard(primaryText: "die Party", secondaryText: "الحفلة"),
+    LearningCard(primaryText: "die Feier", secondaryText: "الاحتفال"),
+    LearningCard(primaryText: "das Datum", secondaryText: "التاريخ"),
+    LearningCard(primaryText: "die Uhrzeit", secondaryText: "الوقت"),
+    LearningCard(primaryText: "der Kuchen", secondaryText: "الكعكة"),
+    LearningCard(primaryText: "der Salat", secondaryText: "السلطة"),
+    LearningCard(primaryText: "das Getränk", secondaryText: "المشروب"),
+    LearningCard(primaryText: "mitbringen", secondaryText: "يحضر معه"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 9 Modul 1 - Die Wohnung - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 9 Modul 1
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_9_Modul1SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: وصف الشقة (Wohnung beschreiben)
+    // ============================================================
+    ItemCard(english: "Meine Wohnung ist nicht so groß. Sie ist 100 Quadratmeter groß.", arabic: "شقتي ليست كبيرة جدًا. مساحتها 100 متر مربع."),
+    ItemCard(english: "Meine Wohnung besteht aus Wohnzimmer, Schlafzimmer, Kinderzimmer, Balkon, Küche und Bad.", arabic: "شقتي تتكون من غرفة معيشة، غرفة نوم، غرفة أطفال، شرفة، مطبخ وحمام."),
+    ItemCard(english: "Der Balkon ist mir sehr wichtig.", arabic: "الشرفة مهمة جدًا بالنسبة لي."),
+    ItemCard(english: "Das Badezimmer ist ziemlich klein.", arabic: "الحمام صغير نوعًا ما."),
+    ItemCard(english: "Meine Wohnung ist 90 Quadratmeter groß.", arabic: "شقتي مساحتها 90 مترًا مربعًا."),
+    ItemCard(english: "Sie besteht aus einem Wohnzimmer, einem Schlafzimmer und einem Kinderzimmer.", arabic: "هي تتكون من غرفة معيشة، غرفة نوم وغرفة أطفال."),
+    ItemCard(english: "Mein Lieblingsplatz in meiner Wohnung ist der Balkon.", arabic: "مكاني المفضل في شقتي هو الشرفة."),
+    ItemCard(english: "Das Wohnzimmer ist mein Lieblingszimmer. Ich sitze dort und schaue fern.", arabic: "غرفة المعيشة هي غرفتي المفضلة. أجلس هناك وأشاهد التلفاز."),
+    ItemCard(english: "Mein Schlafzimmer ist mir sehr wichtig. Ich schlafe und studiere dort.", arabic: "غرفة نومي مهمة جدًا بالنسبة لي. أنام وأدرس هناك."),
+    ItemCard(english: "Die Küche ist das Zentrum unserer Wohnung. Wir kochen und essen dort.", arabic: "المطبخ هو مركز شقتنا. نطبخ ونأكل هناك."),
+
+    // ============================================================
+    // المجموعة 2: وصف شقق مختلفة (Verschiedene Wohnungen)
+    // ============================================================
+    ItemCard(english: "Meine Wohnung ist sehr groß. Sie ist 300 Quadratmeter groß.", arabic: "شقتي كبيرة جدًا. مساحتها 300 متر مربع."),
+    ItemCard(english: "Ich habe vier Zimmer: zwei Kinderzimmer, ein Schlafzimmer und ein Wohnzimmer.", arabic: "لدي أربع غرف: غرفتي أطفال، غرفة نوم وغرفة معيشة."),
+    ItemCard(english: "Ich habe zwei Badezimmer und zwei Balkone.", arabic: "لدي حمامان وشرفتان."),
+    ItemCard(english: "Meine Wohnung ist klein. Sie ist 80 Quadratmeter groß.", arabic: "شقتي صغيرة. مساحتها 80 مترًا مربعًا."),
+    ItemCard(english: "Ich habe zwei Zimmer: ein Wohnzimmer und ein Schlafzimmer.", arabic: "لدي غرفتان: غرفة معيشة وغرفة نوم."),
+    ItemCard(english: "Meine Wohnung ist nicht sehr groß. Sie ist 95 Quadratmeter groß.", arabic: "شقتي ليست كبيرة جدًا. مساحتها 95 مترًا مربعًا."),
+
+    // ============================================================
+    // المجموعة 3: Lieblingsorte (الأماكن المفضلة)
+    // ============================================================
+    ItemCard(english: "Mein Lieblingszimmer ist das Wohnzimmer. Ich sitze auf dem Sofa und schaue fern.", arabic: "غرفتي المفضلة هي غرفة المعيشة. أجلس على الأريكة وأشاهد التلفاز."),
+    ItemCard(english: "Ich entspanne total gern in meinem Arbeitszimmer. Ich habe ein bequemes Sofa.", arabic: "أسترخي كثيرًا في غرفة عملي. لدي أريكة مريحة."),
+    ItemCard(english: "Im Sommer bin ich oft auf dem Balkon. Man kann in der Sonne sitzen und Kaffee trinken.", arabic: "في الصيف أكون كثيرًا على الشرفة. يمكن الجلوس في الشمس وشرب القهوة."),
+    ItemCard(english: "Am Wochenende grillen wir oft auf dem Balkon.", arabic: "في عطلة نهاية الأسبوع نشوي كثيرًا على الشرفة."),
+    ItemCard(english: "Das Wohnzimmer ist mein Lieblingszimmer. Ich trinke dort Kaffee und schaue Filme.", arabic: "غرفة المعيشة هي غرفتي المفضلة. أشرب هناك القهوة وأشاهد الأفلام."),
+    ItemCard(english: "Ich mag das Schlafzimmer. Ich mag schlafen!", arabic: "أحب غرفة النوم. أحب النوم!"),
+
+    // ============================================================
+    // المجموعة 4: Wohnungssuche (البحث عن شقة)
+    // ============================================================
+    ItemCard(english: "Wir suchen eine Drei-Zimmer-Wohnung mit Küche, Bad, Schlafzimmer, Wohnzimmer und Arbeitszimmer.", arabic: "نحن نبحث عن شقة من ثلاث غرف مع مطبخ وحمام وغرفة نوم وغرفة معيشة وغرفة عمل."),
+    ItemCard(english: "Die Wohnung soll ungefähr 80 Quadratmeter groß sein und maximal 800 Euro kosten.", arabic: "يجب أن تكون الشقة حوالي 80 مترًا مربعًا وتكلف 800 يورو كحد أقصى."),
+    ItemCard(english: "Wir möchten im Zentrum wohnen. Ein Balkon oder eine Terrasse ist uns wichtig.", arabic: "نريد أن نسكن في المركز. الشرفة أو التراس مهم بالنسبة لنا."),
+    ItemCard(english: "Die Wohnung soll ruhig und hell sein.", arabic: "يجب أن تكون الشقة هادئة ومشرقة."),
+    ItemCard(english: "Ich habe eine Drei-Zimmer-Wohnung im Zentrum. Die Wohnung ist 82 Quadratmeter groß und kostet 780 Euro.", arabic: "لدي شقة من ثلاث غرف في المركز. الشقة مساحتها 82 مترًا مربعًا وتكلف 780 يورو."),
+    ItemCard(english: "Die Wohnung ist hell und ruhig und hat einen Balkon.", arabic: "الشقة مشرقة وهادئة ولديها شرفة."),
+    ItemCard(english: "Wenn Sie Interesse haben, können Sie mir gerne schreiben oder anrufen.", arabic: "إذا كان لديك اهتمام، يمكنك الكتابة لي أو الاتصال بي."),
+
+    // ============================================================
+    // المجموعة 5: Möbel und Geräte (الأثاث والأجهزة)
+    // ============================================================
+    ItemCard(english: "Die Waschmaschine kommt ins Bad.", arabic: "الغسالة تذهب إلى الحمام."),
+    ItemCard(english: "Die Regale stellen wir in den Flur. Da ist viel Platz.", arabic: "الرفوف نضعها في الممر. هناك مساحة كبيرة."),
+    ItemCard(english: "Der Schrank kommt ins Wohnzimmer.", arabic: "الخزانة تذهب إلى غرفة المعيشة."),
+    ItemCard(english: "Unsere Betten kommen natürlich in unsere Schlafzimmer.", arabic: "أسِرَّتنا تذهب طبعًا إلى غرف نومنا."),
+    ItemCard(english: "Der große Esstisch passt in die Küche. In der Küche ist es immer gemütlich.", arabic: "طاولة الطعام الكبيرة تناسب المطبخ. في المطبخ يكون دائمًا مريحًا."),
+    ItemCard(english: "Das Sofa kommt ins Wohnzimmer. Dann kannst du lesen und ich kann Filme schauen.", arabic: "الأريكة تذهب إلى غرفة المعيشة. حينها يمكنك القراءة وأنا يمكنني مشاهدة الأفلام."),
+    ItemCard(english: "Den Computer stellen wir ins Arbeitszimmer.", arabic: "الكمبيوتر نضعه في غرفة العمل."),
+    ItemCard(english: "Den Fernseher stellen wir ins Wohnzimmer. Wir haben ein neues Sofa.", arabic: "التلفاز نضعه في غرفة المعيشة. لدينا أريكة جديدة."),
+    ItemCard(english: "Die Lampe brauche ich im Schlafzimmer. Ich will am Abend lesen.", arabic: "أحتاج المصباح في غرفة النوم. أريد القراءة في المساء."),
+    ItemCard(english: "Den Kühlschrank stellen wir natürlich in die Küche. Kühlschränke stehen immer in der Küche.", arabic: "الثلاجة نضعها طبعًا في المطبخ. الثلاجات تكون دائمًا في المطبخ."),
+
+    // ============================================================
+    // المجموعة 6: Einladung (الدعوة)
+    // ============================================================
+    ItemCard(english: "Endlich ist meine Wohnung fertig! Das möchte ich am 2. Juni feiern.", arabic: "أخيرًا شقتي جاهزة! أريد الاحتفال بذلك في 2 يونيو."),
+    ItemCard(english: "Die Party fängt um 19 Uhr an. Du kannst gerne Getränke oder Essen mitbringen.", arabic: "الحفلة تبدأ الساعة 7 مساءً. يمكنك إحضار مشروبات أو طعام."),
+    ItemCard(english: "Hoffentlich hast du Zeit. Ich freue mich!", arabic: "أتمنى أن يكون لديك وقت. أنا سعيد!"),
+    ItemCard(english: "Vielen Dank für deine Einladung. Ich komme gern und bringe einen Kuchen mit.", arabic: "شكرًا جزيلاً على دعوتك. سآتي بكل سرور وسأحضر كعكة."),
+    ItemCard(english: "Kann mein Freund mitkommen?", arabic: "هل يمكن لصديقي أن يأتي معي؟"),
+    ItemCard(english: "Ich freue mich auf Samstag. Bis bald!", arabic: "أنا متحمس ليوم السبت. أراك قريبًا!"),
+    ItemCard(english: "Vielen Dank für die Einladung, aber ich kann leider nicht kommen. Ich muss am Samstag arbeiten.", arabic: "شكرًا جزيلاً على الدعوة، لكن للأسف لا أستطيع المجيء. يجب أن أعمل يوم السبت."),
+    ItemCard(english: "Es tut mir leid, aber ich habe keine Zeit. Hoffentlich sehen wir uns bald.", arabic: "أنا آسف، لكن ليس لدي وقت. أتمنى أن نرى بعضنا قريبًا."),
+
+    // ============================================================
+    // المجموعة 7: الجمل مع Präposition "in" + Akkusativ
+    // ============================================================
+    ItemCard(english: "Ich stelle den Tisch in die Küche.", arabic: "أنا أضع الطاولة في المطبخ (إلى المطبخ)."),
+    ItemCard(english: "Ich stelle das Bett ins Schlafzimmer.", arabic: "أنا أضع السرير في غرفة النوم."),
+    ItemCard(english: "Ich stelle den Schrank in das Wohnzimmer.", arabic: "أنا أضع الخزانة في غرفة المعيشة."),
+    ItemCard(english: "Ich stelle die Lampe in den Flur.", arabic: "أنا أضع المصباح في الممر."),
+    ItemCard(english: "Ich stelle die Waschmaschine ins Bad.", arabic: "أنا أضع الغسالة في الحمام."),
+    ItemCard(english: "Ich lege das Buch auf den Tisch.", arabic: "أنا أضع الكتاب على الطاولة."),
+    ItemCard(english: "Ich hänge das Bild an die Wand.", arabic: "أنا أعلق الصورة على الحائط."),
+
+    // ============================================================
+    // المجموعة 8: الجمل مع "wo?" (Dativ) vs "wohin?" (Akkusativ)
+    // ============================================================
+    ItemCard(english: "Der Tisch steht in der Küche. (Wo?)", arabic: "الطاولة موجودة في المطبخ. (أين؟ - مكان ثابت)"),
+    ItemCard(english: "Ich stelle den Tisch in die Küche. (Wohin?)", arabic: "أنا أضع الطاولة إلى المطبخ. (إلى أين؟ - حركة)"),
+    ItemCard(english: "Das Bett steht im Schlafzimmer.", arabic: "السرير موجود في غرفة النوم."),
+    ItemCard(english: "Ich stelle das Bett ins Schlafzimmer.", arabic: "أنا أضع السرير إلى غرفة النوم."),
+    ItemCard(english: "Die Lampe hängt im Wohnzimmer.", arabic: "المصباح معلق في غرفة المعيشة."),
+    ItemCard(english: "Ich hänge die Lampe ins Wohnzimmer.", arabic: "أنا أعلق المصباح إلى غرفة المعيشة."),
+
+    // ============================================================
+    // المجموعة 9: جمل من الدرس عن Lieblingsorte
+    // ============================================================
+    ItemCard(english: "Ich bin Journalistin. Wenn ich zu Hause bin, bin ich die meiste Zeit im Arbeitszimmer.", arabic: "أنا صحفية. عندما أكون في المنزل، أكون معظم الوقت في غرفة العمل."),
+    ItemCard(english: "Ich arbeite am Computer, schreibe E-Mails und recherchiere Informationen im Internet.", arabic: "أعمل على الكمبيوتر، أكتب الإيميلات وأبحث عن معلومات على الإنترنت."),
+    ItemCard(english: "Die ganze Familie sitzt jeden Abend zusammen im Wohnzimmer.", arabic: "العائلة كلها تجتمع كل مساء في غرفة المعيشة."),
+    ItemCard(english: "Wir kochen, essen etwas Gutes, sitzen alle an einem großen Tisch und erzählen.", arabic: "نطبخ، نأكل شيئًا لذيذًا، نجلس كلنا على طاولة كبيرة ونتحدث."),
+    ItemCard(english: "Nach einem langen Tag an der Uni entspanne ich total gern in meinem Wohnzimmer.", arabic: "بعد يوم طويل في الجامعة، أسترخي كثيرًا في غرفة معيشتي."),
+    ItemCard(english: "Ich habe ein sehr bequemes Sofa. Da kann man gut lesen oder Filme sehen.", arabic: "لدي أريكة مريحة جدًا. يمكن هناك القراءة أو مشاهدة الأفلام بشكل جيد."),
+
+    // ============================================================
+    // المجموعة 10: عبارات مفيدة (Nützliche Ausdrücke)
+    // ============================================================
+    ItemCard(english: "Was ist dein Lieblingszimmer?", arabic: "ما هي غرفتك المفضلة؟"),
+    ItemCard(english: "Was ist dir in deiner Wohnung wichtig?", arabic: "ما هو المهم بالنسبة لك في شقتك؟"),
+    ItemCard(english: "Wie groß ist deine Wohnung?", arabic: "كم مساحة شقتك؟"),
+    ItemCard(english: "Wie viele Zimmer hat deine Wohnung?", arabic: "كم عدد الغرف في شقتك؟"),
+    ItemCard(english: "Wohnst du im Zentrum oder am Stadtrand?", arabic: "هل تسكن في المركز أم في الضواحي؟"),
+    ItemCard(english: "Hast du einen Balkon oder eine Terrasse?", arabic: "هل لديك شرفة أم تراس؟"),
+    ItemCard(english: "Die Wohnung ist hell, ruhig und gemütlich.", arabic: "الشقة مشرقة وهادئة ومريحة."),
+    ItemCard(english: "Die Miete ist 800 Euro warm.", arabic: "الإيجار 800 يورو شامل التدفئة."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 9 Modul 1 - Die Wohnung - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFFE65100), // لون برتقالي
+      secondaryColor: const Color(0xFFBF360C),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 9 Modul 1 (Präposition "in" mit Akkusativ & Dativ)
+// شرح كامل ومبسط مع أمثلة كثيرة
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_9_Modul1GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. مقدمة عن حروف الجر المكانية (Präpositionen mit Ort)
+    // ============================================================
+    LearningItem(primaryText: "➤ Präpositionen mit Dativ und Akkusativ", secondaryText: "حروف الجر التي تأتي مع Dativ أو Akkusativ"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 حروف الجر التسعة (Wechselpräpositionen):", secondaryText: "حروف جر تتغير حسب المعنى (مكان ثابت أو حركة)"),
+    LearningItem(primaryText: "an - auf - hinter - in - neben - über - unter - vor - zwischen", secondaryText: "على - على - خلف - في - بجانب - فوق - تحت - أمام - بين"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    LearningItem(primaryText: "🎯 القاعدة الذهبية:", secondaryText: "قاعدة حروف الجر التسعة"),
+    LearningItem(primaryText: "إذا سألت بـ 'Wo?' (أين؟)", secondaryText: "→ Dativ (مكان ثابت - لا حركة)"),
+    LearningItem(primaryText: "إذا سألت بـ 'Wohin?' (إلى أين؟)", secondaryText: "→ Akkusativ (حركة - اتجاه)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. حرف الجر "in" مع Dativ (مكان ثابت - Wo?)
+    // ============================================================
+    LearningItem(primaryText: "➤ in + Dativ (مكان ثابت - Wo?)", secondaryText: "في - مكان ثابت (أين؟)"),
+    LearningItem(primaryText: "der (مذكر) → in dem → im", secondaryText: "في (ال) - مثال: im Schrank (في الخزانة)"),
+    LearningItem(primaryText: "das (محايد) → in dem → im", secondaryText: "في (ال) - مثال: im Bett (في السرير)"),
+    LearningItem(primaryText: "die (مؤنث) → in der", secondaryText: "في (ال) - مثال: in der Küche (في المطبخ)"),
+    LearningItem(primaryText: "die (جمع) → in den", secondaryText: "في (ال) - مثال: in den Zimmern (في الغرف)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 أمثلة على in + Dativ (مكان ثابت):", secondaryText: ""),
+    LearningItem(primaryText: "Der Tisch steht in der Küche.", secondaryText: "الطاولة موجودة في المطبخ."),
+    LearningItem(primaryText: "Das Bett steht im Schlafzimmer.", secondaryText: "السرير موجود في غرفة النوم."),
+    LearningItem(primaryText: "Die Lampe hängt im Wohnzimmer.", secondaryText: "المصباح معلق في غرفة المعيشة."),
+    LearningItem(primaryText: "Die Waschmaschine steht im Bad.", secondaryText: "الغسالة موجودة في الحمام."),
+    LearningItem(primaryText: "Der Stuhl steht in der Ecke.", secondaryText: "الكرسي موجود في الزاوية."),
+    LearningItem(primaryText: "Die Bücher sind im Regal.", secondaryText: "الكتب موجودة على الرف."),
+    LearningItem(primaryText: "Ich wohne in der Stadt.", secondaryText: "أنا أسكن في المدينة."),
+    LearningItem(primaryText: "Er lebt in Deutschland.", secondaryText: "هو يعيش في ألمانيا."),
+
+    // ============================================================
+    // 3. حرف الجر "in" مع Akkusativ (حركة - Wohin?)
+    // ============================================================
+    LearningItem(primaryText: "➤ in + Akkusativ (حركة - Wohin?)", secondaryText: "إلى - اتجاه / حركة (إلى أين؟)"),
+    LearningItem(primaryText: "der (مذكر) → in den", secondaryText: "إلى (ال) - مثال: in den Schrank (إلى الخزانة)"),
+    LearningItem(primaryText: "das (محايد) → in das → ins", secondaryText: "إلى (ال) - مثال: ins Bett (إلى السرير)"),
+    LearningItem(primaryText: "die (مؤنث) → in die", secondaryText: "إلى (ال) - مثال: in die Küche (إلى المطبخ)"),
+    LearningItem(primaryText: "die (جمع) → in die", secondaryText: "إلى (ال) - مثال: in die Zimmer (إلى الغرف)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 أمثلة على in + Akkusativ (حركة):", secondaryText: ""),
+    LearningItem(primaryText: "Ich stelle den Tisch in die Küche.", secondaryText: "أنا أضع الطاولة إلى المطبخ."),
+    LearningItem(primaryText: "Ich stelle das Bett ins Schlafzimmer.", secondaryText: "أنا أضع السرير إلى غرفة النوم."),
+    LearningItem(primaryText: "Ich hänge die Lampe ins Wohnzimmer.", secondaryText: "أنا أعلق المصباح إلى غرفة المعيشة."),
+    LearningItem(primaryText: "Ich stelle die Waschmaschine ins Bad.", secondaryText: "أنا أضع الغسالة إلى الحمام."),
+    LearningItem(primaryText: "Ich lege das Buch in den Schrank.", secondaryText: "أنا أضع الكتاب إلى الخزانة."),
+    LearningItem(primaryText: "Ich stelle den Stuhl in die Ecke.", secondaryText: "أنا أضع الكرسي إلى الزاوية."),
+    LearningItem(primaryText: "Ich gehe in die Stadt.", secondaryText: "أنا أذهب إلى المدينة."),
+    LearningItem(primaryText: "Ich fahre nach Deutschland.", secondaryText: "أنا أسافر إلى ألمانيا."),
+
+    // ============================================================
+    // 4. جدول المقارنة بين Dativ و Akkusativ مع "in"
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Vergleich: Wo? (Dativ) vs. Wohin? (Akkusativ)", secondaryText: "مقارنة: أين؟ (Dativ) vs. إلى أين؟ (Akkusativ)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Wo ist das Buch? - Das Buch ist in der Tasche.", secondaryText: "أين الكتاب؟ - الكتاب موجود في الحقيبة."),
+    LearningItem(primaryText: "Wohin legst du das Buch? - Ich lege das Buch in die Tasche.", secondaryText: "إلى أين تضع الكتاب؟ - أضع الكتاب إلى الحقيبة."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Wo ist der Stuhl? - Der Stuhl ist im Wohnzimmer.", secondaryText: "أين الكرسي؟ - الكرسي موجود في غرفة المعيشة."),
+    LearningItem(primaryText: "Wohin stellst du den Stuhl? - Ich stelle den Stuhl ins Wohnzimmer.", secondaryText: "إلى أين تضع الكرسي؟ - أضع الكرسي إلى غرفة المعيشة."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Wo ist die Lampe? - Die Lampe ist im Schlafzimmer.", secondaryText: "أين المصباح؟ - المصباح موجود في غرفة النوم."),
+    LearningItem(primaryText: "Wohin hängst du die Lampe? - Ich hänge die Lampe ins Schlafzimmer.", secondaryText: "إلى أين تعلق المصباح؟ - أعلق المصباح إلى غرفة النوم."),
+
+    // ============================================================
+    // 5. أفعال الحركة (Verben der Bewegung) + Akkusativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Verben mit Wohin? (Akkusativ)", secondaryText: "أفعال تدل على الحركة (إلى أين؟)"),
+    LearningItem(primaryText: "stellen (يضع - شيء)", secondaryText: "Ich stelle den Tisch in die Küche."),
+    LearningItem(primaryText: "legen (يضع / يمدد - شيء)", secondaryText: "Ich lege das Buch auf den Tisch."),
+    LearningItem(primaryText: "hängen (يعلق - شيء)", secondaryText: "Ich hänge das Bild an die Wand."),
+    LearningItem(primaryText: "setzen (يجلس - نفسه)", secondaryText: "Ich setze mich auf den Stuhl."),
+    LearningItem(primaryText: "legen (يستلقي - نفسه)", secondaryText: "Ich lege mich ins Bett."),
+    LearningItem(primaryText: "gehen (يذهب)", secondaryText: "Ich gehe in die Küche."),
+    LearningItem(primaryText: "fahren (يذهب بمركبة)", secondaryText: "Ich fahre in die Stadt."),
+    LearningItem(primaryText: "kommen (يأتي)", secondaryText: "Ich komme in das Zimmer."),
+
+    // ============================================================
+    // 6. أفعال المكان الثابت (Verben des festen Ortes) + Dativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Verben mit Wo? (Dativ)", secondaryText: "أفعال تدل على مكان ثابت (أين؟)"),
+    LearningItem(primaryText: "stehen (يقف - شيء)", secondaryText: "Der Tisch steht in der Küche."),
+    LearningItem(primaryText: "liegen (يكون موضوعًا - شيء)", secondaryText: "Das Buch liegt auf dem Tisch."),
+    LearningItem(primaryText: "hängen (معلق - شيء)", secondaryText: "Das Bild hängt an der Wand."),
+    LearningItem(primaryText: "sitzen (يجلس - شخص)", secondaryText: "Ich sitze auf dem Stuhl."),
+    LearningItem(primaryText: "liegen (يستلقي - شخص)", secondaryText: "Ich liege im Bett."),
+    LearningItem(primaryText: "leben / wohnen (يعيش / يسكن)", secondaryText: "Ich wohne in der Stadt."),
+
+    // ============================================================
+    // 7. أمثلة إضافية على استخدام "in" مع الغرف
+    // ============================================================
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Beispiele mit Zimmern (Wo? / Wohin?)", secondaryText: "أمثلة مع الغرف (أين؟ / إلى أين؟)"),
+    LearningItem(primaryText: "Das Sofa steht im Wohnzimmer.", secondaryText: "الأريكة موجودة في غرفة المعيشة."),
+    LearningItem(primaryText: "Ich stelle das Sofa ins Wohnzimmer.", secondaryText: "أنا أضع الأريكة إلى غرفة المعيشة."),
+    LearningItem(primaryText: "Das Bett steht im Schlafzimmer.", secondaryText: "السرير موجود في غرفة النوم."),
+    LearningItem(primaryText: "Ich stelle das Bett ins Schlafzimmer.", secondaryText: "أنا أضع السرير إلى غرفة النوم."),
+    LearningItem(primaryText: "Der Kühlschrank steht in der Küche.", secondaryText: "الثلاجة موجودة في المطبخ."),
+    LearningItem(primaryText: "Ich stelle den Kühlschrank in die Küche.", secondaryText: "أنا أضع الثلاجة إلى المطبخ."),
+    LearningItem(primaryText: "Die Waschmaschine steht im Bad.", secondaryText: "الغسالة موجودة في الحمام."),
+    LearningItem(primaryText: "Ich stelle die Waschmaschine ins Bad.", secondaryText: "أنا أضع الغسالة إلى الحمام."),
+    LearningItem(primaryText: "Das Regal steht im Flur.", secondaryText: "الرف موجود في الممر."),
+    LearningItem(primaryText: "Ich stelle das Regal in den Flur.", secondaryText: "أنا أضع الرف إلى الممر."),
+
+    // ============================================================
+    // 8. نفي الجملة مع "in"
+    // ============================================================
+    LearningItem(primaryText: "➤ Negation mit 'nicht' oder 'kein'", secondaryText: "النفي مع nicht أو kein"),
+    LearningItem(primaryText: "Der Tisch steht nicht in der Küche.", secondaryText: "الطاولة ليست موجودة في المطبخ."),
+    LearningItem(primaryText: "Ich stelle den Tisch nicht in die Küche.", secondaryText: "أنا لا أضع الطاولة إلى المطبخ."),
+    LearningItem(primaryText: "Das ist kein Tisch in der Küche.", secondaryText: "هذه ليست طاولة في المطبخ."),
+
+    // ============================================================
+    // 9. كلمات استفهام (Fragewörter)
+    // ============================================================
+    LearningItem(primaryText: "➤ Fragewörter für Ort und Richtung", secondaryText: "أدوات استفهام للمكان والاتجاه"),
+    LearningItem(primaryText: "Wo?", secondaryText: "أين؟ (مكان ثابت - Dativ)"),
+    LearningItem(primaryText: "Wohin?", secondaryText: "إلى أين؟ (حركة - Akkusativ)"),
+    LearningItem(primaryText: "Woher?", secondaryText: "من أين؟ (مصدر - Dativ)"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Wo ist der Tisch? - Der Tisch ist in der Küche.", secondaryText: "أين الطاولة؟ - الطاولة موجودة في المطبخ."),
+    LearningItem(primaryText: "Wohin stellst du den Tisch? - Ich stelle den Tisch in die Küche.", secondaryText: "إلى أين تضع الطاولة؟ - أضع الطاولة إلى المطبخ."),
+    LearningItem(primaryText: "Woher kommst du? - Ich komme aus der Küche.", secondaryText: "من أين أنت؟ - أنا من المطبخ."),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ ملخص القاعدة مع أمثلة إضافية", secondaryText: ""),
+    LearningItem(primaryText: "📌 قاعدة in + Dativ (مكان ثابت - Wo?)", secondaryText: ""),
+    LearningItem(primaryText: "im (in dem) + مذكر/محايد", secondaryText: "im Schrank, im Bett, im Zimmer, im Wohnzimmer, im Schlafzimmer"),
+    LearningItem(primaryText: "in der + مؤنث", secondaryText: "in der Küche, in der Wohnung, in der Stadt, in der Ecke"),
+    LearningItem(primaryText: "in den + جمع", secondaryText: "in den Zimmern, in den Schränken, in den Wohnungen"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 قاعدة in + Akkusativ (حركة - Wohin?)", secondaryText: ""),
+    LearningItem(primaryText: "in den + مذكر", secondaryText: "in den Schrank, in den Raum, in den Flur"),
+    LearningItem(primaryText: "ins (in das) + محايد", secondaryText: "ins Bett, ins Zimmer, ins Wohnzimmer, ins Schlafzimmer, ins Bad"),
+    LearningItem(primaryText: "in die + مؤنث/جمع", secondaryText: "in die Küche, in die Wohnung, in die Stadt, in die Zimmer"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ أمثلة من الدرس على الفرق بين Wo? و Wohin?", secondaryText: ""),
+    LearningItem(primaryText: "Wo ist die Waschmaschine? - Die Waschmaschine ist im Bad.", secondaryText: "أين الغسالة؟ - الغسالة موجودة في الحمام."),
+    LearningItem(primaryText: "Wohin stellst du die Waschmaschine? - Ich stelle sie ins Bad.", secondaryText: "إلى أين تضع الغسالة؟ - أضعها إلى الحمام."),
+    LearningItem(primaryText: "Wo sind die Regale? - Die Regale sind im Flur.", secondaryText: "أين الرفوف؟ - الرفوف موجودة في الممر."),
+    LearningItem(primaryText: "Wohin stellst du die Regale? - Ich stelle sie in den Flur.", secondaryText: "إلى أين تضع الرفوف؟ - أضعها إلى الممر."),
+    LearningItem(primaryText: "Wo ist der Schrank? - Der Schrank ist im Wohnzimmer.", secondaryText: "أين الخزانة؟ - الخزانة موجودة في غرفة المعيشة."),
+    LearningItem(primaryText: "Wohin stellst du den Schrank? - Ich stelle ihn ins Wohnzimmer.", secondaryText: "إلى أين تضع الخزانة؟ - أضعها إلى غرفة المعيشة."),
+    LearningItem(primaryText: "Wo sind die Betten? - Die Betten sind im Schlafzimmer.", secondaryText: "أين الأسرة؟ - الأسرة موجودة في غرفة النوم."),
+    LearningItem(primaryText: "Wohin stellst du die Betten? - Ich stelle sie ins Schlafzimmer.", secondaryText: "إلى أين تضع الأسرة؟ - أضعها إلى غرفة النوم."),
+    LearningItem(primaryText: "Wo ist der Esstisch? - Der Esstisch ist in der Küche.", secondaryText: "أين طاولة الطعام؟ - طاولة الطعام موجودة في المطبخ."),
+    LearningItem(primaryText: "Wohin stellst du den Esstisch? - Ich stelle ihn in die Küche.", secondaryText: "إلى أين تضع طاولة الطعام؟ - أضعها إلى المطبخ."),
+    LearningItem(primaryText: "Wo ist das Sofa? - Das Sofa ist im Wohnzimmer.", secondaryText: "أين الأريكة؟ - الأريكة موجودة في غرفة المعيشة."),
+    LearningItem(primaryText: "Wohin stellst du das Sofa? - Ich stelle es ins Wohnzimmer.", secondaryText: "إلى أين تضع الأريكة؟ - أضعها إلى غرفة المعيشة."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 9 Modul 1 - القواعد (in + Dativ & Akkusativ) - شرح كامل",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+//
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 9 Modul 2
+// Wechselpräpositionen - المفردات (كلمات صغيرة للكروت)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_9_Modul2CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Wechselpräpositionen (حروف الجر المتغيرة)
+    // ============================================================
+    LearningCard(primaryText: "an", secondaryText: "على / بجانب (جدار)"),
+    LearningCard(primaryText: "auf", secondaryText: "على (طاولة)"),
+    LearningCard(primaryText: "hinter", secondaryText: "خلف"),
+    LearningCard(primaryText: "in", secondaryText: "في"),
+    LearningCard(primaryText: "neben", secondaryText: "بجانب"),
+    LearningCard(primaryText: "über", secondaryText: "فوق"),
+    LearningCard(primaryText: "unter", secondaryText: "تحت"),
+    LearningCard(primaryText: "vor", secondaryText: "أمام"),
+    LearningCard(primaryText: "zwischen", secondaryText: "بين"),
+
+    // ============================================================
+    // المجموعة 2: أدوات الاستفهام (Fragewörter)
+    // ============================================================
+    LearningCard(primaryText: "Wo?", secondaryText: "أين؟ (مكان ثابت)"),
+    LearningCard(primaryText: "Wohin?", secondaryText: "إلى أين؟ (حركة)"),
+    LearningCard(primaryText: "Woher?", secondaryText: "من أين؟ (مصدر)"),
+
+    // ============================================================
+    // المجموعة 3: أفعال مع Dativ (مكان ثابت - Wo?)
+    // ============================================================
+    LearningCard(primaryText: "stehen", secondaryText: "يقف / موجود"),
+    LearningCard(primaryText: "liegen", secondaryText: "موضوع (مسطح)"),
+    LearningCard(primaryText: "sitzen", secondaryText: "يجلس"),
+    LearningCard(primaryText: "hängen", secondaryText: "معلق"),
+    LearningCard(primaryText: "wohnen", secondaryText: "يسكن"),
+    LearningCard(primaryText: "schlafen", secondaryText: "ينام"),
+
+    // ============================================================
+    // المجموعة 4: أفعال مع Akkusativ (حركة - Wohin?)
+    // ============================================================
+    LearningCard(primaryText: "stellen", secondaryText: "يضع (قائماً)"),
+    LearningCard(primaryText: "legen", secondaryText: "يضع (مسطحاً)"),
+    LearningCard(primaryText: "setzen", secondaryText: "يجلس (نفسه)"),
+    LearningCard(primaryText: "hängen", secondaryText: "يعلق"),
+    LearningCard(primaryText: "gehen", secondaryText: "يذهب"),
+    LearningCard(primaryText: "kommen", secondaryText: "يأتي"),
+
+    // ============================================================
+    // المجموعة 5: أنواع المساكن (Wohnungstypen)
+    // ============================================================
+    LearningCard(primaryText: "das Hochhaus", secondaryText: "برج سكني"),
+    LearningCard(primaryText: "das Loft", secondaryText: "لوفت (شقة مفتوحة)"),
+    LearningCard(primaryText: "das Reihenhaus", secondaryText: "منزل متصل"),
+    LearningCard(primaryText: "die Altbauwohnung", secondaryText: "شقة قديمة"),
+    LearningCard(primaryText: "das Fachwerkhaus", secondaryText: "منزل نصف خشبي"),
+    LearningCard(primaryText: "der Balkon", secondaryText: "الشرفة"),
+    LearningCard(primaryText: "die Terrasse", secondaryText: "التراس"),
+    LearningCard(primaryText: "der Garten", secondaryText: "الحديقة"),
+
+    // ============================================================
+    // المجموعة 6: صفات لوصف المساكن (Adjektive)
+    // ============================================================
+    LearningCard(primaryText: "hell", secondaryText: "مضيء"),
+    LearningCard(primaryText: "dunkel", secondaryText: "مظلم"),
+    LearningCard(primaryText: "gemütlich", secondaryText: "مريح"),
+    LearningCard(primaryText: "laut", secondaryText: "صاخب"),
+    LearningCard(primaryText: "ruhig", secondaryText: "هادئ"),
+    LearningCard(primaryText: "alt", secondaryText: "قديم"),
+    LearningCard(primaryText: "neu", secondaryText: "جديد"),
+    LearningCard(primaryText: "teuer", secondaryText: "غالي"),
+    LearningCard(primaryText: "billig", secondaryText: "رخيص"),
+    LearningCard(primaryText: "groß", secondaryText: "كبير"),
+    LearningCard(primaryText: "klein", secondaryText: "صغير"),
+    LearningCard(primaryText: "kalt", secondaryText: "بارد"),
+    LearningCard(primaryText: "zentral", secondaryText: "وسط المدينة"),
+
+    // ============================================================
+    // المجموعة 7: تعبيرات إيجابيات وسلبيات (Vorteile & Nachteile)
+    // ============================================================
+    LearningCard(primaryText: "der Vorteil", secondaryText: "الميزة / الإيجابية"),
+    LearningCard(primaryText: "der Nachteil", secondaryText: "العيب / السلبية"),
+    LearningCard(primaryText: "die Aussicht", secondaryText: "الإطلالة"),
+    LearningCard(primaryText: "der Lärm", secondaryText: "الضجيج"),
+    LearningCard(primaryText: "die Ruhe", secondaryText: "الهدوء"),
+    LearningCard(primaryText: "der Aufzug", secondaryText: "المصعد"),
+    LearningCard(primaryText: "die Treppe", secondaryText: "الدرج"),
+
+    // ============================================================
+    // المجموعة 8: كلمات إضافية (Zusätzliche Wörter)
+    // ============================================================
+    LearningCard(primaryText: "die Einladung", secondaryText: "الدعوة"),
+    LearningCard(primaryText: "die Party", secondaryText: "الحفلة"),
+    LearningCard(primaryText: "das Geschenk", secondaryText: "الهدية"),
+    LearningCard(primaryText: "der Tisch decken", secondaryText: "يجهز الطاولة"),
+    LearningCard(primaryText: "das Besteck", secondaryText: "أدوات المائدة"),
+    LearningCard(primaryText: "die Serviette", secondaryText: "المنديل"),
+    LearningCard(primaryText: "die WG", secondaryText: "شقة مشتركة"),
+    LearningCard(primaryText: "zufrieden", secondaryText: "راضي"),
+    LearningCard(primaryText: "die Geschichte", secondaryText: "التاريخ"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 9 Modul 2 - Wechselpräpositionen - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 9 Modul 2 (جمل كاملة للتعلم)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_9_Modul2SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: الفرق بين Wo? (Dativ) و Wohin? (Akkusativ)
+    // ============================================================
+    ItemCard(english: "Wo ist das Buch? - Das Buch liegt auf dem Tisch.", arabic: "أين الكتاب؟ - الكتاب موضوع على الطاولة."),
+    ItemCard(english: "Wohin legst du das Buch? - Ich lege das Buch auf den Tisch.", arabic: "إلى أين تضع الكتاب؟ - أضع الكتاب على الطاولة."),
+    ItemCard(english: "Wo ist der Stuhl? - Der Stuhl steht neben dem Tisch.", arabic: "أين الكرسي؟ - الكرسي موجود بجانب الطاولة."),
+    ItemCard(english: "Wohin stellst du den Stuhl? - Ich stelle den Stuhl neben den Tisch.", arabic: "إلى أين تضع الكرسي؟ - أضع الكرسي بجانب الطاولة."),
+    ItemCard(english: "Wo hängt das Bild? - Das Bild hängt an der Wand.", arabic: "أين الصورة معلقة؟ - الصورة معلقة على الحائط."),
+    ItemCard(english: "Wohin hängst du das Bild? - Ich hänge das Bild an die Wand.", arabic: "إلى أين تعلق الصورة؟ - أعلق الصورة على الحائط."),
+    ItemCard(english: "Wo liegt der Hund? - Der Hund liegt unter dem Tisch.", arabic: "أين الكلب؟ - الكلب مستلق تحت الطاولة."),
+    ItemCard(english: "Wohin geht der Hund? - Der Hund geht unter den Tisch.", arabic: "إلى أين يذهب الكلب؟ - الكلب يذهب إلى تحت الطاولة."),
+
+    // ============================================================
+    // المجموعة 2: أمثلة مع an
+    // ============================================================
+    ItemCard(english: "Das Bild hängt an der Wand.", arabic: "الصورة معلقة على الحائط."),
+    ItemCard(english: "Ich hänge das Bild an die Wand.", arabic: "أنا أعلق الصورة على الحائط."),
+    ItemCard(english: "Der Tisch steht am Fenster.", arabic: "الطاولة موجودة بجانب النافذة."),
+    ItemCard(english: "Ich stelle den Tisch ans Fenster.", arabic: "أنا أضع الطاولة بجانب النافذة."),
+
+    // ============================================================
+    // المجموعة 3: أمثلة mit auf
+    // ============================================================
+    ItemCard(english: "Das Buch liegt auf dem Tisch.", arabic: "الكتاب موضوع على الطاولة."),
+    ItemCard(english: "Ich lege das Buch auf den Tisch.", arabic: "أنا أضع الكتاب على الطاولة."),
+    ItemCard(english: "Der Laptop ist auf dem Schreibtisch.", arabic: "اللاب توب موجود على المكتب."),
+    ItemCard(english: "Ich stelle den Laptop auf den Schreibtisch.", arabic: "أنا أضع اللاب توب على المكتب."),
+
+    // ============================================================
+    // المجموعة 4: أمثلة mit hinter
+    // ============================================================
+    ItemCard(english: "Das Sofa steht hinter dem Tisch.", arabic: "الأريكة موجودة خلف الطاولة."),
+    ItemCard(english: "Ich stelle das Sofa hinter den Tisch.", arabic: "أنا أضع الأريكة خلف الطاولة."),
+    ItemCard(english: "Das Regal ist hinter der Tür.", arabic: "الرف موجود خلف الباب."),
+    ItemCard(english: "Ich stelle das Regal hinter die Tür.", arabic: "أنا أضع الرف خلف الباب."),
+
+    // ============================================================
+    // المجموعة 5: أمثلة mit in
+    // ============================================================
+    ItemCard(english: "Die Lampe hängt im Wohnzimmer.", arabic: "المصباح معلق في غرفة المعيشة."),
+    ItemCard(english: "Ich hänge die Lampe ins Wohnzimmer.", arabic: "أنا أعلق المصباح إلى غرفة المعيشة."),
+    ItemCard(english: "Das Bett steht im Schlafzimmer.", arabic: "السرير موجود في غرفة النوم."),
+    ItemCard(english: "Ich stelle das Bett ins Schlafzimmer.", arabic: "أنا أضع السرير إلى غرفة النوم."),
+    ItemCard(english: "Die Waschmaschine ist im Bad.", arabic: "الغسالة موجودة في الحمام."),
+    ItemCard(english: "Ich stelle die Waschmaschine ins Bad.", arabic: "أنا أضع الغسالة إلى الحمام."),
+
+    // ============================================================
+    // المجموعة 6: أمثلة mit neben
+    // ============================================================
+    ItemCard(english: "Der Tisch steht neben dem Sofa.", arabic: "الطاولة موجودة بجانب الأريكة."),
+    ItemCard(english: "Ich stelle den Tisch neben das Sofa.", arabic: "أنا أضع الطاولة بجانب الأريكة."),
+    ItemCard(english: "Die Lampe steht neben dem Bett.", arabic: "المصباح موجود بجانب السرير."),
+    ItemCard(english: "Ich stelle die Lampe neben das Bett.", arabic: "أنا أضع المصباح بجانب السرير."),
+
+    // ============================================================
+    // المجموعة 7: أمثلة mit über
+    // ============================================================
+    ItemCard(english: "Die Lampe hängt über dem Tisch.", arabic: "المصباح معلق فوق الطاولة."),
+    ItemCard(english: "Ich hänge die Lampe über den Tisch.", arabic: "أنا أعلق المصباح فوق الطاولة."),
+    ItemCard(english: "Das Bild hängt über dem Sofa.", arabic: "الصورة معلقة فوق الأريكة."),
+    ItemCard(english: "Ich hänge das Bild über das Sofa.", arabic: "أنا أعلق الصورة فوق الأريكة."),
+
+    // ============================================================
+    // المجموعة 8: أمثلة mit unter
+    // ============================================================
+    ItemCard(english: "Der Hund liegt unter dem Tisch.", arabic: "الكلب مستلق تحت الطاولة."),
+    ItemCard(english: "Der Hund geht unter den Tisch.", arabic: "الكلب يذهب إلى تحت الطاولة."),
+    ItemCard(english: "Die Schuhe sind unter dem Bett.", arabic: "الحذاء موجود تحت السرير."),
+    ItemCard(english: "Ich lege die Schuhe unter das Bett.", arabic: "أنا أضع الحذاء تحت السرير."),
+
+    // ============================================================
+    // المجموعة 9: أمثلة mit vor
+    // ============================================================
+    ItemCard(english: "Das Sofa steht vor dem Fenster.", arabic: "الأريكة موجودة أمام النافذة."),
+    ItemCard(english: "Ich stelle das Sofa vor das Fenster.", arabic: "أنا أضع الأريكة أمام النافذة."),
+    ItemCard(english: "Das Auto steht vor dem Haus.", arabic: "السيارة موجودة أمام المنزل."),
+    ItemCard(english: "Ich stelle das Auto vor das Haus.", arabic: "أنا أضع السيارة أمام المنزل."),
+
+    // ============================================================
+    // المجموعة 10: أمثلة mit zwischen
+    // ============================================================
+    ItemCard(english: "Der Tisch steht zwischen Sofa und Schrank.", arabic: "الطاولة موجودة بين الأريكة والخزانة."),
+    ItemCard(english: "Ich stelle den Tisch zwischen Sofa und Schrank.", arabic: "أنا أضع الطاولة بين الأريكة والخزانة."),
+    ItemCard(english: "Das Kind sitzt zwischen den Eltern.", arabic: "الطفل جالس بين الوالدين."),
+    ItemCard(english: "Ich setze das Kind zwischen die Eltern.", arabic: "أنا أجلس الطفل بين الوالدين."),
+
+    // ============================================================
+    // المجموعة 11: جمل من محادثة Wohnungsbesichtigung
+    // ============================================================
+    ItemCard(english: "Das Wohnzimmer ist super und die Küche auch.", arabic: "غرفة المعيشة رائعة والمطبخ أيضًا."),
+    ItemCard(english: "Die Wohnung ist wirklich schön und hell.", arabic: "الشقة جميلة حقًا ومضيئة."),
+    ItemCard(english: "Die Lampe ist nicht langweilig, aber hässlich.", arabic: "المصباح ليس مملًا، لكنه قبيح."),
+    ItemCard(english: "Das Bild über dem Fernseher sieht schön aus.", arabic: "الصورة فوق التلفاز تبدو جميلة."),
+    ItemCard(english: "Die Terrasse ist klein, aber fein.", arabic: "التراس صغير لكنه لطيف."),
+    ItemCard(english: "Der Tisch ist alt und kaputt.", arabic: "الطاولة قديمة ومكسورة."),
+    ItemCard(english: "Ich finde die Wohnung echt gemütlich.", arabic: "أجد الشقة مريحة حقًا."),
+
+    // ============================================================
+    // المجموعة 12: وصف أنواع المساكن (Wohnungstypen)
+    // ============================================================
+    ItemCard(english: "Im Hochhaus kann man über die ganze Stadt sehen.", arabic: "في البرج السكني يمكن رؤية المدينة كلها."),
+    ItemCard(english: "Die Zimmer sind hell. Das ist super.", arabic: "الغرف مضيئة. هذا رائع."),
+    ItemCard(english: "Hier wohnen so viele Menschen. Ich kenne meine Nachbarn nicht.", arabic: "هنا يسكن كثير من الناس. لا أعرف جيراني."),
+    ItemCard(english: "Im Loft ist der Raum sehr groß und alles ist hell.", arabic: "في اللوفت الغرفة كبيرة جدًا وكل شيء مضيء."),
+    ItemCard(english: "Im Winter ist die Wohnung oft kalt.", arabic: "في الشتاء الشقة غالبًا ما تكون باردة."),
+    ItemCard(english: "Im Reihenhaus haben wir einen Garten. Die Kinder können dort spielen.", arabic: "في المنزل المتصل لدينا حديقة. الأطفال يمكنهم اللعب هناك."),
+    ItemCard(english: "Die Häuser sehen alle gleich aus. Das ist langweilig.", arabic: "المنازل كلها تبدو متشابهة. هذا ممل."),
+    ItemCard(english: "In der Altbauwohnung sind die Zimmer groß und die Decken hoch.", arabic: "في الشقة القديمة الغرف كبيرة والأسقف عالية."),
+    ItemCard(english: "Die Nachbarn sind sehr nett. Man kennt sich.", arabic: "الجيران لطفاء جدًا. الناس تعرف بعضها."),
+    ItemCard(english: "Man hört die Nachbarn. Es gibt keinen Aufzug, nur eine Treppe.", arabic: "يمكن سماع الجيران. لا يوجد مصعد، فقط درج."),
+    ItemCard(english: "Im Fachwerkhaus sind die Zimmer klein und dunkel.", arabic: "في المنزل نصف الخشبي الغرف صغيرة ومظلمة."),
+    ItemCard(english: "Das Haus hat Geschichte. Es ist über 200 Jahre alt.", arabic: "المنزل له تاريخ. عمره أكثر من 200 سنة."),
+
+    // ============================================================
+    // المجموعة 13: جمل من محادثة Tisch decken
+    // ============================================================
+    ItemCard(english: "Kannst du den Tisch decken?", arabic: "هل يمكنك تجهيز الطاولة؟"),
+    ItemCard(english: "Die Teller sind neben dem Kühlschrank.", arabic: "الأطباق موجودة بجانب الثلاجة."),
+    ItemCard(english: "Das Besteck ist auf dem Tisch in der Küche.", arabic: "أدوات المائدة موجودة على الطاولة في المطبخ."),
+    ItemCard(english: "Die Gläser sind über den Tassen im Schrank.", arabic: "الأكواب موجودة فوق الفناجين في الخزانة."),
+    ItemCard(english: "Die Weinflasche steht hinter dem Sofa.", arabic: "زجاجة النبيذ موجودة خلف الأريكة."),
+    ItemCard(english: "Die Servietten sind unter den Büchern im Regal.", arabic: "المناديل موجودة تحت الكتب على الرف."),
+
+    // ============================================================
+    // المجموعة 14: وصف الغرف (Zimmer beschreiben)
+    // ============================================================
+    ItemCard(english: "Ich habe einen Sessel. Der ist grün und bequem.", arabic: "لدي كرسي بذراعين. هو أخضر ومريح."),
+    ItemCard(english: "Mein Tisch ist weiß und mein Stuhl ist schwarz.", arabic: "طاولتي بيضاء وكرسي أسود."),
+    ItemCard(english: "Vor dem Fenster steht eine Lampe.", arabic: "أمام النافذة يوجد مصباح."),
+    ItemCard(english: "Der Teppich ist blau.", arabic: "السجادة زرقاء."),
+    ItemCard(english: "Neben dem Sessel ist eine Lampe.", arabic: "بجانب الكرسي يوجد مصباح."),
+    ItemCard(english: "Über dem Tisch ist eine Lampe.", arabic: "فوق الطاولة يوجد مصباح."),
+
+    // ============================================================
+    // المجموعة 15: عبارات مفيدة في المحادثة
+    // ============================================================
+    ItemCard(english: "Danke für die Einladung.", arabic: "شكرًا على الدعوة."),
+    ItemCard(english: "Das ist aber nett.", arabic: "هذا لطيف جدًا."),
+    ItemCard(english: "Soll ich euch die Wohnung zeigen?", arabic: "هل أريكم الشقة؟"),
+    ItemCard(english: "Uns gefällt es hier auch gut.", arabic: "نحن أيضًا نحب المكان هنا."),
+    ItemCard(english: "Wir suchen noch eine Lampe.", arabic: "ما زلنا نبحث عن مصباح."),
+    ItemCard(english: "Viele Lampen sind zu teuer.", arabic: "الكثير من المصابيح غالية جدًا."),
+    ItemCard(english: "Ich mag es nicht besonders.", arabic: "لا أحبه بشكل خاص."),
+    ItemCard(english: "Bitte nehmt euch etwas zu essen.", arabic: "من فضلكم خذوا لأنفسكم شيئًا للأكل."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 9 Modul 2 - Wechselpräpositionen - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF00695C), // لون أخضر غامق
+      secondaryColor: const Color(0xFF004D40),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 9 Modul 2 (Wechselpräpositionen - شرح كامل)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_9_Modul2GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. مقدمة عن Wechselpräpositionen
+    // ============================================================
+    LearningItem(primaryText: "➤ Was sind Wechselpräpositionen?", secondaryText: "ما هي حروف الجر المتغيرة؟"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 تعريف:", secondaryText: "هي حروف جر تأتي مرة مع Dativ ومرة مع Akkusativ حسب المعنى"),
+    LearningItem(primaryText: "القاعدة:", secondaryText: "Wo? (أين؟) → Dativ / Wohin? (إلى أين؟) → Akkusativ"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. قائمة حروف الجر التسعة
+    // ============================================================
+    LearningItem(primaryText: "➤ Die 9 Wechselpräpositionen", secondaryText: "حروف الجر المتغيرة التسعة"),
+    LearningItem(primaryText: "an - auf - hinter - in - neben - über - unter - vor - zwischen", secondaryText: ""),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. جدول تحويل الأدوات مع Wechselpräpositionen
+    // ============================================================
+    LearningItem(primaryText: "➤ Artikel im Dativ & Akkusativ", secondaryText: "تحويل الأدوات مع Dativ و Akkusativ"),
+    LearningItem(primaryText: "Artikel", secondaryText: "Nominativ | Dativ (wo?) | Akkusativ (wohin?)"),
+    LearningItem(primaryText: "der (مذكر)", secondaryText: "der → dem → den"),
+    LearningItem(primaryText: "das (محايد)", secondaryText: "das → dem → das"),
+    LearningItem(primaryText: "die (مؤنث)", secondaryText: "die → der → die"),
+    LearningItem(primaryText: "die (جمع)", secondaryText: "die → den + n → die"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. أمثلة على كل حرف جر مع Dativ (Wo?)
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele mit Dativ (Wo?)", secondaryText: "أمثلة مع Dativ (أين؟ - مكان ثابت)"),
+    LearningItem(primaryText: "an + Dativ", secondaryText: "Das Bild hängt an der Wand."),
+    LearningItem(primaryText: "auf + Dativ", secondaryText: "Das Buch liegt auf dem Tisch."),
+    LearningItem(primaryText: "hinter + Dativ", secondaryText: "Der Stuhl steht hinter dem Tisch."),
+    LearningItem(primaryText: "in + Dativ", secondaryText: "Die Lampe hängt im Wohnzimmer."),
+    LearningItem(primaryText: "neben + Dativ", secondaryText: "Der Tisch steht neben dem Sofa."),
+    LearningItem(primaryText: "über + Dativ", secondaryText: "Die Lampe hängt über dem Tisch."),
+    LearningItem(primaryText: "unter + Dativ", secondaryText: "Der Hund liegt unter dem Tisch."),
+    LearningItem(primaryText: "vor + Dativ", secondaryText: "Das Sofa steht vor dem Fenster."),
+    LearningItem(primaryText: "zwischen + Dativ", secondaryText: "Der Tisch steht zwischen Sofa und Schrank."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. أمثلة على كل حرف جر مع Akkusativ (Wohin?)
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele mit Akkusativ (Wohin?)", secondaryText: "أمثلة مع Akkusativ (إلى أين؟ - حركة)"),
+    LearningItem(primaryText: "an + Akkusativ", secondaryText: "Ich hänge das Bild an die Wand."),
+    LearningItem(primaryText: "auf + Akkusativ", secondaryText: "Ich lege das Buch auf den Tisch."),
+    LearningItem(primaryText: "hinter + Akkusativ", secondaryText: "Ich stelle den Stuhl hinter den Tisch."),
+    LearningItem(primaryText: "in + Akkusativ", secondaryText: "Ich hänge die Lampe ins Wohnzimmer."),
+    LearningItem(primaryText: "neben + Akkusativ", secondaryText: "Ich stelle den Tisch neben das Sofa."),
+    LearningItem(primaryText: "über + Akkusativ", secondaryText: "Ich hänge die Lampe über den Tisch."),
+    LearningItem(primaryText: "unter + Akkusativ", secondaryText: "Der Hund geht unter den Tisch."),
+    LearningItem(primaryText: "vor + Akkusativ", secondaryText: "Ich stelle das Sofa vor das Fenster."),
+    LearningItem(primaryText: "zwischen + Akkusativ", secondaryText: "Ich stelle den Tisch zwischen Sofa und Schrank."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. أفعال Dativ (مكان ثابت) vs. أفعال Akkusativ (حركة)
+    // ============================================================
+    LearningItem(primaryText: "➤ Verben mit Dativ (Wo?)", secondaryText: "أفعال تأتي مع Dativ (مكان ثابت)"),
+    LearningItem(primaryText: "stehen", secondaryText: "يقف / موجود (لأشياء طويلة)"),
+    LearningItem(primaryText: "liegen", secondaryText: "موضوع (لأشياء مسطحة)"),
+    LearningItem(primaryText: "sitzen", secondaryText: "يجلس (لشخص)"),
+    LearningItem(primaryText: "hängen", secondaryText: "معلق (لأشياء معلقة)"),
+    LearningItem(primaryText: "wohnen / leben", secondaryText: "يسكن / يعيش"),
+    LearningItem(primaryText: "schlafen", secondaryText: "ينام"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Verben mit Akkusativ (Wohin?)", secondaryText: "أفعال تأتي مع Akkusativ (حركة)"),
+    LearningItem(primaryText: "stellen", secondaryText: "يضع (شيء - بشكل قائم)"),
+    LearningItem(primaryText: "legen", secondaryText: "يضع (شيء - بشكل مسطح)"),
+    LearningItem(primaryText: "setzen", secondaryText: "يجلس (نفسه أو شخصًا آخر)"),
+    LearningItem(primaryText: "hängen", secondaryText: "يعلق (شيء)"),
+    LearningItem(primaryText: "gehen / fahren", secondaryText: "يذهب / يذهب بمركبة"),
+    LearningItem(primaryText: "kommen", secondaryText: "يأتي"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 7. جدول المقارنة النهائي
+    // ============================================================
+    LearningItem(primaryText: "➤ Vergleich: Wo? vs. Wohin?", secondaryText: "مقارنة نهائية: أين؟ vs. إلى أين؟"),
+    LearningItem(primaryText: "Frage", secondaryText: "Wo? (أين؟) | Wohin? (إلى أين؟)"),
+    LearningItem(primaryText: "Kasus", secondaryText: "Dativ | Akkusativ"),
+    LearningItem(primaryText: "Bedeutung", secondaryText: "مكان ثابت - لا حركة | حركة - اتجاه"),
+    LearningItem(primaryText: "Beispiel", secondaryText: "Das Buch ist auf dem Tisch. | Ich lege das Buch auf den Tisch."),
+    LearningItem(primaryText: "Übersetzung", secondaryText: "الكتاب موجود على الطاولة. | أضع الكتاب على الطاولة."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 8. ملخص الاختصارات (Kurzformen)
+    // ============================================================
+    LearningItem(primaryText: "➤ Kurzformen (الاختصارات)", secondaryText: ""),
+    LearningItem(primaryText: "an dem → am", secondaryText: "مثال: am Fenster (بجانب النافذة)"),
+    LearningItem(primaryText: "in dem → im", secondaryText: "مثال: im Zimmer (في الغرفة)"),
+    LearningItem(primaryText: "in das → ins", secondaryText: "مثال: ins Zimmer (إلى الغرفة)"),
+    LearningItem(primaryText: "bei dem → beim", secondaryText: "مثال: beim Arzt (عند الطبيب)"),
+    LearningItem(primaryText: "von dem → vom", secondaryText: "مثال: vom Tisch (من الطاولة)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 9. أنواع المساكن (Wohnungstypen) - Vorteile & Nachteile
+    // ============================================================
+    LearningItem(primaryText: "➤ Wohnungstypen - Vorteile & Nachteile", secondaryText: "أنواع المساكن - الإيجابيات والسلبيات"),
+    LearningItem(primaryText: "Hochhaus (برج سكني)", secondaryText: "Vorteile: Aussicht, helle Zimmer / Nachteile: viele Menschen, anonym"),
+    LearningItem(primaryText: "Loft (لوفت)", secondaryText: "Vorteile: groß, hell, viel Platz / Nachteile: im Winter kalt"),
+    LearningItem(primaryText: "Reihenhaus (منزل متصل)", secondaryText: "Vorteile: Garten, Kinder spielen / Nachteile: alle gleich, nie allein"),
+    LearningItem(primaryText: "Altbau (مبنى قديم)", secondaryText: "Vorteile: große Zimmer, hohe Decken / Nachteile: kein Aufzug, laut"),
+    LearningItem(primaryText: "Fachwerkhaus (نصف خشبي)", secondaryText: "Vorteile: schön, gemütlich, Geschichte / Nachteile: klein, dunkel"),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ أمثلة إضافية للتدريب", secondaryText: ""),
+    LearningItem(primaryText: "Wo ist der Schlüssel? - Der Schlüssel liegt in der Tasche.", secondaryText: "أين المفتاح؟ - المفتاح موضوع في الحقيبة."),
+    LearningItem(primaryText: "Wohin steckst du den Schlüssel? - Ich stecke den Schlüssel in die Tasche.", secondaryText: "إلى أين تضع المفتاح؟ - أضع المفتاح في الحقيبة."),
+    LearningItem(primaryText: "Wo ist das Handy? - Das Handy liegt auf dem Regal.", secondaryText: "أين الموبايل؟ - الموبايل موضوع على الرف."),
+    LearningItem(primaryText: "Wohin legst du das Handy? - Ich lege das Handy auf das Regal.", secondaryText: "إلى أين تضع الموبايل؟ - أضع الموبايل على الرف."),
+    LearningItem(primaryText: "Wo ist die Katze? - Die Katze schläft unter dem Bett.", secondaryText: "أين القطة؟ - القطة نائمة تحت السرير."),
+    LearningItem(primaryText: "Wohin geht die Katze? - Die Katze geht unter das Bett.", secondaryText: "إلى أين تذهب القطة؟ - القطة تذهب إلى تحت السرير."),
+    LearningItem(primaryText: "Wo ist das Bild? - Das Bild hängt über dem Sofa.", secondaryText: "أين الصورة؟ - الصورة معلقة فوق الأريكة."),
+    LearningItem(primaryText: "Wohin hängst du das Bild? - Ich hänge das Bild über das Sofa.", secondaryText: "إلى أين تعلق الصورة؟ - أعلق الصورة فوق الأريكة."),
+    LearningItem(primaryText: "Wo ist der Müll? - Der Müll ist vor der Tür.", secondaryText: "أين القمامة؟ - القمامة موجودة أمام الباب."),
+    LearningItem(primaryText: "Wohin stellst du den Müll? - Ich stelle den Müll vor die Tür.", secondaryText: "إلى أين تضع القمامة؟ - أضع القمامة أمام الباب."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 9 Modul 2 - القواعد (Wechselpräpositionen - شرح كامل)",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 10 Modul 1
+// Studium & Beruf - المفردات (كلمات صغيرة للكروت)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_10_Modul1CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: المهن (Berufe)
+    // ============================================================
+    LearningCard(primaryText: "der Beruf", secondaryText: "المهنة"),
+    LearningCard(primaryText: "die Segellehrerin", secondaryText: "معلمة الإبحار"),
+    LearningCard(primaryText: "der Reiseführer", secondaryText: "مرشد سياحي"),
+    LearningCard(primaryText: "der Erzieher", secondaryText: "مربي أطفال"),
+    LearningCard(primaryText: "die Architektin", secondaryText: "مهندسة معمارية"),
+    LearningCard(primaryText: "die Informatikerin", secondaryText: "متخصصة معلوماتية"),
+    LearningCard(primaryText: "die Kellnerin", secondaryText: "نادلة"),
+    LearningCard(primaryText: "der Student", secondaryText: "طالب"),
+    LearningCard(primaryText: "die Studentin", secondaryText: "طالبة"),
+    LearningCard(primaryText: "der Ingenieur", secondaryText: "مهندس"),
+    LearningCard(primaryText: "die Künstlerin", secondaryText: "فنانة"),
+    LearningCard(primaryText: "der Architekt", secondaryText: "مهندس معماري"),
+
+    // ============================================================
+    // المجموعة 2: حالة العمل (Arbeitsstatus)
+    // ============================================================
+    LearningCard(primaryText: "arbeiten", secondaryText: "يعمل"),
+    LearningCard(primaryText: "studieren", secondaryText: "يدرس (جامعة)"),
+    LearningCard(primaryText: "lernen", secondaryText: "يتعلم"),
+    LearningCard(primaryText: "arbeitslos", secondaryText: "عاطل عن العمل"),
+    LearningCard(primaryText: "arbeitssuchend", secondaryText: "باحث عن عمل"),
+    LearningCard(primaryText: "Geld verdienen", secondaryText: "يكسب المال"),
+    LearningCard(primaryText: "neben dem Studium", secondaryText: "بجانب الدراسة"),
+
+    // ============================================================
+    // المجموعة 3: أوصاف العمل (Arbeitsbeschreibung)
+    // ============================================================
+    LearningCard(primaryText: "zufrieden", secondaryText: "راضي"),
+    LearningCard(primaryText: "unzufrieden", secondaryText: "غير راضٍ"),
+    LearningCard(primaryText: "der Vorteil", secondaryText: "ميزة / إيجابية"),
+    LearningCard(primaryText: "der Nachteil", secondaryText: "عيب / سلبية"),
+    LearningCard(primaryText: "der Stress", secondaryText: "ضغط نفسي"),
+    LearningCard(primaryText: "das Team", secondaryText: "فريق"),
+    LearningCard(primaryText: "der Kollege", secondaryText: "زميل العمل"),
+    LearningCard(primaryText: "die Kollegin", secondaryText: "زميلة العمل"),
+    LearningCard(primaryText: "der Chef", secondaryText: "المدير"),
+    LearningCard(primaryText: "die Chefin", secondaryText: "المديرة"),
+    LearningCard(primaryText: "das Gehalt", secondaryText: "الراتب"),
+    LearningCard(primaryText: "Karriere machen", secondaryText: "يصنع مسيرة مهنية"),
+    LearningCard(primaryText: "Spaß machen", secondaryText: "ممتع"),
+
+    // ============================================================
+    // المجموعة 4: Perfekt - Hilfsverben (أفعال مساعدة)
+    // ============================================================
+    LearningCard(primaryText: "haben (Perfekt)", secondaryText: "يملك - للماضي"),
+    LearningCard(primaryText: "sein (Perfekt)", secondaryText: "يكون - للماضي"),
+    LearningCard(primaryText: "das Perfekt", secondaryText: "الماضي التام"),
+    LearningCard(primaryText: "das Partizip II", secondaryText: "اسم المفعول"),
+
+    // ============================================================
+    // المجموعة 5: Perfekt - Regelmäßige Verben (أفعال منتظمة)
+    // ============================================================
+    LearningCard(primaryText: "machen → gemacht", secondaryText: "يفعل → فعل"),
+    LearningCard(primaryText: "lernen → gelernt", secondaryText: "يتعلم → تعلم"),
+    LearningCard(primaryText: "arbeiten → gearbeitet", secondaryText: "يعمل → عمل"),
+    LearningCard(primaryText: "wohnen → gewohnt", secondaryText: "يسكن → سكن"),
+    LearningCard(primaryText: "spielen → gespielt", secondaryText: "يلعب → لعب"),
+    LearningCard(primaryText: "kaufen → gekauft", secondaryText: "يشتري → اشترى"),
+    LearningCard(primaryText: "hören → gehört", secondaryText: "يسمع → سمع"),
+
+    // ============================================================
+    // المجموعة 6: Perfekt - Unregelmäßige Verben (أفعال غير منتظمة)
+    // ============================================================
+    LearningCard(primaryText: "essen → gegessen", secondaryText: "يأكل → أكل"),
+    LearningCard(primaryText: "trinken → getrunken", secondaryText: "يشرب → شرب"),
+    LearningCard(primaryText: "fahren → gefahren", secondaryText: "يقود → قاد"),
+    LearningCard(primaryText: "kommen → gekommen", secondaryText: "يأتي → أتى"),
+    LearningCard(primaryText: "gehen → gegangen", secondaryText: "يذهب → ذهب"),
+    LearningCard(primaryText: "sehen → gesehen", secondaryText: "يرى → رأى"),
+    LearningCard(primaryText: "lesen → gelesen", secondaryText: "يقرأ → قرأ"),
+    LearningCard(primaryText: "schreiben → geschrieben", secondaryText: "يكتب → كتب"),
+    LearningCard(primaryText: "sprechen → gesprochen", secondaryText: "يتحدث → تحدث"),
+    LearningCard(primaryText: "treffen → getroffen", secondaryText: "يقابل → قابل"),
+    LearningCard(primaryText: "finden → gefunden", secondaryText: "يجد → وجد"),
+    LearningCard(primaryText: "nehmen → genommen", secondaryText: "يأخذ → أخذ"),
+    LearningCard(primaryText: "helfen → geholfen", secondaryText: "يساعد → ساعد"),
+    LearningCard(primaryText: "bringen → gebracht", secondaryText: "يحضر → أحضر"),
+    LearningCard(primaryText: "denken → gedacht", secondaryText: "يفكر → فكر"),
+    LearningCard(primaryText: "wissen → gewusst", secondaryText: "يعرف → عرف"),
+    LearningCard(primaryText: "schlafen → geschlafen", secondaryText: "ينام → نام"),
+    LearningCard(primaryText: "laufen → gelaufen", secondaryText: "يجري → جرى"),
+    LearningCard(primaryText: "fliegen → geflogen", secondaryText: "يطير → طار"),
+
+    // ============================================================
+    // المجموعة 7: Perfekt - Verben mit sein (أفعال تأتي مع sein)
+    // ============================================================
+    LearningCard(primaryText: "sein → gewesen", secondaryText: "يكون → كان"),
+    LearningCard(primaryText: "werden → geworden", secondaryText: "يصبح → أصبح"),
+    LearningCard(primaryText: "bleiben → geblieben", secondaryText: "يبقى → بقي"),
+    LearningCard(primaryText: "passieren → passiert", secondaryText: "يحدث → حدث"),
+    LearningCard(primaryText: "einschlafen → eingeschlafen", secondaryText: "ينام → نام"),
+    LearningCard(primaryText: "aufwachen → aufgewacht", secondaryText: "يستيقظ → استيقظ"),
+    LearningCard(primaryText: "sterben → gestorben", secondaryText: "يموت → مات"),
+
+    // ============================================================
+    // المجموعة 8: Perfekt - Verben mit -ieren (بدون ge)
+    // ============================================================
+    LearningCard(primaryText: "studieren → studiert", secondaryText: "يدرس → درس"),
+    LearningCard(primaryText: "telefonieren → telefoniert", secondaryText: "يتصل → اتصل"),
+    LearningCard(primaryText: "recherchieren → recherchiert", secondaryText: "يبحث → بحث"),
+    LearningCard(primaryText: "fotografieren → fotografiert", secondaryText: "يصور → صور"),
+    LearningCard(primaryText: "diskutieren → diskutiert", secondaryText: "يناقش → ناقش"),
+    LearningCard(primaryText: "probieren → probiert", secondaryText: "يجرب → جرب"),
+
+    // ============================================================
+    // المجموعة 9: Perfekt - Trennbare Verben (أفعال قابلة للفصل)
+    // ============================================================
+    LearningCard(primaryText: "einkaufen → eingekauft", secondaryText: "يتسوق → تسوق"),
+    LearningCard(primaryText: "aufstehen → aufgestanden", secondaryText: "ينهض → نهض"),
+    LearningCard(primaryText: "ankommen → angekommen", secondaryText: "يصل → وصل"),
+    LearningCard(primaryText: "anrufen → angerufen", secondaryText: "يتصل → اتصل"),
+    LearningCard(primaryText: "mitbringen → mitgebracht", secondaryText: "يحضر معه → أحضر"),
+    LearningCard(primaryText: "fernsehen → ferngesehen", secondaryText: "يتفرج → تفرج"),
+
+    // ============================================================
+    // المجموعة 10: Perfekt - Nicht trennbare Verben (بدون ge)
+    // ============================================================
+    LearningCard(primaryText: "besuchen → besucht", secondaryText: "يزور → زار"),
+    LearningCard(primaryText: "verstehen → verstanden", secondaryText: "يفهم → فهم"),
+    LearningCard(primaryText: "erzählen → erzählt", secondaryText: "يروي → روى"),
+    LearningCard(primaryText: "erklären → erklärt", secondaryText: "يشرح → شرح"),
+    LearningCard(primaryText: "bekommen → bekommen", secondaryText: "يحصل → حصل"),
+    LearningCard(primaryText: "vergessen → vergessen", secondaryText: "ينسى → نسي"),
+    LearningCard(primaryText: "gefallen → gefallen", secondaryText: "يعجب → أعجب"),
+
+    // ============================================================
+    // المجموعة 11: Zeitangaben (تعبيرات زمنية للماضي)
+    // ============================================================
+    LearningCard(primaryText: "gestern", secondaryText: "أمس"),
+    LearningCard(primaryText: "vorgestern", secondaryText: "أول أمس"),
+    LearningCard(primaryText: "letzte Woche", secondaryText: "الأسبوع الماضي"),
+    LearningCard(primaryText: "letzten Monat", secondaryText: "الشهر الماضي"),
+    LearningCard(primaryText: "letztes Jahr", secondaryText: "السنة الماضية"),
+    LearningCard(primaryText: "vor einer Stunde", secondaryText: "منذ ساعة"),
+    LearningCard(primaryText: "vor zwei Tagen", secondaryText: "منذ يومين"),
+    LearningCard(primaryText: "früher", secondaryText: "سابقًا"),
+    LearningCard(primaryText: "damals", secondaryText: "في ذلك الوقت"),
+
+    // ============================================================
+    // المجموعة 12: Wörter für Vorteile & Nachteile
+    // ============================================================
+    LearningCard(primaryText: "das Geld", secondaryText: "المال"),
+    LearningCard(primaryText: "die Zeit", secondaryText: "الوقت"),
+    LearningCard(primaryText: "die Freunde", secondaryText: "الأصدقاء"),
+    LearningCard(primaryText: "der Urlaub", secondaryText: "العطلة"),
+    LearningCard(primaryText: "die Prüfung", secondaryText: "الامتحان"),
+    LearningCard(primaryText: "das Seminar", secondaryText: "الندوة"),
+    LearningCard(primaryText: "die Präsentation", secondaryText: "العرض التقديمي"),
+    LearningCard(primaryText: "die Pause", secondaryText: "الاستراحة"),
+    LearningCard(primaryText: "die Bäckerei", secondaryText: "المخبز"),
+    LearningCard(primaryText: "die Bank", secondaryText: "البنك"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 10 Modul 1 - Studium & Beruf - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 10 Modul 1
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_10_Modul1SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: Beschreibung der Berufe (وصف المهن)
+    // ============================================================
+    ItemCard(english: "Ich bin Segellehrerin. Ich bin fast jeden Tag im Freien.", arabic: "أنا معلمة إبحار. أنا تقريبًا كل يوم في الهواء الطلق."),
+    ItemCard(english: "Segeln ist cool und ich kann damit mein Geld verdienen.", arabic: "الإبحار رائع ويمكنني كسب مالي به."),
+    ItemCard(english: "Im Winter kann ich nur Kurse geben, aber nicht segeln.", arabic: "في الشتاء يمكنني فقط إعطاء دروس، لكن لا يمكنني الإبحار."),
+    ItemCard(english: "Ich habe auch einen Job als Kellnerin. Das macht nicht so viel Spaß.", arabic: "لدي أيضًا وظيفة كنادلة. هذا ليس ممتعًا جدًا."),
+    ItemCard(english: "Ich studiere Informatik und möchte als Informatikerin arbeiten.", arabic: "أنا أدرس المعلوماتية وأريد العمل كمتخصصة معلوماتية."),
+    ItemCard(english: "Ich lerne gern draußen im Freien.", arabic: "أنا أتعلم بكل سرور في الهواء الطلق."),
+    ItemCard(english: "Ich verdiene noch kein Geld.", arabic: "أنا لا أكسب المال بعد."),
+    ItemCard(english: "Ich bin Architektin. Mein Beruf macht mir viel Spaß.", arabic: "أنا مهندسة معمارية. مهنتي تمنحني متعة كبيرة."),
+    ItemCard(english: "Wir sind ein super Team. Die Kollegen sind sehr nett.", arabic: "نحن فريق رائع. الزملاء لطفاء جدًا."),
+    ItemCard(english: "Aber oft haben wir auch Stress.", arabic: "لكن غالبًا ما يكون لدينا ضغط عمل أيضًا."),
+    ItemCard(english: "Ich bin Reiseführer. Mein Hobby ist Reisen und es ist auch mein Beruf.", arabic: "أنا مرشد سياحي. هوايتي هي السفر وهي أيضًا مهنتي."),
+    ItemCard(english: "Der Beruf ist schön, aber ich bin nicht oft zu Hause.", arabic: "المهنة جميلة، لكني لست كثيرًا في المنزل."),
+    ItemCard(english: "Ich habe wenig Zeit für meine Freunde.", arabic: "لدي وقت قليل لأصدقائي."),
+    ItemCard(english: "Ich bin Erzieher. Ich arbeite in einem Kindergarten.", arabic: "أنا مربي أطفال. أعمل في روضة أطفال."),
+    ItemCard(english: "Ich mag Kinder und arbeite gern mit Kindern.", arabic: "أنا أحب الأطفال وأعمل بكل سرور مع الأطفال."),
+    ItemCard(english: "Leider verdiene ich nicht so gut.", arabic: "للأسف، لا أكسب جيدًا."),
+
+    // ============================================================
+    // المجموعة 2: Gespräch zwischen Daniel und Tina
+    // ============================================================
+    ItemCard(english: "Ich habe zuerst für ein Seminar recherchiert.", arabic: "لقد بحثت أولاً من أجل ندوة."),
+    ItemCard(english: "Dann habe ich bis jetzt Statistik gelernt.", arabic: "ثم تعلمت الإحصاء حتى الآن."),
+    ItemCard(english: "Ich habe die Prüfung vor ein paar Tagen gemacht.", arabic: "لقد أديت الامتحان قبل بضعة أيام."),
+    ItemCard(english: "Heute habe ich den ganzen Tag eine Präsentation gemacht.", arabic: "اليوم قمت بعرض تقديمي طوال اليوم."),
+    ItemCard(english: "Heute habe ich nur ein bisschen Fußball gespielt.", arabic: "اليوم لعبت كرة القدم قليلاً فقط."),
+    ItemCard(english: "Gestern habe ich im Studio trainiert.", arabic: "بالأمس تدربت في الاستوديو."),
+    ItemCard(english: "Heute früh habe ich 3 Stunden in der Bäckerei gearbeitet.", arabic: "في الصباح الباكر عملت 3 ساعات في المخبز."),
+    ItemCard(english: "Ich muss Geld verdienen.", arabic: "يجب أن أكسب المال."),
+
+    // ============================================================
+    // المجموعة 3: Gespräch über Arbeit vor dem Studium
+    // ============================================================
+    ItemCard(english: "Ich habe vor dem Studium vier Jahre lang gearbeitet.", arabic: "لقد عملت قبل الدراسة لمدة أربع سنوات."),
+    ItemCard(english: "Nach der Schule habe ich Arbeit bei einer Bank gefunden.", arabic: "بعد المدرسة وجدت عملاً في بنك."),
+    ItemCard(english: "Vor allem das Geld war gut.", arabic: "المال كان جيدًا بشكل خاص."),
+    ItemCard(english: "Ich habe zu viel gearbeitet.", arabic: "لقد عملت كثيرًا."),
+    ItemCard(english: "Ich habe meine Freunde kaum gesehen.", arabic: "لم أرَ أصدقائي تقريبًا."),
+    ItemCard(english: "Ich hatte nie Zeit und viel Stress.", arabic: "لم يكن لدي وقت أبدًا وكان لدي ضغط كثير."),
+    ItemCard(english: "Ich habe dann vier Wochen Urlaub genommen.", arabic: "ثم أخذت عطلة لمدة أربعة أسابيع."),
+    ItemCard(english: "Im Urlaub habe ich meine Freundin getroffen.", arabic: "في العطلة قابلت صديقتي."),
+    ItemCard(english: "Es war klar, ich muss etwas anderes machen.", arabic: "كان واضحًا، يجب أن أفعل شيئًا آخر."),
+
+    // ============================================================
+    // المجموعة 4: Perfekt Sätze (جمل في الماضي التام)
+    // ============================================================
+    ItemCard(english: "Ich habe gestern Fußball gespielt.", arabic: "لقد لعبت كرة القدم أمس."),
+    ItemCard(english: "Wir haben letzte Woche eine Prüfung geschrieben.", arabic: "لقد كتبنا امتحانًا الأسبوع الماضي."),
+    ItemCard(english: "Er hat drei Jahre in Berlin gewohnt.", arabic: "لقد سكن في برلين لمدة ثلاث سنوات."),
+    ItemCard(english: "Sie hat den ganzen Tag gelernt.", arabic: "لقد تعلمت طوال اليوم."),
+    ItemCard(english: "Ich bin gestern nach Hause gefahren.", arabic: "لقد ذهبت إلى المنزل أمس."),
+    ItemCard(english: "Wir sind um 8 Uhr aufgestanden.", arabic: "لقد استيقظنا الساعة 8."),
+    ItemCard(english: "Er ist letzte Woche gekommen.", arabic: "لقد جاء الأسبوع الماضي."),
+    ItemCard(english: "Sie ist heute Morgen eingeschlafen.", arabic: "لقد نامت صباح اليوم."),
+    ItemCard(english: "Was ist gestern passiert?", arabic: "ماذا حدث أمس؟"),
+    ItemCard(english: "Ich bin in Berlin geblieben.", arabic: "لقد بقيت في برلين."),
+    ItemCard(english: "Ich bin Lehrer geworden.", arabic: "لقد أصبحت معلمًا."),
+    ItemCard(english: "Ich habe das nicht gewusst.", arabic: "لم أكن أعرف ذلك."),
+
+    // ============================================================
+    // المجموعة 5: Perfekt mit regelmäßigen Verben
+    // ============================================================
+    ItemCard(english: "Ich habe den Tisch gedeckt.", arabic: "لقد جهزت الطاولة."),
+    ItemCard(english: "Sie hat das Fenster geputzt.", arabic: "لقد نظفت النافذة."),
+    ItemCard(english: "Wir haben im Restaurant gegessen.", arabic: "لقد أكلنا في المطعم."),
+    ItemCard(english: "Er hat mir geholfen.", arabic: "لقد ساعدني."),
+    ItemCard(english: "Ich habe meine Hausaufgaben gemacht.", arabic: "لقد فعلت واجباتي المنزلية."),
+
+    // ============================================================
+    // المجموعة 6: Perfekt mit unregelmäßigen Verben
+    // ============================================================
+    ItemCard(english: "Ich habe einen Kaffee getrunken.", arabic: "لقد شربت قهوة."),
+    ItemCard(english: "Sie hat einen Film gesehen.", arabic: "لقد شاهدت فيلمًا."),
+    ItemCard(english: "Wir haben ein Buch gelesen.", arabic: "لقد قرأنا كتابًا."),
+    ItemCard(english: "Er hat einen Brief geschrieben.", arabic: "لقد كتب رسالة."),
+    ItemCard(english: "Ich habe meine Freundin getroffen.", arabic: "لقد قابلت صديقتي."),
+    ItemCard(english: "Sie hat ihren Schlüssel gefunden.", arabic: "لقد وجدت مفتاحها."),
+    ItemCard(english: "Ich habe den Bus genommen.", arabic: "لقد أخذت الحافلة."),
+
+    // ============================================================
+    // المجموعة 7: Fragen im Perfekt (أسئلة في الماضي)
+    // ============================================================
+    ItemCard(english: "Was hast du gestern gemacht?", arabic: "ماذا فعلت أمس؟"),
+    ItemCard(english: "Wo hast du studiert?", arabic: "أين درست؟"),
+    ItemCard(english: "Wie lange hast du gearbeitet?", arabic: "كم من الوقت عملت؟"),
+    ItemCard(english: "Bist du gestern gekommen?", arabic: "هل أتيت أمس؟"),
+    ItemCard(english: "Wohin seid ihr gefahren?", arabic: "إلى أين ذهبتم؟"),
+    ItemCard(english: "Was ist passiert?", arabic: "ماذا حدث؟"),
+
+    // ============================================================
+    // المجموعة 8: Vorteile und Nachteile der Berufe
+    // ============================================================
+    ItemCard(english: "Ich bin oft im Freien. Das ist ein Vorteil.", arabic: "أنا غالبًا في الهواء الطلق. هذه ميزة."),
+    ItemCard(english: "Im Winter kann ich nicht segeln. Das ist ein Nachteil.", arabic: "في الشتاء لا يمكنني الإبحار. هذا عيب."),
+    ItemCard(english: "Ich verdiene kein Geld. Das ist nicht so gut.", arabic: "أنا لا أكسب مالاً. هذا ليس جيدًا جدًا."),
+    ItemCard(english: "Das Team ist super und die Kollegen sind nett.", arabic: "الفريق رائع والزملاء لطفاء."),
+    ItemCard(english: "Ich habe wenig Zeit für meine Freunde. Das finde ich schade.", arabic: "لدي وقت قليل لأصدقائي. أجد ذلك مؤسفًا."),
+    ItemCard(english: "Ich arbeite gern mit Kindern, aber das Gehalt ist niedrig.", arabic: "أحب العمل مع الأطفال، لكن الراتب منخفض."),
+
+    // ============================================================
+    // المجموعة 9: Sätze aus dem Text über Berufsmessen
+    // ============================================================
+    ItemCard(english: "Die Messe informiert Jugendliche über Berufsmöglichkeiten.", arabic: "المعرض يبلغ الشباب عن الفرص المهنية."),
+    ItemCard(english: "Besonders für Berufsanfänger sind diese Messen wichtig.", arabic: "هذه المعارض مهمة بشكل خاص للمبتدئين في المجال المهني."),
+    ItemCard(english: "Die Messe zeigt mögliche Studienrichtungen und Berufschancen.", arabic: "المعرض يظهر التوجهات الدراسية الممكنة والفرص المهنية."),
+    ItemCard(english: "Die Besucher können verschiedene Studienfächer kennenlernen.", arabic: "الزوار يمكنهم التعرف على مختلف التخصصات الدراسية."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 10 Modul 1 - Studium & Beruf - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF6A1B9A), // لون بنفسجي
+      secondaryColor: const Color(0xFF4A148C),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 10 Modul 1 (Perfekt - شرح كامل ومفصل)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_10_Modul1GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. مقدمة عن Perfekt
+    // ============================================================
+    LearningItem(primaryText: "➤ Das Perfekt (الماضي التام)", secondaryText: "يستخدم للتحدث عن أحداث انتهت في الماضي"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 متى نستخدم Perfekt؟", secondaryText: "في المحادثات اليومية للتحدث عن الماضي"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Gestern habe ich Fußball gespielt."),
+    LearningItem(primaryText: "Bedeutung:", secondaryText: "أمس لعبت كرة القدم."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. تركيب Perfekt
+    // ============================================================
+    LearningItem(primaryText: "➤ Bildung des Perfekt", secondaryText: "طريقة تكوين الماضي التام"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "haben/sein (في Position 2) + Partizip II (في نهاية الجملة)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "1️⃣ Hilfsverb (haben oder sein)", secondaryText: "الفعل المساعد (haben أو sein)"),
+    LearningItem(primaryText: "2️⃣ Partizip II", secondaryText: "اسم المفعول (التصريف الثالث)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Ich habe gearbeitet.", secondaryText: "أنا عملت."),
+    LearningItem(primaryText: "Ich bin gekommen.", secondaryText: "أنا جئت."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. تصريف haben و sein في Perfekt
+    // ============================================================
+    LearningItem(primaryText: "➤ Konjugation von 'haben' und 'sein'", secondaryText: "تصريف الفعلين المساعدين"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "ich habe", secondaryText: "أنا (لدي)"),
+    LearningItem(primaryText: "du hast", secondaryText: "أنت (لديك)"),
+    LearningItem(primaryText: "er/sie/es hat", secondaryText: "هو/هي (لديه)"),
+    LearningItem(primaryText: "wir haben", secondaryText: "نحن (لدينا)"),
+    LearningItem(primaryText: "ihr habt", secondaryText: "أنتم (لديكم)"),
+    LearningItem(primaryText: "sie/Sie haben", secondaryText: "هم/حضرتكم (لديهم)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "ich bin", secondaryText: "أنا (أكون)"),
+    LearningItem(primaryText: "du bist", secondaryText: "أنت (تكون)"),
+    LearningItem(primaryText: "er/sie/es ist", secondaryText: "هو/هي (يكون)"),
+    LearningItem(primaryText: "wir sind", secondaryText: "نحن (نكون)"),
+    LearningItem(primaryText: "ihr seid", secondaryText: "أنتم (تكونون)"),
+    LearningItem(primaryText: "sie/Sie sind", secondaryText: "هم/حضرتكم (يكونون)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. متى نستخدم haben ومتى نستخدم sein؟
+    // ============================================================
+    LearningItem(primaryText: "➤ haben oder sein? (القاعدة الذهبية)", secondaryText: ""),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Wir benutzen 'haben':", secondaryText: "نستخدم 'haben' مع:"),
+    LearningItem(primaryText: "1️⃣ Die meisten Verben", secondaryText: "معظم الأفعال"),
+    LearningItem(primaryText: "2️⃣ Verben mit Akkusativobjekt", secondaryText: "الأفعال التي تأخذ مفعولاً به (Akkusativ)"),
+    LearningItem(primaryText: "3️⃣ Reflexive Verben", secondaryText: "الأفعال المنعكسة"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Wir benutzen 'sein':", secondaryText: "نستخدم 'sein' مع:"),
+    LearningItem(primaryText: "1️⃣ Bewegungsverben (von A nach B)", secondaryText: "أفعال الحركة (من مكان إلى آخر)"),
+    LearningItem(primaryText: "2️⃣ Verben der Zustandsänderung", secondaryText: "أفعال تغير الحالة"),
+    LearningItem(primaryText: "3️⃣ Die Verben: sein, werden, bleiben, passieren", secondaryText: "الأفعال: يكون، يصبح، يبقى، يحدث"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. Beispiele für Verben mit haben
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele mit 'haben'", secondaryText: "أمثلة مع haben"),
+    LearningItem(primaryText: "arbeiten → gearbeitet", secondaryText: "يعمل → عمل"),
+    LearningItem(primaryText: "lernen → gelernt", secondaryText: "يتعلم → تعلم"),
+    LearningItem(primaryText: "machen → gemacht", secondaryText: "يفعل → فعل"),
+    LearningItem(primaryText: "spielen → gespielt", secondaryText: "يلعب → لعب"),
+    LearningItem(primaryText: "essen → gegessen", secondaryText: "يأكل → أكل"),
+    LearningItem(primaryText: "trinken → getrunken", secondaryText: "يشرب → شرب"),
+    LearningItem(primaryText: "lesen → gelesen", secondaryText: "يقرأ → قرأ"),
+    LearningItem(primaryText: "schreiben → geschrieben", secondaryText: "يكتب → كتب"),
+    LearningItem(primaryText: "sehen → gesehen", secondaryText: "يرى → رأى"),
+    LearningItem(primaryText: "finden → gefunden", secondaryText: "يجد → وجد"),
+    LearningItem(primaryText: "nehmen → genommen", secondaryText: "يأخذ → أخذ"),
+    LearningItem(primaryText: "helfen → geholfen", secondaryText: "يساعد → ساعد"),
+    LearningItem(primaryText: "bringen → gebracht", secondaryText: "يحضر → أحضر"),
+    LearningItem(primaryText: "denken → gedacht", secondaryText: "يفكر → فكر"),
+    LearningItem(primaryText: "wissen → gewusst", secondaryText: "يعرف → عرف"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. Beispiele für Verben mit sein
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele mit 'sein'", secondaryText: "أمثلة مع sein"),
+    LearningItem(primaryText: "gehen → gegangen", secondaryText: "يذهب → ذهب"),
+    LearningItem(primaryText: "kommen → gekommen", secondaryText: "يأتي → أتى"),
+    LearningItem(primaryText: "fahren → gefahren", secondaryText: "يقود / يذهب → قاد / ذهب"),
+    LearningItem(primaryText: "fliegen → geflogen", secondaryText: "يطير → طار"),
+    LearningItem(primaryText: "laufen → gelaufen", secondaryText: "يجري → جرى"),
+    LearningItem(primaryText: "reisen → gereist", secondaryText: "يسافر → سافر"),
+    LearningItem(primaryText: "aufstehen → aufgestanden", secondaryText: "ينهض → نهض"),
+    LearningItem(primaryText: "einschlafen → eingeschlafen", secondaryText: "ينام → نام"),
+    LearningItem(primaryText: "aufwachen → aufgewacht", secondaryText: "يستيقظ → استيقظ"),
+    LearningItem(primaryText: "sterben → gestorben", secondaryText: "يموت → مات"),
+    LearningItem(primaryText: "sein → gewesen", secondaryText: "يكون → كان"),
+    LearningItem(primaryText: "werden → geworden", secondaryText: "يصبح → أصبح"),
+    LearningItem(primaryText: "bleiben → geblieben", secondaryText: "يبقى → بقي"),
+    LearningItem(primaryText: "passieren → passiert", secondaryText: "يحدث → حدث"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 7. تكوين Partizip II للأفعال المنتظمة
+    // ============================================================
+    LearningItem(primaryText: "➤ Partizip II - Regelmäßige Verben", secondaryText: "اسم المفعول - الأفعال المنتظمة"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "ge + Stamm + t"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "machen (Stamm: mach)", secondaryText: "ge + mach + t = gemacht"),
+    LearningItem(primaryText: "lernen (Stamm: lern)", secondaryText: "ge + lern + t = gelernt"),
+    LearningItem(primaryText: "wohnen (Stamm: wohn)", secondaryText: "ge + wohn + t = gewohnt"),
+    LearningItem(primaryText: "spielen (Stamm: spiel)", secondaryText: "ge + spiel + t = gespielt"),
+    LearningItem(primaryText: "kaufen (Stamm: kauf)", secondaryText: "ge + kauf + t = gekauft"),
+    LearningItem(primaryText: "hören (Stamm: hör)", secondaryText: "ge + hör + t = gehört"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 8. Partizip II للأفعال التي تنتهي بـ -t, -d, -m, -n
+    // ============================================================
+    LearningItem(primaryText: "➤ Partizip II - Verben mit -t, -d, -m, -n", secondaryText: "الأفعال التي ينتهي جذرها بـ -t, -d, -m, -n"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "ge + Stamm + et"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "arbeiten (Stamm: arbeit)", secondaryText: "ge + arbeit + et = gearbeitet"),
+    LearningItem(primaryText: "antworten (Stamm: antwort)", secondaryText: "ge + antwort + et = geantwortet"),
+    LearningItem(primaryText: "öffnen (Stamm: öffn)", secondaryText: "ge + öffn + et = geöffnet"),
+    LearningItem(primaryText: "zeichnen (Stamm: zeichn)", secondaryText: "ge + zeichn + et = gezeichnet"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 9. Partizip II للأفعال غير المنتظمة
+    // ============================================================
+    LearningItem(primaryText: "➤ Partizip II - Unregelmäßige Verben", secondaryText: "اسم المفعول - الأفعال غير المنتظمة"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 تغيير حرف العلة في الجذر:", secondaryText: ""),
+    LearningItem(primaryText: "e → i / ie:", secondaryText: ""),
+    LearningItem(primaryText: "sprechen → gesprochen", secondaryText: "يتحدث → تحدث"),
+    LearningItem(primaryText: "treffen → getroffen", secondaryText: "يقابل → قابل"),
+    LearningItem(primaryText: "helfen → geholfen", secondaryText: "يساعد → ساعد"),
+    LearningItem(primaryText: "nehmen → genommen", secondaryText: "يأخذ → أخذ"),
+    LearningItem(primaryText: "essen → gegessen", secondaryText: "يأكل → أكل"),
+    LearningItem(primaryText: "sehen → gesehen", secondaryText: "يرى → رأى"),
+    LearningItem(primaryText: "lesen → gelesen", secondaryText: "يقرأ → قرأ"),
+    LearningItem(primaryText: "geben → gegeben", secondaryText: "يعطي → أعطى"),
+    LearningItem(primaryText: "vergessen → vergessen", secondaryText: "ينسى → نسي"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "i → u / o:", secondaryText: ""),
+    LearningItem(primaryText: "singen → gesungen", secondaryText: "يغني → غنى"),
+    LearningItem(primaryText: "trinken → getrunken", secondaryText: "يشرب → شرب"),
+    LearningItem(primaryText: "finden → gefunden", secondaryText: "يجد → وجد"),
+    LearningItem(primaryText: "beginnen → begonnen", secondaryText: "يبدأ → بدأ"),
+    LearningItem(primaryText: "gewinnen → gewonnen", secondaryText: "يربح → ربح"),
+    LearningItem(primaryText: "schwimmen → geschwommen", secondaryText: "يسبح → سبح"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "ie → o:", secondaryText: ""),
+    LearningItem(primaryText: "fliegen → geflogen", secondaryText: "يطير → طار"),
+    LearningItem(primaryText: "verlieren → verloren", secondaryText: "يخسر → خسر"),
+    LearningItem(primaryText: "biegen → gebogen", secondaryText: "يثني → ثنى"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "a → ä / u:", secondaryText: ""),
+    LearningItem(primaryText: "fahren → gefahren", secondaryText: "يقود → قاد"),
+    LearningItem(primaryText: "schlafen → geschlafen", secondaryText: "ينام → نام"),
+    LearningItem(primaryText: "laufen → gelaufen", secondaryText: "يجري → جرى"),
+    LearningItem(primaryText: "fallen → gefallen", secondaryText: "يسقط → سقط"),
+    LearningItem(primaryText: "fangen → gefangen", secondaryText: "يمسك → أمسك"),
+    LearningItem(primaryText: "hängen → gehangen", secondaryText: "يعلق → علق"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 10. Partizip II للأفعال التي تنتهي بـ -ieren
+    // ============================================================
+    LearningItem(primaryText: "➤ Partizip II - Verben mit -ieren (بدون ge)", secondaryText: ""),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "Stamm + t (ohne ge)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "studieren → studiert", secondaryText: "يدرس → درس"),
+    LearningItem(primaryText: "telefonieren → telefoniert", secondaryText: "يتصل → اتصل"),
+    LearningItem(primaryText: "recherchieren → recherchiert", secondaryText: "يبحث → بحث"),
+    LearningItem(primaryText: "fotografieren → fotografiert", secondaryText: "يصور → صور"),
+    LearningItem(primaryText: "diskutieren → diskutiert", secondaryText: "يناقش → ناقش"),
+    LearningItem(primaryText: "probieren → probiert", secondaryText: "يجرب → جرب"),
+    LearningItem(primaryText: "markieren → markiert", secondaryText: "يحدد → حدد"),
+    LearningItem(primaryText: "passieren → passiert", secondaryText: "يحدث → حدث"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 11. Partizip II للأفعال القابلة للفصل (trennbare Verben)
+    // ============================================================
+    LearningItem(primaryText: "➤ Partizip II - Trennbare Verben", secondaryText: "اسم المفعول - الأفعال القابلة للفصل"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "Präfix + ge + Stamm + t/en"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "einkaufen → eingekauft", secondaryText: "يتسوق → تسوق"),
+    LearningItem(primaryText: "aufstehen → aufgestanden", secondaryText: "ينهض → نهض"),
+    LearningItem(primaryText: "ankommen → angekommen", secondaryText: "يصل → وصل"),
+    LearningItem(primaryText: "anrufen → angerufen", secondaryText: "يتصل → اتصل"),
+    LearningItem(primaryText: "mitbringen → mitgebracht", secondaryText: "يحضر معه → أحضر"),
+    LearningItem(primaryText: "fernsehen → ferngesehen", secondaryText: "يتفرج → تفرج"),
+    LearningItem(primaryText: "weggehen → weggegangen", secondaryText: "يبتعد → ابتعد"),
+    LearningItem(primaryText: "zurückkommen → zurückgekommen", secondaryText: "يعود → عاد"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 12. Partizip II للأفعال غير القابلة للفصل (nicht trennbare Verben)
+    // ============================================================
+    LearningItem(primaryText: "➤ Partizip II - Nicht trennbare Verben (بدون ge)", secondaryText: ""),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "ohne ge (ge wird nicht hinzugefügt)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "besuchen → besucht", secondaryText: "يزور → زار"),
+    LearningItem(primaryText: "verstehen → verstanden", secondaryText: "يفهم → فهم"),
+    LearningItem(primaryText: "erzählen → erzählt", secondaryText: "يروي → روى"),
+    LearningItem(primaryText: "erklären → erklärt", secondaryText: "يشرح → شرح"),
+    LearningItem(primaryText: "bekommen → bekommen", secondaryText: "يحصل → حصل"),
+    LearningItem(primaryText: "vergessen → vergessen", secondaryText: "ينسى → نسي"),
+    LearningItem(primaryText: "gefallen → gefallen", secondaryText: "يعجب → أعجب"),
+    LearningItem(primaryText: "gelingen → gelungen", secondaryText: "ينجح → نجح"),
+    LearningItem(primaryText: "zerbrechen → zerbrochen", secondaryText: "ينكسر → انكسر"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 13. ترتيب الكلمات في جملة Perfekt
+    // ============================================================
+    LearningItem(primaryText: "➤ Satzstellung im Perfekt", secondaryText: "ترتيب الكلمات في جملة الماضي التام"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Aussagesatz (جملة خبرية):", secondaryText: "Subjekt + haben/sein + ... + Partizip II"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich habe gestern Fußball gespielt."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Frage mit W-Wort:", secondaryText: "W-Wort + haben/sein + Subjekt + ... + Partizip II"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Was hast du gestern gemacht?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Ja/Nein-Frage:", secondaryText: "haben/sein + Subjekt + ... + Partizip II"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Bist du gestern gekommen?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 14. أمثلة إضافية من النص
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele aus dem Text", secondaryText: "أمثلة من النص"),
+    LearningItem(primaryText: "Ich habe für ein Seminar recherchiert.", secondaryText: "لقد بحثت من أجل ندوة."),
+    LearningItem(primaryText: "Ich habe Statistik gelernt.", secondaryText: "لقد تعلمت الإحصاء."),
+    LearningItem(primaryText: "Ich habe die Prüfung gemacht.", secondaryText: "لقد أديت الامتحان."),
+    LearningItem(primaryText: "Ich habe eine Präsentation gemacht.", secondaryText: "لقد قدمت عرضًا تقديميًا."),
+    LearningItem(primaryText: "Ich habe Fußball gespielt.", secondaryText: "لقد لعبت كرة القدم."),
+    LearningItem(primaryText: "Ich habe im Studio trainiert.", secondaryText: "لقد تدربت في الاستوديو."),
+    LearningItem(primaryText: "Ich habe in der Bäckerei gearbeitet.", secondaryText: "لقد عملت في المخبز."),
+    LearningItem(primaryText: "Ich habe vor dem Studium gearbeitet.", secondaryText: "لقد عملت قبل الدراسة."),
+    LearningItem(primaryText: "Ich habe meine Freundin getroffen.", secondaryText: "لقد قابلت صديقتي."),
+    LearningItem(primaryText: "Ich habe vier Wochen Urlaub genommen.", secondaryText: "لقد أخذت عطلة أربعة أسابيع."),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ ملخص القاعدة مع أمثلة إضافية", secondaryText: ""),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 أمثلة على الأفعال التي تأتي مع haben:", secondaryText: ""),
+    LearningItem(primaryText: "Ich habe gearbeitet.", secondaryText: "لقد عملت."),
+    LearningItem(primaryText: "Du hast gelernt.", secondaryText: "لقد تعلمت."),
+    LearningItem(primaryText: "Er hat Fußball gespielt.", secondaryText: "لقد لعب كرة القدم."),
+    LearningItem(primaryText: "Wir haben Pizza gegessen.", secondaryText: "لقد أكلنا بيتزا."),
+    LearningItem(primaryText: "Ihr habt Kaffee getrunken.", secondaryText: "لقد شربتم قهوة."),
+    LearningItem(primaryText: "Sie haben ein Buch gelesen.", secondaryText: "لقد قرأوا كتابًا."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 أمثلة على الأفعال التي تأتي مع sein:", secondaryText: ""),
+    LearningItem(primaryText: "Ich bin nach Hause gegangen.", secondaryText: "لقد ذهبت إلى المنزل."),
+    LearningItem(primaryText: "Du bist gekommen.", secondaryText: "لقد جئت."),
+    LearningItem(primaryText: "Er ist nach Berlin gefahren.", secondaryText: "لقد ذهب إلى برلين."),
+    LearningItem(primaryText: "Wir sind früh aufgestanden.", secondaryText: "لقد استيقظنا مبكرًا."),
+    LearningItem(primaryText: "Ihr seid geblieben.", secondaryText: "لقد بقيت."),
+    LearningItem(primaryText: "Sie sind eingeschlafen.", secondaryText: "لقد ناموا."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 أمثلة على الأفعال مع -ieren (بدون ge):", secondaryText: ""),
+    LearningItem(primaryText: "Ich habe studiert.", secondaryText: "لقد درست."),
+    LearningItem(primaryText: "Wir haben telefoniert.", secondaryText: "لقد تحدثنا هاتفيًا."),
+    LearningItem(primaryText: "Sie hat recherchiert.", secondaryText: "لقد بحثت."),
+    LearningItem(primaryText: "Er hat fotografiert.", secondaryText: "لقد صور."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 أمثلة على الأفعال القابلة للفصل (trennbar):", secondaryText: ""),
+    LearningItem(primaryText: "Ich habe eingekauft.", secondaryText: "لقد تسوقت."),
+    LearningItem(primaryText: "Er ist aufgestanden.", secondaryText: "لقد نهض."),
+    LearningItem(primaryText: "Wir sind angekommen.", secondaryText: "لقد وصلنا."),
+    LearningItem(primaryText: "Sie hat angerufen.", secondaryText: "لقد اتصلت."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 10 Modul 1 - القواعد (Perfekt - شرح كامل ومفصل)",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 10 Modul 2
+// Der Weg zum Job - المفردات (كلمات صغيرة للكروت)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_10_Modul2CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Wege zur Jobsuche (طرق البحث عن وظيفة)
+    // ============================================================
+    LearningCard(primaryText: "die Anzeige", secondaryText: "الإعلان"),
+    LearningCard(primaryText: "die Bewerbung", secondaryText: "طلب التوظيف"),
+    LearningCard(primaryText: "die Unterlagen", secondaryText: "المستندات"),
+    LearningCard(primaryText: "das Jobportal", secondaryText: "بوابة الوظائف"),
+    LearningCard(primaryText: "das Profil", secondaryText: "الملف الشخصي"),
+    LearningCard(primaryText: "die Agentur für Arbeit", secondaryText: "وكالة العمل"),
+    LearningCard(primaryText: "die Stelle", secondaryText: "الوظيفة / المنصب"),
+    LearningCard(primaryText: "sich bewerben", secondaryText: "يتقدم لوظيفة"),
+    LearningCard(primaryText: "die Firma", secondaryText: "الشركة"),
+    LearningCard(primaryText: "die Sekretärin", secondaryText: "السكرتيرة"),
+
+    // ============================================================
+    // المجموعة 2: Perfekt - Verben der Bewegung (أفعال الحركة مع sein)
+    // ============================================================
+    LearningCard(primaryText: "fliegen → geflogen", secondaryText: "يطير → طار"),
+    LearningCard(primaryText: "bleiben → geblieben", secondaryText: "يبقى → بقي"),
+    LearningCard(primaryText: "zurückkommen → zurückgekommen", secondaryText: "يعود → عاد"),
+    LearningCard(primaryText: "reisen → gereist", secondaryText: "يسافر → سافر"),
+    LearningCard(primaryText: "gehen → gegangen", secondaryText: "يذهب → ذهب"),
+    LearningCard(primaryText: "kommen → gekommen", secondaryText: "يأتي → أتى"),
+    LearningCard(primaryText: "fahren → gefahren", secondaryText: "يقود/يذهب → قاد/ذهب"),
+    LearningCard(primaryText: "aufstehen → aufgestanden", secondaryText: "ينهض → نهض"),
+
+    // ============================================================
+    // المجموعة 3: Perfekt - Weitere Verben (أفعال إضافية)
+    // ============================================================
+    LearningCard(primaryText: "schicken → geschickt", secondaryText: "يرسل → أرسل"),
+    LearningCard(primaryText: "verbinden → verbunden", secondaryText: "يصل (بالمصعد) → وصل"),
+    LearningCard(primaryText: "buchstabieren → buchstabiert", secondaryText: "يهجي → هجأ"),
+    LearningCard(primaryText: "passieren → passiert", secondaryText: "يحدث → حدث"),
+    LearningCard(primaryText: "fragen → gefragt", secondaryText: "يسأل → سأل"),
+    LearningCard(primaryText: "antworten → geantwortet", secondaryText: "يجيب → أجاب"),
+    LearningCard(primaryText: "helfen → geholfen", secondaryText: "يساعد → ساعد"),
+    LearningCard(primaryText: "kennenlernen → kennengelernt", secondaryText: "يتعرف على → تعرف على"),
+
+    // ============================================================
+    // المجموعة 4: Redemittel am Telefon - sich melden (التعريف)
+    // ============================================================
+    LearningCard(primaryText: "Hier spricht...", secondaryText: "هنا يتحدث..."),
+    LearningCard(primaryText: "Mein Name ist...", secondaryText: "اسمي هو..."),
+    LearningCard(primaryText: "Sie sprechen mit...", secondaryText: "أنتم تتحدثون مع..."),
+    LearningCard(primaryText: "Guten Tag, mein Name ist...", secondaryText: "طاب يومكم، اسمي هو..."),
+
+    // ============================================================
+    // المجموعة 5: Redemittel am Telefon - nachfragen (السؤال)
+    // ============================================================
+    LearningCard(primaryText: "Ist Frau/Herr da?", secondaryText: "هل السيدة/السيد موجود؟"),
+    LearningCard(primaryText: "Kann ich bitte mit... sprechen?", secondaryText: "هل يمكنني التحدث مع...؟"),
+    LearningCard(primaryText: "Darf ich bitte kurz mit... sprechen?", secondaryText: "هل يسمح لي بالتحدث مع...؟"),
+    LearningCard(primaryText: "Können Sie mich mit... verbinden?", secondaryText: "هل يمكنكم توصيلي بـ...؟"),
+    LearningCard(primaryText: "Können Sie mir die Durchwahl geben?", secondaryText: "هل يمكنكم إعطائي رقم التحويل الداخلي؟"),
+
+    // ============================================================
+    // المجموعة 6: Redemittel am Telefon - nicht verstanden (عدم الفهم)
+    // ============================================================
+    LearningCard(primaryText: "Entschuldigung, das habe ich nicht verstanden.", secondaryText: "عذراً، لم أفهم ذلك."),
+    LearningCard(primaryText: "Können Sie das bitte wiederholen?", secondaryText: "هل يمكنكم تكرار ذلك من فضلكم؟"),
+    LearningCard(primaryText: "Können Sie bitte langsamer sprechen?", secondaryText: "هل يمكنكم التحدث ببطء أكثر؟"),
+    LearningCard(primaryText: "Wie bitte?", secondaryText: "ماذا قلت؟ / عذراً؟"),
+    LearningCard(primaryText: "Was genau meinen Sie?", secondaryText: "ماذا تقصد بالضبط؟"),
+
+    // ============================================================
+    // المجموعة 7: Redemittel am Telefon - verabschieden (الوداع)
+    // ============================================================
+    LearningCard(primaryText: "Vielen Dank, auf Wiederhören.", secondaryText: "شكراً جزيلاً، إلى السماع مرة أخرى."),
+    LearningCard(primaryText: "Danke für Ihre Hilfe.", secondaryText: "شكراً على مساعدتكم."),
+    LearningCard(primaryText: "Einen schönen Tag noch.", secondaryText: "أتمنى لكم يوماً سعيداً."),
+    LearningCard(primaryText: "Gerne. Auf Wiederhören.", secondaryText: "عفواً. إلى السماع مرة أخرى."),
+
+    // ============================================================
+    // المجموعة 8: Feste in Deutschland (المهرجانات)
+    // ============================================================
+    LearningCard(primaryText: "das Oktoberfest", secondaryText: "مهرجان أكتوبر (ميونخ)"),
+    LearningCard(primaryText: "der Weihnachtsmarkt", secondaryText: "سوق عيد الميلاد"),
+    LearningCard(primaryText: "der Striezelmarkt", secondaryText: "سوق شتريتزل (دريسدن)"),
+    LearningCard(primaryText: "die Bregenzer Festspiele", secondaryText: "مهرجان بريغينز المسرحي"),
+    LearningCard(primaryText: "der Stollen", secondaryText: "كعكة عيد الميلاد"),
+    LearningCard(primaryText: "der Lebkuchen", secondaryText: "كعك الزنجبيل"),
+    LearningCard(primaryText: "das Karussell", secondaryText: "الدوامة / الأرجوحة الدوارة"),
+    LearningCard(primaryText: "der Statist", secondaryText: "كومبارس (ممثل إضافي)"),
+    LearningCard(primaryText: "der Händler", secondaryText: "التاجر"),
+    LearningCard(primaryText: "die Kellnerin", secondaryText: "النادلة"),
+
+    // ============================================================
+    // المجموعة 9: Weitere nützliche Wörter
+    // ============================================================
+    LearningCard(primaryText: "die Heimat", secondaryText: "الوطن"),
+    LearningCard(primaryText: "der Arbeitsweg", secondaryText: "طريق العمل"),
+    LearningCard(primaryText: "die Durchwahl", secondaryText: "رقم التحويل الداخلي"),
+    LearningCard(primaryText: "der Anschluss", secondaryText: "الخط / التوصيلة"),
+    LearningCard(primaryText: "besetzt", secondaryText: "مشغول"),
+    LearningCard(primaryText: "der Chef", secondaryText: "المدير"),
+    LearningCard(primaryText: "die Chefin", secondaryText: "المديرة"),
+    LearningCard(primaryText: "die Kraft", secondaryText: "القوة"),
+    LearningCard(primaryText: "lustig", secondaryText: "مضحك / مسل"),
+    LearningCard(primaryText: "anstrengend", secondaryText: "مرهق"),
+    LearningCard(primaryText: "langweilig", secondaryText: "ممل"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 10 Modul 2 - Der Weg zum Job - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 10 Modul 2
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_10_Modul2SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: Wie haben die Personen ihre Stelle gefunden?
+    // ============================================================
+    ItemCard(english: "Ich habe eine Anzeige im Internet gelesen und gleich meine Bewerbung geschickt.", arabic: "لقد قرأت إعلاناً على الإنترنت وأرسلت طلب توظيفي فوراً."),
+    ItemCard(english: "Vier Wochen später bin ich nach Berlin gekommen.", arabic: "بعد أربعة أسابيع جئت إلى برلين."),
+    ItemCard(english: "Das Krankenhaus ist gut und die Kollegen sind nett.", arabic: "المستشفى جيد والزملاء لطفاء."),
+    ItemCard(english: "Meine Frau habe ich hier kennengelernt.", arabic: "لقد تعرفت على زوجتي هنا."),
+    ItemCard(english: "Vor drei Jahren bin ich nach Spanien geflogen.", arabic: "منذ ثلاث سنوات سافرت بالطائرة إلى إسبانيا."),
+    ItemCard(english: "Ich bin dort geblieben und habe in einem Hotel gearbeitet.", arabic: "لقد بقيت هناك وعملت في فندق."),
+    ItemCard(english: "Jetzt bin ich wieder in der Heimat und arbeite in einem Hotel im Zentrum.", arabic: "الآن أنا مرة أخرى في الوطن وأعمل في فندق في المركز."),
+    ItemCard(english: "Die Stelle habe ich durch ein Jobportal gefunden.", arabic: "لقد وجدت الوظيفة من خلال بوابة وظائف."),
+    ItemCard(english: "Der Chef hat mein Profil gesehen und eine Nachricht geschrieben.", arabic: "لقد رأى المدير ملفي الشخصي وكتب رسالة."),
+    ItemCard(english: "Wir haben gesprochen und ich habe den Job bekommen.", arabic: "لقد تحدثنا وحصلت على الوظيفة."),
+    ItemCard(english: "Früher bin ich jeden Tag zwei Stunden zum Büro gefahren.", arabic: "سابقاً كنت أقود ساعتين كل يوم إلى المكتب."),
+    ItemCard(english: "Das war zu viel und ich hatte es immer eilig.", arabic: "كان ذلك كثيراً وكنت دائماً في عجلة من أمري."),
+    ItemCard(english: "Dann habe ich in der Zeitung eine Anzeige gesehen.", arabic: "ثم رأيت إعلاناً في الجريدة."),
+    ItemCard(english: "Die Firma hat eine Sekretärin gesucht.", arabic: "الشركة كانت تبحث عن سكرتيرة."),
+    ItemCard(english: "Ich habe eine Bewerbung geschrieben und sie haben mich genommen.", arabic: "لقد كتبت طلب توظيف وأخذوني."),
+    ItemCard(english: "Jetzt brauche ich nur 15 Minuten zur Arbeit.", arabic: "الآن أحتاج فقط 15 دقيقة للعمل."),
+    ItemCard(english: "Ich bin Koch und war zwei Jahre lang arbeitslos.", arabic: "أنا طباخ وكنت عاطلاً عن العمل لمدة سنتين."),
+    ItemCard(english: "Ich bin jede Woche zur Agentur für Arbeit gegangen, aber nichts ist passiert.", arabic: "كنت أذهب كل أسبوع إلى وكالة العمل، لكن لم يحدث شيء."),
+    ItemCard(english: "Dann hat das Restaurant einen Koch gesucht.", arabic: "ثم كان المطعم يبحث عن طباخ."),
+    ItemCard(english: "Ich kenne die Chefin und habe sie gleich gefragt.", arabic: "أنا أعرف المديرة وسألتها فوراً."),
+    ItemCard(english: "Sofort hat sie ja gesagt.", arabic: "لقد قالت نعم فوراً."),
+
+    // ============================================================
+    // المجموعة 2: Telefongespräche (محادثات تلفونية)
+    // ============================================================
+    ItemCard(english: "Firma Hölke, guten Tag. Sie sprechen mit Tom Müller.", arabic: "شركة هولكه، طاب يومكم. أنتم تتحدثون مع توم مولر."),
+    ItemCard(english: "Guten Tag, hier ist Claudia Lange.", arabic: "طاب يومكم، هنا كلوديا لانغه."),
+    ItemCard(english: "Ich habe Ihre Anzeige gesehen. Sie suchen eine Sekretärin.", arabic: "لقد رأيت إعلانكم. أنتم تبحثون عن سكرتيرة."),
+    ItemCard(english: "Tut mir leid, da kann ich Ihnen nicht helfen.", arabic: "أنا آسف، لا يمكنني مساعدتكم في ذلك."),
+    ItemCard(english: "Sie müssen mit Frau Schmidt sprechen.", arabic: "يجب أن تتحدثوا مع السيدة شميت."),
+    ItemCard(english: "Entschuldigung, das habe ich nicht verstanden. Können Sie den Namen bitte wiederholen?", arabic: "عذراً، لم أفهم ذلك. هل يمكنكم تكرار الاسم من فضلكم؟"),
+    ItemCard(english: "Können Sie mich mit Frau Schmidt verbinden?", arabic: "هل يمكنكم توصيلي بالسيدة شميت؟"),
+    ItemCard(english: "Frau Schmidt ist heute leider nicht da.", arabic: "السيدة شميت غير موجودة اليوم للأسف."),
+    ItemCard(english: "Können Sie morgen noch einmal anrufen?", arabic: "هل يمكنكم الاتصال مرة أخرى غداً؟"),
+    ItemCard(english: "Ja, natürlich. Können Sie mir die Durchwahl geben?", arabic: "نعم، طبعاً. هل يمكنكم إعطائي رقم التحويل الداخلي؟"),
+    ItemCard(english: "Ja, das ist die 4319.", arabic: "نعم، هذا هو 4319."),
+    ItemCard(english: "Vielen Dank. Auf Wiederhören.", arabic: "شكراً جزيلاً. إلى السماع مرة أخرى."),
+
+    // ============================================================
+    // المجموعة 3: Perfekt Sätze aus dem Text
+    // ============================================================
+    ItemCard(english: "Ich bin in Augsburg zur Schule gegangen.", arabic: "لقد ذهبت إلى المدرسة في آوغسبورغ."),
+    ItemCard(english: "Nach der Schule bin ich nach Spanien gegangen.", arabic: "بعد المدرسة ذهبت إلى إسبانيا."),
+    ItemCard(english: "Dort bin ich ein Jahr geblieben.", arabic: "هناك بقيت لمدة سنة."),
+    ItemCard(english: "Ich habe in einem Café gearbeitet.", arabic: "لقد عملت في مقهى."),
+    ItemCard(english: "Natürlich habe ich Spanisch gelernt.", arabic: "طبعاً تعلمت الإسبانية."),
+    ItemCard(english: "Nach einem Jahr bin ich nach Deutschland zurückgekommen.", arabic: "بعد سنة عدت إلى ألمانيا."),
+    ItemCard(english: "Ich habe zwei Jahre als Taxifahrer gearbeitet.", arabic: "لقد عملت لمدة سنتين كسائق تاكسي."),
+    ItemCard(english: "Dann habe ich in Stuttgart Spanisch und Englisch studiert.", arabic: "ثم درست الإسبانية والإنجليزية في شتوتغارت."),
+    ItemCard(english: "Ich habe mit drei Freunden eine Reise gemacht.", arabic: "لقد قمت برحلة مع ثلاثة أصدقاء."),
+    ItemCard(english: "Wir sind drei Monate durch Asien gefahren.", arabic: "لقد سافرنا عبر آسيا لمدة ثلاثة أشهر."),
+    ItemCard(english: "Das war toll!", arabic: "كان ذلك رائعاً!"),
+    ItemCard(english: "Jetzt bin ich seit zwei Jahren in Köln.", arabic: "الآن أنا في كولونيا منذ سنتين."),
+
+    // ============================================================
+    // المجموعة 4: Jobs auf Festen (وظائف في المهرجانات)
+    // ============================================================
+    ItemCard(english: "Ich arbeite jeden Sommer als Statist bei den Bregenzer Festspielen.", arabic: "أعمل كل صيف ككومبارس في مهرجان بريغينز."),
+    ItemCard(english: "Ich bin kein Schauspieler. Ich muss keinen Text lernen.", arabic: "أنا لست ممثلاً. لا يجب أن أتعلم نصاً."),
+    ItemCard(english: "Ich mag Opern sehr. Das ist toll und interessant.", arabic: "أنا أحب الأوبرا جداً. هذا رائع ومثير للاهتمام."),
+    ItemCard(english: "Man verdient nicht viel Geld. Es ist mehr ein Hobby.", arabic: "لا يكسب المرء مالاً كثيراً. إنه أكثر هواية."),
+    ItemCard(english: "Ich arbeite auf dem Striezelmarkt in Dresden.", arabic: "أعمل في سوق شتريتزل في دريسدن."),
+    ItemCard(english: "Wir verkaufen den berühmten Dresdner Stollen.", arabic: "نحن نبيع كعكة دريسدن الشهيرة."),
+    ItemCard(english: "Die Arbeit macht jedes Jahr wieder Spaß.", arabic: "العمل ممتع كل سنة مرة أخرى."),
+    ItemCard(english: "Ich arbeite jedes Jahr als Kellnerin auf dem Oktoberfest.", arabic: "أعمل كل سنة كنادلة في مهرجان أكتوبر."),
+    ItemCard(english: "Man braucht viel Kraft. Die Gläser sind schwer.", arabic: "يحتاج المرء إلى قوة كبيرة. الأكواب ثقيلة."),
+    ItemCard(english: "Nach der Arbeit bin ich sehr müde.", arabic: "بعد العمل أكون متعبة جداً."),
+    ItemCard(english: "Ich verdiene in den zweieinhalb Wochen viel Geld.", arabic: "أكسب مالاً كثيراً في الأسبوعين ونصف."),
+    ItemCard(english: "Die Leute sind alle gut gelaunt und feiern.", arabic: "الناس كلهم في مزاج جيد ويحتفلون."),
+
+    // ============================================================
+    // المجموعة 5: Feste in Deutschland (مهرجانات ألمانيا)
+    // ============================================================
+    ItemCard(english: "Das Oktoberfest in München gibt es seit 1810.", arabic: "مهرجان أكتوبر في ميونخ موجود منذ 1810."),
+    ItemCard(english: "Es beginnt im September und dauert bis Anfang Oktober.", arabic: "يبدأ في سبتمبر ويستمر حتى بداية أكتوبر."),
+    ItemCard(english: "Man kann essen, trinken und Karussell fahren.", arabic: "يمكن الأكل والشرب وركوب الدوامة."),
+    ItemCard(english: "Jedes Jahr kommen über 6 Millionen Besucher.", arabic: "كل سنة يأتي أكثر من 6 ملايين زائر."),
+    ItemCard(english: "Der Weihnachtsmarkt in Dresden heißt Striezelmarkt.", arabic: "سوق عيد الميلاد في دريسدن يسمى شتريتزل ماركت."),
+    ItemCard(english: "Er ist der älteste Weihnachtsmarkt in Deutschland.", arabic: "هو أقدم سوق عيد ميلاد في ألمانيا."),
+    ItemCard(english: "240 Händler verkaufen ihre Waren.", arabic: "240 تاجراً يبيعون بضائعهم."),
+    ItemCard(english: "Eine Spezialität ist der Dresdner Stollen.", arabic: "من الأطباق الخاصة كعكة دريسدن."),
+    ItemCard(english: "Die Bregenzer Festspiele sind ein Kulturfestival.", arabic: "مهرجان بريغينز هو مهرجان ثقافي."),
+    ItemCard(english: "Es findet jedes Jahr im Juli und August statt.", arabic: "يقام كل سنة في يوليو وأغسطس."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 10 Modul 2 - Der Weg zum Job - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF00695C), // لون أخضر غامق
+      secondaryColor: const Color(0xFF004D40),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 10 Modul 2 (Perfekt - مراجعة كاملة + Redemittel Telefon)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_10_Modul2GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. مراجعة Perfekt
+    // ============================================================
+    LearningItem(primaryText: "➤ Das Perfekt - Wiederholung", secondaryText: "الماضي التام - مراجعة"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Bildung:", secondaryText: "haben/sein + Partizip II"),
+    LearningItem(primaryText: "haben:", secondaryText: "ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben"),
+    LearningItem(primaryText: "sein:", secondaryText: "ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. Verben mit sein (أفعال الحركة)
+    // ============================================================
+    LearningItem(primaryText: "➤ Verben mit 'sein' (Bewegung)", secondaryText: "الأفعال التي تأتي مع sein (الحركة)"),
+    LearningItem(primaryText: "gehen → gegangen", secondaryText: "يذهب → ذهب"),
+    LearningItem(primaryText: "kommen → gekommen", secondaryText: "يأتي → أتى"),
+    LearningItem(primaryText: "fahren → gefahren", secondaryText: "يقود/يذهب → قاد/ذهب"),
+    LearningItem(primaryText: "fliegen → geflogen", secondaryText: "يطير → طار"),
+    LearningItem(primaryText: "reisen → gereist", secondaryText: "يسافر → سافر"),
+    LearningItem(primaryText: "aufstehen → aufgestanden", secondaryText: "ينهض → نهض"),
+    LearningItem(primaryText: "einschlafen → eingeschlafen", secondaryText: "ينام → نام"),
+    LearningItem(primaryText: "bleiben → geblieben", secondaryText: "يبقى → بقي"),
+    LearningItem(primaryText: "passieren → passiert", secondaryText: "يحدث → حدث"),
+    LearningItem(primaryText: "sein → gewesen", secondaryText: "يكون → كان"),
+    LearningItem(primaryText: "werden → geworden", secondaryText: "يصبح → أصبح"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. أمثلة من النص على Perfekt
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele aus dem Text", secondaryText: "أمثلة من النص"),
+    LearningItem(primaryText: "Ich habe eine Anzeige gelesen.", secondaryText: "لقد قرأت إعلاناً."),
+    LearningItem(primaryText: "Ich habe meine Bewerbung geschickt.", secondaryText: "لقد أرسلت طلب توظيفي."),
+    LearningItem(primaryText: "Ich bin nach Berlin gekommen.", secondaryText: "لقد جئت إلى برلين."),
+    LearningItem(primaryText: "Ich bin nach Spanien geflogen.", secondaryText: "لقد سافرت بالطائرة إلى إسبانيا."),
+    LearningItem(primaryText: "Ich bin dort geblieben.", secondaryText: "لقد بقيت هناك."),
+    LearningItem(primaryText: "Ich habe in einem Hotel gearbeitet.", secondaryText: "لقد عملت في فندق."),
+    LearningItem(primaryText: "Ich habe die Stelle durch ein Portal gefunden.", secondaryText: "لقد وجدت الوظيفة من خلال بوابة."),
+    LearningItem(primaryText: "Der Chef hat mein Profil gesehen.", secondaryText: "لقد رأى المدير ملفي الشخصي."),
+    LearningItem(primaryText: "Er hat eine Nachricht geschrieben.", secondaryText: "لقد كتب رسالة."),
+    LearningItem(primaryText: "Wir haben gesprochen.", secondaryText: "لقد تحدثنا."),
+    LearningItem(primaryText: "Ich bin jeden Tag zwei Stunden gefahren.", secondaryText: "لقد كنت أقود ساعتين كل يوم."),
+    LearningItem(primaryText: "Ich habe in der Zeitung eine Anzeige gesehen.", secondaryText: "لقد رأيت إعلاناً في الجريدة."),
+    LearningItem(primaryText: "Ich habe eine Bewerbung geschrieben.", secondaryText: "لقد كتبت طلب توظيف."),
+    LearningItem(primaryText: "Sie haben mich genommen.", secondaryText: "لقد أخذوني."),
+    LearningItem(primaryText: "Ich bin zur Agentur gegangen.", secondaryText: "لقد ذهبت إلى الوكالة."),
+    LearningItem(primaryText: "Nichts ist passiert.", secondaryText: "لم يحدث شيء."),
+    LearningItem(primaryText: "Ich habe die Chefin gefragt.", secondaryText: "لقد سألت المديرة."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. Redemittel am Telefon - Übersicht
+    // ============================================================
+    LearningItem(primaryText: "➤ Redemittel am Telefon", secondaryText: "عبارات التلفون"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    LearningItem(primaryText: "📌 Sich melden (التعريف بنفسك):", secondaryText: ""),
+    LearningItem(primaryText: "Hier spricht...", secondaryText: "هنا يتحدث..."),
+    LearningItem(primaryText: "Mein Name ist...", secondaryText: "اسمي هو..."),
+    LearningItem(primaryText: "Sie sprechen mit...", secondaryText: "أنتم تتحدثون مع..."),
+    LearningItem(primaryText: "Guten Tag, mein Name ist...", secondaryText: "طاب يومكم، اسمي هو..."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    LearningItem(primaryText: "📌 Nachfragen (السؤال عن شخص):", secondaryText: ""),
+    LearningItem(primaryText: "Ist Frau/Herr bitte da?", secondaryText: "هل السيدة/السيد موجود من فضلك؟"),
+    LearningItem(primaryText: "Kann ich bitte mit... sprechen?", secondaryText: "هل يمكنني التحدث مع... من فضلك؟"),
+    LearningItem(primaryText: "Darf ich bitte kurz mit... sprechen?", secondaryText: "هل يسمح لي بالتحدث مع... لفترة قصيرة؟"),
+    LearningItem(primaryText: "Können Sie mich mit... verbinden?", secondaryText: "هل يمكنكم توصيلي بـ...؟"),
+    LearningItem(primaryText: "Können Sie mir die Durchwahl geben?", secondaryText: "هل يمكنكم إعطائي رقم التحويل الداخلي؟"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    LearningItem(primaryText: "📌 Nicht verstanden (عدم الفهم):", secondaryText: ""),
+    LearningItem(primaryText: "Entschuldigung, das habe ich nicht verstanden.", secondaryText: "عذراً، لم أفهم ذلك."),
+    LearningItem(primaryText: "Können Sie das bitte wiederholen?", secondaryText: "هل يمكنكم تكرار ذلك من فضلكم؟"),
+    LearningItem(primaryText: "Können Sie bitte langsamer sprechen?", secondaryText: "هل يمكنكم التحدث ببطء أكثر من فضلكم؟"),
+    LearningItem(primaryText: "Wie bitte?", secondaryText: "ماذا قلت؟ / عذراً؟"),
+    LearningItem(primaryText: "Was genau meinen Sie?", secondaryText: "ماذا تقصد بالضبط؟"),
+    LearningItem(primaryText: "Können Sie das bitte buchstabieren?", secondaryText: "هل يمكنكم تهجئة ذلك من فضلكم؟"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    LearningItem(primaryText: "📌 Verabschieden (الوداع):", secondaryText: ""),
+    LearningItem(primaryText: "Vielen Dank, auf Wiederhören.", secondaryText: "شكراً جزيلاً، إلى السماع مرة أخرى."),
+    LearningItem(primaryText: "Danke für Ihre Hilfe.", secondaryText: "شكراً على مساعدتكم."),
+    LearningItem(primaryText: "Einen schönen Tag noch.", secondaryText: "أتمنى لكم يوماً سعيداً."),
+    LearningItem(primaryText: "Gerne. Auf Wiederhören.", secondaryText: "عفواً. إلى السماع مرة أخرى."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. Beispieltelefonat (مثال لمكالمة تلفونية كاملة)
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispieltelefonat (مثال لمكالمة تلفونية)", secondaryText: ""),
+    LearningItem(primaryText: "A: Firma Hölke, guten Tag. Sie sprechen mit Tom Müller.", secondaryText: "شركة هولكه، طاب يومكم. أنتم تتحدثون مع توم مولر."),
+    LearningItem(primaryText: "B: Guten Tag, hier ist Claudia Lange.", secondaryText: "طاب يومكم، هنا كلوديا لانغه."),
+    LearningItem(primaryText: "B: Ich habe eine Frage zu der Anzeige.", secondaryText: "لدي سؤال بخصوص الإعلان."),
+    LearningItem(primaryText: "A: Tut mir leid, da kann ich Ihnen nicht helfen.", secondaryText: "أنا آسف، لا يمكنني مساعدتكم في ذلك."),
+    LearningItem(primaryText: "A: Sie müssen mit Frau Schmidt sprechen.", secondaryText: "يجب أن تتحدثوا مع السيدة شميت."),
+    LearningItem(primaryText: "B: Können Sie mich mit Frau Schmidt verbinden?", secondaryText: "هل يمكنكم توصيلي بالسيدة شميت؟"),
+    LearningItem(primaryText: "A: Frau Schmidt ist heute leider nicht da.", secondaryText: "السيدة شميت غير موجودة اليوم للأسف."),
+    LearningItem(primaryText: "A: Können Sie morgen noch einmal anrufen?", secondaryText: "هل يمكنكم الاتصال مرة أخرى غداً؟"),
+    LearningItem(primaryText: "B: Ja, natürlich. Können Sie mir die Durchwahl geben?", secondaryText: "نعم، طبعاً. هل يمكنكم إعطائي رقم التحويل الداخلي؟"),
+    LearningItem(primaryText: "A: Ja, das ist die 4319.", secondaryText: "نعم، هذا هو 4319."),
+    LearningItem(primaryText: "B: Vielen Dank. Auf Wiederhören.", secondaryText: "شكراً جزيلاً. إلى السماع مرة أخرى."),
+    LearningItem(primaryText: "A: Gerne. Auf Wiederhören.", secondaryText: "عفواً. إلى السماع مرة أخرى."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. Feste in Deutschland (مهرجانات ألمانيا)
+    // ============================================================
+    LearningItem(primaryText: "➤ Feste in Deutschland", secondaryText: "المهرجانات في ألمانيا"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Oktoberfest in München:", secondaryText: "مهرجان أكتوبر في ميونخ"),
+    LearningItem(primaryText: "seit 1810", secondaryText: "منذ 1810"),
+    LearningItem(primaryText: "beginnt im September", secondaryText: "يبدأ في سبتمبر"),
+    LearningItem(primaryText: "über 6 Millionen Besucher", secondaryText: "أكثر من 6 ملايين زائر"),
+    LearningItem(primaryText: "essen, trinken, Karussell fahren", secondaryText: "أكل، شرب، ركوب دوامة"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Weihnachtsmarkt in Dresden:", secondaryText: "سوق عيد الميلاد في دريسدن"),
+    LearningItem(primaryText: "seit 1434 (Striezelmarkt)", secondaryText: "منذ 1434 (شتريتزل ماركت)"),
+    LearningItem(primaryText: "ältester Weihnachtsmarkt Deutschlands", secondaryText: "أقدم سوق عيد ميلاد في ألمانيا"),
+    LearningItem(primaryText: "2,5 Millionen Besucher", secondaryText: "2.5 مليون زائر"),
+    LearningItem(primaryText: "Spezialität: Dresdner Stollen", secondaryText: "الأكلة الخاصة: كعكة دريسدن"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Bregenzer Festspiele:", secondaryText: "مهرجان بريغينز المسرحي"),
+    LearningItem(primaryText: "seit 1946", secondaryText: "منذ 1946"),
+    LearningItem(primaryText: "findet im Juli und August statt", secondaryText: "يقام في يوليو وأغسطس"),
+    LearningItem(primaryText: "Kulturfestival", secondaryText: "مهرجان ثقافي"),
+    LearningItem(primaryText: "Bühne auf dem See", secondaryText: "مسرح على البحيرة"),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ Weitere Beispiele für Perfekt mit sein", secondaryText: ""),
+    LearningItem(primaryText: "Ich bin gestern um 8 Uhr aufgestanden.", secondaryText: "لقد استيقظت أمس الساعة 8."),
+    LearningItem(primaryText: "Wir sind nach Hause gegangen.", secondaryText: "لقد ذهبنا إلى المنزل."),
+    LearningItem(primaryText: "Er ist nach Berlin gefahren.", secondaryText: "لقد ذهب إلى برلين."),
+    LearningItem(primaryText: "Sie ist nach Ägypten geflogen.", secondaryText: "لقد سافرت بالطائرة إلى مصر."),
+    LearningItem(primaryText: "Das Kind ist eingeschlafen.", secondaryText: "لقد نام الطفل."),
+    LearningItem(primaryText: "Ich bin in Deutschland geblieben.", secondaryText: "لقد بقيت في ألمانيا."),
+    LearningItem(primaryText: "Was ist gestern passiert?", secondaryText: "ماذا حدث أمس؟"),
+    LearningItem(primaryText: "Ich bin müde gewesen.", secondaryText: "لقد كنت متعباً."),
+    LearningItem(primaryText: "Mein Vater ist Arzt geworden.", secondaryText: "لقد أصبح والدي طبيباً."),
+
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Weitere Beispiele für Perfekt mit haben", secondaryText: ""),
+    LearningItem(primaryText: "Ich habe den ganzen Tag gearbeitet.", secondaryText: "لقد عملت طوال اليوم."),
+    LearningItem(primaryText: "Du hast viel gelernt.", secondaryText: "لقد تعلمت كثيراً."),
+    LearningItem(primaryText: "Er hat mir geholfen.", secondaryText: "لقد ساعدني."),
+    LearningItem(primaryText: "Wir haben Pizza gegessen.", secondaryText: "لقد أكلنا بيتزا."),
+    LearningItem(primaryText: "Ihr habt Kaffee getrunken.", secondaryText: "لقد شربتم قهوة."),
+    LearningItem(primaryText: "Sie haben einen Film gesehen.", secondaryText: "لقد شاهدوا فيلماً."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 10 Modul 2 - القواعد (Perfekt & Telefon - شرح كامل)",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 11 Modul 1
+// Kleidung - المفردات (كلمات صغيرة للكروت)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_11_Modul1CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Kleidungsstücke (قطع الملابس)
+    // ============================================================
+    LearningCard(primaryText: "das Kleid", secondaryText: "الفستان"),
+    LearningCard(primaryText: "der Rock", secondaryText: "التنورة"),
+    LearningCard(primaryText: "die Hose", secondaryText: "البنطلون"),
+    LearningCard(primaryText: "die Jeans", secondaryText: "الجينز"),
+    LearningCard(primaryText: "das Hemd", secondaryText: "القميص (رسمي)"),
+    LearningCard(primaryText: "das T-Shirt", secondaryText: "التيشيرت"),
+    LearningCard(primaryText: "der Pullover", secondaryText: "البلوفر"),
+    LearningCard(primaryText: "die Jacke", secondaryText: "الجاكيت"),
+    LearningCard(primaryText: "der Mantel", secondaryText: "المعطف"),
+    LearningCard(primaryText: "der Anzug", secondaryText: "البدلة"),
+    LearningCard(primaryText: "der Schal", secondaryText: "الشال / الوشاح"),
+    LearningCard(primaryText: "die Mütze", secondaryText: "الطاقية"),
+    LearningCard(primaryText: "der Hut", secondaryText: "القبعة"),
+    LearningCard(primaryText: "die Schuhe", secondaryText: "الأحذية"),
+    LearningCard(primaryText: "die Stiefel", secondaryText: "الأحذية الطويلة"),
+    LearningCard(primaryText: "die Socken", secondaryText: "الجوارب"),
+    LearningCard(primaryText: "der Gürtel", secondaryText: "الحزام"),
+    LearningCard(primaryText: "die Tasche", secondaryText: "الشنطة / الحقيبة"),
+
+    // ============================================================
+    // المجموعة 2: Verben (أفعال)
+    // ============================================================
+    LearningCard(primaryText: "anziehen", secondaryText: "يرتدي (لبس)"),
+    LearningCard(primaryText: "anhaben", secondaryText: "يرتدي (لديه على جسمه)"),
+    LearningCard(primaryText: "tragen", secondaryText: "يحمل / يرتدي"),
+    LearningCard(primaryText: "passen", secondaryText: "يناسب (القياس)"),
+    LearningCard(primaryText: "gefallen", secondaryText: "يعجب"),
+    LearningCard(primaryText: "probieren", secondaryText: "يجرب"),
+    LearningCard(primaryText: "anprobieren", secondaryText: "يجرب (الملابس)"),
+    LearningCard(primaryText: "umtauschen", secondaryText: "يستبدل"),
+    LearningCard(primaryText: "zurückschicken", secondaryText: "يعيد بالبريد"),
+    LearningCard(primaryText: "bestellen", secondaryText: "يطلب"),
+    LearningCard(primaryText: "kaufen", secondaryText: "يشتري"),
+    LearningCard(primaryText: "verkaufen", secondaryText: "يبيع"),
+    LearningCard(primaryText: "bezahlen", secondaryText: "يدفع"),
+    LearningCard(primaryText: "aussehen", secondaryText: "يبدو"),
+
+    // ============================================================
+    // المجموعة 3: Adjektive (صفات)
+    // ============================================================
+    LearningCard(primaryText: "zu kurz", secondaryText: "قصير جدًا"),
+    LearningCard(primaryText: "zu lang", secondaryText: "طويل جدًا"),
+    LearningCard(primaryText: "zu eng", secondaryText: "ضيق جدًا"),
+    LearningCard(primaryText: "zu weit", secondaryText: "واسع جدًا"),
+    LearningCard(primaryText: "bunt", secondaryText: "ملون / زاهي"),
+    LearningCard(primaryText: "schwarz", secondaryText: "أسود"),
+    LearningCard(primaryText: "weiß", secondaryText: "أبيض"),
+    LearningCard(primaryText: "grau", secondaryText: "رمادي"),
+    LearningCard(primaryText: "blau", secondaryText: "أزرق"),
+    LearningCard(primaryText: "grün", secondaryText: "أخضر"),
+    LearningCard(primaryText: "rot", secondaryText: "أحمر"),
+    LearningCard(primaryText: "gelb", secondaryText: "أصفر"),
+    LearningCard(primaryText: "teuer", secondaryText: "غالي"),
+    LearningCard(primaryText: "günstig", secondaryText: "رخيص / مناسب السعر"),
+    LearningCard(primaryText: "billig", secondaryText: "رخيص"),
+    LearningCard(primaryText: "cool", secondaryText: "رائع"),
+    LearningCard(primaryText: "schrecklich", secondaryText: "فظيع"),
+    LearningCard(primaryText: "langweilig", secondaryText: "ممل"),
+    LearningCard(primaryText: "super", secondaryText: "رائع"),
+    LearningCard(primaryText: "neu", secondaryText: "جديد"),
+    LearningCard(primaryText: "alt", secondaryText: "قديم"),
+
+    // ============================================================
+    // المجموعة 4: Größen (المقاسات)
+    // ============================================================
+    LearningCard(primaryText: "die Größe", secondaryText: "المقاس"),
+    LearningCard(primaryText: "XS", secondaryText: "صغير جدًا"),
+    LearningCard(primaryText: "S", secondaryText: "صغير"),
+    LearningCard(primaryText: "M", secondaryText: "وسط"),
+    LearningCard(primaryText: "L", secondaryText: "كبير"),
+    LearningCard(primaryText: "XL", secondaryText: "كبير جدًا"),
+
+    // ============================================================
+    // المجموعة 5: Fragen beim Einkaufen (أسئلة في التسوق)
+    // ============================================================
+    LearningCard(primaryText: "Kann ich Ihnen helfen?", secondaryText: "هل يمكنني مساعدتك؟"),
+    LearningCard(primaryText: "Welche Größe haben Sie?", secondaryText: "ما قياسك؟"),
+    LearningCard(primaryText: "Welche Farbe möchten Sie?", secondaryText: "أي لون تريد؟"),
+    LearningCard(primaryText: "Wie viel kostet das?", secondaryText: "كم سعر هذا؟"),
+    LearningCard(primaryText: "Kann ich ihn anprobieren?", secondaryText: "هل يمكنني تجربته؟"),
+    LearningCard(primaryText: "Passt er?", secondaryText: "هل يناسب؟"),
+    LearningCard(primaryText: "Ich nehme das.", secondaryText: "سآخذ هذا."),
+    LearningCard(primaryText: "Haben Sie das auch in...?", secondaryText: "هل لديكم هذا أيضًا بـ...؟"),
+
+    // ============================================================
+    // المجموعة 6: Demonstrativpronomen (Nominativ)
+    // ============================================================
+    LearningCard(primaryText: "dieser (Maskulin)", secondaryText: "هذا (للمذكر)"),
+    LearningCard(primaryText: "dieses (Neutral)", secondaryText: "هذا (للمحايد)"),
+    LearningCard(primaryText: "diese (Feminin)", secondaryText: "هذه (للمؤنث)"),
+    LearningCard(primaryText: "diese (Plural)", secondaryText: "هؤلاء / هذه (للجمع)"),
+
+    // ============================================================
+    // المجموعة 7: Demonstrativpronomen (Akkusativ)
+    // ============================================================
+    LearningCard(primaryText: "diesen (Maskulin)", secondaryText: "هذا (مفعول به - مذكر)"),
+    LearningCard(primaryText: "dieses (Neutral)", secondaryText: "هذا (مفعول به - محايد)"),
+    LearningCard(primaryText: "diese (Feminin)", secondaryText: "هذه (مفعول به - مؤنث)"),
+    LearningCard(primaryText: "diese (Plural)", secondaryText: "هؤلاء (مفعول به - جمع)"),
+
+    // ============================================================
+    // المجموعة 8: Frageartikel (Nominativ)
+    // ============================================================
+    LearningCard(primaryText: "welcher (Maskulin)", secondaryText: "أي (للمذكر)"),
+    LearningCard(primaryText: "welches (Neutral)", secondaryText: "أي (للمحايد)"),
+    LearningCard(primaryText: "welche (Feminin)", secondaryText: "أي (للمؤنث)"),
+    LearningCard(primaryText: "welche (Plural)", secondaryText: "أي (للجمع)"),
+
+    // ============================================================
+    // المجموعة 9: Frageartikel (Akkusativ)
+    // ============================================================
+    LearningCard(primaryText: "welchen (Maskulin)", secondaryText: "أي (مفعول به - مذكر)"),
+    LearningCard(primaryText: "welches (Neutral)", secondaryText: "أي (مفعول به - محايد)"),
+    LearningCard(primaryText: "welche (Feminin)", secondaryText: "أي (مفعول به - مؤنث)"),
+    LearningCard(primaryText: "welche (Plural)", secondaryText: "أي (مفعول به - جمع)"),
+
+    // ============================================================
+    // المجموعة 10: Einkaufsorte (أماكن الشراء)
+    // ============================================================
+    LearningCard(primaryText: "das Kleidergeschäft", secondaryText: "محل ملابس"),
+    LearningCard(primaryText: "das Kaufhaus", secondaryText: "متجر كبير"),
+    LearningCard(primaryText: "der Supermarkt", secondaryText: "السوبر ماركت"),
+    LearningCard(primaryText: "der Markt", secondaryText: "السوق"),
+    LearningCard(primaryText: "Secondhand", secondaryText: "مستعمل"),
+    LearningCard(primaryText: "das Internet", secondaryText: "الإنترنت"),
+    LearningCard(primaryText: "das Einkaufszentrum", secondaryText: "مركز التسوق"),
+
+    // ============================================================
+    // المجموعة 11: Perfekt - wichtige Verben
+    // ============================================================
+    LearningCard(primaryText: "gefallen → gefallen", secondaryText: "يعجب → أعجب"),
+    LearningCard(primaryText: "passen → gepasst", secondaryText: "يناسب → ناسب"),
+    LearningCard(primaryText: "anprobieren → anprobiert", secondaryText: "يجرب → جرب"),
+    LearningCard(primaryText: "umtauschen → umgetauscht", secondaryText: "يستبدل → استبدل"),
+    LearningCard(primaryText: "zurückschicken → zurückgeschickt", secondaryText: "يعيد → أعاد"),
+    LearningCard(primaryText: "bestellen → bestellt", secondaryText: "يطلب → طلب"),
+    LearningCard(primaryText: "bezahlen → bezahlt", secondaryText: "يدفع → دفع"),
+    LearningCard(primaryText: "aussehen → ausgesehen", secondaryText: "يبدو → بدا"),
+    LearningCard(primaryText: "empfehlen → empfohlen", secondaryText: "يوصي → أوصى"),
+    LearningCard(primaryText: "entdecken → entdeckt", secondaryText: "يكتشف → اكتشف"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 11 Modul 1 - Kleidung - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 11 Modul 1
+// ============================================================================
+
+// ============================================================================
+// الجمل - Kapitel 11 Modul 1 (تابع)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_11_Modul1SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: Dialoge beim Einkaufen (محادثات الشراء)
+    // ============================================================
+    ItemCard(english: "Guten Tag. Kann ich Ihnen helfen?", arabic: "طاب يومكم. هل يمكنني مساعدتكم؟"),
+    ItemCard(english: "Ja, ich möchte bitte eine Hose.", arabic: "نعم، أريد بنطالاً من فضلك."),
+    ItemCard(english: "Die Hosen sind hier. Welche Größe haben Sie?", arabic: "البناطيل هنا. ما قياسكم؟"),
+    ItemCard(english: "Ich habe Größe 38. Welche Farbe? Schwarz.", arabic: "قياسي 38. أي لون؟ أسود."),
+    ItemCard(english: "Hier ist eine Hose in schwarz in Größe 38. Was kostet sie?", arabic: "هذا بنطال أسود بمقاس 38. كم سعره؟"),
+    ItemCard(english: "Sie kostet 59 Euro. Gut, ich nehme die Hose.", arabic: "سعره 59 يورو. جيد، سآخذ البنطال."),
+    ItemCard(english: "Ich möchte bitte einen Pullover.", arabic: "أريد بلوفراً من فضلك."),
+    ItemCard(english: "Hier sind Pullover in blau oder in grün. In grün, bitte.", arabic: "هنا بلوفرات باللون الأزرق أو الأخضر. بالأخضر من فضلك."),
+    ItemCard(english: "Ich habe Größe XL. Kann ich ihn anprobieren?", arabic: "قياسي XL. هل يمكنني تجربته؟"),
+    ItemCard(english: "Ja, bitte. Passt er? Ja, der Pullover passt mir gut.", arabic: "نعم، من فضلك. هل يناسبه؟ نعم، البلوفير يناسبني جيداً."),
+    ItemCard(english: "Was kostet er? Er kostet 24,95 Euro. Das ist günstig. Ich nehme ihn.", arabic: "كم سعره؟ سعره 24.95 يورو. هذا رخيص. سآخذه."),
+
+    // ============================================================
+    // المجموعة 2: Demonstrativpronomen - Nominativ
+    // ============================================================
+    ItemCard(english: "Dieser Pullover ist sehr schön.", arabic: "هذا البلوفير جميل جداً."),
+    ItemCard(english: "Diese Hose ist neu.", arabic: "هذا البنطال جديد."),
+    ItemCard(english: "Dieses Hemd ist teuer.", arabic: "هذا القميص غالي."),
+    ItemCard(english: "Diese Schuhe sind bequem.", arabic: "هذه الأحذية مريحة."),
+    ItemCard(english: "Dieser Mantel gefällt mir.", arabic: "هذا المعطف يعجبني."),
+    ItemCard(english: "Diese Jacke ist cool.", arabic: "هذه الجاكيت رائعة."),
+    ItemCard(english: "Dieses Kleid steht dir gut.", arabic: "هذا الفستان يناسبك جيداً."),
+
+    // ============================================================
+    // المجموعة 3: Demonstrativpronomen - Akkusativ
+    // ============================================================
+    ItemCard(english: "Ich kaufe diesen Pullover.", arabic: "أنا أشتري هذا البلوفير."),
+    ItemCard(english: "Ich nehme diese Hose.", arabic: "أنا آخذ هذا البنطال."),
+    ItemCard(english: "Ich probiere dieses Hemd an.", arabic: "أنا أجرب هذا القميص."),
+    ItemCard(english: "Ich möchte diese Schuhe.", arabic: "أريد هذه الأحذية."),
+    ItemCard(english: "Ich finde diesen Mantel schön.", arabic: "أجد هذا المعطف جميلاً."),
+    ItemCard(english: "Kann ich diese Jacke anprobieren?", arabic: "هل يمكنني تجربة هذه الجاكيت؟"),
+
+    // ============================================================
+    // المجموعة 4: Frageartikel - Nominativ
+    // ============================================================
+    ItemCard(english: "Welcher Pullover gefällt dir?", arabic: "أي بلوفير يعجبك؟"),
+    ItemCard(english: "Welche Hose möchtest du?", arabic: "أي بنطال تريد؟"),
+    ItemCard(english: "Welches Hemd ist schöner?", arabic: "أي قميص أجمل؟"),
+    ItemCard(english: "Welche Schuhe sind bequem?", arabic: "أي أحذية مريحة؟"),
+    ItemCard(english: "Welcher Mantel ist nicht teuer?", arabic: "أي معطف ليس غالياً؟"),
+
+    // ============================================================
+    // المجموعة 5: Frageartikel - Akkusativ
+    // ============================================================
+    ItemCard(english: "Welchen Pullover nimmst du?", arabic: "أي بلوفير تأخذ؟"),
+    ItemCard(english: "Welche Hose kaufst du?", arabic: "أي بنطال تشتري؟"),
+    ItemCard(english: "Welches Hemd probierst du an?", arabic: "أي قميص تجرب؟"),
+    ItemCard(english: "Welche Schuhe suchst du?", arabic: "أي أحذية تبحث عنها؟"),
+    ItemCard(english: "Welchen Mantel findest du schön?", arabic: "أي معطف تجده جميلاً؟"),
+
+    // ============================================================
+    // المجموعة 6: Verben anziehen, anhaben, tragen
+    // ============================================================
+    ItemCard(english: "Ich ziehe ein T-Shirt an.", arabic: "أنا ألبس تيشيرتاً."),
+    ItemCard(english: "Ich habe eine Jacke an.", arabic: "أنا لدي جاكيت علي."),
+    ItemCard(english: "Sie trägt ein Kleid.", arabic: "هي ترتدي فستاناً."),
+    ItemCard(english: "Er zieht einen Anzug an.", arabic: "هو يلبس بدلة."),
+    ItemCard(english: "Was hast du heute an?", arabic: "ماذا لديك عليك اليوم؟"),
+    ItemCard(english: "Ich trage heute einen blauen Pullover.", arabic: "أنا أرتدى اليوم بلوفراً أزرق."),
+
+    // ============================================================
+    // المجموعة 7: Dialoge über Kleidung (محادثات عن الملابس)
+    // ============================================================
+    ItemCard(english: "Wow, Hanna, das Kleid ist echt schön!", arabic: "واو، هانا، هذا الفستان جميل حقاً!"),
+    ItemCard(english: "Danke, es ist ganz neu.", arabic: "شكراً، إنه جديد تماماً."),
+    ItemCard(english: "Dein T-Shirt sieht etwas alt aus.", arabic: "التيشيرت الذي لديك يبدو قديماً بعض الشيء."),
+    ItemCard(english: "Ich war extra noch einkaufen.", arabic: "كنت في التسوق بشكل إضافي."),
+    ItemCard(english: "Das T-Shirt muss warten.", arabic: "التيشيرت يجب أن ينتظر."),
+    ItemCard(english: "Das Hemd und die Hose stehen Ihnen sehr gut.", arabic: "القميص والبنطال يناسبانكم جيداً جداً."),
+    ItemCard(english: "Hoffentlich finde ich hier etwas.", arabic: "آمل أن أجد شيئاً هنا."),
+    ItemCard(english: "Das ist aber schön und teuer. Egal, ich kaufe es.", arabic: "هذا جميل لكن غالي. لا يهم، سأشتريه."),
+    ItemCard(english: "Der Rock ist zu kurz und die Hose ist zu eng.", arabic: "التنورة قصيرة جداً والبنطال ضيق جداً."),
+    ItemCard(english: "Du siehst toll aus!", arabic: "أنت تبدو رائعاً!"),
+
+    // ============================================================
+    // المجموعة 8: Wo kaufen die Leute Kleidung?
+    // ============================================================
+    ItemCard(english: "Auf Platz 1 sind die Kleidergeschäfte von Markenfirmen.", arabic: "في المركز الأول محلات الملابس لشركات الماركات."),
+    ItemCard(english: "Die Kleidung ist meistens nicht so teuer.", arabic: "الملابس غالباً ليست غالية جداً."),
+    ItemCard(english: "Auf Platz 2 kommen die großen Kaufhäuser.", arabic: "في المركز الثاني تأتي المتاجر الكبيرة."),
+    ItemCard(english: "Da gibt es verschiedene Marken an einem Ort.", arabic: "هناك ماركات مختلفة في مكان واحد."),
+    ItemCard(english: "Auf Platz 3 ist der Online-Kleiderkauf.", arabic: "في المركز الثالث شراء الملابس عبر الإنترنت."),
+    ItemCard(english: "Viele Leute kaufen ihre Kleidung auch im Supermarkt.", arabic: "كثير من الناس يشترون ملابسهم أيضاً في السوبر ماركت."),
+    ItemCard(english: "Das finden sie praktisch.", arabic: "هذا يجدونه عملياً."),
+    ItemCard(english: "Auf Platz 5 ist der Markt für neue Kleidung oder Secondhand.", arabic: "في المركز الخامس سوق الملابس الجديدة أو المستعملة."),
+
+    // ============================================================
+    // المجموعة 9: Online-Einkauf (الشراء عبر الإنترنت)
+    // ============================================================
+    ItemCard(english: "Die Sachen habe ich vorgestern bestellt.", arabic: "الأشياء طلبتها أول أمس."),
+    ItemCard(english: "Der Hut hat im Internet super ausgesehen.", arabic: "القبعة بدت رائعة على الإنترنت."),
+    ItemCard(english: "Er ist heute angekommen.", arabic: "لقد وصلت اليوم."),
+    ItemCard(english: "Das T-Shirt habe ich Andreas empfohlen.", arabic: "لقد أوصيت أندرياس بالتيشيرت."),
+    ItemCard(english: "Er hat es sofort gekauft.", arabic: "لقد اشتراه فوراً."),
+    ItemCard(english: "Ich finde das T-Shirt cool, aber den Hut nicht so gut.", arabic: "أجد التيشيرت رائعاً، لكن القبعة ليست جيدة جداً."),
+    ItemCard(english: "Ohne Hut siehst du besser aus.", arabic: "بدون قبعة تبدو أفضل."),
+    ItemCard(english: "Die Klamotten haben nicht gepasst.", arabic: "الملابس لم تناسب."),
+    ItemCard(english: "Ich habe alles zurückgeschickt oder umgetauscht.", arabic: "لقد أعدت كل شيء أو استبدلته."),
+    ItemCard(english: "Der Hut kostet nur 29 Euro.", arabic: "القبعة تكلف فقط 29 يورو."),
+
+    // ============================================================
+    // المجموعة 10: Perfekt Sätze
+    // ============================================================
+    ItemCard(english: "Die Hose hat mir nicht gepasst.", arabic: "البنطال لم يناسبني."),
+    ItemCard(english: "Ich habe sie umgetauscht.", arabic: "لقد استبدلته."),
+    ItemCard(english: "Martina hat ihre Jacke im Internet verkauft.", arabic: "مارتينا باعت جاكيتها على الإنترنت."),
+    ItemCard(english: "Paula hat bei Michael angerufen.", arabic: "باولا اتصلت بميشائيل."),
+    ItemCard(english: "Gestern bin ich um 6 Uhr aufgestanden.", arabic: "أمس استيقظت الساعة 6."),
+    ItemCard(english: "Ich habe das Hemd mit Kreditkarte bezahlt.", arabic: "لقد دفعت القميص ببطاقة الائتمان."),
+    ItemCard(english: "Im Sommer haben wir Freunde in Frankreich besucht.", arabic: "في الصيف زرنا أصدقاء في فرنسا."),
+    ItemCard(english: "Carola hat ihre Freundin zum Grillen eingeladen.", arabic: "كارولا دعت صديقتها للشواء."),
+    ItemCard(english: "Ich habe ein T-Shirt gekauft.", arabic: "لقد اشتريت تيشيرتاً."),
+    ItemCard(english: "Hast du heute schon eingekauft?", arabic: "هل تسوقت اليوم بالفعل؟"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 11 Modul 1 - Kleidung - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFFE91E63), // لون وردي للموضة
+      secondaryColor: const Color(0xFFC2185B),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 11 Modul 1 (Demonstrativpronomen + Frageartikel)
+// شرح كامل ومفصل
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_11_Modul1GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. مقدمة عن Demonstrativpronomen
+    // ============================================================
+    LearningItem(primaryText: "➤ Demonstrativpronomen (أسماء الإشارة)", secondaryText: "تُستخدم للإشارة إلى شيء أو شخص معين"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "dieser, diese, dieses + Artikelendung"),
+    LearningItem(primaryText: "Bedeutung:", secondaryText: "هذا / هذه / هؤلاء"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. جدول Demonstrativpronomen - Nominativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Nominativ (der Wer-Fall)", secondaryText: "حالة الرفع (من؟ / ماذا؟)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Maskulin (der)", secondaryText: "dieser (هذا)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Dieser Pullover ist schön."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Neutral (das)", secondaryText: "dieses (هذا)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Dieses Hemd ist teuer."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Feminin (die)", secondaryText: "diese (هذه)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Diese Hose ist neu."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Plural (die)", secondaryText: "diese (هؤلاء / هذه)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Diese Schuhe sind bequem."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. جدول Demonstrativpronomen - Akkusativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Akkusativ (den-Wen-Fall)", secondaryText: "حالة النصب (ماذا؟ - مفعول به)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Maskulin (den)", secondaryText: "diesen (هذا - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich kaufe diesen Pullover."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Neutral (das)", secondaryText: "dieses (هذا - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich nehme dieses Hemd."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Feminin (die)", secondaryText: "diese (هذه - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich probiere diese Hose an."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Plural (die)", secondaryText: "diese (هؤلاء - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Ich möchte diese Schuhe."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. Frageartikel - Nominativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Frageartikel (Nominativ)", secondaryText: "أدوات الاستفهام (حالة الرفع)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "welcher, welche, welches + Artikelendung"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Maskulin (der)", secondaryText: "welcher (أي - مذكر)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welcher Pullover gefällt dir?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Neutral (das)", secondaryText: "welches (أي - محايد)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welches Hemd ist schöner?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Feminin (die)", secondaryText: "welche (أي - مؤنث)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welche Hose möchtest du?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Plural (die)", secondaryText: "welche (أي - جمع)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welche Schuhe sind bequem?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. Frageartikel - Akkusativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Frageartikel (Akkusativ)", secondaryText: "أدوات الاستفهام (حالة النصب)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Maskulin (den)", secondaryText: "welchen (أي - مذكر - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welchen Pullover nimmst du?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Neutral (das)", secondaryText: "welches (أي - محايد - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welches Hemd probierst du an?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Feminin (die)", secondaryText: "welche (أي - مؤنث - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welche Hose kaufst du?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Plural (die)", secondaryText: "welche (أي - جمع - مفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Welche Schuhe suchst du?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. المقارنة بين Frageartikel و Demonstrativpronomen
+    // ============================================================
+    LearningItem(primaryText: "➤ Frage vs. Antwort (سؤال وجواب)", secondaryText: ""),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Frage (سؤال):", secondaryText: "Welcher Pullover gefällt dir?"),
+    LearningItem(primaryText: "Antwort (جواب):", secondaryText: "Dieser Pullover gefällt mir."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Frage:", secondaryText: "Welche Hose nimmst du?"),
+    LearningItem(primaryText: "Antwort:", secondaryText: "Ich nehme diese Hose."),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Frage:", secondaryText: "Welches Hemd ist teuer?"),
+    LearningItem(primaryText: "Antwort:", secondaryText: "Dieses Hemd ist teuer."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 7. أمثلة إضافية من النص
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele aus dem Text", secondaryText: "أمثلة من النص"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Sieh mal, der Mantel ist doch toll, oder? Welcher Mantel?", secondaryText: "انظر، المعطف رائع أليس كذلك؟ أي معطف؟"),
+    LearningItem(primaryText: "Na, dieser hier.", secondaryText: "هذا هنا."),
+    LearningItem(primaryText: "Ich finde diese Jacke hier viel besser.", secondaryText: "أجد هذه الجاكيت هنا أفضل بكثير."),
+    LearningItem(primaryText: "Welche Jacke meinst du? Diese?", secondaryText: "أي جاكيت تقصد؟ هذه؟"),
+    LearningItem(primaryText: "Wie findest du diesen Hut hier? Der ist super.", secondaryText: "كيف تجد هذه القبعة هنا؟ إنها رائعة."),
+
+    // ============================================================
+    // 8. تمرين: اختر الإجابة الصحيحة
+    // ============================================================
+    LearningItem(primaryText: "➤ Übung: Wählen Sie die richtige Form", secondaryText: "تمرين: اختر الصيغة الصحيحة"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "1. _____ Pullover ist schön. (Dieser/Diese/Dieses)", secondaryText: "Dieser"),
+    LearningItem(primaryText: "2. Ich nehme _____ Hose. (diesen/diese/dieses)", secondaryText: "diese"),
+    LearningItem(primaryText: "3. _____ Schuhe sind teuer. (Dieser/Diese/Dieses)", secondaryText: "Diese"),
+    LearningItem(primaryText: "4. _____ Hemd gefällt mir. (Welcher/Welche/Welches)", secondaryText: "Welches"),
+    LearningItem(primaryText: "5. _____ Mantel kaufst du? (Welchen/Welche/Welches)", secondaryText: "Welchen"),
+    LearningItem(primaryText: "6. Ich probiere _____ Jacke an. (diesen/diese/dieses)", secondaryText: "diese"),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ Weitere Beispiele für Demonstrativpronomen", secondaryText: ""),
+    LearningItem(primaryText: "Dieser Rock ist zu kurz.", secondaryText: "هذه التنورة قصيرة جداً."),
+    LearningItem(primaryText: "Diese Jeans passt mir gut.", secondaryText: "هذا الجينز يناسبني جيداً."),
+    LearningItem(primaryText: "Dieses T-Shirt finde ich cool.", secondaryText: "هذا التيشيرت أجده رائعاً."),
+    LearningItem(primaryText: "Diese Stiefel sind schön.", secondaryText: "هذه الأحذية الطويلة جميلة."),
+    LearningItem(primaryText: "Diesen Pullover möchte ich anprobieren.", secondaryText: "هذا البلوفير أريد تجربته."),
+    LearningItem(primaryText: "Diese Tasche kaufe ich.", secondaryText: "هذه الحقيبة سأشتريها."),
+    LearningItem(primaryText: "Dieses Kleid steht dir ausgezeichnet.", secondaryText: "هذا الفستان يناسبك تماماً."),
+    LearningItem(primaryText: "Diese Schuhe sind sehr bequem.", secondaryText: "هذه الأحذية مريحة جداً."),
+
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Weitere Beispiele für Frageartikel", secondaryText: ""),
+    LearningItem(primaryText: "Welchen Rock findest du schön?", secondaryText: "أي تنورة تجدها جميلة؟"),
+    LearningItem(primaryText: "Welche Jeans passt dir?", secondaryText: "أي جينز يناسبك؟"),
+    LearningItem(primaryText: "Welches T-Shirt nimmst du?", secondaryText: "أي تيشيرت تأخذ؟"),
+    LearningItem(primaryText: "Welche Stiefel sind billig?", secondaryText: "أي أحذية طويلة رخيصة؟"),
+    LearningItem(primaryText: "Welchen Hut hast du gekauft?", secondaryText: "أي قبعة اشتريت؟"),
+    LearningItem(primaryText: "Welche Farbe möchten Sie?", secondaryText: "أي لون تريدون؟"),
+    LearningItem(primaryText: "Welche Größe haben Sie?", secondaryText: "أي مقاس لديكم؟"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 11 Modul 1 - القواعد (Demonstrativpronomen & Frageartikel) - شرح كامل",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 11 Modul 2
+// Personalpronomen im Dativ + Einkaufen - المفردات (كلمات صغيرة)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_11_Modul2CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Personalpronomen im Dativ (ضمائر Dativ)
+    // ============================================================
+    LearningCard(primaryText: "mir", secondaryText: "لي"),
+    LearningCard(primaryText: "dir", secondaryText: "لك (مفرد)"),
+    LearningCard(primaryText: "ihm", secondaryText: "له (مذكر/محايد)"),
+    LearningCard(primaryText: "ihr", secondaryText: "لها (مؤنث)"),
+    LearningCard(primaryText: "uns", secondaryText: "لنا"),
+    LearningCard(primaryText: "euch", secondaryText: "لكم (جمع - غير رسمي)"),
+    LearningCard(primaryText: "ihnen", secondaryText: "لهم"),
+    LearningCard(primaryText: "Ihnen", secondaryText: "لكم (رسمي)"),
+
+    // ============================================================
+    // المجموعة 2: Verben mit Dativ (أفعال تأتي مع Dativ)
+    // ============================================================
+    LearningCard(primaryText: "gefallen", secondaryText: "يعجب"),
+    LearningCard(primaryText: "gehören", secondaryText: "يملك / يعود لـ"),
+    LearningCard(primaryText: "passen", secondaryText: "يناسب (القياس)"),
+    LearningCard(primaryText: "stehen", secondaryText: "يناسب / يليق"),
+    LearningCard(primaryText: "schmecken", secondaryText: "يكون لذيذاً"),
+    LearningCard(primaryText: "helfen", secondaryText: "يساعد"),
+    LearningCard(primaryText: "gratulieren", secondaryText: "يهنئ"),
+    LearningCard(primaryText: "gehen (es geht...)", secondaryText: "يكون (حالياً)"),
+
+    // ============================================================
+    // المجموعة 3: Stockwerke (الطوابق)
+    // ============================================================
+    LearningCard(primaryText: "das Untergeschoss (UG)", secondaryText: "الطابق السفلي"),
+    LearningCard(primaryText: "das Erdgeschoss (EG)", secondaryText: "الطابق الأرضي"),
+    LearningCard(primaryText: "der erste Stock", secondaryText: "الطابق الأول"),
+    LearningCard(primaryText: "der zweite Stock", secondaryText: "الطابق الثاني"),
+    LearningCard(primaryText: "der dritte Stock", secondaryText: "الطابق الثالث"),
+    LearningCard(primaryText: "der vierte Stock", secondaryText: "الطابق الرابع"),
+    LearningCard(primaryText: "der fünfte Stock", secondaryText: "الطابق الخامس"),
+
+    // ============================================================
+    // المجموعة 4: Abteilungen im Kaufhaus (أقسام المتجر)
+    // ============================================================
+    LearningCard(primaryText: "Damenmode", secondaryText: "أزياء نسائية"),
+    LearningCard(primaryText: "Herrenmode", secondaryText: "أزياء رجالية"),
+    LearningCard(primaryText: "Kindermode", secondaryText: "أزياء أطفال"),
+    LearningCard(primaryText: "Sportkleidung", secondaryText: "ملابس رياضية"),
+    LearningCard(primaryText: "Kosmetik", secondaryText: "مستحضرات تجميل"),
+    LearningCard(primaryText: "Parfümerie", secondaryText: "عطور"),
+    LearningCard(primaryText: "Schmuck", secondaryText: "مجوهرات"),
+    LearningCard(primaryText: "Schreibwaren", secondaryText: "أدوات كتابة"),
+    LearningCard(primaryText: "Elektrogeräte", secondaryText: "أجهزة كهربائية"),
+    LearningCard(primaryText: "Haushaltswaren", secondaryText: "أدوات منزلية"),
+    LearningCard(primaryText: "Spielwaren", secondaryText: "ألعاب"),
+    LearningCard(primaryText: "Bücher", secondaryText: "كتب"),
+    LearningCard(primaryText: "Zeitschriften", secondaryText: "مجلات"),
+    LearningCard(primaryText: "die Kasse", secondaryText: "الكاشير / الخروج"),
+
+    // ============================================================
+    // المجموعة 5: Redemittel im Geschäft (عبارات في المتجر)
+    // ============================================================
+    LearningCard(primaryText: "Kann ich Ihnen helfen?", secondaryText: "هل يمكنني مساعدتكم؟"),
+    LearningCard(primaryText: "Ich suche...", secondaryText: "أنا أبحث عن..."),
+    LearningCard(primaryText: "Ich brauche...", secondaryText: "أنا أحتاج..."),
+    LearningCard(primaryText: "Haben Sie...?", secondaryText: "هل لديكم...؟"),
+    LearningCard(primaryText: "Wie viel kostet...?", secondaryText: "كم سعر...؟"),
+    LearningCard(primaryText: "Probieren Sie es an.", secondaryText: "جربه."),
+    LearningCard(primaryText: "Es passt mir gut.", secondaryText: "يناسبني جيداً."),
+    LearningCard(primaryText: "Es ist zu eng/weit.", secondaryText: "إنه ضيق / واسع جداً."),
+    LearningCard(primaryText: "Ich nehme es.", secondaryText: "سآخذه."),
+    LearningCard(primaryText: "Wo finde ich...?", secondaryText: "أين أجد...؟"),
+    LearningCard(primaryText: "Wo gibt es...?", secondaryText: "أين يوجد...؟"),
+
+    // ============================================================
+    // المجموعة 6: Adjektive für Kleidung (صفات الملابس)
+    // ============================================================
+    LearningCard(primaryText: "bequem", secondaryText: "مريح"),
+    LearningCard(primaryText: "eng", secondaryText: "ضيق"),
+    LearningCard(primaryText: "weit", secondaryText: "واسع"),
+    LearningCard(primaryText: "schmutzig", secondaryText: "وسخ"),
+    LearningCard(primaryText: "bunt", secondaryText: "ملون"),
+    LearningCard(primaryText: "einfarbig", secondaryText: "لون واحد"),
+    LearningCard(primaryText: "praktisch", secondaryText: "عملي"),
+    LearningCard(primaryText: "modern", secondaryText: "حديث"),
+    LearningCard(primaryText: "klassisch", secondaryText: "كلاسيكي"),
+
+    // ============================================================
+    // المجموعة 7: Kleidung für verschiedene Situationen
+    // ============================================================
+    LearningCard(primaryText: "Arbeitskleidung", secondaryText: "ملابس العمل"),
+    LearningCard(primaryText: "Freizeitkleidung", secondaryText: "ملابس أوقات الفراغ"),
+    LearningCard(primaryText: "Abendkleidung", secondaryText: "ملابس السهرة"),
+    LearningCard(primaryText: "Sportkleidung", secondaryText: "ملابس رياضية"),
+    LearningCard(primaryText: "Arbeitsschuhe", secondaryText: "أحذية العمل"),
+
+    // ============================================================
+    // المجموعة 8: Berliner Geschäfte (محلات برلين)
+    // ============================================================
+    LearningCard(primaryText: "der Schuhladen Treppen", secondaryText: "محل أحذية تريبن"),
+    LearningCard(primaryText: "Tausche (Taschen)", secondaryText: "تاوشه (حقائب)"),
+    LearningCard(primaryText: "Kaufhaus aus Berlin", secondaryText: "متجر برلين"),
+    LearningCard(primaryText: "die Hackeschen Höfe", secondaryText: "أفنية هاكه"),
+    LearningCard(primaryText: "der Erfinderladen", secondaryText: "محل المخترع"),
+
+    // ============================================================
+    // المجموعة 9: Perfekt - wichtige Verben
+    // ============================================================
+    LearningCard(primaryText: "besuchen → besucht", secondaryText: "يزور → زار"),
+    LearningCard(primaryText: "gefallen → gefallen", secondaryText: "يعجب → أعجب"),
+    LearningCard(primaryText: "anprobieren → anprobiert", secondaryText: "يجرب → جرب"),
+    LearningCard(primaryText: "ausziehen → ausgezogen", secondaryText: "ينزع → نزع"),
+    LearningCard(primaryText: "einkaufen → eingekauft", secondaryText: "يتسوق → تسوق"),
+    LearningCard(primaryText: "bestellen → bestellt", secondaryText: "يطلب → طلب"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 11 Modul 2 - Personalpronomen im Dativ - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 11 Modul 2
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_11_Modul2SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: Dialog im Geschäft (محادثة في المتجر)
+    // ============================================================
+    ItemCard(english: "Guten Tag. Kann ich Ihnen helfen?", arabic: "طاب يومكم. هل يمكنني مساعدتكم؟"),
+    ItemCard(english: "Ja, bitte. Ich suche einen Pullover.", arabic: "نعم، من فضلك. أبحث عن بلوفر."),
+    ItemCard(english: "Welche Größe brauchen Sie?", arabic: "أي مقاس تحتاجون؟"),
+    ItemCard(english: "Ich habe meistens XL, manchmal auch L.", arabic: "عندي غالباً XL، وأحياناً L أيضاً."),
+    ItemCard(english: "Kommen Sie mit, bitte. Wie finden Sie den Pullover hier?", arabic: "تفضلوا معي من فضلك. كيف تجدون هذا البلوفير؟"),
+    ItemCard(english: "Ich weiß nicht. Grün steht mir nicht so gut.", arabic: "لا أعرف. اللون الأخضر لا يليق بي جيداً."),
+    ItemCard(english: "Haben Sie den auch in blau?", arabic: "هل لديكم هذا أيضاً باللون الأزرق؟"),
+    ItemCard(english: "Einen Moment bitte. Hier ist er in blau.", arabic: "لحظة من فضلك. ها هو بالأزرق."),
+    ItemCard(english: "Wie gefällt Ihnen der? Oh ja, der ist gut.", arabic: "كيف يعجبكم هذا؟ أوه نعم، هذا جيد."),
+    ItemCard(english: "Wie viel kostet er? Er ist sehr günstig, nur 49,90 Euro.", arabic: "كم سعره؟ إنه رخيص جداً، فقط 49.90 يورو."),
+    ItemCard(english: "Probieren Sie ihn doch mal an.", arabic: "جربوه فقط."),
+    ItemCard(english: "Passt er? Nicht so richtig. Er ist zu weit.", arabic: "هل يناسبه؟ ليس بشكل صحيح. إنه واسع جداً."),
+    ItemCard(english: "Ich habe ihn wieder ausgezogen. Haben Sie den auch in L?", arabic: "لقد خلعته مرة أخرى. هل لديكم هذا أيضاً بمقاس L؟"),
+    ItemCard(english: "Ja, ich hole ihn. Bitte sehr.", arabic: "نعم، سأحضره. تفضل."),
+    ItemCard(english: "Und ist das die richtige Größe? Ja, der passt gut.", arabic: "وهل هذا هو المقاس الصحيح؟ نعم، هذا يناسب جيداً."),
+
+    // ============================================================
+    // المجموعة 2: Personalpronomen im Dativ - Beispiele
+    // ============================================================
+    ItemCard(english: "Kannst du mir helfen?", arabic: "هل يمكنك مساعدتي؟"),
+    ItemCard(english: "Das Auto gehört ihm.", arabic: "السيارة تعود له / يملكها."),
+    ItemCard(english: "Wir gratulieren ihr.", arabic: "نحن نهنئها."),
+    ItemCard(english: "Das Hemd passt dir sehr gut.", arabic: "القميص يناسبك جيداً جداً."),
+    ItemCard(english: "Schmeckt euch das Essen?", arabic: "هل الطعام لذيذ لكم؟"),
+    ItemCard(english: "Die Wohnung gefällt uns sehr gut.", arabic: "الشقة تعجبنا جداً جداً."),
+    ItemCard(english: "Das Kleid steht mir richtig gut.", arabic: "الفستان يليق بي حقاً جيداً."),
+    ItemCard(english: "Wie geht's Ihnen?", arabic: "كيف حالكم؟ (رسمي)"),
+    ItemCard(english: "Die Jacke gefällt mir sehr gut.", arabic: "الجاكيت يعجبني جداً جداً."),
+    ItemCard(english: "Sie passt ihr nicht. Sie ist zu groß.", arabic: "لا يناسبها. إنه كبير جداً."),
+    ItemCard(english: "Können Sie uns helfen, bitte?", arabic: "هل يمكنكم مساعدتنا من فضلكم؟"),
+    ItemCard(english: "Die Hose gefällt meinem Sohn, aber sie passt ihm nicht.", arabic: "البنطال يعجب ابني، لكنه لا يناسبه."),
+    ItemCard(english: "Dieses Kleid steht dir richtig gut.", arabic: "هذا الفستان يليق بك حقاً جيداً."),
+    ItemCard(english: "Es gefällt mir sehr, aber es ist zu teuer.", arabic: "يعجبني جداً، لكنه غالي جداً."),
+
+    // ============================================================
+    // المجموعة 3: Dativ vs. Akkusativ
+    // ============================================================
+    ItemCard(english: "Ich sehe dich. (Akkusativ)", arabic: "أراك."),
+    ItemCard(english: "Ich helfe dir. (Dativ)", arabic: "أساعدك."),
+    ItemCard(english: "Ich liebe sie. (Akkusativ)", arabic: "أحبها."),
+    ItemCard(english: "Das Kleid gefällt ihr. (Dativ)", arabic: "الفستان يعجبها."),
+    ItemCard(english: "Ich nehme es. (Akkusativ)", arabic: "آخذه."),
+    ItemCard(english: "Der Pullover passt ihm. (Dativ)", arabic: "البلوفير يناسبه."),
+
+    // ============================================================
+    // المجموعة 4: Im Kaufhaus - Wo finde ich was?
+    // ============================================================
+    ItemCard(english: "Ich brauche unbedingt noch ein Parfüm.", arabic: "أحتاج بالتأكيد عطراً أيضاً."),
+    ItemCard(english: "Das gibt es im Erdgeschoss. Da ist die Parfümerie.", arabic: "هذا موجود في الطابق الأرضي. هناك قسم العطور."),
+    ItemCard(english: "Ich brauche noch ein Duschgel.", arabic: "أحتاج أيضاً جل استحمام."),
+    ItemCard(english: "Das kann ich auch dort kaufen.", arabic: "يمكنني شراء ذلك أيضاً هناك."),
+    ItemCard(english: "Dann brauchst du noch einen Schal.", arabic: "ثم تحتاج وشاحاً أيضاً."),
+    ItemCard(english: "Aber der passt nicht zum Anzug.", arabic: "لكنه لا يناسب البدلة."),
+    ItemCard(english: "Dann gehen wir in den zweiten Stock.", arabic: "ثم نذهب إلى الطابق الثاني."),
+    ItemCard(english: "Da finden wir bestimmt etwas.", arabic: "هناك نجد بالتأكيد شيئاً."),
+    ItemCard(english: "Wir brauchen noch einen USB-Stick.", arabic: "نحتاج أيضاً ذاكرة USB."),
+    ItemCard(english: "Der ist im vierten Stock.", arabic: "هذا موجود في الطابق الرابع."),
+    ItemCard(english: "Dann gehen wir in den fünften Stock. Was brauchst du da?", arabic: "ثم نذهب إلى الطابق الخامس. ماذا تحتاج هناك؟"),
+    ItemCard(english: "Eine Tasse Kaffee. Hast du auch Lust?", arabic: "فنجان قهوة. هل لديك رغبة أيضاً؟"),
+    ItemCard(english: "Brauchen wir sonst noch was? Ja, ein Geschenk für Luzi.", arabic: "هل نحتاج شيئاً آخر؟ نعم، هدية للوزي."),
+    ItemCard(english: "Wir fangen am besten mit dem Kaffee ganz oben an.", arabic: "نبدأ بالأفضل بالقهوة في الأعلى تماماً."),
+
+    // ============================================================
+    // المجموعة 5: Dialog über Kleidungsstil
+    // ============================================================
+    ItemCard(english: "Mode ist für mich nicht wichtig. Kleidung muss bequem sein und passen.", arabic: "الموضة ليست مهمة بالنسبة لي. الملابس يجب أن تكون مريحة ومناسبة."),
+    ItemCard(english: "In der Arbeit trage ich Arbeitskleidung. Ich bin Mechaniker.", arabic: "في العمل أرتدي ملابس العمل. أنا ميكانيكي."),
+    ItemCard(english: "Da ist alles schnell schmutzig.", arabic: "هناك كل شيء يتسخ بسرعة."),
+    ItemCard(english: "Ich habe auch immer Arbeitsschuhe an.", arabic: "أرتدي أيضاً أحذية العمل دائماً."),
+    ItemCard(english: "Nach der Arbeit ziehe ich ein T-Shirt und Jeans an.", arabic: "بعد العمل أرتدي تيشيرت وجينز."),
+    ItemCard(english: "Abends trage ich das gleiche: Jeans, T-Shirt und eine Jacke.", arabic: "مساءً أرتدي نفس الشيء: جينز، تيشيرت وجاكيت."),
+    ItemCard(english: "Für mich ist Kleidung wichtig. Ich arbeite in einer großen Firma.", arabic: "الملابس مهمة بالنسبة لي. أعمل في شركة كبيرة."),
+    ItemCard(english: "Ich trage meistens Hosen oder einen Rock und eine Bluse.", arabic: "أرتدي غالباً بناطيل أو تنورة وبلوزة."),
+    ItemCard(english: "Zu Hause habe ich am liebsten Jeans und T-Shirts an.", arabic: "في المنزل أفضل ارتداء جينز وتيشيرتات."),
+    ItemCard(english: "Zum Ausgehen ziehe ich gern schöne Sachen an. Ich mag Kleider.", arabic: "للخروج أحب ارتداء أشياء جميلة. أحب الفساتين."),
+
+    // ============================================================
+    // المجموعة 6: Fragen im Geschäft (أسئلة في المتجر)
+    // ============================================================
+    ItemCard(english: "Entschuldigung, wo gibt es Tassen?", arabic: "عذراً، أين توجد الأكواب؟"),
+    ItemCard(english: "Gehen Sie ins Untergeschoss, da finden Sie sie.", arabic: "اذهبوا إلى الطابق السفلي، هناك تجدونها."),
+    ItemCard(english: "Können Sie mir helfen, bitte? Ich brauche einen USB-Stick.", arabic: "هل يمكنكم مساعدتي من فضلكم؟ أحتاج ذاكرة USB."),
+    ItemCard(english: "Im vierten Stock ist alles für Computer und Technik.", arabic: "في الطابق الرابع كل شيء للكمبيوتر والتقنية."),
+    ItemCard(english: "Ich habe eine Frage. Ich suche ein Handy. Wo finde ich das?", arabic: "لدي سؤال. أبحث عن هاتف محمول. أين أجده؟"),
+    ItemCard(english: "Tut mir leid, wir haben leider keine Handys.", arabic: "أنا آسف، ليس لدينا هواتف محمولة للأسف."),
+
+    // ============================================================
+    // المجموعة 7: Was haben Lara und Mark in Berlin gemacht?
+    // ============================================================
+    ItemCard(english: "Ich war zwei Wochen in Berlin. Ich habe einen Kurs besucht.", arabic: "كنت في برلين لمدة أسبوعين. حضرت دورة."),
+    ItemCard(english: "Es war sehr interessant, aber auch anstrengend. Ich musste viel lernen.", arabic: "كان ممتعاً جداً، لكن مرهقاً أيضاً. كان علي تعلم الكثير."),
+    ItemCard(english: "Die Stadt ist ja so schön. Das finde ich auch.", arabic: "المدينة جميلة جداً. أجد ذلك أيضاً."),
+    ItemCard(english: "Was hast du noch gemacht? Warst du im Theater?", arabic: "ماذا فعلت أيضاً؟ هل كنت في المسرح؟"),
+    ItemCard(english: "Nein, das nicht. Aber ich habe drei Ausstellungen besucht.", arabic: "لا، ليس ذلك. لكن زرت ثلاثة معارض."),
+    ItemCard(english: "Ich mag Design und Architektur. Da gibt es in Berlin so viel.", arabic: "أحب التصميم والهندسة المعمارية. هناك الكثير في برلين."),
+    ItemCard(english: "Ich war für meine Firma in Berlin, aber ich hatte auch Zeit für mich.", arabic: "كنت في برلين من أجل شركتي، لكن كان لدي وقت لنفسي أيضاً."),
+    ItemCard(english: "Ich war im Reichstag und habe das Jüdische Museum besucht.", arabic: "كنت في مبنى الرايخستاغ وزرت المتحف اليهودي."),
+    ItemCard(english: "Ich mag die Hackeschen Höfe. Da gehe ich jedes Mal hin.", arabic: "أحب أفنية هاكه. أذهب هناك كل مرة."),
+    ItemCard(english: "Die Geschäfte sind mir egal. Ich liebe einfach Architektur.", arabic: "المحلات لا تهمني. أنا ببساطة أحب الهندسة المعمارية."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 11 Modul 2 - Personalpronomen im Dativ - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF9C27B0), // لون بنفسجي
+      secondaryColor: const Color(0xFF6A1B9A),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 11 Modul 2 (Personalpronomen im Dativ)
+// شرح كامل ومفصل مع جداول
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_11_Modul2GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. مقدمة عن Dativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Der Dativ (حالة الجر / المفعول به غير المباشر)", secondaryText: "تُستخدم مع بعض الأفعال وحروف الجر"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 متى نستخدم Dativ؟", secondaryText: ""),
+    LearningItem(primaryText: "1️⃣ Nach bestimmten Verben (بعد أفعال معينة)", secondaryText: "helfen, gefallen, gehören, passen, stehen, schmecken, gratulieren"),
+    LearningItem(primaryText: "2️⃣ Nach Wechselpräpositionen (Wo?)", secondaryText: "in, an, auf, unter, über, neben, vor, hinter, zwischen"),
+    LearningItem(primaryText: "3️⃣ Nach Dativpräpositionen", secondaryText: "aus, bei, mit, nach, von, zu, gegenüber"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. جدول Personalpronomen - Alle Fälle
+    // ============================================================
+    LearningItem(primaryText: "➤ Personalpronomen - Nominativ, Akkusativ, Dativ", secondaryText: "ضمائر الشخص - جميع الحالات"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Nominativ", secondaryText: "Akkusativ | Dativ"),
+    LearningItem(primaryText: "ich", secondaryText: "mich | mir"),
+    LearningItem(primaryText: "du", secondaryText: "dich | dir"),
+    LearningItem(primaryText: "er", secondaryText: "ihn | ihm"),
+    LearningItem(primaryText: "es", secondaryText: "es | ihm"),
+    LearningItem(primaryText: "sie", secondaryText: "sie | ihr"),
+    LearningItem(primaryText: "wir", secondaryText: "uns | uns"),
+    LearningItem(primaryText: "ihr", secondaryText: "euch | euch"),
+    LearningItem(primaryText: "sie", secondaryText: "sie | ihnen"),
+    LearningItem(primaryText: "Sie", secondaryText: "Sie | Ihnen"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. أمثلة على كل ضمير في Dativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele für Dativpronomen", secondaryText: "أمثلة على ضمائر Dativ"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "mir (لي)", secondaryText: "Kannst du mir helfen? - هل يمكنك مساعدتي؟"),
+    LearningItem(primaryText: "dir (لك)", secondaryText: "Das Hemd passt dir gut. - القميص يناسبك جيداً."),
+    LearningItem(primaryText: "ihm (له)", secondaryText: "Das Auto gehört ihm. - السيارة تعود له."),
+    LearningItem(primaryText: "ihr (لها)", secondaryText: "Wir gratulieren ihr. - نحن نهنئها."),
+    LearningItem(primaryText: "uns (لنا)", secondaryText: "Die Wohnung gefällt uns. - الشقة تعجبنا."),
+    LearningItem(primaryText: "euch (لكم)", secondaryText: "Schmeckt euch das Essen? - هل الطعام لذيذ لكم؟"),
+    LearningItem(primaryText: "ihnen (لهم)", secondaryText: "Ich helfe ihnen. - أنا أساعدهم."),
+    LearningItem(primaryText: "Ihnen (لكم - رسمي)", secondaryText: "Wie geht es Ihnen? - كيف حالكم؟"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. Verben mit Dativ - تفصيل
+    // ============================================================
+    LearningItem(primaryText: "➤ Wichtige Verben mit Dativ", secondaryText: "أفعال مهمة تأتي مع Dativ"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "helfen (يساعد)", secondaryText: "Kannst du mir helfen? (هل يمكنك مساعدتي؟)"),
+    LearningItem(primaryText: "gefallen (يعجب)", secondaryText: "Das Kleid gefällt mir. (الفستان يعجبني)"),
+    LearningItem(primaryText: "gehören (يملك / يعود لـ)", secondaryText: "Das Buch gehört ihm. (الكتاب يعود له)"),
+    LearningItem(primaryText: "passen (يناسب)", secondaryText: "Die Schuhe passen dir. (الحذاء يناسبك)"),
+    LearningItem(primaryText: "stehen (يليق)", secondaryText: "Die Farbe steht ihr. (اللون يليق بها)"),
+    LearningItem(primaryText: "schmecken (لذيذ)", secondaryText: "Die Pizza schmeckt uns. (البيتزا لذيذة لنا)"),
+    LearningItem(primaryText: "gratulieren (يهنئ)", secondaryText: "Wir gratulieren euch. (نحن نهنئكم)"),
+    LearningItem(primaryText: "antworten (يجيب)", secondaryText: "Antworte mir bitte. (أجبني من فضلك)"),
+    LearningItem(primaryText: "danken (يشكر)", secondaryText: "Ich danke dir. (أنا أشكرك)"),
+    LearningItem(primaryText: "fehlen (يفتقد / ينقص)", secondaryText: "Mir fehlt das Geld. (ينقصني المال)"),
+    LearningItem(primaryText: "gehen (es geht...)", secondaryText: "Wie geht es dir? (كيف حالك؟)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. الفرق بين Akkusativ و Dativ مع نفس الفعل
+    // ============================================================
+    LearningItem(primaryText: "➤ Vergleich: Akkusativ vs. Dativ", secondaryText: "مقارنة: حالة النصب vs. حالة الجر"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Ich sehe dich. (Akkusativ)", secondaryText: "أراك. (مفعول به مباشر)"),
+    LearningItem(primaryText: "Ich helfe dir. (Dativ)", secondaryText: "أساعدك. (مفعول به غير مباشر)"),
+    LearningItem(primaryText: "Ich liebe sie. (Akkusativ)", secondaryText: "أحبها."),
+    LearningItem(primaryText: "Das Kleid gefällt ihr. (Dativ)", secondaryText: "الفستان يعجبها."),
+    LearningItem(primaryText: "Ich nehme es. (Akkusativ)", secondaryText: "آخذه."),
+    LearningItem(primaryText: "Der Pullover passt ihm. (Dativ)", secondaryText: "البلوفير يناسبه."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. تمرين: اختر الضمير الصحيح في Dativ
+    // ============================================================
+    LearningItem(primaryText: "➤ Übung: Wählen Sie das richtige Dativpronomen", secondaryText: "تمرين: اختر ضمير Dativ الصحيح"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "1. Kannst du _____ helfen? (ich)", secondaryText: "mir"),
+    LearningItem(primaryText: "2. Das Kleid gefällt _____ gut. (sie)", secondaryText: "ihr"),
+    LearningItem(primaryText: "3. Der Pullover passt _____ nicht. (er)", secondaryText: "ihm"),
+    LearningItem(primaryText: "4. Die Wohnung gefällt _____ sehr. (wir)", secondaryText: "uns"),
+    LearningItem(primaryText: "5. Wie geht es _____? (du)", secondaryText: "dir"),
+    LearningItem(primaryText: "6. Ich danke _____ für die Hilfe. (Sie - formal)", secondaryText: "Ihnen"),
+    LearningItem(primaryText: "7. Das Essen schmeckt _____ gut. (ihr - plural)", secondaryText: "euch"),
+    LearningItem(primaryText: "8. Wir gratulieren _____ zum Geburtstag. (er)", secondaryText: "ihm"),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ أمثلة إضافية من النص", secondaryText: ""),
+    LearningItem(primaryText: "Kann ich Ihnen helfen?", secondaryText: "هل يمكنني مساعدتكم؟ (رسمي)"),
+    LearningItem(primaryText: "Die Jacke gefällt mir sehr gut.", secondaryText: "الجاكيت يعجبني جداً جداً."),
+    LearningItem(primaryText: "Sie passt ihr nicht. Sie ist zu groß.", secondaryText: "لا يناسبها. إنه كبير جداً."),
+    LearningItem(primaryText: "Können Sie uns helfen, bitte?", secondaryText: "هل يمكنكم مساعدتنا من فضلكم؟"),
+    LearningItem(primaryText: "Die Hose gefällt meinem Sohn, aber sie passt ihm nicht.", secondaryText: "البنطال يعجب ابني، لكنه لا يناسبه."),
+    LearningItem(primaryText: "Dieses Kleid steht dir richtig gut.", secondaryText: "هذا الفستان يليق بك حقاً جيداً."),
+    LearningItem(primaryText: "Es gefällt mir sehr, aber es ist zu teuer.", secondaryText: "يعجبني جداً، لكنه غالي جداً."),
+    LearningItem(primaryText: "Das Hemd passt dir sehr gut.", secondaryText: "القميص يناسبك جيداً جداً."),
+    LearningItem(primaryText: "Schmeckt euch das Essen?", secondaryText: "هل الطعام لذيذ لكم؟"),
+    LearningItem(primaryText: "Die Farbe steht mir gut.", secondaryText: "اللون يليق بي جيداً."),
+    LearningItem(primaryText: "Das Auto gehört ihm.", secondaryText: "السيارة تعود له."),
+    LearningItem(primaryText: "Wir gratulieren ihr.", secondaryText: "نحن نهنئها."),
+    LearningItem(primaryText: "Kannst du mir bitte das Salz geben?", secondaryText: "هل يمكنك إعطائي الملح من فضلك؟"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 11 Modul 2 - القواعد (Personalpronomen im Dativ) - شرح كامل",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 12 Modul 1
+// Urlaub & Reisen - المفردات (كلمات صغيرة للكروت)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_12_Modul1CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Urlaubsarten (أنواع العطلات)
+    // ============================================================
+    LearningCard(primaryText: "der Urlaub", secondaryText: "العطلة"),
+    LearningCard(primaryText: "die Reise", secondaryText: "الرحلة"),
+    LearningCard(primaryText: "der Campingurlaub", secondaryText: "عطلة التخييم"),
+    LearningCard(primaryText: "der Strandurlaub", secondaryText: "عطلة الشاطئ"),
+    LearningCard(primaryText: "der Städteurlaub", secondaryText: "عطلة المدن"),
+    LearningCard(primaryText: "der Skiurlaub", secondaryText: "عطلة التزلج"),
+    LearningCard(primaryText: "das Zelt", secondaryText: "الخيمة"),
+    LearningCard(primaryText: "der Wohnwagen", secondaryText: "المقطورة السكنية"),
+
+    // ============================================================
+    // المجموعة 2: Packliste (قائمة التجهيز)
+    // ============================================================
+    LearningCard(primaryText: "der Koffer", secondaryText: "الحقيبة"),
+    LearningCard(primaryText: "der Rucksack", secondaryText: "حقيبة الظهر"),
+    LearningCard(primaryText: "packen", secondaryText: "يحزم / يجهز"),
+    LearningCard(primaryText: "einpacken", secondaryText: "يحزم (داخل الحقيبة)"),
+    LearningCard(primaryText: "die Sonnencreme", secondaryText: "كريم واقي من الشمس"),
+    LearningCard(primaryText: "der Badeanzug", secondaryText: "بدلة السباحة (نسائي)"),
+    LearningCard(primaryText: "der Bikini", secondaryText: "البيكيني"),
+    LearningCard(primaryText: "die Badehose", secondaryText: "سروال السباحة (رجالي)"),
+    LearningCard(primaryText: "die Badesachen", secondaryText: "أغراض السباحة"),
+    LearningCard(primaryText: "der Regenschirm", secondaryText: "المظلة"),
+    LearningCard(primaryText: "die Regenjacke", secondaryText: "جاكيت المطر"),
+    LearningCard(primaryText: "die Winterjacke", secondaryText: "جاكيت الشتاء"),
+    LearningCard(primaryText: "der Reiseführer", secondaryText: "الدليل السياحي"),
+    LearningCard(primaryText: "die Seife", secondaryText: "الصابون"),
+    LearningCard(primaryText: "das Handtuch", secondaryText: "المنشفة"),
+    LearningCard(primaryText: "die Mütze", secondaryText: "الطاقية"),
+    LearningCard(primaryText: "der Helm", secondaryText: "الخوذة"),
+    LearningCard(primaryText: "die Tablette", secondaryText: "القرص الدوائي"),
+    LearningCard(primaryText: "das Buch", secondaryText: "الكتاب"),
+    LearningCard(primaryText: "die Sportschuhe", secondaryText: "الأحذية الرياضية"),
+    LearningCard(primaryText: "das Geschirr", secondaryText: "الأواني"),
+    LearningCard(primaryText: "der Löffel", secondaryText: "الملعقة"),
+    LearningCard(primaryText: "die Gabel", secondaryText: "الشوكة"),
+    LearningCard(primaryText: "das Messer", secondaryText: "السكين"),
+
+    // ============================================================
+    // المجموعة 3: Aktivitäten im Urlaub (نشاطات في العطلة)
+    // ============================================================
+    LearningCard(primaryText: "spazieren gehen", secondaryText: "يتمشى"),
+    LearningCard(primaryText: "die Stadtführung", secondaryText: "الجولة الإرشادية في المدينة"),
+    LearningCard(primaryText: "besichtigen", secondaryText: "يزور (معلم سياحي)"),
+    LearningCard(primaryText: "der Dom", secondaryText: "الكاتدرائية"),
+    LearningCard(primaryText: "das Museum", secondaryText: "المتحف"),
+    LearningCard(primaryText: "die Ausstellung", secondaryText: "المعرض"),
+    LearningCard(primaryText: "typisches Essen probieren", secondaryText: "يجرب طعاماً تقليدياً"),
+    LearningCard(primaryText: "shoppen", secondaryText: "يتسوق"),
+    LearningCard(primaryText: "die Bergtour", secondaryText: "الجولة الجبلية"),
+    LearningCard(primaryText: "die Sehenswürdigkeit", secondaryText: "المعلم السياحي"),
+    LearningCard(primaryText: "die Altstadt", secondaryText: "المدينة القديمة"),
+    LearningCard(primaryText: "der Marktplatz", secondaryText: "ساحة السوق"),
+
+    // ============================================================
+    // المجموعة 4: Verkehrsmittel (وسائل النقل)
+    // ============================================================
+    LearningCard(primaryText: "die Tram", secondaryText: "الترام"),
+    LearningCard(primaryText: "der Bus", secondaryText: "الحافلة"),
+    LearningCard(primaryText: "die Haltestelle", secondaryText: "محطة (باص/ترام)"),
+    LearningCard(primaryText: "einsteigen", secondaryText: "يصعد (إلى وسيلة نقل)"),
+    LearningCard(primaryText: "aussteigen", secondaryText: "ينزل (من وسيلة نقل)"),
+    LearningCard(primaryText: "umsteigen", secondaryText: "يغير وسيلة النقل"),
+    LearningCard(primaryText: "der Bahnhof", secondaryText: "محطة القطار"),
+    LearningCard(primaryText: "das Gleis", secondaryText: "الرصيف / الخط الحديدي"),
+    LearningCard(primaryText: "der Flug", secondaryText: "الرحلة الجوية"),
+    LearningCard(primaryText: "der Ausgang", secondaryText: "المخرج"),
+    LearningCard(primaryText: "die Abfahrt", secondaryText: "موعد المغادرة"),
+    LearningCard(primaryText: "die Ankunft", secondaryText: "موعد الوصول"),
+    LearningCard(primaryText: "sich verzögern", secondaryText: "يتأخر"),
+
+    // ============================================================
+    // المجموعة 5: Hotel und Unterkunft (الفندق والإقامة)
+    // ============================================================
+    LearningCard(primaryText: "das Hotel", secondaryText: "الفندق"),
+    LearningCard(primaryText: "das Zimmer", secondaryText: "الغرفة"),
+    LearningCard(primaryText: "reservieren", secondaryText: "يحجز"),
+    LearningCard(primaryText: "der Prospekt", secondaryText: "الكتيب / النشرة"),
+    LearningCard(primaryText: "das Frühstück", secondaryText: "الإفطار"),
+    LearningCard(primaryText: "der Lift", secondaryText: "المصعد"),
+
+    // ============================================================
+    // المجموعة 6: Reiseziele (وجهات سفر)
+    // ============================================================
+    LearningCard(primaryText: "Basel", secondaryText: "بازل (سويسرا)"),
+    LearningCard(primaryText: "Innsbruck", secondaryText: "إنسبروك (النمسا)"),
+    LearningCard(primaryText: "das Kunstmuseum", secondaryText: "متحف الفن"),
+    LearningCard(primaryText: "das Designmuseum", secondaryText: "متحف التصميم"),
+    LearningCard(primaryText: "das Volkskunstmuseum", secondaryText: "متحف الفن الشعبي"),
+    LearningCard(primaryText: "das Restaurant", secondaryText: "المطعم"),
+    LearningCard(primaryText: "die Spezialität", secondaryText: "الأكلة الخاصة"),
+    LearningCard(primaryText: "der Knödel", secondaryText: "الكنودل (زلابية)"),
+    LearningCard(primaryText: "die Spätzle", secondaryText: "الشباتزلي (معكرونة)"),
+
+    // ============================================================
+    // المجموعة 7: Wetter (الطقس)
+    // ============================================================
+    LearningCard(primaryText: "das Wetter", secondaryText: "الطقس"),
+    LearningCard(primaryText: "die Sonne", secondaryText: "الشمس"),
+    LearningCard(primaryText: "sonnig", secondaryText: "مشمس"),
+    LearningCard(primaryText: "der Schnee", secondaryText: "الثلج"),
+    LearningCard(primaryText: "kalt", secondaryText: "بارد"),
+    LearningCard(primaryText: "warm", secondaryText: "دافئ"),
+    LearningCard(primaryText: "der Regen", secondaryText: "المطر"),
+
+    // ============================================================
+    // المجموعة 8: Konnektoren (denn & weil)
+    // ============================================================
+    LearningCard(primaryText: "denn", secondaryText: "لأن (Hauptsatz - فعل في Position 2)"),
+    LearningCard(primaryText: "weil", secondaryText: "لأن (Nebensatz - فعل في النهاية)"),
+    LearningCard(primaryText: "der Grund", secondaryText: "السبب"),
+    LearningCard(primaryText: "der Hauptsatz", secondaryText: "الجملة الرئيسية"),
+    LearningCard(primaryText: "der Nebensatz", secondaryText: "الجملة الثانوية"),
+
+    // ============================================================
+    // المجموعة 9: Perfekt - wichtige Verben
+    // ============================================================
+    LearningCard(primaryText: "einpacken → eingepackt", secondaryText: "يحزم → حزم"),
+    LearningCard(primaryText: "ausfüllen → ausgefüllt", secondaryText: "يملأ → ملأ"),
+    LearningCard(primaryText: "anmelden → angemeldet", secondaryText: "يسجل → سجل"),
+    LearningCard(primaryText: "empfehlen → empfohlen", secondaryText: "يوصي → أوصى"),
+    LearningCard(primaryText: "besichtigen → besichtigt", secondaryText: "يزور → زار"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 12 Modul 1 - Urlaub & Reisen - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 12 Modul 1
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_12_Modul1SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: Gespräch über Koffer packen (محادثة عن تجهيز الحقيبة)
+    // ============================================================
+    ItemCard(english: "Ach ja, das ist ja auch nett. Das muss ich auch mal wieder anziehen.", arabic: "آه نعم، هذا لطيف أيضاً. يجب أن أرتديه مرة أخرى."),
+    ItemCard(english: "Ja, das nehme ich mit. Und der Pulli, wenn es mal nicht so warm ist.", arabic: "نعم، سآخذه معي. والبلوفر، إذا لم يكن الجو دافئاً جداً."),
+    ItemCard(english: "So, jetzt bin ich fertig. Nur noch alles in den Koffer.", arabic: "هكذا، الآن أنا جاهز. فقط كل شيء في الحقيبة."),
+    ItemCard(english: "Mist! Passt nicht alles rein.", arabic: "اللعنة! لا يسع كل شيء."),
+    ItemCard(english: "Schatz, bist du schon fertig mit packen? Nein, noch nicht ganz.", arabic: "عزيزي، هل انتهيت من التجهيز؟ لا، ليس تماماً بعد."),
+    ItemCard(english: "Sag mal, nimmst du Badesachen mit? Vielleicht gehen wir ja mal schwimmen.", arabic: "قل لي، هل تأخذ أغراض السباحة معك؟ ربما نذهب للسباحة."),
+    ItemCard(english: "Ach komm, wir gehen hier auch nie schwimmen. Wir wollen doch die Stadt ansehen.", arabic: "آه هيا، نحن لا نذهب للسباحة هنا أبداً. نحن نريد رؤية المدينة."),
+    ItemCard(english: "Mensch, der Koffer geht nicht zu.", arabic: "يا رجل، الحقيبة لا تغلق."),
+    ItemCard(english: "Na, dann muss ich halt ein paar Sachen hier lassen.", arabic: "حسناً، إذن يجب أن أترك بعض الأشياء هنا."),
+    ItemCard(english: "Sag mal, brauchen wir eine Winterjacke? Nein, so kalt ist es noch nicht.", arabic: "قل لي، هل نحتاج جاكيت شتوي؟ لا، الجو ليس بهذه البرودة بعد."),
+    ItemCard(english: "Wenn es kalt ist, gehen wir ja auch mal in ein Café.", arabic: "عندما يكون الجو بارداً، نذهب أيضاً إلى مقهى."),
+    ItemCard(english: "Super, gute Idee. Dann lasse ich die Winterjacke hier.", arabic: "رائع، فكرة جيدة. إذن سأترك الجاكيت الشتوي هنا."),
+    ItemCard(english: "Aber die Regenjacke nehme ich mit. Klar, ich habe auch einen Regenschirm.", arabic: "لكن جاكيت المطر سآخذه معي. طبعاً، لدي أيضاً مظلة."),
+    ItemCard(english: "Hast du den Reiseführer dabei? Ja, natürlich.", arabic: "هل معك الدليل السياحي؟ نعم، طبعاً."),
+    ItemCard(english: "Ich habe zwei Hosen, einen Rock, drei T-Shirts, zwei Blusen und einen Pulli eingepackt.", arabic: "لقد حزمت بنطالين، تنورة، ثلاثة تيشيرتات، بلوزتين وبلوفراً."),
+    ItemCard(english: "Meinst du, das reicht? Klar, und wenn uns was fehlt, können wir es uns kaufen.", arabic: "هل تعتقد أن هذا يكفي؟ طبعاً، وإذا نقصنا شيء، يمكننا شراؤه."),
+    ItemCard(english: "Wir fahren ja nicht in die Wüste. Stimmt.", arabic: "نحن لا نذهب إلى الصحراء. صحيح."),
+
+    // ============================================================
+    // المجموعة 2: Im Hotel in Basel (في الفندق في بازل)
+    // ============================================================
+    ItemCard(english: "Guten Abend. Wir haben ein Zimmer auf den Namen Burger reserviert.", arabic: "مساء الخير. لدينا غرفة محجوزة باسم برغر."),
+    ItemCard(english: "Können Sie mir das hier bitte noch ausfüllen? Ja, natürlich.", arabic: "هل يمكنكم ملء هذا من فضلكم؟ نعم، طبعاً."),
+    ItemCard(english: "Das Zimmer ist im dritten Stock. Der Lift ist gleich hier rechts.", arabic: "الغرفة في الطابق الثالث. المصعد هنا على اليمين."),
+    ItemCard(english: "Wir sind zum ersten Mal hier in Basel. Was gibt es für Sehenswürdigkeiten?", arabic: "نحن هنا لأول مرة في بازل. ما هي المعالم السياحية؟"),
+    ItemCard(english: "Sie können in der Altstadt spazieren gehen oder eine Stadtführung machen.", arabic: "يمكنكم التمشية في المدينة القديمة أو القيام بجولة إرشادية في المدينة."),
+    ItemCard(english: "Oder Sie machen eine Stadttour mit einem Oldtimer-Tram. Das macht wirklich Spaß.", arabic: "أو تقومون بجولة في المدينة بترام قديم. هذا ممتع حقاً."),
+    ItemCard(english: "Die Tour startet um 10:30 Uhr und dauert eine Stunde.", arabic: "الجولة تبدأ الساعة 10:30 وتستمر ساعة."),
+    ItemCard(english: "Interessieren Sie sich auch für Museen? Ja, sehr.", arabic: "هل تهتمون أيضاً بالمتاحف؟ نعم، كثيراً."),
+    ItemCard(english: "Das Kunstmuseum Basel ist sehr bekannt.", arabic: "متحف الفن في بازل مشهور جداً."),
+    ItemCard(english: "Gibt es auch etwas Moderneres? Ja, das Vitra Designmuseum.", arabic: "هل يوجد شيء أكثر حداثة؟ نعم، متحف فيترا للتصميم."),
+    ItemCard(english: "Das hört sich toll an.", arabic: "هذا يبدو رائعاً."),
+    ItemCard(english: "Wo können wir am Abend etwas essen? Das Restaurant Löwenzorn kann ich empfehlen.", arabic: "أين يمكننا تناول الطعام في المساء؟ يمكنني أن أوصي بمطعم لوفينتسورن."),
+    ItemCard(english: "Da haben wir ja ein volles Programm.", arabic: "إذاً لدينا برنامج كامل."),
+
+    // ============================================================
+    // المجموعة 3: Tipps für Innsbruck (نصائح لإنسبروك)
+    // ============================================================
+    ItemCard(english: "Ich fahre mit Alice nach Innsbruck. Hast du ein paar Tipps für uns?", arabic: "سأذهب مع أليس إلى إنسبروك. هل لديك بعض النصائح لنا؟"),
+    ItemCard(english: "Vielleicht geht ihr zuerst in der Altstadt spazieren.", arabic: "ربما تذهبون أولاً للتمشية في المدينة القديمة."),
+    ItemCard(english: "Da könnt ihr auch gleich den Dom besichtigen.", arabic: "هناك يمكنكم أيضاً زيارة الكاتدرائية."),
+    ItemCard(english: "Dann müsst ihr auch das Volkskunstmuseum besuchen.", arabic: "ثم يجب عليكم أيضاً زيارة متحف الفن الشعبي."),
+    ItemCard(english: "Wir möchten auch typisches Essen probieren.", arabic: "نريد أيضاً تجربة طعام تقليدي."),
+    ItemCard(english: "Dann geht doch ins Weiße Rössl.", arabic: "إذاً اذهبوا إلى فايسه روسل."),
+    ItemCard(english: "Da kann man gut Spezialitäten aus Tirol essen.", arabic: "هناك يمكن أكل أطباق تقليدية من تيرول جيداً."),
+    ItemCard(english: "Wir möchten auch ein bisschen shoppen. Im Zentrum kann man gut shoppen.", arabic: "نريد أيضاً التسوق قليلاً. في المركز يمكن التسوق جيداً."),
+    ItemCard(english: "Gibt es auch Stadtführungen? Natürlich.", arabic: "هل هناك أيضاً جولات إرشادية في المدينة؟ طبعاً."),
+    ItemCard(english: "Ich schreibe dir eine Mail mit ein paar Tipps.", arabic: "سأكتب لك إيميلاً ببعض النصائح."),
+
+    // ============================================================
+    // المجموعة 4: Was nehmen die Personen mit? (ماذا يأخذ الأشخاص معهم؟)
+    // ============================================================
+    ItemCard(english: "Ich fahre nie ohne Sonnencreme in den Urlaub. Die habe ich immer bei mir.", arabic: "لا أذهب أبداً في العطلة بدون كريم واقي من الشمس. إنه دائماً معي."),
+    ItemCard(english: "Ein gutes Buch packe ich auch immer ein oder zwei.", arabic: "أحزم أيضاً كتاباً جيداً أو اثنين."),
+    ItemCard(english: "Und natürlich meine Sportschuhe. Ich laufe jeden Tag.", arabic: "وطبعاً حذائي الرياضي. أركض كل يوم."),
+    ItemCard(english: "Ich habe immer meinen Rucksack dabei. Der ist nicht groß, aber alles hat Platz.", arabic: "لدي دائماً حقيبة ظهري معي. إنها ليست كبيرة، لكن كل شيء له مكان."),
+    ItemCard(english: "Ich nehme immer einen Regenschirm mit und meinen eigenen Tee.", arabic: "آخذ دائماً مظلة معي وشايي الخاص."),
+    ItemCard(english: "Ich trinke keinen Kaffee und brauche jeden Tag eine Tasse von meinem Lieblingstee.", arabic: "لا أشرب القهوة وأحتاج كل يوم كوباً من شايي المفضل."),
+    ItemCard(english: "Ich habe immer Tabletten gegen Kopfschmerzen dabei.", arabic: "لدي دائماً أقراص ضد الصداع معي."),
+    ItemCard(english: "Messer, Gabel und Löffel packe ich auch immer ein.", arabic: "أحزم أيضاً سكيناً وشوكة وملعقة."),
+    ItemCard(english: "Meine Mütze kommt immer mit, egal wo ich hinfahre.", arabic: "قبعتي تأتي دائماً معي، بغض النظر عن أين أذهب."),
+
+    // ============================================================
+    // المجموعة 5: Wegbeschreibung (وصف الطريق)
+    // ============================================================
+    ItemCard(english: "Wie kommen wir denn jetzt zu der Stadttour?", arabic: "كيف نصل الآن إلى الجولة الإرشادية في المدينة؟"),
+    ItemCard(english: "Schau doch mal auf dem Handy nach. Wie heißt noch mal der Platz? Zentralbahnplatz.", arabic: "انظر على الهاتف. ما اسم الساحة مرة أخرى؟ تسنترالبانبلاتس."),
+    ItemCard(english: "Wir können mit der Tram fahren.", arabic: "يمكننا الذهاب بالترام."),
+    ItemCard(english: "Wir gehen zur Haltestelle Bankverein, da steigen wir in die Tram ein.", arabic: "نذهب إلى محطة بانكفيرين، هناك نصعد إلى الترام."),
+    ItemCard(english: "Am Zentralbahnplatz steigen wir wieder aus.", arabic: "في تسنترالبانبلاتس ننزل مرة أخرى."),
+    ItemCard(english: "Da muss man nicht umsteigen. Die Tram fährt direkt.", arabic: "لا نحتاج إلى تغيير وسيلة النقل. الترام يذهب مباشرة."),
+    ItemCard(english: "Das ist die Nummer 8 und die Nummer 10.", arabic: "هذا هو رقم 8 ورقم 10."),
+
+    // ============================================================
+    // المجموعة 6: Beispiele mit denn und weil (أمثلة مع denn و weil)
+    // ============================================================
+    ItemCard(english: "Ich lerne Deutsch, denn ich will nach Deutschland fliegen.", arabic: "أتعلم الألمانية، لأنني أريد السفر إلى ألمانيا."),
+    ItemCard(english: "Ich lerne Deutsch, weil ich nach Deutschland fliegen will.", arabic: "أتعلم الألمانية، لأنني أريد السفر إلى ألمانيا."),
+    ItemCard(english: "Ich bleibe zu Hause, denn ich bin krank.", arabic: "أبقى في المنزل، لأنني مريض."),
+    ItemCard(english: "Ich bleibe zu Hause, weil ich krank bin.", arabic: "أبقى في المنزل، لأنني مريض."),
+    ItemCard(english: "Die Stadt ist toll, denn man kann viel machen.", arabic: "المدينة رائعة، لأن المرء يمكنه فعل الكثير."),
+    ItemCard(english: "Ich mag das Museum, denn Kunst gefällt mir.", arabic: "أحب المتحف، لأن الفن يعجبني."),
+    ItemCard(english: "Wir essen sehr viel, denn es gibt viele Restaurants.", arabic: "نأكل كثيراً، لأن هناك الكثير من المطاعم."),
+    ItemCard(english: "Abends sind wir müde, denn wir haben viel gesehen und gemacht.", arabic: "في المساء نكون متعبين، لأننا رأينا وفعلنا الكثير."),
+    ItemCard(english: "Ich kaufe einen Rucksack, denn ich gehe am Wochenende wandern.", arabic: "أشتري حقيبة ظهر، لأنني سأذهب للتنزه في عطلة نهاية الأسبوع."),
+    ItemCard(english: "Wir nehmen den Bus, denn er ist schneller.", arabic: "نأخذ الحافلة، لأنها أسرع."),
+
+    // ============================================================
+    // المجموعة 7: Postkarte aus Basel (بطاقة بريدية من بازل)
+    // ============================================================
+    ItemCard(english: "Liebe Tante Rosa, lieber Onkel Karl, in Basel ist es sehr schön.", arabic: "عزيزتي العمة روزا، عزيزي العم كارل، الجو في بازل جميل جداً."),
+    ItemCard(english: "Denn man kann hier sehr viel machen.", arabic: "لأنه يمكن فعل الكثير هنا."),
+    ItemCard(english: "Wir haben heute das Vitra Designmuseum besucht und eine super Stadttour gemacht.", arabic: "لقد زرنا اليوم متحف فيترا للتصميم وقمنا بجولة مدينة رائعة."),
+    ItemCard(english: "Morgen machen wir einen Spaziergang im Zoo und gehen ein bisschen shoppen.", arabic: "غداً سنقوم بتمشية في حديقة الحيوان ونذهب للتسوق قليلاً."),
+    ItemCard(english: "Bis bald und viele Grüße, Katharina und Johannes.", arabic: "إلى اللقاء قريباً وتحيات كثيرة، كاثارينا ويوهانس."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 12 Modul 1 - Urlaub & Reisen - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF0288D1), // لون أزرق فاتح
+      secondaryColor: const Color(0xFF01579B),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 12 Modul 1 (denn & weil - شرح كامل)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_12_Modul1GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. مقدمة عن denn و weil
+    // ============================================================
+    LearningItem(primaryText: "➤ denn und weil (لأن)", secondaryText: "لتقديم سبب أو تفسير"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 beide bedeuten 'لأن'", secondaryText: "كلاهما يعني 'لأن'"),
+    LearningItem(primaryText: "aber der Satzbau ist anders!", secondaryText: "لكن تركيب الجملة مختلف!"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. قاعدة denn (Hauptsatz)
+    // ============================================================
+    LearningItem(primaryText: "➤ denn (Hauptsatz)", secondaryText: "denn (جملة رئيسية)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "denn + Subjekt + Verb + ..."),
+    LearningItem(primaryText: "Das Verb steht auf Position 2", secondaryText: "الفعل في Position 2 (جملة عادية)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Ich lerne Deutsch, denn ich will nach Deutschland fliegen.", secondaryText: "أتعلم الألمانية، لأنني أريد السفر إلى ألمانيا."),
+    LearningItem(primaryText: "Ich bleibe zu Hause, denn ich bin krank.", secondaryText: "أبقى في المنزل، لأنني مريض."),
+    LearningItem(primaryText: "Die Stadt ist toll, denn man kann viel machen.", secondaryText: "المدينة رائعة، لأن المرء يمكنه فعل الكثير."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. قاعدة weil (Nebensatz)
+    // ============================================================
+    LearningItem(primaryText: "➤ weil (Nebensatz)", secondaryText: "weil (جملة ثانوية)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 القاعدة:", secondaryText: "weil + Subjekt + ... + Verb (am Ende)"),
+    LearningItem(primaryText: "Das Verb steht am Ende des Satzes", secondaryText: "الفعل في نهاية الجملة"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Ich lerne Deutsch, weil ich nach Deutschland fliegen will.", secondaryText: "أتعلم الألمانية، لأنني أريد السفر إلى ألمانيا."),
+    LearningItem(primaryText: "Ich bleibe zu Hause, weil ich krank bin.", secondaryText: "أبقى في المنزل، لأنني مريض."),
+    LearningItem(primaryText: "Die Stadt ist toll, weil man viel machen kann.", secondaryText: "المدينة رائعة، لأن المرء يمكنه فعل الكثير."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. جدول المقارنة بين denn و weil
+    // ============================================================
+    LearningItem(primaryText: "➤ Vergleich: denn vs. weil", secondaryText: "مقارنة: denn مقابل weil"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "denn", secondaryText: "weil"),
+    LearningItem(primaryText: "Hauptsatz (جملة رئيسية)", secondaryText: "Nebensatz (جملة ثانوية)"),
+    LearningItem(primaryText: "Verb auf Position 2", secondaryText: "Verb am Ende"),
+    LearningItem(primaryText: "kein anderer Wortstellungswechsel", secondaryText: "الفعل يذهب إلى النهاية"),
+    LearningItem(primaryText: "mehr in geschriebener Sprache", secondaryText: "mehr in gesprochener Sprache"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Beispiel mit denn:", secondaryText: "Ich gehe nicht zur Arbeit, denn ich bin krank."),
+    LearningItem(primaryText: "Beispiel mit weil:", secondaryText: "Ich gehe nicht zur Arbeit, weil ich krank bin."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. أمثلة إضافية من النص
+    // ============================================================
+    LearningItem(primaryText: "➤ Beispiele aus dem Text", secondaryText: "أمثلة من النص"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "In Basel ist es sehr schön, denn man kann hier sehr viel machen.", secondaryText: "في بازل الجو جميل جداً، لأنه يمكن فعل الكثير هنا."),
+    LearningItem(primaryText: "Ich kaufe einen Rucksack, denn ich gehe am Wochenende wandern.", secondaryText: "أشتري حقيبة ظهر، لأنني سأذهب للتنزه في عطلة نهاية الأسبوع."),
+    LearningItem(primaryText: "Wir nehmen den Bus, denn er ist schneller.", secondaryText: "نأخذ الحافلة، لأنها أسرع."),
+    LearningItem(primaryText: "Ich mag das Museum, denn Kunst gefällt mir.", secondaryText: "أحب المتحف، لأن الفن يعجبني."),
+    LearningItem(primaryText: "Wir essen sehr viel, denn es gibt viele Restaurants.", secondaryText: "نأكل كثيراً، لأن هناك مطاعم كثيرة."),
+    LearningItem(primaryText: "Abends sind wir müde, denn wir haben viel gesehen und gemacht.", secondaryText: "في المساء نكون متعبين، لأننا رأينا وفعلنا الكثير."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. تمرين: اختر denn oder weil
+    // ============================================================
+    LearningItem(primaryText: "➤ Übung: denn oder weil?", secondaryText: "تمرين: denn أم weil؟"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "1. Ich lerne Deutsch, _____ ich die Sprache brauche.", secondaryText: "denn / weil (weil - Verb 'brauche'? Nein: 'brauche' am Ende → weil)"),
+    LearningItem(primaryText: "2. Ich bleibe zu Hause, _____ ich müde bin.", secondaryText: "weil (bin am Ende)"),
+    LearningItem(primaryText: "3. Die Stadt ist toll, _____ man kann viel machen.", secondaryText: "denn (kann في Position 2)"),
+    LearningItem(primaryText: "4. Ich gehe ins Kino, _____ der Film ist gut.", secondaryText: "denn (ist في Position 2)"),
+    LearningItem(primaryText: "5. Wir fahren nach Berlin, _____ wir die Stadt lieben.", secondaryText: "weil (lieben am Ende)"),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ Weitere Beispiele zum Üben", secondaryText: "أمثلة إضافية للتدريب"),
+    LearningItem(primaryText: "Ich trinke Wasser, denn ich habe Durst.", secondaryText: "أشرب الماء، لأنني عطشان."),
+    LearningItem(primaryText: "Ich trinke Wasser, weil ich Durst habe.", secondaryText: "أشرب الماء، لأنني عطشان."),
+    LearningItem(primaryText: "Wir gehen ins Restaurant, denn wir haben Hunger.", secondaryText: "نذهب إلى المطعم، لأننا جائعون."),
+    LearningItem(primaryText: "Wir gehen ins Restaurant, weil wir Hunger haben.", secondaryText: "نذهب إلى المطعم، لأننا جائعون."),
+    LearningItem(primaryText: "Sie kauft ein Kleid, denn es gefällt ihr.", secondaryText: "هي تشتري فستاناً، لأنه يعجبها."),
+    LearningItem(primaryText: "Sie kauft ein Kleid, weil es ihr gefällt.", secondaryText: "هي تشتري فستاناً، لأنه يعجبها."),
+    LearningItem(primaryText: "Er nimmt den Schirm, denn es regnet.", secondaryText: "هو يأخذ المظلة، لأنها تمطر."),
+    LearningItem(primaryText: "Er nimmt den Schirm, weil es regnet.", secondaryText: "هو يأخذ المظلة، لأنها تمطر."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 12 Modul 1 - القواعد (denn & weil - شرح كامل)",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+
+// ============================================================================
+// Netzwerk neu A1.1 - Kapitel 12 Modul 2
+// Reiseberichte & Zeitangaben - المفردات (كلمات صغيرة للكروت)
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_12_Modul2CardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Reiseberichte Vokabeln (مفردات تقارير السفر)
+    // ============================================================
+    LearningCard(primaryText: "der Reisebericht", secondaryText: "تقرير السفر"),
+    LearningCard(primaryText: "die Jugendherberge", secondaryText: "بيت الشباب"),
+    LearningCard(primaryText: "außerhalb", secondaryText: "خارج (المركز)"),
+    LearningCard(primaryText: "sauber", secondaryText: "نظيف"),
+    LearningCard(primaryText: "günstig", secondaryText: "رخيص / مناسب السعر"),
+    LearningCard(primaryText: "unterwegs", secondaryText: "في الطريق"),
+    LearningCard(primaryText: "KO / kaputt", secondaryText: "منهك / متعب جداً"),
+    LearningCard(primaryText: "der Akku", secondaryText: "بطارية (الهاتف)"),
+    LearningCard(primaryText: "leer", secondaryText: "فارغ"),
+    LearningCard(primaryText: "der Taxifahrer", secondaryText: "سائق التاكسي"),
+    LearningCard(primaryText: "die Auskunft", secondaryText: "المعلومات / الاستعلام"),
+    LearningCard(primaryText: "froh", secondaryText: "سعيد / مرتاح"),
+
+    // ============================================================
+    // المجموعة 2: Fahrradreise Vokabeln (مفردات رحلة الدراجة)
+    // ============================================================
+    LearningCard(primaryText: "die Ostsee", secondaryText: "بحر البلطيق"),
+    LearningCard(primaryText: "die Pension", secondaryText: "بينسيون (إقامة صغيرة)"),
+    LearningCard(primaryText: "losfahren", secondaryText: "ينطلق / يبدأ القيادة"),
+    LearningCard(primaryText: "anstrengend", secondaryText: "مرهق"),
+    LearningCard(primaryText: "der Zug", secondaryText: "القطار"),
+    LearningCard(primaryText: "verpassen", secondaryText: "يفوته (القطار/الموعد)"),
+    LearningCard(primaryText: "der Schaffner", secondaryText: "مراقب القطار / المضيف"),
+    LearningCard(primaryText: "wecken", secondaryText: "يوقظ"),
+    LearningCard(primaryText: "der Bekannte", secondaryText: "معروف / صديق"),
+
+    // ============================================================
+    // المجموعة 3: Koffer Vokabeln (مفردات الحقيبة)
+    // ============================================================
+    LearningCard(primaryText: "der Koffer", secondaryText: "الحقيبة"),
+    LearningCard(primaryText: "verwechseln", secondaryText: "يخلط بين (شيئين)"),
+    LearningCard(primaryText: "merken", secondaryText: "يلاحظ / يتذكر"),
+    LearningCard(primaryText: "gehören", secondaryText: "يعود لـ / يخص"),
+    LearningCard(primaryText: "die Badehose", secondaryText: "سروال السباحة"),
+    LearningCard(primaryText: "faul", secondaryText: "كسول"),
+    LearningCard(primaryText: "warten auf", secondaryText: "ينتظر"),
+    LearningCard(primaryText: "chillen", secondaryText: "يسترخي / يرتاح"),
+
+    // ============================================================
+    // المجموعة 4: Fragewörter (أدوات الاستفهام)
+    // ============================================================
+    LearningCard(primaryText: "wer (Nominativ)", secondaryText: "من (فاعل)"),
+    LearningCard(primaryText: "wen (Akkusativ)", secondaryText: "من (مفعول به)"),
+    LearningCard(primaryText: "wem (Dativ)", secondaryText: "لمن (مفعول به غير مباشر)"),
+    LearningCard(primaryText: "wohin", secondaryText: "إلى أين"),
+    LearningCard(primaryText: "woher", secondaryText: "من أين"),
+    LearningCard(primaryText: "wie lange", secondaryText: "كم من الوقت"),
+    LearningCard(primaryText: "wann", secondaryText: "متى"),
+    LearningCard(primaryText: "warum", secondaryText: "لماذا"),
+    LearningCard(primaryText: "was", secondaryText: "ماذا"),
+
+    // ============================================================
+    // المجموعة 5: Zeitpräpositionen (حروف الجر الزمنية)
+    // ============================================================
+    LearningCard(primaryText: "ab", secondaryText: "بدءاً من (مستقبل)"),
+    LearningCard(primaryText: "am", secondaryText: "في (أيام الأسبوع، أوقات اليوم)"),
+    LearningCard(primaryText: "im", secondaryText: "في (شهور، فصول السنة)"),
+    LearningCard(primaryText: "nach", secondaryText: "بعد"),
+    LearningCard(primaryText: "vor", secondaryText: "قبل"),
+    LearningCard(primaryText: "seit", secondaryText: "منذ (حدث مستمر)"),
+    LearningCard(primaryText: "in", secondaryText: "خلال / بعد (زمن مستقبلي)"),
+
+    // ============================================================
+    // المجموعة 6: Himmelsrichtungen (اتجاهات البوصلة)
+    // ============================================================
+    LearningCard(primaryText: "der Norden", secondaryText: "الشمال"),
+    LearningCard(primaryText: "der Süden", secondaryText: "الجنوب"),
+    LearningCard(primaryText: "der Osten", secondaryText: "الشرق"),
+    LearningCard(primaryText: "der Westen", secondaryText: "الغرب"),
+    LearningCard(primaryText: "die Mitte", secondaryText: "الوسط"),
+
+    // ============================================================
+    // المجموعة 7: Wetter (الطقس)
+    // ============================================================
+    LearningCard(primaryText: "die Sonne scheint", secondaryText: "الشمس مشرقة"),
+    LearningCard(primaryText: "es regnet", secondaryText: "إنها تمطر"),
+    LearningCard(primaryText: "es schneit", secondaryText: "إنها تثلج"),
+    LearningCard(primaryText: "bewölkt", secondaryText: "غائم"),
+    LearningCard(primaryText: "der Wind weht", secondaryText: "الرياح تهب"),
+    LearningCard(primaryText: "windig", secondaryText: "عاصف"),
+    LearningCard(primaryText: "die Hitze", secondaryText: "الحر الشديد"),
+    LearningCard(primaryText: "die Temperatur", secondaryText: "درجة الحرارة"),
+    LearningCard(primaryText: "warm", secondaryText: "دافئ"),
+    LearningCard(primaryText: "kalt", secondaryText: "بارد"),
+    LearningCard(primaryText: "heiß", secondaryText: "حار"),
+
+    // ============================================================
+    // المجموعة 8: Reiseziele in Deutschland (وجهات سفر في ألمانيا)
+    // ============================================================
+    LearningCard(primaryText: "die Nordsee", secondaryText: "بحر الشمال"),
+    LearningCard(primaryText: "die Ostsee", secondaryText: "بحر البلطيق"),
+    LearningCard(primaryText: "die Alpen", secondaryText: "جبال الألب"),
+    LearningCard(primaryText: "Mallorca", secondaryText: "مايوركا"),
+    LearningCard(primaryText: "Salzburg", secondaryText: "سالزبورغ"),
+    LearningCard(primaryText: "Garmisch-Partenkirchen", secondaryText: "غارميش-بارتنكيرشن"),
+    LearningCard(primaryText: "Berchtesgaden", secondaryText: "بيرشتسغادن"),
+
+    // ============================================================
+    // المجموعة 9: Weitere wichtige Verben
+    // ============================================================
+    LearningCard(primaryText: "schlafen → geschlafen", secondaryText: "ينام → نام"),
+    LearningCard(primaryText: "aufwachen → aufgewacht", secondaryText: "يستيقظ → استيقظ"),
+    LearningCard(primaryText: "wandern → gewandert", secondaryText: "يتنزه → تنزه"),
+    LearningCard(primaryText: "grillen → gegrillt", secondaryText: "يشوي → شوى"),
+    LearningCard(primaryText: "kochen → gekocht", secondaryText: "يطبخ → طهى"),
+    LearningCard(primaryText: "einsteigen → eingestiegen", secondaryText: "يصعد → صعد"),
+    LearningCard(primaryText: "aussteigen → ausgestiegen", secondaryText: "ينزل → نزل"),
+    LearningCard(primaryText: "umsteigen → umgestiegen", secondaryText: "يغير وسيلة النقل → غير"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 12 Modul 2 - Reiseberichte - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Kapitel 12 Modul 2
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_12_Modul2SintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: Reisebericht Laura (München)
+    // ============================================================
+    ItemCard(english: "Meine Freundin und ich waren im August in München.", arabic: "صديقتي وأنا كنا في ميونخ في أغسطس."),
+    ItemCard(english: "Schöne Geschäfte und viele Sehenswürdigkeiten.", arabic: "محلات جميلة والعديد من المعالم السياحية."),
+    ItemCard(english: "Wir hatten ein Zimmer in einer Jugendherberge etwas außerhalb.", arabic: "كان لدينا غرفة في بيت شباب خارج المركز قليلاً."),
+    ItemCard(english: "Die Herberge war sauber und günstig.", arabic: "بيت الشباب كان نظيفاً ورخيصاً."),
+    ItemCard(english: "Wir waren seit dem Frühstück in der Stadt unterwegs.", arabic: "كنا في الطريق في المدينة منذ الإفطار."),
+    ItemCard(english: "Am Abend waren wir echt KO.", arabic: "في المساء كنا منهكين حقاً."),
+    ItemCard(english: "Aber wir haben nicht mehr zur Jugendherberge zurückgefunden.", arabic: "لكننا لم نعد نجد الطريق إلى بيت الشباب."),
+    ItemCard(english: "Unsere Handy-Akkus waren leer.", arabic: "بطاريات هواتفنا كانت فارغة."),
+    ItemCard(english: "Wir hatten kein Internet und die Adresse hatten wir auch nicht.", arabic: "لم يكن لدينا إنترنت ولم يكن لدينا العنوان أيضاً."),
+    ItemCard(english: "Zuerst war das noch lustig, aber nach einer Stunde nicht mehr.", arabic: "في البداية كان هذا مضحكاً، لكن بعد ساعة لم يعد كذلك."),
+    ItemCard(english: "In der Nacht haben wir dann einen Taxifahrer gefragt.", arabic: "في الليل سألنا سائق تاكسي."),
+    ItemCard(english: "Er hat uns geholfen und uns die Auskunft gegeben.", arabic: "لقد ساعدنا وأعطانا المعلومات."),
+    ItemCard(english: "Am Ende waren wir froh.", arabic: "في النهاية كنا سعداء."),
+
+    // ============================================================
+    // المجموعة 2: Reisebericht Bernd (Ostsee)
+    // ============================================================
+    ItemCard(english: "Im Herbst waren vier Freunde und ich eine Woche an der Ostsee.", arabic: "في الخريف كنت أنا وأربعة أصدقاء أسبوعاً على بحر البلطيق."),
+    ItemCard(english: "Von Stralsund sind wir 300 km mit dem Fahrrad bis nach Lübeck gefahren.", arabic: "من شترالزوند قدنا 300 كم بالدراجة حتى لوبيك."),
+    ItemCard(english: "Wir haben in Pensionen übernachtet.", arabic: "بتنا في بينسيونات."),
+    ItemCard(english: "Wir sind immer direkt nach dem Frühstück losgefahren.", arabic: "كنا ننطلق دائماً مباشرة بعد الإفطار."),
+    ItemCard(english: "Die Tour war total schön, aber auch anstrengend.", arabic: "الرحلة كانت جميلة جداً، لكنها مرهقة أيضاً."),
+    ItemCard(english: "Nach einer Woche sind wir mit dem Zug wieder nach Hause gefahren.", arabic: "بعد أسبوع عدنا بالقطار إلى المنزل."),
+    ItemCard(english: "Wir waren alle total müde und haben geschlafen.", arabic: "كنا جميعاً متعبين جداً ونمنا."),
+    ItemCard(english: "Wir haben unseren Bahnhof verpasst.", arabic: "فوتنا محطة قطارنا."),
+    ItemCard(english: "Erst vor der Ankunft in Kassel hat uns der Schaffner geweckt.", arabic: "فقط قبل الوصول إلى كاسل أيقظنا المراقب."),
+    ItemCard(english: "Wir haben dann in Kassel Bekannte besucht.", arabic: "ثم زرنا معارف في كاسل."),
+    ItemCard(english: "Dann sind wir 150 km zurückgefahren, aber mit dem Zug.", arabic: "ثم عدنا 150 كم، لكن بالقطار."),
+
+    // ============================================================
+    // المجموعة 3: Reisebericht Christian (Salzburg)
+    // ============================================================
+    ItemCard(english: "Im Winter bin ich mit meiner Freundin zum Skifahren nach Salzburg geflogen.", arabic: "في الشتاء سافرت بالطائرة مع صديقتي للتزلج إلى سالزبورغ."),
+    ItemCard(english: "Nach der Ankunft ist es passiert.", arabic: "بعد الوصول حدث ذلك."),
+    ItemCard(english: "Ich habe den falschen Koffer genommen.", arabic: "أخذت الحقيبة الخاطئة."),
+    ItemCard(english: "Mein Koffer ist schwarz wie ganz viele.", arabic: "حقيبتي سوداء مثل الكثير جداً."),
+    ItemCard(english: "Ich habe das erst am Abend im Hotel gemerkt.", arabic: "لاحظت ذلك فقط في المساء في الفندق."),
+    ItemCard(english: "Ich habe den Koffer aufgemacht, aber die Sachen haben mir nicht gehört.", arabic: "فتحت الحقيبة، لكن الأشياء لم تكن تخصني."),
+    ItemCard(english: "Da waren nur T-Shirts und Badehosen.", arabic: "كان هناك فقط تيشيرتات وسراويل سباحة."),
+    ItemCard(english: "Ab dem Moment war ich total faul, denn ich habe auf meinen Koffer gewartet.", arabic: "منذ تلك اللحظة كنت كسولاً جداً، لأنني كنت أنتظر حقيبتي."),
+    ItemCard(english: "In der Zeit habe ich einfach im Zimmer gechillt und Filme geschaut.", arabic: "في ذلك الوقت كنت أسترخي في الغرفة وأشاهد الأفلام."),
+    ItemCard(english: "Nach zwei Tagen war mein Koffer da.", arabic: "بعد يومين كانت حقيبتي هناك."),
+    ItemCard(english: "Das Wetter war wunderbar und ich bin viel Ski gefahren.", arabic: "الطقس كان رائعاً وتزلجت كثيراً."),
+    ItemCard(english: "Vor der nächsten Reise kaufe ich einen grünen Koffer.", arabic: "قبل الرحلة القادمة سأشتري حقيبة خضراء."),
+
+    // ============================================================
+    // المجموعة 4: Fragewörter Beispiele (أمثلة أدوات الاستفهام)
+    // ============================================================
+    ItemCard(english: "Wer kommt heute? - Ali kommt heute.", arabic: "من يأتي اليوم؟ - علي يأتي اليوم."),
+    ItemCard(english: "Wen triffst du heute? - Ich treffe meinen Freund.", arabic: "من تقابل اليوم؟ - أقابل صديقي."),
+    ItemCard(english: "Wem hilfst du? - Ich helfe meiner Mutter.", arabic: "لمن تساعد؟ - أساعد أمي."),
+    ItemCard(english: "Wohin fährst du am Wochenende? - Ich fahre nach Berlin.", arabic: "إلى أين تذهب في عطلة نهاية الأسبوع؟ - أذهب إلى برلين."),
+    ItemCard(english: "Wie lange dauert die Reise? - Eine Woche.", arabic: "كم من الوقت تستغرق الرحلة؟ - أسبوع."),
+    ItemCard(english: "Wann warst du in München? - Im August.", arabic: "متى كنت في ميونخ؟ - في أغسطس."),
+    ItemCard(english: "Warum bist du müde? - Weil ich wenig geschlafen habe.", arabic: "لماذا أنت متعب؟ - لأنني نمت قليلاً."),
+
+    // ============================================================
+    // المجموعة 5: Zeitpräpositionen Beispiele
+    // ============================================================
+    ItemCard(english: "Ab morgen lerne ich Deutsch.", arabic: "بدءاً من الغد أتعلم الألمانية."),
+    ItemCard(english: "Am Morgen trinke ich Kaffee.", arabic: "في الصباح أشرب القهوة."),
+    ItemCard(english: "Am Wochenende gehe ich ins Kino.", arabic: "في عطلة نهاية الأسبوع أذهب إلى السينما."),
+    ItemCard(english: "Im August mache ich Urlaub.", arabic: "في أغسطس آخذ عطلة."),
+    ItemCard(english: "Im Sommer fahre ich nach Ägypten.", arabic: "في الصيف أذهب إلى مصر."),
+    ItemCard(english: "Nach dem Frühstück gehe ich zur Arbeit.", arabic: "بعد الإفطار أذهب إلى العمل."),
+    ItemCard(english: "Nach dem Kurs treffe ich meine Freunde.", arabic: "بعد الدورة أقابل أصدقائي."),
+    ItemCard(english: "Vor der Prüfung lerne ich viel.", arabic: "قبل الامتحان أتعلم كثيراً."),
+    ItemCard(english: "Vor dem Frühstück dusche ich.", arabic: "قبل الإفطار أستحم."),
+    ItemCard(english: "Seit drei Monaten lerne ich Deutsch.", arabic: "منذ ثلاثة أشهر أتعلم الألمانية."),
+    ItemCard(english: "Seit einem Jahr wohne ich in Berlin.", arabic: "منذ سنة أسكن في برلين."),
+    ItemCard(english: "In einer Woche habe ich Urlaub.", arabic: "بعد أسبوع لدي عطلة."),
+
+    // ============================================================
+    // المجموعة 6: Wetterbeschreibung (وصف الطقس)
+    // ============================================================
+    ItemCard(english: "Im Süden Deutschlands scheint heute die Sonne und es weht viel Wind.", arabic: "في جنوب ألمانيا الشمس مشرقة والرياح تهب بقوة."),
+    ItemCard(english: "Im Norden Deutschlands ist kein Wind, aber es regnet.", arabic: "في شمال ألمانيا لا توجد رياح، لكنها تمطر."),
+    ItemCard(english: "Die Temperaturen liegen nur bei maximal 10 Grad.", arabic: "درجات الحرارة تصل فقط إلى 10 درجات كحد أقصى."),
+    ItemCard(english: "Im Osten gibt es ein paar Wolken, aber keinen Regen.", arabic: "في الشرق توجد بعض الغيوم، لكن لا مطر."),
+    ItemCard(english: "Das Thermometer steigt auf 24 Grad.", arabic: "ميزان الحرارة يرتفع إلى 24 درجة."),
+    ItemCard(english: "Mann, ist das heiß! So eine Hitze!", arabic: "يا رجل، كم هو حار! يا له من حر!"),
+    ItemCard(english: "So ein Mistwetter! Es schüttet.", arabic: "يا له من طقس سيء! إنها تمطر بغزارة."),
+
+    // ============================================================
+    // المجموعة 7: Urlaub in Deutschland (العطلة في ألمانيا)
+    // ============================================================
+    ItemCard(english: "Viele Deutsche machen Urlaub in Deutschland. 35% reisen im eigenen Land.", arabic: "الكثير من الألمان يقضون عطلتهم في ألمانيا. 35% يسافرون في بلدهم."),
+    ItemCard(english: "Städtereisen sind sehr beliebt. Berlin, Hamburg, München sind populär.", arabic: "رحلات المدن مشهورة جداً. برلين، هامبورغ، ميونخ شعبية."),
+    ItemCard(english: "In den Städten gibt es Kultur, Bars und viele Angebote.", arabic: "في المدن هناك ثقافة، حانات والعديد من العروض."),
+    ItemCard(english: "Viele fahren ans Meer zur Nord- oder Ostsee.", arabic: "الكثير يذهبون إلى البحر الشمالي أو بحر البلطيق."),
+    ItemCard(english: "Dort kann man schwimmen, Sport machen und sich erholen.", arabic: "هناك يمكن السباحة، ممارسة الرياضة والاسترخاء."),
+    ItemCard(english: "Die Landschaft und die Strände sind wunderschön.", arabic: "المناظر الطبيعية والشواطئ جميلة جداً."),
+    ItemCard(english: "Auch die Berge sind beliebt. Dort kann man wandern und die Natur genießen.", arabic: "أيضاً الجبال مشهورة. هناك يمكن التنزه والاستمتاع بالطبيعة."),
+
+    // ============================================================
+    // المجموعة 8: Leo auf Mallorca
+    // ============================================================
+    ItemCard(english: "Mein Urlaub war super. Ich war mit Freunden auf Mallorca.", arabic: "عطلتي كانت رائعة. كنت مع أصدقائي في مايوركا."),
+    ItemCard(english: "Wir waren zwei Wochen im Norden der Insel.", arabic: "كنا أسبوعين في شمال الجزيرة."),
+    ItemCard(english: "Dort kann man toll wandern.", arabic: "هناك يمكن التنزه بشكل رائع."),
+    ItemCard(english: "Wir sind fast jeden Tag gewandert.", arabic: "كنا نتنزه تقريباً كل يوم."),
+    ItemCard(english: "Dann sind wir zum Strand gegangen und geschwommen.", arabic: "ثم ذهبنا إلى الشاطئ وسبحنا."),
+    ItemCard(english: "Abends haben wir gegrillt oder gekocht.", arabic: "في المساء كنا نشوي أو نطبخ."),
+    ItemCard(english: "Das war super lecker.", arabic: "كان ذلك لذيذاً جداً."),
+    ItemCard(english: "Es war vielleicht etwas zu heiß für mich.", arabic: "ربما كان حاراً جداً بالنسبة لي."),
+    ItemCard(english: "Mittags habe ich oft geschlafen.", arabic: "ظهراً كنت أنام كثيراً."),
+    ItemCard(english: "Mehr als 30 Grad sind einfach nichts für mich.", arabic: "أكثر من 30 درجة ليست مناسبة لي ببساطة."),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Kapitel 12 Modul 2 - Reiseberichte - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFF00ACC1), // لون تركواز
+      secondaryColor: const Color(0xFF00838F),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Kapitel 12 Modul 2 (Fragewörter & Zeitpräpositionen)
+// شرح كامل ومفصل
+// ============================================================================
+
+class NetzwerkNeuA1Kapitel_12_Modul2GrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. Fragewörter - Übersicht
+    // ============================================================
+    LearningItem(primaryText: "➤ Fragewörter (W-Fragen)", secondaryText: "أدوات الاستفهام"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 wer, wen, wem", secondaryText: "من (حسب الحالة الإعرابية)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. wer (Nominativ)
+    // ============================================================
+    LearningItem(primaryText: "➤ wer (Nominativ)", secondaryText: "من (للسؤال عن الفاعل)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Wer kommt heute? - Ali kommt heute."),
+    LearningItem(primaryText: "Frage nach dem Subjekt", secondaryText: "السؤال عن الفاعل"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. wen (Akkusativ)
+    // ============================================================
+    LearningItem(primaryText: "➤ wen (Akkusativ)", secondaryText: "من (للسؤال عن المفعول به)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Wen triffst du heute? - Ich treffe meinen Freund."),
+    LearningItem(primaryText: "Frage nach dem Objekt", secondaryText: "السؤال عن المفعول به"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. wem (Dativ)
+    // ============================================================
+    LearningItem(primaryText: "➤ wem (Dativ)", secondaryText: "لمن (للسؤال عن المفعول به غير المباشر)"),
+    LearningItem(primaryText: "Beispiel:", secondaryText: "Wem hilfst du? - Ich helfe meiner Mutter."),
+    LearningItem(primaryText: "Frage nach dem indirekten Objekt", secondaryText: "السؤال عن المفعول به غير المباشر"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. جدول المقارنة
+    // ============================================================
+    LearningItem(primaryText: "➤ Vergleich: wer - wen - wem", secondaryText: "مقارنة: من - من - لمن"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Kasus", secondaryText: "Fragewort | Beispiel"),
+    LearningItem(primaryText: "Nominativ", secondaryText: "wer | Wer kommt heute?"),
+    LearningItem(primaryText: "Akkusativ", secondaryText: "wen | Wen liebst du?"),
+    LearningItem(primaryText: "Dativ", secondaryText: "wem | Wem gibst du das Buch?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. Weitere wichtige Fragewörter
+    // ============================================================
+    LearningItem(primaryText: "➤ Weitere W-Fragen", secondaryText: "أدوات استفهام أخرى"),
+    LearningItem(primaryText: "wo?", secondaryText: "أين؟ (مكان)"),
+    LearningItem(primaryText: "wohin?", secondaryText: "إلى أين؟ (اتجاه)"),
+    LearningItem(primaryText: "woher?", secondaryText: "من أين؟ (مصدر)"),
+    LearningItem(primaryText: "wann?", secondaryText: "متى؟ (زمان)"),
+    LearningItem(primaryText: "warum?", secondaryText: "لماذا؟ (سبب)"),
+    LearningItem(primaryText: "wie?", secondaryText: "كيف؟ (طريقة)"),
+    LearningItem(primaryText: "wie lange?", secondaryText: "كم من الوقت؟ (مدة)"),
+    LearningItem(primaryText: "was?", secondaryText: "ماذا؟ (شيء)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 7. Zeitpräpositionen - Übersicht
+    // ============================================================
+    LearningItem(primaryText: "➤ Zeitpräpositionen", secondaryText: "حروف الجر الزمنية"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "📌 Präpositionen mit Dativ", secondaryText: "جميعها تأتي مع Dativ"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 8. ab
+    // ============================================================
+    LearningItem(primaryText: "➤ ab", secondaryText: "بدءاً من (للمستقبل)"),
+    LearningItem(primaryText: "Bedeutung:", secondaryText: "starting from / as of"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Ab morgen lerne ich Deutsch.", secondaryText: "بدءاً من الغد أتعلم الألمانية."),
+    LearningItem(primaryText: "Ab Montag arbeite ich wieder.", secondaryText: "بدءاً من الاثنين أعود للعمل."),
+    LearningItem(primaryText: "Ab dem Moment war ich faul.", secondaryText: "بدءاً من تلك اللحظة كنت كسولاً."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 9. am
+    // ============================================================
+    LearningItem(primaryText: "➤ am (an + dem)", secondaryText: "في (أيام الأسبوع - أوقات اليوم)"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Am Morgen trinke ich Kaffee.", secondaryText: "في الصباح أشرب القهوة."),
+    LearningItem(primaryText: "Am Wochenende gehe ich ins Kino.", secondaryText: "في عطلة نهاية الأسبوع أذهب إلى السينما."),
+    LearningItem(primaryText: "Am Abend waren wir müde.", secondaryText: "في المساء كنا متعبين."),
+    LearningItem(primaryText: "Am Montag habe ich frei.", secondaryText: "يوم الاثنين لدي عطلة."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 10. im (in + dem)
+    // ============================================================
+    LearningItem(primaryText: "➤ im (in + dem)", secondaryText: "في (شهور - فصول السنة)"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Im August mache ich Urlaub.", secondaryText: "في أغسطس آخذ عطلة."),
+    LearningItem(primaryText: "Im Sommer fahre ich ans Meer.", secondaryText: "في الصيف أذهب إلى البحر."),
+    LearningItem(primaryText: "Im Winter war ich in Salzburg.", secondaryText: "في الشتاء كنت في سالزبورغ."),
+    LearningItem(primaryText: "Im Jahr 2026 fliege ich nach Deutschland.", secondaryText: "في سنة 2026 أسافر بالطائرة إلى ألمانيا."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 11. nach
+    // ============================================================
+    LearningItem(primaryText: "➤ nach", secondaryText: "بعد (حدث في الماضي)"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Nach dem Frühstück gehe ich zur Arbeit.", secondaryText: "بعد الإفطار أذهب إلى العمل."),
+    LearningItem(primaryText: "Nach der Ankunft ist es passiert.", secondaryText: "بعد الوصول حدث ذلك."),
+    LearningItem(primaryText: "Nach einer Woche fuhren wir nach Hause.", secondaryText: "بعد أسبوع عدنا إلى المنزل."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 12. vor
+    // ============================================================
+    LearningItem(primaryText: "➤ vor", secondaryText: "قبل"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Vor dem Frühstück dusche ich.", secondaryText: "قبل الإفطار أستحم."),
+    LearningItem(primaryText: "Vor der Prüfung lerne ich viel.", secondaryText: "قبل الامتحان أتعلم كثيراً."),
+    LearningItem(primaryText: "Vor der nächsten Reise kaufe ich einen Koffer.", secondaryText: "قبل الرحلة القادمة أشتري حقيبة."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 13. seit
+    // ============================================================
+    LearningItem(primaryText: "➤ seit", secondaryText: "منذ (حدث بدأ في الماضي وما زال مستمراً)"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "Seit drei Monaten lerne ich Deutsch.", secondaryText: "منذ ثلاثة أشهر أتعلم الألمانية."),
+    LearningItem(primaryText: "Seit einem Jahr wohne ich in Berlin.", secondaryText: "منذ سنة أسكن في برلين."),
+    LearningItem(primaryText: "Seit vier Wochen sind wir wieder zu Hause.", secondaryText: "منذ أربعة أسابيع عدنا إلى المنزل."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 14. in (mit Zeitangabe)
+    // ============================================================
+    LearningItem(primaryText: "➤ in (mit Zeitangabe)", secondaryText: "خلال / بعد (زمن مستقبلي)"),
+    LearningItem(primaryText: "Beispiele:", secondaryText: ""),
+    LearningItem(primaryText: "In einer Woche habe ich Urlaub.", secondaryText: "بعد أسبوع لدي عطلة."),
+    LearningItem(primaryText: "In zwei Tagen fliege ich nach Berlin.", secondaryText: "بعد يومين أسافر بالطائرة إلى برلين."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 15. جدول ملخص Zeitpräpositionen
+    // ============================================================
+    LearningItem(primaryText: "➤ Zusammenfassung", secondaryText: "ملخص"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Präposition", secondaryText: "Bedeutung | Beispiel"),
+    LearningItem(primaryText: "ab", secondaryText: "بدءاً من | Ab Montag arbeite ich."),
+    LearningItem(primaryText: "am", secondaryText: "في (يوم/وقت) | Am Morgen trinke ich Kaffee."),
+    LearningItem(primaryText: "im", secondaryText: "في (شهر/فصل) | Im Sommer fahre ich weg."),
+    LearningItem(primaryText: "nach", secondaryText: "بعد | Nach dem Essen gehe ich schlafen."),
+    LearningItem(primaryText: "vor", secondaryText: "قبل | Vor dem Schlafen lese ich."),
+    LearningItem(primaryText: "seit", secondaryText: "منذ (مستمر) | Seit 2020 lerne ich Deutsch."),
+    LearningItem(primaryText: "in", secondaryText: "خلال/بعد | In 10 Minuten bin ich da."),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ Übung: Fragewörter einsetzen", secondaryText: "تمرين: ضع أداة الاستفهام المناسبة"),
+    LearningItem(primaryText: "1. _____ kommt heute? - Meine Schwester kommt.", secondaryText: "Wer"),
+    LearningItem(primaryText: "2. _____ triffst du morgen? - Ich treffe meinen Freund.", secondaryText: "Wen"),
+    LearningItem(primaryText: "3. _____ hilfst du? - Ich helfe meinem Bruder.", secondaryText: "Wem"),
+    LearningItem(primaryText: "4. _____ fährst du? - Ich fahre nach Berlin.", secondaryText: "Wohin"),
+    LearningItem(primaryText: "5. _____ kommst du? - Ich komme aus Ägypten.", secondaryText: "Woher"),
+    LearningItem(primaryText: "6. _____ dauert der Film? - Zwei Stunden.", secondaryText: "Wie lange"),
+    LearningItem(primaryText: "7. _____ hast du Geburtstag? - Am 15. Mai.", secondaryText: "Wann"),
+    LearningItem(primaryText: "8. _____ bist du müde? - Weil ich wenig geschlafen habe.", secondaryText: "Warum"),
+
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "➤ Übung: Zeitpräpositionen einsetzen", secondaryText: "تمرين: ضع حرف الجر المناسب"),
+    LearningItem(primaryText: "1. _____ Sommer fahre ich nach Ägypten. (im/vor)", secondaryText: "Im"),
+    LearningItem(primaryText: "2. _____ dem Frühstück gehe ich zur Arbeit. (Nach/Vor)", secondaryText: "Nach"),
+    LearningItem(primaryText: "3. _____ drei Jahren lerne ich Deutsch. (Seit/Ab)", secondaryText: "Seit"),
+    LearningItem(primaryText: "4. _____ Montag habe ich Urlaub. (Am/Im)", secondaryText: "Am"),
+    LearningItem(primaryText: "5. _____ der Prüfung lerne ich viel. (Vor/Nach)", secondaryText: "Vor"),
+    LearningItem(primaryText: "6. _____ morgen lerne ich Deutsch. (Ab/Seit)", secondaryText: "Ab"),
+    LearningItem(primaryText: "7. _____ August war ich in München. (Im/Am)", secondaryText: "Im"),
+    LearningItem(primaryText: "8. _____ Wochenende gehe ich ins Kino. (Am/Im)", secondaryText: "Am"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Kapitel 12 Modul 2 - القواعد (Fragewörter & Zeitpräpositionen) - شرح كامل",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+class NetzwerkNeuA1WiederholungCardsScreenDwa extends StatelessWidget {
+  final List<LearningCard> Cards = [
+    // ============================================================
+    // المجموعة 1: Prüfungsteile (أجزاء الامتحان)
+    // ============================================================
+    LearningCard(primaryText: "die Prüfung", secondaryText: "الامتحان"),
+    LearningCard(primaryText: "das Lesen", secondaryText: "القراءة"),
+    LearningCard(primaryText: "das Hören", secondaryText: "الاستماع"),
+    LearningCard(primaryText: "das Schreiben", secondaryText: "الكتابة"),
+    LearningCard(primaryText: "das Sprechen", secondaryText: "التحدث"),
+    LearningCard(primaryText: "die Wiederholung", secondaryText: "المراجعة"),
+    LearningCard(primaryText: "die Vorbereitung", secondaryText: "التحضير"),
+
+    // ============================================================
+    // المجموعة 2: Lesen - wichtige Wörter (مفردات القراءة المهمة)
+    // ============================================================
+    LearningCard(primaryText: "die Information", secondaryText: "المعلومة"),
+    LearningCard(primaryText: "die Anzeige", secondaryText: "الإعلان"),
+    LearningCard(primaryText: "der Text", secondaryText: "النص"),
+    LearningCard(primaryText: "die Aufgabe", secondaryText: "المهمة"),
+    LearningCard(primaryText: "markieren", secondaryText: "يحدد / يضع علامة"),
+    LearningCard(primaryText: "die Antwort", secondaryText: "الإجابة"),
+    LearningCard(primaryText: "richtig", secondaryText: "صحيح"),
+    LearningCard(primaryText: "falsch", secondaryText: "خطأ"),
+    LearningCard(primaryText: "der Tipp", secondaryText: "النصيحة"),
+
+    // ============================================================
+    // المجموعة 3: Hören - wichtige Wörter (مفردات الاستماع)
+    // ============================================================
+    LearningCard(primaryText: "die Ansage", secondaryText: "الإعلان المسموع"),
+    LearningCard(primaryText: "der Anruf", secondaryText: "المكالمة"),
+    LearningCard(primaryText: "die Mailbox", secondaryText: "صندوق البريد الصوتي"),
+    LearningCard(primaryText: "die Durchsage", secondaryText: "الإعلان العام"),
+    LearningCard(primaryText: "der Bahnhof", secondaryText: "محطة القطار"),
+    LearningCard(primaryText: "der Flughafen", secondaryText: "المطار"),
+    LearningCard(primaryText: "das Gleis", secondaryText: "الرصيف / الخط"),
+    LearningCard(primaryText: "die Abfahrt", secondaryText: "المغادرة"),
+    LearningCard(primaryText: "die Ankunft", secondaryText: "الوصول"),
+    LearningCard(primaryText: "verspätet", secondaryText: "متأخر"),
+    LearningCard(primaryText: "pünktlich", secondaryText: "في الموعد"),
+
+    // ============================================================
+    // المجموعة 4: Schreiben - wichtige Wörter (مفردات الكتابة)
+    // ============================================================
+    LearningCard(primaryText: "die E-Mail", secondaryText: "البريد الإلكتروني"),
+    LearningCard(primaryText: "der Brief", secondaryText: "الرسالة"),
+    LearningCard(primaryText: "die Anrede", secondaryText: "التحية"),
+    LearningCard(primaryText: "der Gruß", secondaryText: "السلام الختامي"),
+    LearningCard(primaryText: "der Punkt", secondaryText: "النقطة"),
+    LearningCard(primaryText: "das Formular", secondaryText: "النموذج"),
+    LearningCard(primaryText: "ausfüllen", secondaryText: "يملأ"),
+    LearningCard(primaryText: "ergänzen", secondaryText: "يكمل"),
+
+    // ============================================================
+    // المجموعة 5: Anrede und Gruß (تحية وختام)
+    // ============================================================
+    LearningCard(primaryText: "Lieber...", secondaryText: "عزيزي... (للمذكر)"),
+    LearningCard(primaryText: "Liebe...", secondaryText: "عزيزتي... (للمؤنث)"),
+    LearningCard(primaryText: "Sehr geehrter Herr...", secondaryText: "سيدي العزيز... (رسمي)"),
+    LearningCard(primaryText: "Sehr geehrte Frau...", secondaryText: "سيدتي العزيزة... (رسمي)"),
+    LearningCard(primaryText: "Viele Grüße", secondaryText: "مع أطيب التحيات"),
+    LearningCard(primaryText: "Liebe Grüße", secondaryText: "تحياتي الحارة"),
+    LearningCard(primaryText: "Bis bald", secondaryText: "أراك قريباً"),
+
+    // ============================================================
+    // المجموعة 6: Sprechen - Vorstellung (مفردات التحدث - التعريف بالنفس)
+    // ============================================================
+    LearningCard(primaryText: "sich vorstellen", secondaryText: "يقدم نفسه"),
+    LearningCard(primaryText: "der Name", secondaryText: "الاسم"),
+    LearningCard(primaryText: "das Alter", secondaryText: "العمر"),
+    LearningCard(primaryText: "die Herkunft", secondaryText: "المنشأ"),
+    LearningCard(primaryText: "der Wohnort", secondaryText: "مكان السكن"),
+    LearningCard(primaryText: "die Sprache", secondaryText: "اللغة"),
+    LearningCard(primaryText: "der Beruf", secondaryText: "المهنة"),
+    LearningCard(primaryText: "das Hobby", secondaryText: "الهواية"),
+    LearningCard(primaryText: "die Freizeit", secondaryText: "وقت الفراغ"),
+
+    // ============================================================
+    // المجموعة 7: Prüfungsresultat (نتيجة الامتحان)
+    // ============================================================
+    LearningCard(primaryText: "bestehen", secondaryText: "ينجح"),
+    LearningCard(primaryText: "nicht bestehen", secondaryText: "يرسب"),
+    LearningCard(primaryText: "die Punktzahl", secondaryText: "درجة / نقاط"),
+    LearningCard(primaryText: "das Ergebnis", secondaryText: "النتيجة"),
+    LearningCard(primaryText: "das Zertifikat", secondaryText: "الشهادة"),
+    LearningCard(primaryText: "das Niveau", secondaryText: "المستوى"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return LearningCardsScreenDwa(
+      categoryTitle: "Netzwerk neu A1.1 - Wiederholung - Prüfungsvorbereitung - المفردات",
+      cards: Cards,
+    );
+  }
+}
+
+// ============================================================================
+// الجمل - Wiederholung (المراجعة النهائية)
+// ============================================================================
+
+class NetzwerkNeuA1WiederholungSintinceScreenDwa extends StatelessWidget {
+  final List<ItemCard> sentences = [
+    // ============================================================
+    // المجموعة 1: Lesen - Beispiele (أمثلة القراءة)
+    // ============================================================
+    ItemCard(english: "Sie möchten einen Film sehen und suchen ein Kino.", arabic: "أنت تريد مشاهدة فيلم وتبحث عن سينما."),
+    ItemCard(english: "Alle Informationen über die Kinos in der Stadt, Filme, Programme, Preise.", arabic: "جميع المعلومات عن دور السينما في المدينة، الأفلام، البرامج، الأسعار."),
+    ItemCard(english: "Sie möchten nach Köln fahren und suchen Informationen über die Stadt.", arabic: "أنت تريد الذهاب إلى كولونيا وتبحث عن معلومات عن المدينة."),
+    ItemCard(english: "Hier finden Sie alles über Köln: Hotels, Kultur, Bus, Bahn, Theater, Kino.", arabic: "هنا تجد كل شيء عن كولونيا: فنادق، ثقافة، باص، قطار، مسرح، سينما."),
+    ItemCard(english: "Sie möchten mit Freunden essen gehen.", arabic: "أنت تريد الذهاب لتناول الطعام مع الأصدقاء."),
+    ItemCard(english: "Sie suchen Arbeit. 10.000 neue Jobs, alle Berufe, alle Städte.", arabic: "أنت تبحث عن عمل. 10,000 وظيفة جديدة، كل المهن، كل المدن."),
+    ItemCard(english: "Sie möchten trainieren und suchen einen Club.", arabic: "أنت تريد التمرين وتبحث عن نادٍ رياضي."),
+
+    // ============================================================
+    // المجموعة 2: Hören - Beispiele (أمثلة الاستماع)
+    // ============================================================
+    ItemCard(english: "Hallo Hannes, hier ist Marco. Komm bitte ins Café am Markt, nicht zum Café am Park.", arabic: "مرحباً هانيس، هنا ماركو. تعال من فضلك إلى المقهى في السوق، ليس إلى المقهى في الحديقة."),
+    ItemCard(english: "Mein Handy geht nicht mehr. Ich brauche die Fotos für eine Präsentation.", arabic: "هاتفي لا يعمل بعد الآن. أحتاج الصور لعرض تقديمي."),
+    ItemCard(english: "Kannst du heute Abend kommen? Bitte, bis bald.", arabic: "هل يمكنك المجيء مساء اليوم؟ من فضلك، أراك قريباً."),
+    ItemCard(english: "Ich kann dich leider nicht vom Bahnhof abholen. Nimm die Straßenbahn Nummer 3.", arabic: "للأسف لا أستطيع اصطحابك من محطة القطار. خذ الترام رقم 3."),
+    ItemCard(english: "Ich habe einen Termin um 15:30 Uhr. Da muss ich leider arbeiten.", arabic: "لدي موعد الساعة 15:30. للأسف يجب أن أعمل."),
+    ItemCard(english: "Kann ich auch um 16:30 Uhr kommen? Bitte rufen Sie mich zurück.", arabic: "هل يمكنني المجيء الساعة 16:30 أيضاً؟ من فضلك اتصل بي."),
+    ItemCard(english: "Unsere Praxis ist bis 31. Juli geschlossen. Ab dem 1. August sind wir wieder für Sie da.", arabic: "عيادتنا مغلقة حتى 31 يوليو. اعتباراً من 1 أغسطس نحن هنا من أجلكم مجدداً."),
+
+    // ============================================================
+    // المجموعة 3: Hören Teil 2 - Richtig/Falsch
+    // ============================================================
+    ItemCard(english: "Achtung Fahrgäste, auf Gleis 3 fährt ein der Intercity Express nach Hannover.", arabic: "انتباه أيها الركاب، على الرصيف 3 يغادر قطار إنترسيتي إكسبريس إلى هانوفر."),
+    ItemCard(english: "Planmäßige Abfahrt um 19:37 Uhr. Bitte Vorsicht, beide einfach.", arabic: "المغادرة المقررة الساعة 19:37. من فضلك انتبه."),
+    ItemCard(english: "Passagier Glaser, bitte kommen Sie sofort zum Ausgang D19. Ihr Flug ist zum Einsteigen bereit.", arabic: "الراكب جلازر، من فضلك تعال فوراً إلى المخرج D19. رحلتك جاهزة للصعود."),
+    ItemCard(english: "Liebe Kunden, heute haben wir ein besonderes Angebot in unserer Sportabteilung im dritten Stock.", arabic: "أعزائي العملاء، اليوم لدينا عرض خاص في قسم الرياضة في الطابق الثالث."),
+    ItemCard(english: "Alles für den Schwimmsport ist heute um 20% reduziert.", arabic: "كل شيء للرياضات المائية مخفض اليوم بنسبة 20%."),
+
+    // ============================================================
+    // المجموعة 4: Schreiben - E-Mail Beispiel
+    // ============================================================
+    ItemCard(english: "Lieber Timo, endlich habe ich eine Wohnung gefunden. Das möchte ich feiern.", arabic: "عزيزي تيمو، أخيراً وجدت شقة. أريد الاحتفال بذلك."),
+    ItemCard(english: "Hast du am Samstag um 20 Uhr Zeit? Kannst du mir am Vormittag helfen?", arabic: "هل لديك وقت يوم السبت الساعة 8 مساءً؟ هل يمكنك مساعدتي في الصباح؟"),
+    ItemCard(english: "Ich muss ganz viel einkaufen. Viele Grüße, Dein Freund.", arabic: "يجب أن أتسوق كثيراً. مع أطيب التحيات، صديقك."),
+    ItemCard(english: "Liebe Freundin, am Sonntag mache ich einen Ausflug. Möchtest du mitkommen?", arabic: "عزيزتي الصديقة، يوم الأحد سأقوم برحلة. هل تريدين المجيء معي؟"),
+    ItemCard(english: "Wir treffen uns um 10 Uhr am Hauptbahnhof. Bitte schreib mir zurück.", arabic: "نتقابل الساعة 10 في محطة القطار الرئيسية. من فضلك اكتبي لي."),
+
+    // ============================================================
+    // المجموعة 5: Schreiben - Formular ausfüllen
+    // ============================================================
+    ItemCard(english: "Name: _________________", arabic: "الاسم: _________________"),
+    ItemCard(english: "Datum: _________________", arabic: "التاريخ: _________________"),
+    ItemCard(english: "Uhrzeit: _________________", arabic: "الوقت: _________________"),
+    ItemCard(english: "Wie viele Personen? _________________", arabic: "كم عدد الأشخاص؟ _________________"),
+    ItemCard(english: "Telefonnummer: _________________", arabic: "رقم الهاتف: _________________"),
+    ItemCard(english: "Adresse: _________________", arabic: "العنوان: _________________"),
+
+    // ============================================================
+    // المجموعة 6: Sprechen - Sich vorstellen (أمثلة التحدث)
+    // ============================================================
+    ItemCard(english: "Mein Name ist Khaled Nabil.", arabic: "اسمي خالد نبيل."),
+    ItemCard(english: "Ich bin 32 Jahre alt.", arabic: "عمري 32 سنة."),
+    ItemCard(english: "Ich komme aus Ägypten.", arabic: "أنا من مصر."),
+    ItemCard(english: "Ich wohne in Kairo.", arabic: "أنا أسكن في القاهرة."),
+    ItemCard(english: "Ich spreche Arabisch, Deutsch und Englisch.", arabic: "أتحدث العربية والألمانية والإنجليزية."),
+    ItemCard(english: "Ich arbeite als Kursleiter.", arabic: "أعمل كمدرب دورة."),
+    ItemCard(english: "Mein Hobby ist Fußball.", arabic: "هوايتي كرة القدم."),
+    ItemCard(english: "Meine Hobbys sind Lesen und Reisen.", arabic: "هواياتي القراءة والسفر."),
+    ItemCard(english: "In meiner Freizeit spiele ich Fußball.", arabic: "في وقت فراغي ألعب كرة القدم."),
+
+    // ============================================================
+    // المجموعة 7: Lesen Teil 2 - Tipps (نصائح للقراءة)
+    // ============================================================
+    ItemCard(english: "Lesen Sie die Aufgabe genau und markieren Sie die wichtigen Worte.", arabic: "اقرأ المهمة بدقة وحدد الكلمات المهمة."),
+    ItemCard(english: "Welche Worte in den Texten passen zu der Aufgabe?", arabic: "أي كلمات في النصوص تناسب المهمة؟"),
+    ItemCard(english: "Kreuzen Sie an, welcher Text passt.", arabic: "ضع علامة (صح) على أي نص يناسب."),
+    ItemCard(english: "Lesen Sie noch einmal die Aufgabe.", arabic: "اقرأ المهمة مرة أخرى."),
+
+    // ============================================================
+    // المجموعة 8: Hören Teil 3 - Tipps (نصائح للاستماع)
+    // ============================================================
+    ItemCard(english: "Lesen Sie die Aufgabe genau. Was ist für die Aufgabe wichtig?", arabic: "اقرأ المهمة بدقة. ما هو المهم للمهمة؟"),
+    ItemCard(english: "Hören Sie beim zweiten Mal genau und kontrollieren Sie Ihre Lösung.", arabic: "استمع في المرة الثانية بدقة وتحقق من حلك."),
+    ItemCard(english: "Nur eine Information im Text ist richtig.", arabic: "معلومة واحدة فقط في النص صحيحة."),
+    ItemCard(english: "Was ist richtig? Kreuzen Sie A, B oder C an.", arabic: "ما هو الصحيح؟ ضع علامة على A أو B أو C."),
+
+    // ============================================================
+    // المجموعة 9: Schreiben - Tipps (نصائح للكتابة)
+    // ============================================================
+    ItemCard(english: "Schreiben Sie zu jedem Punkt zwei Sätze.", arabic: "اكتب لكل نقطة جملتين."),
+    ItemCard(english: "Schreiben Sie ca. 30 Wörter.", arabic: "اكتب حوالي 30 كلمة."),
+    ItemCard(english: "Kontrollieren Sie die Anrede und den Gruß.", arabic: "تحقق من التحية والختام."),
+    ItemCard(english: "Kontrollieren Sie die Wortstellung. Das Verb kommt auf Position 2.", arabic: "تحقق من ترتيب الكلمات. الفعل يأتي في الموضع الثاني."),
+    ItemCard(english: "Haben Sie zu allen Punkten etwas geschrieben?", arabic: "هل كتبت شيئاً لجميع النقاط؟"),
+
+    // ============================================================
+    // المجموعة 10: Prüfungsinformationen (معلومات الامتحان)
+    // ============================================================
+    ItemCard(english: "Die Prüfung dauert 2 bis 3 Stunden.", arabic: "الامتحان يستغرق 2 إلى 3 ساعات."),
+    ItemCard(english: "Sie brauchen 70% von 100%, um zu bestehen.", arabic: "أنت بحاجة إلى 70% من 100% لكي تنجح."),
+    ItemCard(english: "Lesen: 30 Punkte, Hören: 30 Punkte, Schreiben: 30 Punkte, Sprechen: 30 Punkte.", arabic: "القراءة: 30 نقطة، الاستماع: 30 نقطة، الكتابة: 30 نقطة، التحدث: 30 نقطة."),
+    ItemCard(english: "Sie müssen 20 von 30 Punkten in jedem Teil bekommen.", arabic: "يجب أن تحصل على 20 من 30 نقطة في كل جزء."),
+    ItemCard(english: "Viel Erfolg bei der Prüfung!", arabic: "حظاً موفقاً في الامتحان!"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return GenericListScreenDwa(
+      title: "Netzwerk neu A1.1 - Wiederholung - Prüfungsvorbereitung - الجمل",
+      items: sentences,
+      primaryColor: const Color(0xFFF57C00), // لون برتقالي للامتحان
+      secondaryColor: const Color(0xFFE65100),
+    );
+  }
+}
+
+// ============================================================================
+// القواعد - Wiederholung (مراجعة جميع قواعد A1.1)
+// شرح كامل ومفصل لكل القواعد المهمة للامتحان
+// ============================================================================
+
+class NetzwerkNeuA1WiederholungGrammatikScreenDwa extends StatelessWidget {
+  final List<LearningItem> words = [
+    // ============================================================
+    // 1. Personalpronomen (الضمائر الشخصية)
+    // ============================================================
+    LearningItem(primaryText: "➤ Personalpronomen (Alle Fälle)", secondaryText: "الضمائر الشخصية (جميع الحالات)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Nominativ", secondaryText: "Akkusativ | Dativ"),
+    LearningItem(primaryText: "ich", secondaryText: "mich | mir"),
+    LearningItem(primaryText: "du", secondaryText: "dich | dir"),
+    LearningItem(primaryText: "er", secondaryText: "ihn | ihm"),
+    LearningItem(primaryText: "es", secondaryText: "es | ihm"),
+    LearningItem(primaryText: "sie", secondaryText: "sie | ihr"),
+    LearningItem(primaryText: "wir", secondaryText: "uns | uns"),
+    LearningItem(primaryText: "ihr", secondaryText: "euch | euch"),
+    LearningItem(primaryText: "sie", secondaryText: "sie | ihnen"),
+    LearningItem(primaryText: "Sie", secondaryText: "Sie | Ihnen"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 2. Konjugation der Verben (تصريف الأفعال)
+    // ============================================================
+    LearningItem(primaryText: "➤ Konjugation - Präsens", secondaryText: "تصريف الأفعال في المضارع"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Regelmäßige Verben:", secondaryText: "machen, lernen, wohnen, spielen"),
+    LearningItem(primaryText: "ich -e", secondaryText: "du -st | er/sie/es -t | wir -en | ihr -t | sie -en"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Unregelmäßige Verben (Vokalwechsel):", secondaryText: ""),
+    LearningItem(primaryText: "sprechen (e→i/ie)", secondaryText: "du sprichst, er spricht"),
+    LearningItem(primaryText: "sehen (e→ie)", secondaryText: "du siehst, er sieht"),
+    LearningItem(primaryText: "lesen (e→ie)", secondaryText: "du liest, er liest"),
+    LearningItem(primaryText: "fahren (a→ä)", secondaryText: "du fährst, er fährt"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Hilfsverben:", secondaryText: ""),
+    LearningItem(primaryText: "sein", secondaryText: "bin, bist, ist, sind, seid, sind"),
+    LearningItem(primaryText: "haben", secondaryText: "habe, hast, hat, haben, habt, haben"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 3. Modalverben (أفعال المودال)
+    // ============================================================
+    LearningItem(primaryText: "➤ Modalverben (Präsens)", secondaryText: "أفعال المودال (المضارع)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "können", secondaryText: "kann, kannst, kann, können, könnt, können"),
+    LearningItem(primaryText: "müssen", secondaryText: "muss, musst, muss, müssen, müsst, müssen"),
+    LearningItem(primaryText: "sollen", secondaryText: "soll, sollst, soll, sollen, sollt, sollen"),
+    LearningItem(primaryText: "wollen", secondaryText: "will, willst, will, wollen, wollt, wollen"),
+    LearningItem(primaryText: "möchten", secondaryText: "möchte, möchtest, möchte, möchten, möchtet, möchten"),
+    LearningItem(primaryText: "dürfen", secondaryText: "darf, darfst, darf, dürfen, dürft, dürfen"),
+    LearningItem(primaryText: "Regel:", secondaryText: "Modalverb auf Position 2 + Infinitiv am Ende"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 4. Perfekt (الماضي التام)
+    // ============================================================
+    LearningItem(primaryText: "➤ Perfekt", secondaryText: "الماضي التام"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Bildung:", secondaryText: "haben/sein + Partizip II"),
+    LearningItem(primaryText: "haben:", secondaryText: "die meisten Verben (arbeiten, lernen, machen, essen, trinken)"),
+    LearningItem(primaryText: "sein:", secondaryText: "Bewegungsverben (gehen, fahren, kommen, fliegen, laufen)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+    LearningItem(primaryText: "Partizip II Bildung:", secondaryText: ""),
+    LearningItem(primaryText: "regelmäßig:", secondaryText: "ge + Stamm + t (gemacht, gelernt)"),
+    LearningItem(primaryText: "unregelmäßig:", secondaryText: "ge + Stamm + en (gegangen, gefahren, gekommen)"),
+    LearningItem(primaryText: "-ieren Verben:", secondaryText: "ohne ge (studiert, telefoniert)"),
+    LearningItem(primaryText: "trennbar:", secondaryText: "Präfix + ge + Stamm + t (eingekauft, aufgestanden)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 5. Wechselpräpositionen (حروف الجر المتغيرة)
+    // ============================================================
+    LearningItem(primaryText: "➤ Wechselpräpositionen (9)", secondaryText: "حروف الجر المتغيرة"),
+    LearningItem(primaryText: "an, auf, hinter, in, neben, über, unter, vor, zwischen", secondaryText: ""),
+    LearningItem(primaryText: "Wo? (Dativ)", secondaryText: "Wohin? (Akkusativ)"),
+    LearningItem(primaryText: "Das Buch liegt auf dem Tisch.", secondaryText: "Ich lege das Buch auf den Tisch."),
+    LearningItem(primaryText: "Das Bild hängt an der Wand.", secondaryText: "Ich hänge das Bild an die Wand."),
+    LearningItem(primaryText: "Der Stuhl steht neben dem Tisch.", secondaryText: "Ich stelle den Stuhl neben den Tisch."),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 6. Dativpräpositionen (حروف الجر التي تأتي مع Dativ)
+    // ============================================================
+    LearningItem(primaryText: "➤ Dativpräpositionen", secondaryText: "حروف الجر مع Dativ"),
+    LearningItem(primaryText: "aus, bei, mit, nach, von, zu, gegenüber", secondaryText: ""),
+    LearningItem(primaryText: "aus Ägypten", secondaryText: "bei meiner Mutter | mit dem Bus | nach Hause"),
+    LearningItem(primaryText: "von mir", secondaryText: "zu dir | gegenüber dem Supermarkt"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 7. Zeitpräpositionen (حروف الجر الزمنية)
+    // ============================================================
+    LearningItem(primaryText: "➤ Zeitpräpositionen", secondaryText: "حروف الجر الزمنية"),
+    LearningItem(primaryText: "ab", secondaryText: "بدءاً من (Ab Montag arbeite ich.)"),
+    LearningItem(primaryText: "am", secondaryText: "في (Am Wochenende gehe ich ins Kino.)"),
+    LearningItem(primaryText: "im", secondaryText: "في (Im Sommer fahre ich ans Meer.)"),
+    LearningItem(primaryText: "nach", secondaryText: "بعد (Nach dem Essen gehe ich schlafen.)"),
+    LearningItem(primaryText: "vor", secondaryText: "قبل (Vor der Prüfung lerne ich viel.)"),
+    LearningItem(primaryText: "seit", secondaryText: "منذ (Seit drei Monaten lerne ich Deutsch.)"),
+    LearningItem(primaryText: "in", secondaryText: "خلال / بعد (In einer Woche habe ich Urlaub.)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 8. Fragewörter (أدوات الاستفهام)
+    // ============================================================
+    LearningItem(primaryText: "➤ Fragewörter (W-Fragen)", secondaryText: "أدوات الاستفهام"),
+    LearningItem(primaryText: "wer?", secondaryText: "من؟ (Nominativ) - Wer kommt heute?"),
+    LearningItem(primaryText: "wen?", secondaryText: "من؟ (Akkusativ) - Wen triffst du?"),
+    LearningItem(primaryText: "wem?", secondaryText: "لمن؟ (Dativ) - Wem hilfst du?"),
+    LearningItem(primaryText: "wo?", secondaryText: "أين؟ - Wo wohnst du?"),
+    LearningItem(primaryText: "wohin?", secondaryText: "إلى أين؟ - Wohin fährst du?"),
+    LearningItem(primaryText: "woher?", secondaryText: "من أين؟ - Woher kommst du?"),
+    LearningItem(primaryText: "wann?", secondaryText: "متى؟ - Wann hast du Geburtstag?"),
+    LearningItem(primaryText: "warum?", secondaryText: "لماذا؟ - Warum bist du müde?"),
+    LearningItem(primaryText: "wie?", secondaryText: "كيف؟ - Wie heißt du?"),
+    LearningItem(primaryText: "wie lange?", secondaryText: "كم من الوقت؟ - Wie lange lernst du Deutsch?"),
+    LearningItem(primaryText: "was?", secondaryText: "ماذا؟ - Was machst du?"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 9. denn & weil (لأن)
+    // ============================================================
+    LearningItem(primaryText: "➤ denn & weil", secondaryText: "لأن"),
+    LearningItem(primaryText: "denn (Hauptsatz)", secondaryText: "Verb auf Position 2"),
+    LearningItem(primaryText: "Ich bleibe zu Hause, denn ich bin krank.", secondaryText: ""),
+    LearningItem(primaryText: "weil (Nebensatz)", secondaryText: "Verb am Ende"),
+    LearningItem(primaryText: "Ich bleibe zu Hause, weil ich krank bin.", secondaryText: ""),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 10. Imperativ (صيغة الأمر)
+    // ============================================================
+    LearningItem(primaryText: "➤ Imperativ", secondaryText: "صيغة الأمر"),
+    LearningItem(primaryText: "du (informell)", secondaryText: "Mach! (ohne st + du)"),
+    LearningItem(primaryText: "ihr (informell)", secondaryText: "Macht! (ohne ihr, mit t)"),
+    LearningItem(primaryText: "Sie (formell)", secondaryText: "Machen Sie! (mit Sie)"),
+    LearningItem(primaryText: "", secondaryText: ""),
+
+    // ============================================================
+    // 11. Satzstellung (ترتيب الكلمات)
+    // ============================================================
+    LearningItem(primaryText: "➤ Satzstellung", secondaryText: "ترتيب الكلمات"),
+    LearningItem(primaryText: "Hauptsatz:", secondaryText: "Subjekt + Verb + ..."),
+    LearningItem(primaryText: "Frage:", secondaryText: "W-Wort + Verb + Subjekt + ..."),
+    LearningItem(primaryText: "Perfekt:", secondaryText: "Subjekt + haben/sein + ... + Partizip II"),
+    LearningItem(primaryText: "Modalverb:", secondaryText: "Subjekt + Modalverb + ... + Infinitiv"),
+    LearningItem(primaryText: "Temporale Angabe vorne:", secondaryText: "Heute + Verb + Subjekt + ..."),
+  ];
+
+  final List<LearningItem> sentences = [
+    LearningItem(primaryText: "➤ Wichtige Sätze für die Prüfung", secondaryText: "جمل مهمة للامتحان"),
+    LearningItem(primaryText: "Können Sie das bitte wiederholen?", secondaryText: "هل يمكنكم تكرار ذلك من فضلكم؟"),
+    LearningItem(primaryText: "Ich habe eine Frage.", secondaryText: "لدي سؤال."),
+    LearningItem(primaryText: "Ich verstehe das nicht.", secondaryText: "أنا لا أفهم ذلك."),
+    LearningItem(primaryText: "Können Sie bitte langsamer sprechen?", secondaryText: "هل يمكنكم التحدث ببطء أكثر من فضلكم؟"),
+    LearningItem(primaryText: "Wie schreibt man das?", secondaryText: "كيف يُكتب هذا؟"),
+    LearningItem(primaryText: "Was bedeutet das auf Arabisch?", secondaryText: "ماذا يعني ذلك بالعربية؟"),
+    LearningItem(primaryText: "Vielen Dank für Ihre Hilfe.", secondaryText: "شكراً جزيلاً على مساعدتكم."),
+    LearningItem(primaryText: "Auf Wiederhören.", secondaryText: "إلى السماع مرة أخرى."),
+    LearningItem(primaryText: "Viel Erfolg bei der Prüfung!", secondaryText: "حظاً موفقاً في الامتحان!"),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return CombinedLearningWidget(
+      categoryTitle: "Netzwerk neu A1.1 - Wiederholung - القواعد (مراجعة كاملة لجميع قواعد A1.1)",
+      words: words,
+      sentences: sentences,
+    );
+  }
+}
+
+
+
+
